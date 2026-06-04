@@ -220,6 +220,60 @@
       "description": "A pint-sized green-clad hero on an endless quest to keep the realm — his app — free of bolted-on AI. Everywhere he turns, a glowing merchant pops out of the bushes: 'I have a solution for you! Let me show you how to add AI to your app!' He just wants to ship the small, sharp, beloved thing. Wields the Triforce not as power but as principle — focus, restraint, taste — and a sword for trimming every feature nobody asked for. Not anti-AI; anti-shoehorn. The bravest 'no' in the kingdom.",
       "imagePrompt": "A pint-sized green-tunic'd fantasy hero (classic adventure-game knight energy, pointed cap, little leather boots) caricatured with a huge determined frown and oversized head, planted in a fighting stance with a gleaming sword raised and a round shield held up. Emblazoned on the shield is a single glowing golden triangle-of-three-triangles emblem. He is bravely fending off a pushy, grinning glowing AI-orb 'merchant' that has popped out of the bushes offering him a cursed, over-decorated treasure chest stuffed with chatbot bubbles and sparkles — and he is firmly turning it away with the shield. Lush green storybook overworld, rolling hills, a few pixel-flowers, bright heroic adventure-game palette, golden afternoon light. No text anywhere.",
       "image": "art/the-ai-triforce.png"
+    },
+    {
+      "id": "the-demo-illusionist",
+      "name": "The Demo Illusionist",
+      "saying": "Don't refresh. Whatever you do, don't refresh.",
+      "moves": [
+        {
+          "name": "Sleight of Hand",
+          "description": "Performs the one rehearsed happy path so smoothly the audience never sees the four that crash."
+        },
+        {
+          "name": "The Loaded Deck",
+          "description": "Quietly stubs the flaky endpoint with a hardcoded response so the magic never depends on the venue wifi."
+        }
+      ],
+      "description": "A showman who has turned the live demo into a magic act. Behind the flawless on-stage run is a single happy path rehearsed forty times, a stubbed API or two, and a cape draped over the parts that don't work yet. Radiates total confidence while quietly praying nothing reloads. Universal-guilt card: everyone who has ever given a live demo knows the terror under the showmanship. The trick always works — as long as nobody touches the keyboard.",
+      "imagePrompt": "A flamboyant stage magician in a tuxedo, top hat, and flowing cape, mid-flourish on a darkened conference stage under a single dramatic spotlight, triumphantly pulling a glowing, perfectly-running phone app out of a top hat as if by magic — beaming a showman's grin while a single bead of nervous sweat rolls down his temple. Just behind him, half-hidden by his cape, a chaotic tangle of duct tape, crossed wires, and a propped-up laptop shows the trick is held together by hope. Faint silhouettes of an audience in the dark foreground. Caricature: oversized confident grin, huge expressive eyes, theatrical posture. Moody spotlit stage, rich theatrical purples and golds, dramatic rim light. No text anywhere.",
+      "image": ""
+    },
+    {
+      "id": "the-pixel-surgeon",
+      "name": "The Pixel Surgeon",
+      "saying": "That's two pixels off. I can see it from here.",
+      "moves": [
+        {
+          "name": "Sub-Pixel Incision",
+          "description": "Shifts a single element one point with a steady hand, and somehow the whole screen finally breathes."
+        },
+        {
+          "name": "Eagle Eye",
+          "description": "Spots the misaligned padding from across the room and cannot, will not, unsee it."
+        }
+      ],
+      "description": "An exacting craftsperson who treats a layout like an operating table. Sees the 2px misalignment nobody else can, and will not close until it's perfect — often on a device they don't even own. Calm, precise, a little terrifying. The reason the UI feels right even though no one can say why. Not slow, just unwilling to ship a wound.",
+      "imagePrompt": "A focused surgeon in teal scrubs, surgical mask, and a head-mounted magnifier lamp, leaning intently over a large glowing UI mockup laid out like a patient on an operating table. With tiny precision tools — calipers, tweezers, a glowing scalpel — they delicately nudge one single pixel-block into alignment. A monitor beside the table displays a pulsing layout grid instead of a heartbeat. Caricature: enormous magnified eyes behind the lens, intense steady concentration, oversized careful hands. Cool teal operating-room lighting, sterile but warm focal glow on the work. No text anywhere.",
+      "image": ""
+    },
+    {
+      "id": "the-upgrade-monk",
+      "name": "The Upgrade Monk",
+      "saying": "The breaking changes are simply a teacher.",
+      "moves": [
+        {
+          "name": "The Long Migration",
+          "description": "Sits in perfect calm through forty breaking changes and a thousand deprecation warnings without losing serenity."
+        },
+        {
+          "name": "Bear the Suffering",
+          "description": "Absorbs the entire SDK bump alone so the rest of the team never has to open the changelog."
+        }
+      ],
+      "description": "An ascetic who has made peace with the dependency upgrade everyone else dreads. Finds quiet enlightenment in the Expo SDK bump, the major-version migration, the changelog no one wants to read. Takes on the suffering so the team doesn't have to, and emerges serene on the other side of a green build. Patient, selfless, faintly amused by your fear of breaking changes.",
+      "imagePrompt": "A serene bald monk in flowing saffron-orange robes, sitting in calm lotus meditation atop a misty mountain peak, a faint blissful smile on his face and a glowing halo of peace around him — utterly undisturbed while a swirling storm of red deprecation-warning triangles and crackling 'breaking change' lightning rages all around him. An impossibly long changelog scroll unrolls down the mountainside beside him; a small glowing package-box floats before him like an object of devotion. Caricature: oversized peaceful face, tiny knowing smile, exaggerated calm amid chaos. Misty mountaintop temple at warm dawn, soft golden light cutting through the storm. No text anywhere.",
+      "image": ""
     }
   ]
 }
