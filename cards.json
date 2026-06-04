@@ -2,7 +2,7 @@
   "meta": {
     "event": "Chain React 2026 — Portland, OR",
     "target": 30,
-    "artDirection": "A single full-bleed CHARACTER ILLUSTRATION — artwork only, NOT a trading card. Absolutely no card frame, no border, no card template, no HP, no text, no labels, no name plate, no energy symbols, no stat boxes, no logos, no UI of any kind anywhere in the image. Just the raw painted illustration filling the whole frame, edge to edge. ONE character is the unmistakable hero of the frame — large, centered, shown mid-action performing their signature quirk. Surround them with only a few small supporting props or details that hint at what they're up to; keep the background simple and uncluttered so the character stays the clear focal point — but it must ALWAYS be a real, colored environment with mood and atmosphere. NEVER a plain white, gray, blank, or empty studio background; every image needs an actual setting with depth and color. Render in the energetic illustration style of Pokémon creature/character ART (the painted artwork itself, never the card it sits on): energetic 3/4 or full-body pose, bold readable silhouette, vibrant saturated color, clean dramatic lighting, subtle depth. Push every character toward exaggerated, silly CARICATURE — oversized expressive features, comic proportions, big playful energy. Tell the story through visual imagery, props, pose and expression — NOT through words: avoid in-scene signs, banners, billboards, screens of text, or any written labels. Each character keeps the distinct art-style flavor named in its own prompt, but all share this hero-in-action composition."
+    "artDirection": "A single full-bleed CHARACTER ILLUSTRATION — artwork only, NOT a trading card. Absolutely no card frame, no border, no card template, no HP, no name plate, no energy symbols, no stat boxes, no card logos, no UI of any kind anywhere in the image. Just the raw painted illustration filling the whole frame, edge to edge. ONE character is the unmistakable hero of the frame — large, centered, shown mid-action performing their signature quirk. Surround them with only a few small supporting props or details that hint at what they're up to; keep the background simple and uncluttered so the character stays the clear focal point — but it must ALWAYS be a real, colored environment with mood and atmosphere. NEVER a plain white, gray, blank, or empty studio background; every image needs an actual setting with depth and color. Render in the energetic illustration style of Pokémon creature/character ART (the painted artwork itself, never the card it sits on): energetic 3/4 or full-body pose, bold readable silhouette, vibrant saturated color, clean dramatic lighting, subtle depth. Push every character toward exaggerated, silly CARICATURE — oversized expressive features, comic proportions, big playful energy. Tell the story mainly through visual imagery, props, pose and expression, and keep words to a minimum — avoid stray signs, billboards, screens of text or random written labels. (A card's OWN prompt may call for one or two short, intentional labels; when it does, render exactly those, cleanly and legibly, and no other text.) Each character keeps the distinct art-style flavor named in its own prompt, but all share this hero-in-action composition."
   },
   "cards": [
     {
@@ -38,7 +38,7 @@
         }
       ],
       "description": "The mythical troll of the JS↔native bridge: cross all you like, but try to send too much data and he'll charge you for it. Genuinely cautious about performance — every fat payload serialized over is a toll paid in dropped frames. Lately grumbles that the New Architecture thinned his margins, though he'd never admit business is down. Still guarding the bridge. Still eyeing your payload size.",
-      "imagePrompt": "Friendly good-vibes fairy-tale troll: a big round huggable troll with soft mossy-green skin, a bulbous nose, a goofy underbite with one snaggle-tooth, big gentle eyes and a sheepish good-natured grin, sitting cozily under a low mossy stone bridge. He's not a villain — just doing his job, politely holding out one giant hand to check the toll as a tiny traveler hauls an absurdly oversized glowing bundle of data across the span. Overhead in the distance, a sleek futuristic jet-engine airplane streaks across the sky leaving a vapor trail — the shiny 'new architecture' express quietly bypassing his little bridge. Warm storybook-fantasy palette, dappled golden light, lush green riverbank, mossy stones and a trickle of water below.",
+      "imagePrompt": "Friendly good-vibes fairy-tale troll: a big round huggable troll with soft mossy-green skin, a bulbous nose, a goofy underbite with one snaggle-tooth, big gentle eyes and a sheepish good-natured grin, sitting cozily beneath a mossy stone bridge — politely holding out one giant hand to check the toll. The bridge clearly connects two different lands: the near bank is a bright, warm land of floating glowing curly-braces and rounded JavaScript-yellow blocks, marked by a small stone sign reading 'JS'; the far bank is a cooler land of sleek metal gears and native platform shapes, marked by a small stone sign reading 'NATIVE'. A tiny traveler hauls an absurdly oversized glowing bundle of data across the span toward the native side. High overhead, a sleek jet airplane streaks past trailing a small flag-banner that reads 'NEW ARCHITECTURE', quietly bypassing the little bridge. Warm storybook-fantasy palette, dappled golden light, lush riverbank, a trickle of water below. Render only those three short labels — 'JS', 'NATIVE', 'NEW ARCHITECTURE' — cleanly and legibly, and no other text anywhere.",
       "image": "art/the-bridge-troll.png"
     },
     {
@@ -92,7 +92,8 @@
         }
       ],
       "description": "The silent sage of every desk. You explain the impossible bug out loud, and somewhere around the third sentence the answer arrives — the duck never said a word. Patient, unbothered, quietly omniscient. Has solved more production incidents than any senior engineer and asked for nothing but a dry spot by the keyboard.",
-      "imagePrompt": "A little yellow rubber duck as the wise hero of the frame, large and centered on a desk: glossy and round with a serene, all-knowing, faintly smug expression, somehow radiating calm omniscient wisdom like a tiny zen master. Exaggerated caricature — big knowing eyes, a subtle sage's smile. A faint soft glow or halo of insight around it; out of focus behind it, a frazzled developer mid-rant gestures at a glowing tangle of buggy code. Warm desk-lamp glow, cozy late-night home-office den, mugs and sticky notes, deep colored atmospheric background."
+      "imagePrompt": "A little yellow rubber duck as the wise hero of the frame, large and centered on a desk: glossy and round with a serene, all-knowing, faintly smug expression, somehow radiating calm omniscient wisdom like a tiny zen master. Exaggerated caricature — big knowing eyes, a subtle sage's smile. A faint soft glow or halo of insight around it; out of focus behind it, a frazzled developer mid-rant gestures at a glowing tangle of buggy code. Warm desk-lamp glow, cozy late-night home-office den, mugs and sticky notes, deep colored atmospheric background.",
+      "image": "art/the-rubber-duck.png"
     },
     {
       "id": "the-console-detective",
@@ -131,8 +132,8 @@
       "image": "art/the-agent-wrangler.png"
     },
     {
-      "id": "the-context-firehose",
-      "name": "The Context Firehose",
+      "id": "the-context-hoarder",
+      "name": "The Context Hoarder",
       "saying": "Just give it everything.",
       "moves": [
         {
@@ -146,7 +147,7 @@
       ],
       "description": "A trusting soul who believes more context can only help and that access controls are for cowards. Dumps the whole repo, hooks the agent to every MCP it asks for, clicks 'allow all' without reading. YOLO incarnate. The fear underneath: the one thing you withhold is the thing it needed.",
       "imagePrompt": "Cute cartoon trash-panda raccoon with gleeful gremlin energy, big silly caricature: wide-eyed and grinning ear to ear, arms thrown wide as it proudly hugs a giant overflowing armful of random junk — papers, tangled cables, folders and files spilling out everywhere, a few tumbling from its stuffed cheeks — beaming like 'yeah, this is ALL my context.' Bushy striped tail, mischievous sparkle in its eyes. Set in a cozy dim hoarder's den glowing with warm amber light — cluttered shelves and a colored, atmospheric backdrop framing him, never a plain white background.",
-      "image": "art/the-context-firehose.png"
+      "image": "art/the-context-hoarder.png"
     },
     {
       "id": "the-dependency-prepper",
