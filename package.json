@@ -7,6 +7,14 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
-    "build": "node build.js"
+    "build": "node build.js",
+    "export": "node export.js"
+  },
+  "dependencies": {
+    "puppeteer": "^24.19.0",
+    "sharp": "^0.34.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["puppeteer", "sharp"]
   }
 }
