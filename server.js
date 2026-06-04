@@ -78,8 +78,10 @@ function readBody(req) {
 // gallery shows under "copy full".
 function buildPrompt(meta, card) {
   const dir = meta.artDirection || "";
+  const tail =
+    "\n\nReminder: output the character illustration ONLY — no card frame, border, text, or stat boxes.";
   return dir
-    ? `${dir}\n\nCharacter — ${card.name}: ${card.imagePrompt}`
+    ? `${dir}\n\nCharacter — ${card.name}: ${card.imagePrompt}${tail}`
     : card.imagePrompt;
 }
 

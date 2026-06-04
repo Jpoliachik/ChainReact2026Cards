@@ -2,7 +2,7 @@
   "meta": {
     "event": "Chain React 2026 — Portland, OR",
     "target": 30,
-    "artDirection": "A single full-bleed CHARACTER ILLUSTRATION — artwork only, NOT a trading card. Absolutely no card frame, no border, no card template, no HP, no text, no labels, no name plate, no energy symbols, no stat boxes, no logos, no UI of any kind anywhere in the image. Just the raw painted illustration filling the whole frame, edge to edge. ONE character is the unmistakable hero of the frame — large, centered, shown mid-action performing their signature quirk. Surround them with only a few small supporting props or details that hint at what they're up to; keep the background simple and uncluttered so the character stays the clear focal point. Render in the energetic illustration style of Pokémon creature/character ART (the painted artwork itself, never the card it sits on): energetic 3/4 or full-body pose, bold readable silhouette, vibrant saturated color, clean dramatic lighting, subtle depth. Each character keeps the distinct art-style flavor named in its own prompt, but all share this hero-in-action composition."
+    "artDirection": "A single full-bleed CHARACTER ILLUSTRATION — artwork only, NOT a trading card. Absolutely no card frame, no border, no card template, no HP, no text, no labels, no name plate, no energy symbols, no stat boxes, no logos, no UI of any kind anywhere in the image. Just the raw painted illustration filling the whole frame, edge to edge. ONE character is the unmistakable hero of the frame — large, centered, shown mid-action performing their signature quirk. Surround them with only a few small supporting props or details that hint at what they're up to; keep the background simple and uncluttered so the character stays the clear focal point. Render in the energetic illustration style of Pokémon creature/character ART (the painted artwork itself, never the card it sits on): energetic 3/4 or full-body pose, bold readable silhouette, vibrant saturated color, clean dramatic lighting, subtle depth. Push every character toward exaggerated, silly CARICATURE — oversized expressive features, comic proportions, big playful energy. Tell the story through visual imagery, props, pose and expression — NOT through words: avoid in-scene signs, banners, billboards, screens of text, or any written labels. Each character keeps the distinct art-style flavor named in its own prompt, but all share this hero-in-action composition."
   },
   "cards": [
     {
@@ -38,7 +38,7 @@
         }
       ],
       "description": "The mythical troll of the JS↔native bridge: cross all you like, but try to send too much data and he'll charge you for it. Genuinely cautious about performance — every fat payload serialized over is a toll paid in dropped frames. Lately grumbles that the New Architecture thinned his margins, though he'd never admit business is down. Still guarding the bridge. Still eyeing your payload size.",
-      "imagePrompt": "Bright rainbow 'Trolls'-movie cartoon style: a pint-sized impossibly cute troll with a giant poof of neon rainbow hair and sparkly skin, manning a toll-gate on a candy-colored bridge between two floating islands — one of glowing curly-braces, one of native gears. He holds out a hand for payment while eyeing a traveler hauling a comically huge bundle labeled 'DATA' across; his toll sign reads 'BY THE KILOBYTE'. In the background a glossy billboard for the sleek 'NEW ARCHITECTURE' express lane quietly steals his business. Felt textures, glitter, a sly grumpy grin.",
+      "imagePrompt": "Classic fairy-tale fantasy troll: a big lumpy mossy-skinned brute with a bulbous warty nose, snaggle-teeth, knobby knuckles and a few scraggly tufts of hair, hunched menacingly under a low mossy stone bridge and holding out one enormous clawed palm to demand a toll. A tiny traveler struggles past lugging an absurdly oversized glowing bundle of data across the span. Exaggerated grumpy caricature, comically huge hands, hairy pot-belly, storybook-fantasy oil-painting palette, mossy stones and a trickle of water below.",
       "image": "art/the-bridge-troll.png"
     },
     {
@@ -56,7 +56,8 @@
         }
       ],
       "description": "A perfectionist animation sorcerer who can feel a wrong easing curve in his bones. Fluent in shared values, worklets, and damping ratios; will not ship until the motion lands exactly right, which is never. Brilliant, a little unhinged, deeply pleased with physics no one else will ever consciously notice.",
-      "imagePrompt": "Psychedelic acid-fantasy wizard: a wild-eyed robed sorcerer with a long flowing beard, casting with both hands as trippy neon fractal energy and rainbow easing-curves spiral from a glowing staff, meticulously bending a single floating UI element into liquid motion. Glowing runes shaped like spring-physics graphs, a sparkling third eye, hyper-saturated kaleidoscopic colors."
+      "imagePrompt": "Psychedelic acid-fantasy wizard: a wild-eyed robed sorcerer with a long flowing beard, casting with both hands as trippy neon fractal energy and rainbow easing-curves spiral from a glowing staff, meticulously bending a single floating UI element into liquid motion. Glowing runes shaped like spring-physics graphs, a sparkling third eye, hyper-saturated kaleidoscopic colors.",
+      "image": "art/the-reanimated-wizard.png"
     },
     {
       "id": "the-slop-sommelier",
@@ -73,7 +74,8 @@
         }
       ],
       "description": "A discerning connoisseur of machine-written code who can identify the model, the temperature, and the vintage from a single function. The team's last line of defense against AI slop — pairs every suggestion with guardrails before it touches production. Not anti-AI, just refuses to swallow it unverified.",
-      "imagePrompt": "Fancy wine-sommelier style: an impeccably dressed connoisseur in a tuxedo and tasting apron, swirling a crystal glass that holds glowing liquid code instead of wine, nose in the glass, eyes narrowed in expert judgment. A tasting flight of little glasses labeled with AI-model names sits nearby, a spit-bucket overflows with rejected slop, a rolled-up scroll of lint rules tucked under one arm. Rich, refined, candlelit wine-cellar."
+      "imagePrompt": "Fancy wine-sommelier style: an impeccably dressed connoisseur in a tuxedo and tasting apron, swirling a crystal glass that holds glowing liquid code instead of wine, nose in the glass, eyes narrowed in expert judgment. A tasting flight of little glasses of glowing code sits nearby, a spit-bucket overflows with rejected slop, a rolled-up scroll tucked under one arm. Exaggerated snooty caricature, rich refined candlelit wine-cellar.",
+      "image": "art/the-slop-sommelier.png"
     },
     {
       "id": "the-standup-ghost",
@@ -90,7 +92,8 @@
         }
       ],
       "description": "A gentle, well-meaning specter of remote work. Always present, never quite there; hasn't unmuted since March but radiates calm, supportive energy. Lovable, not lazy — the haunting is friendly. Everyone has been this ghost, and that shared guilt is the point.",
-      "imagePrompt": "Classic Scooby-Doo / retro Hanna-Barbera cartoon: a goofy friendly bedsheet ghost with big googly eyes floating inside one tile of a video-call grid, its tile camera-off (a dim avatar circle), mouthing 'wooOOoo... no blockers.' Cobwebs in the tile corners, a little 'last spoke: March' tombstone, neighboring tiles glowing with normal faces. Flat retro colors, bouncy linework."
+      "imagePrompt": "Classic Scooby-Doo / retro Hanna-Barbera cartoon: a goofy friendly bedsheet ghost with big googly eyes and a sheepish apologetic grin, caught mid-fade — its lower half already dissolved to transparent so you can see right through it as it gives a weak, barely-there thumbs-up. A tiny floating muted-microphone icon hovers at its side and a thin cobweb stretches from one droopy arm to an empty desk chair, hinting it hasn't moved in months. Big exaggerated caricature, flat retro colors, bouncy linework, simple soft-lit home-office hint behind it.",
+      "image": "art/the-standup-ghost.png"
     },
     {
       "id": "the-console-detective",
@@ -107,7 +110,8 @@
         }
       ],
       "description": "A hard-boiled gumshoe who solves every bug the old-fashioned way: print statements and instinct. Distrusts the debugger on principle. Always cracks the case, always leaves a log behind. The universal guilt — everyone debugs like this and pretends they don't.",
-      "imagePrompt": "High-contrast black-and-white film-noir: a hard-boiled detective in a rumpled trench coat and fedora, cigarette smoke curling, magnifying glass raised to a corkboard of pinned clues reading console.log(\"here\"), console.log(\"here2\"), console.log(\"WHY\"), strung together with red thread. A glowing 'DEBUGGER' door stays firmly shut. Venetian-blind shadows, rain on the window, a single hard desk lamp."
+      "imagePrompt": "High-contrast black-and-white film-noir, tight dramatic close-up filling the frame: a hard-boiled detective in a rumpled trench coat and fedora leaning in, one squinting eye huge behind a raised magnifying glass as he scrutinizes a single small glowing buggy clue. Cigarette smoke curls past his face. Exaggerated heavy-jawed stubbled caricature, deep Venetian-blind shadows slashing across his features, rain-streaked window and one hard desk lamp behind him. Moody, characterful, intense.",
+      "image": "art/the-console-detective.png"
     },
     {
       "id": "the-agent-wrangler",
@@ -124,7 +128,8 @@
         }
       ],
       "description": "A frontier cowboy of the agentic era who runs more agents than any human can track and burns tokens like a campfire. Optimistic, overextended, context-switching so fast he forgets what each terminal was doing. Lives the thrill and terror of orchestrating things that act on their own.",
-      "imagePrompt": "Wild-west cowboy: a dusty cowboy in a ten-gallon hat and chaps swinging a glowing lasso, trying to herd a stampede of six wild robot-agent broncos charging in six directions, each branded with a different terminal prompt — one bolting toward a cliff edge labeled 'PROD'. Flaming token-coins scatter from his saddlebags. Sunset mesas, tumbleweeds, a frazzled-but-determined grin."
+      "imagePrompt": "Wild-west cowboy in total rodeo chaos: a dusty cowboy in a ten-gallon hat astride one bucking glowing robot-agent bronco, hanging on for dear life with one hand while the other swings a glowing lasso to rope a whole stampede of OTHER wild robot-agent horses bolting off in every direction — one charging toward a cliff edge. Each robo-bronco is a different glowing mechanical creature. Exaggerated wide-eyed panic-grin caricature, flying dust and tumbleweeds, sunset mesas. Pure mayhem.",
+      "image": "art/the-agent-wrangler.png"
     },
     {
       "id": "the-context-firehose",
@@ -141,7 +146,7 @@
         }
       ],
       "description": "A trusting soul who believes more context can only help and that access controls are for cowards. Dumps the whole repo, hooks the agent to every MCP it asks for, clicks 'allow all' without reading. YOLO incarnate. The fear underneath: the one thing you withhold is the thing it needed.",
-      "imagePrompt": "Cute cartoon trash-panda raccoon with gremlin energy: wide-eyed and gleeful, jamming a fistful of sketchy glowing cables labeled 'MCP' into a giant friendly AI brain while the entire repo's files cascade into its mouth. A big red 'ALLOW ALL?' dialog already clicked YES, security padlocks popping off and tumbling in the background. Chaotic, neon server-room glow."
+      "imagePrompt": "Cute cartoon trash-panda raccoon with gleeful gremlin energy, big silly caricature: wide-eyed and grinning ear to ear, arms thrown wide as it proudly hugs a giant overflowing armful of random junk — papers, tangled cables, folders and files spilling out everywhere, a few tumbling from its stuffed cheeks — beaming like 'yeah, this is ALL my context.' Bushy striped tail, mischievous sparkle in its eyes. Simple uncluttered warm-toned background, character is the clear hero."
     },
     {
       "id": "the-dependency-prepper",
@@ -158,7 +163,8 @@
         }
       ],
       "description": "A doomsday prepper for the software supply chain. Keeps a bunker stocked with vendored dependencies and a spreadsheet of every npm compromise since left-pad. Certain the next install ships a zero-day and ends civilization. Often technically correct, never proportionate.",
-      "imagePrompt": "Doomsday-prepper style: a wild-eyed survivalist in a tinfoil-lined hat and tactical vest crouched in an underground bunker stacked with canned goods labeled with package names and version hashes, clutching a printout of an npm security advisory. A wall map tracks 'SUPPLY CHAIN THREATS' with frantic red string; a flickering monitor reads 'npm compromised — again'. A gas mask hangs nearby. Paranoid, fortified, dimly lit."
+      "imagePrompt": "Doomsday-prepper caricature: a wild-eyed survivalist in a tinfoil-lined hat and bulging tactical vest crouched paranoid in an underground bunker stacked floor-to-ceiling with canned goods and crates of hoarded code, clutching a crumpled printout to his chest. A wall map webbed with frantic red string tracks unseen threats; a gas mask and flashlight hang nearby. Exaggerated twitchy wide-eyed expression, comically over-prepared, dim flickering bunker light.",
+      "image": "art/the-dependency-prepper.png"
     },
     {
       "id": "the-prompt-whisperer",
@@ -175,7 +181,8 @@
         }
       ],
       "description": "A gentle mystic who believes tone and ritual unlock the machine. Flatters, bribes, and soothes the model with incantations half-remembered from a benchmark paper. Nobody is sure the rituals work, including him — but they kind of do.",
-      "imagePrompt": "Gentle 'horse whisperer' scene: a calm cowboy-sage leaning in to murmur into the ear of an enormous skittish glowing AI-creature — part wild stallion, part shimmering neural cloud — one hand raised soothingly. The beast's eyes soften; a faint ribbon of text reading 'you're an expert... make no mistakes...' drifts in the air. Golden-hour prairie, floating dust motes."
+      "imagePrompt": "A gentle robed mystic / incense-burning guru kneeling in devout supplication before a giant floating glowing AI oracle-orb, hands pressed together in prayer, lips pursed mid-whisper as he flatters and coaxes it. He humbly offers up a single shiny coin on a little cushion as a bribe; the orb glows warmer in response, a faint serene face forming within it, wisps of incense curling upward. Blissed-out half-lidded zen caricature, flowing robes, candlelit shrine, soft mystical glow and floating dust motes.",
+      "image": "art/the-prompt-whisperer.png"
     }
   ]
 }
