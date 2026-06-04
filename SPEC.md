@@ -49,8 +49,8 @@ each card has these fields:
   "type": "nature",                 // VISIBLE — Pokémon-elemental type; sets the HP icon
   "saying": "Crossing to native? That'll cost ya.", // VISIBLE — the one line they'd say
   "moves": [                        // VISIBLE — exactly two; where the personality lives
-    { "name": "Riddle of the Crossing", "type": "nature",   "damage": "30", "iconCount": 2, "description": "one sentence" },
-    { "name": "Flattened to Fit",       "type": "strength", "damage": "90", "iconCount": 3, "description": "one sentence" }
+    { "name": "Riddle of the Crossing", "type": "nature",   "damage": "30", "description": "≤ 2 lines (~95 chars)" },
+    { "name": "Flattened to Fit",       "type": "strength", "damage": "90", "description": "≤ 2 lines (~95 chars)" }
   ],
   "backgroundColor": "green",       // VISIBLE — frame color: a string or ["a","b"] gradient
   "description": "character bible", // INTERNAL — traits/personality/vibe, never shown
@@ -60,7 +60,7 @@ each card has these fields:
 ```
 
 - **Visible on the card:** `name`, `hp`, `type`, `saying`, the two `moves`
-  (each with `type` / `damage` / `iconCount` / `description`), the art, and `backgroundColor`.
+  (each a `name` / `type` / `damage` / `description`), the art, and `backgroundColor`.
 - **Internal (building + generation only):** `description` (a short character bible so we
   reason about who they are) and `imagePrompt`.
 - Cut ideas live in [GRAVEYARD.md](GRAVEYARD.md), not in `cards.json`.
@@ -72,7 +72,10 @@ Incredibly short (< 60 chars), in their voice — the line you'd hear them say. 
 ### `moves`
 
 Exactly two. Each is a `name` (punny/thematic) + a one-sentence effect. This is the comedy
-engine — quirks, sins, and signature behaviors land here, Pokémon-style.
+engine — quirks, sins, and signature behaviors land here, Pokémon-style. Keep each
+`description` to **two lines on the card (~95 characters) — a hard limit**; trim the line,
+never let it wrap to a third. Each move also carries its own `type` (below), shown as a
+single type icon inline beside the move name.
 
 ### `imagePrompt` + `meta.artDirection`
 
@@ -86,21 +89,22 @@ props, and action. Keep characters visually distinct (no two near-identical figu
 
 Each card and each move carries a Pokémon-elemental `type` — one of:
 `nature · fire · psychic · water · electric · cosmic · toxic · dream · crystal · sound · strength`.
-Icon + color for each live in `render/card.js`; the card's `type` drives the HP badge, and
-each move's `type` colors its energy pips. The deck skews `psychic` (the AI/mind cards
-cluster there). These are flavor, not balance.
+Icon + color for each live in `render/card.js`; the card's `type` drives the HP badge, and each
+move's `type` shows as a single circular icon inline beside the move name. (This replaced the
+old 1–4 energy-cost pips — one clean icon per move, not a count.) The deck skews `psychic`
+(the AI/mind cards cluster there). These are flavor, not balance.
 
-### Stats: `hp`, `damage`, `iconCount`
+### Stats: `hp`, `damage`
 
 `hp` and `damage` are pure flavor — lean into dev gags (`"60"` for 60fps, `"16"` for the
 frame budget, `"404"`/`"500"`, `"4K"` for a giant diff, `"∞"`, `"1M"`). `damage` is a
-**string** so non-numeric jokes render. `iconCount` (1–4) is the move's energy cost, shown
-as that many type pips.
+**string** so non-numeric jokes render.
 
 ## The rendered card (the "actual visual")
 
 The written card becomes a 816×1110 Pokémon-style trading card (yellow border, gradient
-frame, name plate, HP + type icon, framed art, saying, two moves with pips + damage).
+frame, name plate, HP + type icon, framed art, saying, two moves — each with its type icon
+and damage).
 
 - `render/card.js` — the shared renderer (`createCard`), used by the gallery and the export.
 - `public/card.css` — the card stylesheet; `public/icons/` — the type-icon SVGs.

@@ -12,8 +12,8 @@
  *   hp                -> HP value
  *   image             -> framed character art (e.g. "art/<id>.png")
  *   saying            -> italic tagline under the art
- *   moves[].name      -> move title
- *   moves[].description, .damage -> move row
+ *   moves[].name      -> move title (with the move's type icon inline beside it)
+ *   moves[].type, .description, .damage -> move row
  *   type              -> card's headline type (HP icon) — falls back to move 1
  *   backgroundColor   -> "green" | ["purple","pink"] | …  (palette below)
  *
@@ -67,12 +67,18 @@ function backgroundStyle(backgroundColor) {
 }
 
 function moveHtml(move) {
-  const { name, description, damage } = move;
+  const { name, type, description, damage } = move;
+  const t = typeOf(type);
   return `
     <div class="flex items-center justify-between gap-4 w-full p-1">
       <div class="flex-1">
-        <span class="font-bold text-3xl">${name}</span>
-        <div class="mt-1 text-3xl leading-snug">${description}</div>
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-full flex items-center justify-center" style="background-color: ${t.color}; flex-shrink: 0;">
+            <img src="icons/${t.icon}" class="w-6 h-6 filter brightness-0 invert" />
+          </div>
+          <span class="font-bold text-3xl">${name}</span>
+        </div>
+        <div class="mt-1 leading-snug" style="font-size: 1.625rem;">${description}</div>
       </div>
       <div class="text-4xl font-bold text-yellow-400">${damage ?? ""}</div>
     </div>`;
@@ -99,13 +105,13 @@ function createCard(cardData) {
           </div>
         </div>
 
-        <img src="${image}" class="mt-2 w-full h-[570px] object-cover rounded-xl border-4 border-yellow-500" />
+        <img src="${image}" class="mt-2 w-full object-cover rounded-xl border-4 border-yellow-500" style="height: 520px;" />
 
-        <div class="mt-0 py-4 text-center border-y border-slate-500 text-3xl italic">
+        <div class="mt-1 py-6 text-center border-y border-slate-500 text-3xl italic">
           "${saying}"
         </div>
 
-        <div class="mt-2 flex flex-1 flex-col gap-3 justify-center">
+        <div class="mt-2 flex flex-1 flex-col gap-4 justify-center">
           ${moves.map(moveHtml).join("")}
         </div>
       </div>
