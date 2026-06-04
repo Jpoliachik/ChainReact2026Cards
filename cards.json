@@ -78,21 +78,21 @@
       "image": "art/the-slop-sommelier.png"
     },
     {
-      "id": "the-rubber-duck-confidant",
-      "name": "The Rubber Duck Confidant",
-      "saying": "Okay, so walk me through it again.",
+      "id": "the-rubber-duck",
+      "name": "The Rubber Duck",
+      "saying": "I'm listening.",
       "moves": [
         {
-          "name": "Say It Out Loud",
-          "description": "Explains the bug aloud to the duck and solves it halfway through the sentence, before the duck says a word."
+          "name": "Silent Treatment",
+          "description": "Says absolutely nothing — and somehow that's exactly the help you needed to hear your own mistake."
         },
         {
           "name": "The Duck Knows",
-          "description": "Sits in silent rubber judgment until the truth surfaces — somehow it was never the duck's fault."
+          "description": "Sits in serene rubber judgment until the bug confesses itself; takes none of the blame, accepts all of the credit."
         }
       ],
-      "description": "A devoted believer in the oldest debugging magic there is: explain it out loud to the duck. Talks through every gnarly bug with a tiny plastic confidant who never interrupts and is always right. Wholesome, a little unhinged, fiercely loyal to a toy. Everyone has done this and pretends they don't.",
-      "imagePrompt": "Wholesome cozy cartoon: an earnest wide-eyed developer leaning in close and gesturing emphatically as they explain a tangled bug out loud to a little yellow rubber duck perched on the desk. The duck sits perfectly still wearing a tiny, smug, all-knowing expression, somehow radiating quiet wisdom. Exaggerated caricature — big expressive hands and face on the dev, comically tiny serene duck. Warm desk-lamp glow, a softly cluttered late-night home-office den, mugs and sticky notes, deep colored atmospheric background."
+      "description": "The silent sage of every desk. You explain the impossible bug out loud, and somewhere around the third sentence the answer arrives — the duck never said a word. Patient, unbothered, quietly omniscient. Has solved more production incidents than any senior engineer and asked for nothing but a dry spot by the keyboard.",
+      "imagePrompt": "A little yellow rubber duck as the wise hero of the frame, large and centered on a desk: glossy and round with a serene, all-knowing, faintly smug expression, somehow radiating calm omniscient wisdom like a tiny zen master. Exaggerated caricature — big knowing eyes, a subtle sage's smile. A faint soft glow or halo of insight around it; out of focus behind it, a frazzled developer mid-rant gestures at a glowing tangle of buggy code. Warm desk-lamp glow, cozy late-night home-office den, mugs and sticky notes, deep colored atmospheric background."
     },
     {
       "id": "the-console-detective",
