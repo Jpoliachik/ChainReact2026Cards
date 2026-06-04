@@ -379,25 +379,25 @@
       "name": "The Brownfield Mechanic",
       "hp": 160,
       "type": "strength",
-      "saying": "Don't rewrite her — I know every rattle she's got.",
+      "saying": "Ejected in 2016. Still shipping. Don't touch it.",
       "moves": [
         {
-          "name": "Percussive Maintenance",
+          "name": "Patch-Package and Pray",
           "damage": "2",
-          "description": "Delivers one well-aimed whack to the wheezing legacy box, and somehow the old thing purrs back to life."
+          "description": "Reaches into node_modules, fixes the broken native module by hand, and freezes it there forever with patch-package."
         },
         {
-          "name": "It's Load-Bearing",
+          "name": "Do Not Upgrade",
           "damage": "90",
-          "description": "Knows exactly which terrifying duct-taped hack the whole system secretly rests on, and guards it from anyone itching to 'clean it up'."
+          "description": "Guards an app ejected on an ancient RN version — the native folders are hand-tuned, and nobody dares run the upgrade."
         }
       ],
       "backgroundColor": [
         "yellow",
         "orange"
       ],
-      "description": "A grease-stained veteran who keeps the ancient, taped-together codebase running by feel. Doesn't fear the legacy mess — lives in it, can diagnose a regression by the sound it makes, and trusts intuition built over years under the hood. While the Greenfield Speedster races the shiny new car, the Mechanic keeps the old beast on the road. Maintain over rewrite, every time — the counterpart to the Speedster: give them the new build and they'll just go back to tuning the engine that actually ships.",
-      "imagePrompt": "A cheerful grease-stained mechanic in oil-smeared overalls, head and shoulders buried under the raised hood of a wheezing, battered, lovingly over-patched ancient engine cobbled together from duct tape, zip-ties, mismatched parts, and exposed wiring — yet it still chugs along, puffing little contented smoke-rings. One hand swings a big wrench, the other gives a confident thumbs-up; a coffee-stained service manual, an oil-can, and scattered spare parts surround the workbench. The machine reads as a hybrid of a vintage car engine and a creaky old server tower (the legacy codebase as an old motor). Caricature: oversized confident grin, a smudge of oil on one cheek, comic proportions. Warm cluttered garage, hanging work-light, a few sparks, deep amber greasy glow. No text anywhere.",
+      "description": "A grease-stained veteran keeping an app that was ejected back when React Native shipped — long before Expo existed — alive by feel. Lives in the bare workflow: hand-patches native modules, knows every line of the ios/ and android/ folders, and has refused every RN upgrade since. Maintain over rewrite, every time — the counterpart to the Greenfield Speedster, who'd just spin up a fresh Expo app instead of nursing the old beast.",
+      "imagePrompt": "A cheerful grease-stained mechanic in oil-smeared overalls, head and shoulders buried under the raised hood of a wheezing, battered, lovingly over-patched ancient engine cobbled together from duct tape, zip-ties, mismatched parts and exposed wiring — yet it still chugs along puffing contented smoke-rings. The machine reads as a hybrid of a vintage car engine and a creaky old server tower (an ejected legacy codebase as an old motor). One hand swings a big wrench, the other gives a confident thumbs-up. Two battered labeled crates sit at his feet reading 'ios/' and 'android/', with a coffee-stained service manual and an oil-can nearby. Caricature: oversized confident grin, a smudge of oil on one cheek, comic proportions. Warm cluttered garage, hanging work-light, a few sparks, deep amber greasy glow. Render only the two short crate labels — 'ios/' and 'android/' — cleanly, and no other text.",
       "image": "art/the-brownfield-mechanic.png"
     },
     {
@@ -405,25 +405,25 @@
       "name": "The Greenfield Speedster",
       "hp": 30,
       "type": "fire",
-      "saying": "No legacy, no traffic, no speed limit.",
+      "saying": "create-expo-app to prod before your pods install.",
       "moves": [
         {
           "name": "Zero to Production",
           "damage": "60",
-          "description": "Floors it from 'npx create' to a shipped first build while everyone else is still reading the old README."
+          "description": "Goes from `npx create-expo-app` to a live build in Expo Go before anyone else has finished `pod install`."
         },
         {
-          "name": "No Speed Limit",
+          "name": "No Native Rebuild",
           "damage": "100",
-          "description": "Opens the throttle on a wide, empty, freshly-paved repo — with nothing built yet, there's nothing to crash into."
+          "description": "Stays in pure JS on managed Expo, so there's never a native folder to rebuild — just reload and keep rolling."
         }
       ],
       "backgroundColor": [
         "green",
         "cyan"
       ],
-      "description": "A starry-eyed racer who lives for the open road of an untouched repository, happiest at full throttle off the first commit. Craves clean architecture, zero tech debt, and a horizon with nothing built on it yet — every hard problem solved by starting fresh somewhere with no traffic. Allergic to legacy: hates nothing more than a mirror full of old code. The counterpart to the Brownfield Mechanic — give them the battered old engine and they'll just go find a faster, emptier track.",
-      "imagePrompt": "A grinning helmeted speed-racer in a sleek aerodynamic racing suit, the unmistakable hero of the frame, leaning hard into the cockpit of a glossy, brand-new, candy-bright concept race car blazing at top speed down a wide-open, freshly-paved empty highway at bright dewy dawn. Heavy motion-blur and speed-lines streak past, a lick of flame and sparks trailing from the exhaust, the road ahead utterly blank and open to the horizon, zero traffic. A green starting-flag whips past and a tiny '<App/>' decal sits on the spotless hood. Pristine, sunlit, exhilarating (NOT desert or dusty). Caricature: oversized confident grin, huge bright eyes behind the visor, comic proportions, thumbs-up. Vivid saturated racing-green and gold, glowing dawn light. Render only the one short label — '<App/>' on the hood — cleanly, and no other text.",
+      "description": "A starry-eyed racer who lives for the open road of a fresh Expo app, happiest flooring it off the first commit. Craves clean architecture and zero native config — `npx create-expo-app`, never `pod install` — and is allergic to legacy and to native rebuilds, staying in managed Expo where a reload beats a recompile. The counterpart to the Brownfield Mechanic: hand them the battered ejected app and they'll just go spin up an empty one.",
+      "imagePrompt": "A grinning helmeted speed-racer in a sleek aerodynamic racing suit, the unmistakable hero of the frame, leaning hard into the cockpit of a glossy, brand-new, candy-bright concept race car blazing at top speed down a wide-open, freshly-paved empty highway at bright dewy dawn. Heavy motion-blur and speed-lines streak past, a lick of flame and sparks trailing from the exhaust, the road ahead utterly blank and open to the horizon, zero traffic — no pit crew, no garage, nothing to rebuild. A green starting-flag whips past and a tiny '<App/>' decal sits on the spotless hood. Pristine, sunlit, exhilarating (NOT desert or dusty). Caricature: oversized confident grin, huge bright eyes behind the visor, comic proportions, thumbs-up. Vivid saturated racing-green and gold, glowing dawn light. Render only the one short label — '<App/>' on the hood — cleanly, and no other text.",
       "image": "art/the-greenfield-speedster.png"
     },
     {
@@ -436,19 +436,19 @@
         {
           "name": "Rite of behavior",
           "damage": "2",
-          "description": "Chants a different sacred prop for each platform and prays the input field stops hiding behind the keyboard on exactly one of them."
+          "description": "Chants a different KeyboardAvoidingView `behavior` for each platform and prays the input clears the keyboard on one."
         },
         {
           "name": "Banish the Rising Tide",
           "damage": "60",
-          "description": "Drives the swelling keyboard back beneath the fold so the submit button may once again be seen by mortal thumbs."
+          "description": "Installs react-native-keyboard-controller at last, and the swelling keyboard is driven back beneath the fold for good."
         }
       ],
       "backgroundColor": [
         "red",
         "orange"
       ],
-      "description": "A robed warrior-priest locked in eternal holy war with KeyboardAvoidingView. Knows a different incantation for every OS, trusts none of them fully, and keeps a vial of holy water for the build where the keyboard wins anyway. Universal RN suffering — everyone who has shipped a form on mobile has stood in this exact battle and whispered the same prayer.",
+      "description": "A robed warrior-priest locked in eternal holy war with KeyboardAvoidingView. Knows a different incantation for every OS — 'padding' on iOS, 'height' on Android — trusts none of them fully, and keeps a vial of holy water for the build where the keyboard wins anyway. Universal RN suffering: everyone who has shipped a form on mobile has stood in this exact battle and whispered the same prayer.",
       "imagePrompt": "A wild-eyed robed exorcist-priest mid-incantation, brandishing a glowing talisman in one hand and flinging a splash from a holy-water vial with the other, fending off a huge snarling demonic ON-SCREEN KEYBOARD monster that surges upward like a tide from the bottom of a giant glowing phone. At the top of the phone, a tiny app input field and submit button cower out of reach. Holy radiant light clashing against the dark keyboard demon. Caricature: oversized panicked-determined face, huge eyes, billowing robes, comic proportions. Dramatic chiaroscuro, embers and sparks, fiery red-and-gold supernatural glow. No text anywhere.",
       "image": "art/the-keyboard-exorcist.png"
     },
@@ -457,26 +457,51 @@
       "name": "The OTA Smuggler",
       "hp": 90,
       "type": "electric",
-      "saying": "Why wait for review when you can patch it live?",
+      "saying": "Why submit when `eas update` ships it tonight?",
       "moves": [
         {
           "name": "Patch It Live",
           "damage": "1.0.1",
-          "description": "Slips a hotfix straight onto every device over the air, skipping the week-long review queue entirely."
+          "description": "Fires off an `eas update` and the fresh JS bundle lands on every device, skipping the whole App Store review queue."
         },
         {
-          "name": "Mind the Native Modules",
+          "name": "Mind the Runtime Version",
           "damage": "86",
-          "description": "One day pushes a change that quietly touches native code, and the whole contraband bundle gets turned away at the gate."
+          "description": "Slips in a change that touches native code; the runtimeVersion drifts and the slick OTA quietly reaches nobody."
         }
       ],
       "backgroundColor": [
         "blue",
         "purple"
       ],
-      "description": "A charming rogue who lives by the over-the-air update, beaming fixes to users at midnight rather than bowing to the App Store review queue. Mostly gets away with it — right up until a change brushes native code and forces a real submission. Cursed but shared: everyone with OTA updates has felt the thrill of patching prod live and dodging the line.",
-      "imagePrompt": "A sly cloaked rogue smuggler with a mischievous grin, tiptoeing through the dead of night past a drowsy 'app store' border-checkpoint guard booth where a uniformed inspector dozes. Over one shoulder he hauls a glowing contraband app-bundle crate, beaming it wirelessly — little glowing OTA signal-waves arcing over the fence — to a row of eager phones waiting on the far side. Moonlit heist atmosphere, long shadows, a striped checkpoint barrier. Caricature: exaggerated sneaky tiptoe, huge shifty eyes, finger to lips. Cool moonlit blues and electric-purple glow. No text anywhere.",
+      "description": "A charming rogue who lives by expo-updates, beaming a fresh JS bundle to users at midnight rather than bowing to the App Store review queue. Mostly gets away with it — right up until a change brushes native code, the runtimeVersion no longer matches, and a real store submission is the only way through. Cursed but shared: everyone running EAS Update has felt the thrill of patching prod live and dodging the line.",
+      "imagePrompt": "A sly cloaked rogue smuggler with a mischievous grin, tiptoeing through the dead of night past a drowsy 'app store' border-checkpoint guard booth where a uniformed inspector dozes. Over one shoulder he hauls a glowing contraband app-bundle crate stamped 'eas update', beaming it wirelessly — little glowing OTA signal-waves arcing over the fence — to a row of eager phones waiting on the far side. Moonlit heist atmosphere, long shadows, a striped checkpoint barrier. Caricature: exaggerated sneaky tiptoe, huge shifty eyes, finger to lips. Cool moonlit blues and electric-purple glow. Render only the one short label — 'eas update' on the crate — cleanly, and no other text.",
       "image": "art/the-ota-smuggler.png"
+    },
+    {
+      "id": "the-app-store-enchantress",
+      "name": "The App Store Enchantress",
+      "hp": 24,
+      "type": "dream",
+      "saying": "Look into my eyes, and approve my submission.",
+      "moves": [
+        {
+          "name": "Look Into My Eyes",
+          "damage": "1",
+          "description": "Locks eyes with the reviewer through love-letter notes and a flawless pre-logged-in demo account; the build glides through on the very first pass, expedited."
+        },
+        {
+          "name": "Guideline 4.3",
+          "damage": "4.3",
+          "description": "The one charm she cannot cast back — a faceless rejection for 'spam, minimum functionality,' binding and unexplained, no matter how perfect the spell."
+        }
+      ],
+      "backgroundColor": [
+        "pink",
+        "purple"
+      ],
+      "description": "A glamorous sorceress who has mastered the dark, intimate art of App Store submission. She doesn't fear the review queue — she has seduced it. Reviewer notes written like love letters, a pristine pre-logged-in demo account, screenshots staged just so, metadata that whispers exactly what Apple wants to hear; her builds sail through on the first pass while everyone else eats three rejections. Knows the guidelines like scripture. The counterpart to the OTA Smuggler — where he sneaks past the gatekeeper, she charms it into saying yes. The terror underneath the confidence: the god is still faceless and capricious, and no spell is total — do everything right and Guideline 4.3 can still strike from nowhere, binding and unexplained.",
+      "imagePrompt": "A glamorous enchantress-sorceress with a sly knowing smile and swirling hypnotic spiral eyes, leaning in close and casting a charm spell with one outstretched hand — shimmering pink-and-violet enchantment magic and looping hypnotic spirals pouring from her fingertips and her gaze. Before her, a faceless robed App Store gatekeeper-reviewer (a cloaked figure with a softly glowing apple-shaped emblem on its chest) has gone glassy-eyed and slack under her spell, dreamily raising a giant glowing rubber stamp to bring it down on her floating submission scroll. The stamp reads 'APPROVED'. A small floating phone with a pristine glowing app hovers beside her like a charmed offering. Caricature: oversized seductive confident grin, huge mesmerizing hypnotic eyes, comic proportions. Dreamy enchanted setting where a temple gate meets a candlelit boudoir, drifting sparkles and incense smoke, rich seductive magenta-and-purple glow. Render only the one short label — 'APPROVED' on the stamp — cleanly and legibly, and no other text anywhere."
     },
     {
       "id": "the-qa-phantom",
@@ -488,19 +513,19 @@
         {
           "name": "Edge Case from Beyond",
           "damage": "13",
-          "description": "Conjures the one scenario nobody designed for — airplane mode mid-upload, a rotate at checkout — and the happy path crumbles."
+          "description": "Conjures the case nobody built for — airplane mode mid-upload, a rotate at checkout — and the happy path crumbles."
         },
         {
           "name": "It Repros on My Device",
           "damage": "100",
-          "description": "Reproduces the impossible bug every single time on a three-year-old Android phone that no one else on the team owns."
+          "description": "Hits the impossible crash every time — but only in the release build, on a three-year-old Android no one else owns."
         }
       ],
       "backgroundColor": [
         "purple",
         "indigo"
       ],
-      "description": "A spectral tester who haunts the happy path, materializing only to do the unthinkable thing a real user would absolutely do. Beloved and feared in equal measure: the bug they surface is the one that would have shipped. The human truth underneath — actual users really do rotate the device mid-payment, and someone has to be the ghost who proves it.",
+      "description": "A spectral tester who haunts the happy path, materializing only to do the unthinkable thing a real user would absolutely do — rotate mid-payment, flip airplane mode mid-upload, all on the cheapest Android in the drawer. Beloved and feared in equal measure: the crash they surface, the one that only shows up in the release build, is the one that would have shipped. The human truth — actual users really do all of this, and someone has to be the ghost who proves it.",
       "imagePrompt": "A translucent, softly glowing ghost-phantom wearing a conference QA lanyard, with a mischievous spectral grin, phasing its ethereal hands straight through a giant glowing smartphone to twist it sideways mid-transaction while one wispy finger flicks on airplane-mode. Around it float little glowing bug-spirits. In the corner, a tiny terrified developer-figure watches a crash bloom red across the screen. Playful haunted-house energy, not scary. Caricature: oversized gleeful spooky grin, big hollow glowing eyes, comic proportions. Moonlit purple-and-indigo haunted glow, drifting ectoplasm mist. No text anywhere.",
       "image": "art/the-qa-phantom.png"
     },
@@ -514,19 +539,19 @@
         {
           "name": "Hear Both Sides",
           "damage": "2",
-          "description": "Calmly weighs HEAD against incoming, line by warring line, until the chevrons of conflict fall silent."
+          "description": "Weighs HEAD against incoming line by line — even the gnarled Podfile.lock conflict that no one else will touch."
         },
         {
           "name": "Ruling from the Bench",
           "damage": "200",
-          "description": "Renders final judgment on whose code survives the merge; the verdict is binding and the rebase comes out mercifully clean."
+          "description": "Renders the binding verdict on the post-upgrade ios/ and android/ conflict, and the rebase comes out mercifully clean."
         }
       ],
       "backgroundColor": [
         "cyan",
         "blue"
       ],
-      "description": "The calm, impartial arbiter every team needs when two developers' branches collide and neither will yield. Hears both sides, weighs the diff with a steady hand, and brings order to the chaos of '<<<<<<< HEAD'. Respected, fair, faintly theatrical in the wig. A merge-conflict identity reframed as the peacemaker rather than the gladiator — the senior who settles the standoff instead of bleeding in the arena.",
+      "description": "The calm, impartial arbiter every team needs when two branches collide and neither developer will yield — never more so than after a React Native upgrade, when the ios/, android/, and Podfile.lock conflicts pile up. Hears both sides, weighs the diff with a steady hand, and brings order to the chaos of '<<<<<<< HEAD'. Respected, fair, faintly theatrical in the wig — the senior who settles the standoff instead of bleeding in the arena.",
       "imagePrompt": "A dignified judge in a tall white curly barrister's wig and flowing black robe, perched high behind an ornate wooden courtroom bench, banging a single glowing gavel to settle a dispute. Below, two glowing rival code-branch streams are tangled together in tug-of-war, knotted with '<<<<<<<' conflict chevrons. To one side, a set of golden scales of justice weighs two little glowing code-blocks labeled 'HEAD' and 'incoming' in perfect balance. Stately wood-paneled courtroom, warm authoritative amber light, shafts of dignified sunlight. Caricature: oversized powdered wig, stern-but-fair expression, comic proportions. Render only the two short scale labels — 'HEAD' and 'incoming' — cleanly, and no other text.",
       "image": "art/the-merge-magistrate.png"
     }
