@@ -35,26 +35,35 @@ me"), **delight** (funny/surprising), or **both**. A shrug means the card is dea
 Conference-meta cards (Hallway Track Sage, First-Question Gladiator…) land _harder_ in
 the room because the context is live. Reserve ~5–6 slots.
 
-## Card data — current schema (Phase 1: selection)
+## Card data — current schema (Phase 1: selection + character design)
 
-Stored in `cards.json`. Array **order = stack rank** (top = best).
+Stored in `cards.json`.
 
 ```jsonc
 {
   "id": "the-bridge-keeper",      // kebab slug, stable
-  "name": "The Bridge Keeper",    // high-register, "The ___"
-  "profile": "2–3 sentences...",  // the character; sets up the eventual moves
+  "name": "The Bridge Keeper",    // high-register, "The ___" — what the user sees first
   "domain": "native",             // one of the domains above
-  "status": "locked | candidate | cut",
-  "rating": null,                 // 1–5, your gut score
-  "favorite": false,              // star, surfaces to top
-  "notes": ""                     // your feedback / why it works or doesn't
+  "status": "locked | cut",       // locked = a current pick; cut = graveyard
+  "profile": "2–3 sentences...",  // WHO they are — the posture; sets up the eventual moves
+  "visual": "vivid look...",      // WHAT they look like — the image-prompt seed (see below)
+  "image": "",                    // path to generated art, once it exists
+  "notes": ""                     // working notes / why kept or cut
 }
 ```
 
-- **locked** — in the final 30, north-star quality.
-- **candidate** — in the running, being ranked.
-- **cut** — killed, kept for the graveyard so we don't regenerate it.
+- **locked** — a current pick (the working set we're developing).
+- **cut** — killed, kept in the graveyard so we don't regenerate it. `visual` left empty
+  for cut cards; we only design the look for picks.
+
+### The `visual` field
+
+The look carries the gag as much as the name does — they're a team. A good `visual` is a
+**specific, whimsical, made-up character** with concrete costume, props, setting, and mood,
+written so it can be handed almost verbatim to an image generator. Lean into the joke
+(Bridge Keeper = an actual barnacled troll at an actual bridge). Keep characters visually
+distinct from each other — watch for collisions (e.g. don't make three serene robed
+figures, or two gladiators).
 
 ## Phase 2: the full Pokémon card (not built yet)
 
