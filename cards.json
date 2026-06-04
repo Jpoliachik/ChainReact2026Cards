@@ -5,94 +5,64 @@
   },
   "cards": [
     {
-      "id": "the-bridge-keeper",
-      "name": "The Bridge Keeper",
-      "profile": "Guards the crossing between JavaScript and native. Knows what truly happens when a call leaves the JS thread, and charges a toll in complexity. Speaks fluent Objective-C and Kotlin, and will gently remind you the New Architecture changed everything.",
-      "visual": "A barnacled, moss-bearded troll-keeper wearing a high-vis safety vest over ancient grey robes, standing sentry at a creaking rope-and-plank suspension bridge strung between two floating islands — one island built of glowing curly braces, the other of cold riveted native steel and gears. He clutches an enormous brass toll-ledger and a swinging lantern; coins stamped 'COMPLEXITY' spill from his pockets. Fog, dangling cables, a faint blue glow from the JS side."
+      "id": "the-jester-handler",
+      "name": "The Jester Handler",
+      "profile": "Bends the swipe, the pan, the long-press to their will. Every touch is a trick; every transition, a sleight of hand. You never notice the gesture — that's the whole illusion. Has spent a full week on a single fling so it feels right in the thumb.",
+      "visual": "Old-school cartoon court-jester / joker style with magical hypnotist vibes. A grinning harlequin in diamond-patterned motley and a curled three-point jester hat, fingers splayed mid-flourish, conjuring swirling hypnotic spirals and looping glowing motion-trails from the fingertips. A phone floats hypnotized in the air, scrolling in perfect rubber-band rhythm to the spinning spiral. Mischievous wink, swirly spiral eyes, candy colors, vaudeville stage glow."
     },
     {
-      "id": "the-vibe-coder",
-      "name": "The Vibe Coder",
-      "profile": "Does not read the diff. Feels the diff. Communes with the agent, accepts all, and somehow ships. Terrifying. Possibly the future.",
-      "visual": "A blissed-out figure in mirrored sunglasses and an oversized flow-state hoodie, eyes serenely closed, arms thrown wide, surfing a glowing curling wave made entirely of streaming code diffs on a longboard. Big headphones, a faint golden halo. The wave behind is half-gorgeous, half about to crash on rocks. Sunset palette, lens flares, total unbothered serenity in the middle of chaos."
+      "id": "the-bridge-troll",
+      "name": "The Bridge Troll",
+      "profile": "Guards the crossing between JavaScript and native, and charges a toll in complexity. Knows exactly what happens when a call leaves the JS thread. Will remind you, sweetly, that the New Architecture changed everything.",
+      "visual": "Bright rainbow cartoon 'Trolls'-movie style. A pint-sized impossibly cute troll with a giant poof of rainbow neon hair and sparkly skin, perched on a candy-colored rope bridge slung between two floating islands — one built of glowing curly braces, the other of shiny riveted native gears. Clutches a tiny toll-gate and a fistful of glittering coins stamped 'COMPLEXITY'. Felt textures, glitter sparkles, huge happy eyes, saturated rainbow palette."
+    },
+    {
+      "id": "the-reanimated-wizard",
+      "name": "The Reanimated Wizard",
+      "profile": "Makes everything move — springs, shared values, worklets humming on the UI thread, all at a buttery 60fps. Believes any element can, and therefore should, animate. Reality is just a default that hasn't been interpolated yet.",
+      "visual": "Psychedelic acid-fantasy wizard style. A wild-eyed robed wizard with a long flowing beard, casting with both hands as trippy neon fractal energy and rainbow easing-curves spiral out of a glowing staff, bending floating UI elements into liquid motion. Melting kaleidoscopic background, glowing runes shaped like spring-physics graphs, a sparkling third eye. Vivid, hyper-saturated, gloriously unhinged."
     },
     {
       "id": "the-hallucination-archaeologist",
       "name": "The Hallucination Archaeologist",
       "profile": "Digs through code the AI wrote with total confidence, unearthing methods that have never existed in any library, anywhere. Carries a brush and a deep sigh.",
-      "visual": "A weary explorer in a dusty pith helmet and khaki field vest, kneeling at a dig site, delicately brushing sand off a half-buried stone tablet carved with `array.shuffleSmartly()` — a method that has never existed. Scattered around: broken pottery shards engraved with fake API calls, a magnifying glass, a thermos of cold coffee. A small dust cloud and an almost-visible sigh hang in the desert air."
-    },
-    {
-      "id": "the-yak-shaver",
-      "name": "The Yak Shaver",
-      "profile": "Set out to change one button's color. Three days later is patching a transitive dependency's Gradle config to fix the linter that broke the formatter. Has forgotten the original task. Is, somehow, having a wonderful time.",
-      "visual": "A determined craftsperson in a leather apron, utterly absorbed, shaving an enormous fluffy patient yak with tiny buzzing electric clippers — but the scene spirals outward: to shave the yak they first built a barber's chair, which needed lumber, which needed the axe they're forging at a glowing anvil in the background. The original task (a single paint swatch) lies forgotten on the floor. The yak is blissfully enjoying it."
-    },
-    {
-      "id": "the-demo-gods-supplicant",
-      "name": "The Demo Gods' Supplicant",
-      "profile": "Makes offerings before every live demo. Knows the wifi will betray them, the simulator will freeze, and the one untested path is the one they'll show. Prays anyway. Demos anyway. This is faith.",
-      "visual": "A robed devotee kneeling before a glowing altar built of stacked phones, tablets, and a flickering simulator, hands clasped, offering up a single coiled ethernet cable like a stick of incense. Dark storm clouds labeled 'CONFERENCE WIFI' gather overhead with tiny forks of lightning. Sweat beads on the brow; a votive candle gutters on the edge of going out. Desperate, sincere devotion."
-    },
-    {
-      "id": "the-refactor-mystic",
-      "name": "The Refactor Mystic",
-      "profile": "Sees the truer architecture shimmering beneath the code. Cannot ship until the structure is correct. The feature works — that is not the point. The feature is not yet beautiful.",
-      "visual": "A serene architect-seer in deep indigo robes, eyes glowing white, hovering cross-legged before a vast floating hologram of shimmering sacred geometry — the 'true architecture' — golden-ratio spirals and clean class diagrams orbiting their head. A third eye shaped like a flowchart. Meanwhile the actual working app sits ignored, dusty and blinking, on a humble stool beside them."
-    },
-    {
-      "id": "the-offline-first-monk",
-      "name": "The Offline-First Monk",
-      "profile": "Builds for the subway, the basement, the rural two-lane road. Assumes the network is a lie. Treats connectivity as a pleasant surprise rather than a right. Wholly at peace with the sync queue.",
-      "visual": "A tranquil bald monk in saffron robes embroidered with a tiny airplane-mode icon, meditating cross-legged on a misty mountaintop with a faint blissful smile and exactly ZERO signal bars glowing above his head. In one hand he spins a little prayer-wheel that is actually a loading spinner he has made total peace with. Subway tunnels and basements drift painted into the distant clouds. No notifications, ever."
-    },
-    {
-      "id": "the-last-artisan",
-      "name": "The Last Artisan",
-      "profile": "Refuses the autocomplete. Types every character by hand, smug and unhurried. 'I like to understand my code.' Will outlive us all, or be the first against the wall.",
-      "visual": "A smug, unhurried master craftsman in a leather apron and monocle at a candlelit wooden workbench, chiseling each line of code by hand into a slab of oak, pointedly ignoring a glowing AI autocomplete genie that hovers behind him offering help. Curled wood-shavings shaped like semicolons litter the floor. One proud bead of sweat, warm candlelight, an air of timeless defiance."
-    },
-    {
-      "id": "the-expo-evangelist",
-      "name": "The Expo Evangelist",
-      "profile": "Has seen the promised land and it has no Xcode. Will tell you, unprompted, that you don't need to eject anymore. Radiates the deep calm of someone whose builds are simply handled. Possibly correct.",
-      "visual": "A beaming tent-revival preacher in a glowing white suit, arms raised to the heavens, holding a single radiant phone aloft like sacred scripture, mid-sermon. A halo of green build-success checkmarks circles their head; a banner reading 'NO XCODE' billows behind them and a rapt crowd reaches upward. Confetti, golden light, pure radiant (possibly-correct) joy."
-    },
-    {
-      "id": "the-hallway-track-sage",
-      "name": "The Hallway Track Sage",
-      "profile": "Has not attended a single session. The hallway is the conference. Has had four life-changing conversations by the coffee urn and missed every talk on purpose. This is the way.",
-      "visual": "A blissfully relaxed attendee sitting cross-legged on the patterned carpet of a convention-center hallway, conference lanyard askew, cradling a paper coffee cup like a sacred chalice, glowing faintly with enlightenment mid-conversation. Through an open doorway behind them, a packed talk happens — completely ignored. Comfy socks, a fat tote bag, the unbothered calm of a guru who deliberately chose the hallway."
-    },
-    {
-      "id": "the-merge-conflict-gladiator",
-      "name": "The Merge Conflict Gladiator",
-      "profile": "Enters the arena of <<<<<<< HEAD and emerges bloodied but victorious. Has resolved conflicts they did not understand and never will. Accept incoming. Accept current. Accept fate.",
-      "visual": "A battered, grinning gladiator in dented bronze armor standing victorious in a roaring colosseum, sword raised, one boot planted on a defeated multi-headed beast woven from tangled `<<<<<<< HEAD` and `>>>>>>> branch` banners. Bloodied, triumphant, and visibly with no idea what the fight was actually about. Conflict markers rain down like confetti; the crowd of devs goes wild."
+      "visual": "Jurassic Park style. A sun-bleached paleontologist in a khaki field shirt and wide-brim hat crouched at a desert dig, brushing dust off a huge fossilized 'bone' that is actually the skeleton of `array.shuffleSmartly()` — a method that never existed. Nearby fossil bones spell out other fake API calls. Warm amber light, a dusty Jeep and a tattered banner in the distance, a thermos of cold coffee, an enormous weary sigh hanging in the air."
     },
     {
       "id": "the-standup-ghost",
       "name": "The Standup Ghost",
       "profile": "Present in body, camera off, 'no blockers.' Has not spoken in the meeting since March. A quiet, benevolent haunting.",
-      "visual": "A gentle translucent ghost floating inside one tile of a video-call grid, its own tile CAMERA-OFF (just a dim glowing avatar circle and a name), politely see-through, faintly mouthing 'no blockers.' Cobwebs gather in the corners of its little square while the surrounding tiles glow with living faces. A tiny tombstone in the corner reads 'last spoke: March.' Soft, benevolent, barely-there."
+      "visual": "Classic Scooby-Doo / retro Hanna-Barbera cartoon style. A goofy friendly bedsheet ghost with big googly cartoon eyes floating inside one tile of a video-call grid, its own tile camera-OFF (just a dim avatar circle), going 'wooOOoo... no blockers.' Cobwebs in the corners of its square, a little 'last spoke: March' tombstone, the surrounding call tiles glowing with normal faces. Flat retro colors, bouncy linework."
     },
     {
-      "id": "the-gesture-handler",
-      "name": "The Gesture Handler",
-      "profile": "Will spend a full day on the pan-and-fling so it feels right in the thumb. Speaks with their hands; the hands are always demoing a swipe. Has opinions about the rubber-band at the edge of a scroll. The animation is invisible and perfect, and it took a week.",
-      "visual": "An intensely focused choreographer-developer caught mid-gesture, both hands sweeping through the air and leaving glowing motion-trails of springs and easing-curves, sculpting an invisible swipe to perfection like a maestro conducting. A phone floats obediently beside them, scrolling with buttery rubber-band physics. A small galaxy of empty coffee cups orbits their head — a full week's worth."
+      "id": "the-console-detective",
+      "name": "The Console Detective",
+      "profile": "Refuses the debugger. Solves every mystery with strategically placed print statements — 'here', 'here2', 'WHY'. Cracks the case every time, and ships one of the logs to prod.",
+      "visual": "High-contrast black-and-white film-noir style. A hard-boiled detective in a rumpled trench coat and fedora, cigarette smoke curling, magnifying glass raised to a corkboard of pinned print-statement clues — `console.log(\"here\")`, `console.log(\"here2\")`, `console.log(\"WHY\")` — strung together with red thread. A glowing 'DEBUGGER' door stays firmly shut behind. Venetian-blind shadows, rain on the window, a single hard desk lamp."
     },
     {
-      "id": "the-testflight-necromancer",
-      "name": "The TestFlight Necromancer",
-      "profile": "Submits the build at 11pm and refreshes App Store Connect like a slot machine. Has named all forty-seven builds. Knows the reviewer's timezone better than their own family's.",
-      "visual": "A hollow-eyed hooded necromancer in a moonlit graveyard, staff raised, summoning glowing spectral app 'builds' rising up out of headstones engraved 'Build 41', 'Build 42', 'Build 43'. Green resurrection mist curls around their feet; a distant cold moon is faintly shaped like a stern App Review reviewer. Deep dark circles under the eyes. The clock reads 11pm — forever."
+      "id": "the-agent-wrangler",
+      "name": "The Agent Wrangler",
+      "profile": "Has six AI agents running in six terminals and has lost track of which one is editing prod. A shepherd whose flock has scattered across the hills. Yeehaw, more or less.",
+      "visual": "Wild-west cowboy style. A dusty cowboy in a ten-gallon hat and chaps swinging a glowing lasso, trying to herd a stampede of six wild robot-agent broncos charging in six different directions across a canyon, each branded with a different terminal prompt. One has clearly bolted toward a cliff edge labeled 'PROD'. Sunset mesas, tumbleweeds, a frazzled-but-determined grin."
     },
     {
-      "id": "the-console-log-detective",
-      "name": "The Console.log Detective",
-      "profile": "Refuses the debugger. Solves every mystery with strategically placed print statements. 'here', 'here2', 'WHY'. Cracks the case every time and ships one of the logs to prod.",
-      "visual": "A hard-boiled noir detective in a rumpled trench coat and fedora, magnifying glass raised, squinting at a wall of pinned print-statement clues — `console.log(\"here\")`, `console.log(\"here2\")`, `console.log(\"WHY\")` — connected by frantic red string. A glowing 'DEBUGGER' door behind them stands firmly unopened. Rain on the window, venetian-blind shadows, a smoking cup of cold coffee. Always cracks the case."
+      "id": "the-context-hoarder",
+      "name": "The Context Hoarder",
+      "profile": "Pastes the entire codebase into the window every time. Treats the token limit as a personal insult. Will not, under any circumstances, be told to be selective.",
+      "visual": "Cute cartoon trash-panda raccoon style. A wide-eyed guilty raccoon frantically clutching an absurd teetering armful of files, folders, and entire repos, cramming one more whole codebase into a bulging sack labeled 'just in case' inside a cluttered burrow. A small 'TOKEN LIMIT' sign lies snapped in half underfoot. Big pleading eyes, mid-grab, cozy chaotic hoard glow."
+    },
+    {
+      "id": "the-dependency-doomsayer",
+      "name": "The Dependency Doomsayer",
+      "profile": "Runs npm audit and reads the results aloud at standup. Sees forty-seven critical vulnerabilities in a static marketing site and will not be calmed. The supply chain is coming for us all.",
+      "visual": "Cartoon doomsday street-prophet style. A wild-haired, wild-eyed prophet in tattered robes ringing a hand-bell, wearing a sandwich board that reads 'THE END IS NIGH — 47 CRITICAL VULNS', brandishing a long scroll of npm audit output unspooling across the ground. Behind them a perfectly fine, peaceful little static website glows completely untroubled. A lone storm cloud hovers only over the prophet. Frantic, comic, doom."
+    },
+    {
+      "id": "the-prompt-whisperer",
+      "name": "The Prompt Whisperer",
+      "profile": "Believes the right incantation unlocks the machine spirit. Says 'please' and 'you're an expert' to a language model. It... kind of works?",
+      "visual": "Gentle 'horse whisperer' style. A calm cowboy-sage leaning in to murmur softly into the ear of an enormous skittish glowing AI-creature — part wild stallion, part shimmering neural cloud — one hand raised soothingly. The beast's eyes soften; a faint ribbon of text reading 'please... you're an expert...' drifts through the air. Golden-hour prairie, floating dust motes, a quiet bond forming between human and machine."
     }
   ]
 }
