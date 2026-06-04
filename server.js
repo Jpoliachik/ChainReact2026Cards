@@ -191,6 +191,13 @@ const server = createServer(async (req, res) => {
       return send(res, 200, data, MIME[".json"]);
     }
 
+    // Serve the shared card renderer (lives outside public/ so export.js and
+    // the gallery share one source of truth).
+    if (url.pathname === "/render/card.js") {
+      const data = await readFile(join(__dirname, "render", "card.js"));
+      return send(res, 200, data, MIME[".js"]);
+    }
+
     if (url.pathname === "/api/generate" && req.method === "POST") {
       const body = JSON.parse((await readBody(req)) || "{}");
       if (!body.id) return sendJson(res, 400, { ok: false, error: "Missing id" });
