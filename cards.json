@@ -219,7 +219,7 @@
       ],
       "description": "Wielder of the AI Triforce — Gant Laborde's agentic-team method, where AI gives everyone superpowers but a dungeon with no locked doors is no place to ship from. Instead of one person context-switching (slower, and prone to error), the power splits three ways: the Builder ships features fast inside the sandbox but can't merge; the Protector owns safety, tests, and the constraints of what must never happen; the Organizer guards architecture and holds back the drift. Three humans guarding the gates — how you pull deterministic outcomes out of a non-deterministic machine. A tribute to Gant's piece; he'll be at Chain React.",
       "imagePrompt": "A heroic pint-sized green-tunic'd fantasy adventurer (classic top-down adventure-game energy, pointed cap, little leather boots), caricatured with an oversized triumphant grin and huge bright eyes, standing in a victorious hero pose and raising overhead a single radiant golden Triforce — three glowing triangles fitted into one larger triangle, each of the three lit a distinct color and bearing a tiny icon: a little hammer, a little shield, and a little gear. A glowing legendary sword hangs at his hip. Around him, three small friendly glowing agent-sprite fairies buzz helpfully. Behind him stands a sturdy stone castle gateway with a closed, well-guarded door. Lush green storybook overworld, rolling hills, golden heroic light, bright saturated adventure-game palette. Render only the three small icons inside the triangles (hammer, shield, gear) — no words or text anywhere.",
-      "image": ""
+      "image": "art/the-ai-triforce.png"
     },
     {
       "id": "the-demo-illusionist",
@@ -255,7 +255,7 @@
       ],
       "description": "An exacting craftsperson who treats a layout like an operating table. Sees the 2px misalignment nobody else can, and will not close until it's perfect — often on a device they don't even own. Calm, precise, a little terrifying. The reason the UI feels right even though no one can say why. Not slow, just unwilling to ship a wound.",
       "imagePrompt": "A focused surgeon in teal scrubs, surgical mask, and a head-mounted magnifier lamp, leaning intently over a large glowing UI mockup laid out like a patient on an operating table. With tiny precision tools — calipers, tweezers, a glowing scalpel — they delicately nudge one single pixel-block into alignment. A monitor beside the table displays a pulsing layout grid instead of a heartbeat. Caricature: enormous magnified eyes behind the lens, intense steady concentration, oversized careful hands. Cool teal operating-room lighting, sterile but warm focal glow on the work. No text anywhere.",
-      "image": ""
+      "image": "art/the-pixel-surgeon.png"
     },
     {
       "id": "the-upgrade-monk",
