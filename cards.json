@@ -461,6 +461,34 @@
       "image": "art/the-greenfield-speedster.png"
     },
     {
+      "id": "the-keyboard-exorcist",
+      "name": "The Keyboard Exorcist",
+      "hp": 120,
+      "type": "sound",
+      "saying": "Back beneath the fold, foul keyboard!",
+      "moves": [
+        {
+          "name": "Rite of behavior",
+          "type": "sound",
+          "damage": "2",
+          "description": "Chants 'padding' on iOS and 'height' on Android, praying the input clears on at least one."
+        },
+        {
+          "name": "Banish the Rising Tide",
+          "type": "sound",
+          "damage": "60",
+          "description": "Installs react-native-keyboard-controller at last, and the keyboard sinks beneath the fold."
+        }
+      ],
+      "backgroundColor": [
+        "red",
+        "orange"
+      ],
+      "description": "A robed warrior-priest locked in eternal holy war with KeyboardAvoidingView. Knows a different incantation for every OS — 'padding' on iOS, 'height' on Android — trusts none of them fully, and keeps a vial of holy water for the build where the keyboard wins anyway. Universal RN suffering: everyone who has shipped a form on mobile has stood in this exact battle and whispered the same prayer.",
+      "imagePrompt": "A wild-eyed robed exorcist-priest mid-incantation, brandishing a glowing talisman in one hand and flinging a splash from a holy-water vial with the other, fending off a huge snarling demonic ON-SCREEN KEYBOARD monster that surges upward like a tide from the bottom of a giant glowing phone. At the top of the phone, a tiny app input field and submit button cower out of reach. Holy radiant light clashing against the dark keyboard demon. Caricature: oversized panicked-determined face, huge eyes, billowing robes, comic proportions. Dramatic chiaroscuro, embers and sparks, fiery red-and-gold supernatural glow. No text anywhere.",
+      "image": "art/the-keyboard-exorcist.png"
+    },
+    {
       "id": "the-ota-smuggler",
       "name": "The OTA Smuggler",
       "hp": 90,
@@ -571,6 +599,34 @@
       "description": "The calm, impartial arbiter every team needs when two branches collide and neither developer will yield — never more so than after a React Native upgrade, when the ios/, android/, and Podfile.lock conflicts pile up. Hears both sides, weighs the diff with a steady hand, and brings order to the chaos of '<<<<<<< HEAD'. Respected, fair, faintly theatrical in the wig — the senior who settles the standoff instead of bleeding in the arena.",
       "imagePrompt": "A dignified judge in a tall white curly barrister's wig and flowing black robe, perched high behind an ornate wooden courtroom bench, banging a single glowing gavel to settle a dispute. Below, two glowing rival code-branch streams are tangled together in tug-of-war, knotted with '<<<<<<<' conflict chevrons. To one side, a set of golden scales of justice weighs two little glowing code-blocks labeled 'HEAD' and 'incoming' in perfect balance. Stately wood-paneled courtroom, warm authoritative amber light, shafts of dignified sunlight. Caricature: oversized powdered wig, stern-but-fair expression, comic proportions. Render only the two short scale labels — 'HEAD' and 'incoming' — cleanly, and no other text.",
       "image": "art/the-merge-magistrate.png"
+    },
+    {
+      "id": "the-keypunch-hermit",
+      "name": "The Keypunch Hermit",
+      "hp": 640,
+      "type": "nature",
+      "saying": "Autocomplete? I know the next line.",
+      "moves": [
+        {
+          "name": "No Copilot",
+          "type": "strength",
+          "damage": "0",
+          "description": "Swats away every autocomplete before it finishes — not one token has ever touched his code."
+        },
+        {
+          "name": "Knows Every Line",
+          "type": "psychic",
+          "damage": "100%",
+          "description": "Recites his whole system from memory, card by punched card — no machine ever wrote a line of it."
+        }
+      ],
+      "backgroundColor": [
+        "green",
+        "teal"
+      ],
+      "description": "In the age of agents that burn a million tokens before lunch, the Keypunch Hermit retreated to his cave and never looked back. He writes every program by hand, punches every card himself, and feeds the stack into a clattering mainframe older than most of the attendees — not because he can't use AI, but because he took a vow not to. To him, code a machine wrote is code you don't understand, and code you don't understand isn't yours. He is gloriously, defiantly slow. He is also the only soul alive who knows every line of his system by heart, because nothing in it was ever suggested to him. The proud anti-AI holdout the whole agentic deck needs as its foil — and the card every token-burner secretly feels a pang looking at.",
+      "imagePrompt": "A grizzled, wild-bearded old hermit in a tattered cardigan and half-moon spectacles, hunched gleefully over an enormous clattering vintage mainframe, feeding a thick stack of punch cards into its slot by hand with the proud focus of a monk at prayer. Freshly-punched cards and curling ticker-tape spill everywhere around him. With his other hand he irritably swats away a little cloud of glowing, translucent AI agent-sprites that hover around him offering to help, holding out glowing wordless code-suggestion bubbles he refuses to even look at. A dim green-phosphor CRT terminal glows beside the mainframe. Caricature: oversized bushy eyebrows, huge stubborn squint, defiant proud grin, ink-stained fingers, comic proportions. Cozy cave-like retro-tech den lit by warm amber tubes and green screen-glow, towering shelves of punch-card boxes and reel-to-reel tape, deep atmospheric shadows. No text anywhere.",
+      "image": "art/the-keypunch-hermit.png"
     },
     {
       "id": "the-native-ninja",
