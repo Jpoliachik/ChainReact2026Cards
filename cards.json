@@ -237,7 +237,7 @@
       ],
       "description": "A showman who has turned the live demo into a magic act. Behind the flawless on-stage run is a single happy path rehearsed forty times, a stubbed API or two, and a cape draped over the parts that don't work yet. Radiates total confidence while quietly praying nothing reloads. Universal-guilt card: everyone who has ever given a live demo knows the terror under the showmanship. The trick always works — as long as nobody touches the keyboard.",
       "imagePrompt": "A flamboyant stage magician in a tuxedo, top hat, and flowing cape, mid-flourish on a darkened conference stage under a single dramatic spotlight, triumphantly pulling a glowing, perfectly-running phone app out of a top hat as if by magic — beaming a showman's grin while a single bead of nervous sweat rolls down his temple. Just behind him, half-hidden by his cape, a chaotic tangle of duct tape, crossed wires, and a propped-up laptop shows the trick is held together by hope. Faint silhouettes of an audience in the dark foreground. Caricature: oversized confident grin, huge expressive eyes, theatrical posture. Moody spotlit stage, rich theatrical purples and golds, dramatic rim light. No text anywhere.",
-      "image": ""
+      "image": "art/the-demo-illusionist.png"
     },
     {
       "id": "the-pixel-surgeon",
@@ -273,7 +273,7 @@
       ],
       "description": "An ascetic who has made peace with the dependency upgrade everyone else dreads. Finds quiet enlightenment in the Expo SDK bump, the major-version migration, the changelog no one wants to read. Takes on the suffering so the team doesn't have to, and emerges serene on the other side of a green build. Patient, selfless, faintly amused by your fear of breaking changes.",
       "imagePrompt": "A serene bald monk in flowing saffron-orange robes, sitting in calm lotus meditation atop a misty mountain peak, a faint blissful smile on his face and a glowing halo of peace around him — utterly undisturbed while a swirling storm of red deprecation-warning triangles and crackling 'breaking change' lightning rages all around him. An impossibly long changelog scroll unrolls down the mountainside beside him; a small glowing package-box floats before him like an object of devotion. Caricature: oversized peaceful face, tiny knowing smile, exaggerated calm amid chaos. Misty mountaintop temple at warm dawn, soft golden light cutting through the storm. No text anywhere.",
-      "image": ""
+      "image": "art/the-upgrade-monk.png"
     }
   ]
 }

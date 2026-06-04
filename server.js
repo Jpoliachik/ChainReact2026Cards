@@ -97,6 +97,24 @@ function extractImage(json) {
   return null;
 }
 
+// Serialize cards.json writes so concurrent generates can't clobber each
+// other, and re-read the file fresh on every persist so we only ever change
+// this one card's image — never write back a stale whole-doc snapshot.
+let writeChain = Promise.resolve();
+function persistImage(id, image) {
+  const task = async () => {
+    const raw = await readFile(CARDS_PATH, "utf-8");
+    const doc = JSON.parse(raw);
+    const card = doc.cards.find((c) => c.id === id);
+    if (!card) return;
+    await writeFile(`${CARDS_PATH}.bak`, raw);
+    card.image = image;
+    await writeFile(CARDS_PATH, JSON.stringify(doc, null, 2) + "\n");
+  };
+  writeChain = writeChain.then(task, task);
+  return writeChain;
+}
+
 async function generateCard(id) {
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
@@ -155,12 +173,13 @@ async function generateCard(id) {
   const fileName = `${id}.${ext}`;
   await writeFile(join(ART_DIR, fileName), Buffer.from(img.data, "base64"));
 
-  // Persist the image path back into cards.json (with a .bak backup).
-  await writeFile(`${CARDS_PATH}.bak`, raw);
-  card.image = `art/${fileName}`;
-  await writeFile(CARDS_PATH, JSON.stringify(doc, null, 2) + "\n");
+  // Persist the image path back into cards.json. persistImage re-reads the
+  // file fresh under a write lock and touches only this card, so a concurrent
+  // generate or manual edit made during the (slow) Gemini call above survives.
+  const image = `art/${fileName}`;
+  await persistImage(id, image);
 
-  return { status: 200, body: { ok: true, id, image: card.image } };
+  return { status: 200, body: { ok: true, id, image } };
 }
 
 const server = createServer(async (req, res) => {
