@@ -6,6 +6,7 @@
   "description": "Developer-archetype card deck for Chain React 2026 — selection & ranking tool",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "build": "node build.js"
   }
 }

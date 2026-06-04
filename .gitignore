@@ -12,6 +12,9 @@ node_modules/
 # Secrets
 .env
 
+# Build output (shareable single-file deck)
+dist/
+
 # Local backup written by server.js on each save
 cards.json.bak
 
