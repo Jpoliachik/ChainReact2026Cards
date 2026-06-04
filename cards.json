@@ -2,7 +2,7 @@
   "meta": {
     "event": "Chain React 2026 — Portland, OR",
     "target": 30,
-    "artDirection": "Illustrate like a Pokémon trading-card character: ONE character is the unmistakable hero of the frame — large, centered, shown mid-action performing their signature quirk. Surround them with only a few small supporting props or details that hint at what they're up to; keep the background simple and uncluttered so the character stays the clear focal point. Energetic 3/4 or full-body pose, bold readable silhouette, vibrant saturated color, clean dramatic lighting, subtle depth. Each character keeps the distinct art-style flavor named in its own prompt, but all share this hero-in-action composition."
+    "artDirection": "A single full-bleed CHARACTER ILLUSTRATION — artwork only, NOT a trading card. Absolutely no card frame, no border, no card template, no HP, no text, no labels, no name plate, no energy symbols, no stat boxes, no logos, no UI of any kind anywhere in the image. Just the raw painted illustration filling the whole frame, edge to edge. ONE character is the unmistakable hero of the frame — large, centered, shown mid-action performing their signature quirk. Surround them with only a few small supporting props or details that hint at what they're up to; keep the background simple and uncluttered so the character stays the clear focal point. Render in the energetic illustration style of Pokémon creature/character ART (the painted artwork itself, never the card it sits on): energetic 3/4 or full-body pose, bold readable silhouette, vibrant saturated color, clean dramatic lighting, subtle depth. Each character keeps the distinct art-style flavor named in its own prompt, but all share this hero-in-action composition."
   },
   "cards": [
     {
@@ -10,30 +10,50 @@
       "name": "The Gesture Jester",
       "saying": "Don't watch the swipe — watch the hands.",
       "moves": [
-        { "name": "Misdirection", "description": "Buries a half-second of lag behind a flourish so smooth the hit lands before anyone notices they waited." },
-        { "name": "Hypnotic Fling", "description": "Flicks a list into a buttery 60fps spin that leaves onlookers Mesmerized — they cannot look away." }
+        {
+          "name": "Misdirection",
+          "description": "Buries a half-second of lag behind a flourish so smooth the hit lands before anyone notices they waited."
+        },
+        {
+          "name": "Hypnotic Fling",
+          "description": "Flicks a list into a buttery 60fps spin that leaves onlookers Mesmerized — they cannot look away."
+        }
       ],
       "description": "A vaudeville trickster who treats every touch interaction as a magic act. Obsessive about how a gesture feels in the thumb; will rebuild a swipe twenty times for an imperceptible gain. Charming, theatrical, quietly smug that his best work is the work nobody notices.",
-      "imagePrompt": "Old-school cartoon court-jester with magical hypnotist flair: a grinning harlequin in diamond-patterned motley and a curled three-point hat, fingers splayed mid-flourish conjuring glowing hypnotic spirals and looping motion-trails. A single phone floats hypnotized nearby, mid-swipe. Swirly spiral eyes, mischievous wink, candy-colored vaudeville palette."
+      "imagePrompt": "Old-school cartoon court-jester with magical hypnotist flair: a grinning harlequin in diamond-patterned motley and a curled three-point hat, fingers splayed mid-flourish conjuring glowing hypnotic spirals and looping motion-trails. A single phone floats hypnotized nearby, mid-swipe. Swirly spiral eyes, mischievous wink, candy-colored vaudeville palette.",
+      "image": "art/the-gesture-jester.png"
     },
     {
       "id": "the-bridge-troll",
       "name": "The Bridge Troll",
       "saying": "Crossing to native? That'll cost ya.",
       "moves": [
-        { "name": "Toll by the Kilobyte", "description": "Deals more damage the fatter the payload you serialize across the bridge — travel light to soften the blow." },
-        { "name": "Gridlock", "description": "Clogs the span with a backlog of queued calls — nothing reaches native until the jam clears." }
+        {
+          "name": "Toll by the Kilobyte",
+          "description": "Deals more damage the fatter the payload you serialize across the bridge — travel light to soften the blow."
+        },
+        {
+          "name": "Gridlock",
+          "description": "Clogs the span with a backlog of queued calls — nothing reaches native until the jam clears."
+        }
       ],
       "description": "The mythical troll of the JS↔native bridge: cross all you like, but try to send too much data and he'll charge you for it. Genuinely cautious about performance — every fat payload serialized over is a toll paid in dropped frames. Lately grumbles that the New Architecture thinned his margins, though he'd never admit business is down. Still guarding the bridge. Still eyeing your payload size.",
-      "imagePrompt": "Bright rainbow 'Trolls'-movie cartoon style: a pint-sized impossibly cute troll with a giant poof of neon rainbow hair and sparkly skin, manning a toll-gate on a candy-colored bridge between two floating islands — one of glowing curly-braces, one of native gears. He holds out a hand for payment while eyeing a traveler hauling a comically huge bundle labeled 'DATA' across; his toll sign reads 'BY THE KILOBYTE'. In the background a glossy billboard for the sleek 'NEW ARCHITECTURE' express lane quietly steals his business. Felt textures, glitter, a sly grumpy grin."
+      "imagePrompt": "Bright rainbow 'Trolls'-movie cartoon style: a pint-sized impossibly cute troll with a giant poof of neon rainbow hair and sparkly skin, manning a toll-gate on a candy-colored bridge between two floating islands — one of glowing curly-braces, one of native gears. He holds out a hand for payment while eyeing a traveler hauling a comically huge bundle labeled 'DATA' across; his toll sign reads 'BY THE KILOBYTE'. In the background a glossy billboard for the sleek 'NEW ARCHITECTURE' express lane quietly steals his business. Felt textures, glitter, a sly grumpy grin.",
+      "image": "art/the-bridge-troll.png"
     },
     {
       "id": "the-reanimated-wizard",
       "name": "The Reanimated Wizard",
       "saying": "The easing's off. I can feel it.",
       "moves": [
-        { "name": "Just One More Frame", "description": "Re-runs the same transition for the ninth hour straight; the move never resolves, because it's never quite right." },
-        { "name": "Spring of Madness", "description": "Bolts a bouncy spring onto an element that had no reason to move — now it overshoots every single time." }
+        {
+          "name": "Just One More Frame",
+          "description": "Re-runs the same transition for the ninth hour straight; the move never resolves, because it's never quite right."
+        },
+        {
+          "name": "Spring of Madness",
+          "description": "Bolts a bouncy spring onto an element that had no reason to move — now it overshoots every single time."
+        }
       ],
       "description": "A perfectionist animation sorcerer who can feel a wrong easing curve in his bones. Fluent in shared values, worklets, and damping ratios; will not ship until the motion lands exactly right, which is never. Brilliant, a little unhinged, deeply pleased with physics no one else will ever consciously notice.",
       "imagePrompt": "Psychedelic acid-fantasy wizard: a wild-eyed robed sorcerer with a long flowing beard, casting with both hands as trippy neon fractal energy and rainbow easing-curves spiral from a glowing staff, meticulously bending a single floating UI element into liquid motion. Glowing runes shaped like spring-physics graphs, a sparkling third eye, hyper-saturated kaleidoscopic colors."
@@ -43,8 +63,14 @@
       "name": "The Slop Sommelier",
       "saying": "I can taste the AI in this PR.",
       "moves": [
-        { "name": "Sniff Test", "description": "Swirls a pull request, sips, and names which model wrote it from the aftertaste alone." },
-        { "name": "Guardrail Pairing", "description": "Refuses to let an AI suggestion near main without a test and a lint rule chaperoning it." }
+        {
+          "name": "Sniff Test",
+          "description": "Swirls a pull request, sips, and names which model wrote it from the aftertaste alone."
+        },
+        {
+          "name": "Guardrail Pairing",
+          "description": "Refuses to let an AI suggestion near main without a test and a lint rule chaperoning it."
+        }
       ],
       "description": "A discerning connoisseur of machine-written code who can identify the model, the temperature, and the vintage from a single function. The team's last line of defense against AI slop — pairs every suggestion with guardrails before it touches production. Not anti-AI, just refuses to swallow it unverified.",
       "imagePrompt": "Fancy wine-sommelier style: an impeccably dressed connoisseur in a tuxedo and tasting apron, swirling a crystal glass that holds glowing liquid code instead of wine, nose in the glass, eyes narrowed in expert judgment. A tasting flight of little glasses labeled with AI-model names sits nearby, a spit-bucket overflows with rejected slop, a rolled-up scroll of lint rules tucked under one arm. Rich, refined, candlelit wine-cellar."
@@ -54,8 +80,14 @@
       "name": "The Standup Ghost",
       "saying": "No blockers.",
       "moves": [
-        { "name": "Camera Off", "description": "Vanishes into a dim avatar circle so completely no one remembers they're there." },
-        { "name": "Slack It Later", "description": "Promises to drop the update in the channel after the call, and is never heard from again." }
+        {
+          "name": "Camera Off",
+          "description": "Vanishes into a dim avatar circle so completely no one remembers they're there."
+        },
+        {
+          "name": "Slack It Later",
+          "description": "Promises to drop the update in the channel after the call, and is never heard from again."
+        }
       ],
       "description": "A gentle, well-meaning specter of remote work. Always present, never quite there; hasn't unmuted since March but radiates calm, supportive energy. Lovable, not lazy — the haunting is friendly. Everyone has been this ghost, and that shared guilt is the point.",
       "imagePrompt": "Classic Scooby-Doo / retro Hanna-Barbera cartoon: a goofy friendly bedsheet ghost with big googly eyes floating inside one tile of a video-call grid, its tile camera-off (a dim avatar circle), mouthing 'wooOOoo... no blockers.' Cobwebs in the tile corners, a little 'last spoke: March' tombstone, neighboring tiles glowing with normal faces. Flat retro colors, bouncy linework."
@@ -65,8 +97,14 @@
       "name": "The Console Detective",
       "saying": "It was the null. It's always the null.",
       "moves": [
-        { "name": "Print Statement", "description": "Drops a console.log('here') at the scene of every crime until the bug confesses." },
-        { "name": "Ship the Evidence", "description": "Accidentally deploys one of the logs straight to production." }
+        {
+          "name": "Print Statement",
+          "description": "Drops a console.log('here') at the scene of every crime until the bug confesses."
+        },
+        {
+          "name": "Ship the Evidence",
+          "description": "Accidentally deploys one of the logs straight to production."
+        }
       ],
       "description": "A hard-boiled gumshoe who solves every bug the old-fashioned way: print statements and instinct. Distrusts the debugger on principle. Always cracks the case, always leaves a log behind. The universal guilt — everyone debugs like this and pretends they don't.",
       "imagePrompt": "High-contrast black-and-white film-noir: a hard-boiled detective in a rumpled trench coat and fedora, cigarette smoke curling, magnifying glass raised to a corkboard of pinned clues reading console.log(\"here\"), console.log(\"here2\"), console.log(\"WHY\"), strung together with red thread. A glowing 'DEBUGGER' door stays firmly shut. Venetian-blind shadows, rain on the window, a single hard desk lamp."
@@ -76,8 +114,14 @@
       "name": "The Agent Wrangler",
       "saying": "Now which one of y'all touched prod?",
       "moves": [
-        { "name": "Token Bonfire", "description": "Sets a million tokens ablaze before lunch and calls it research." },
-        { "name": "Hot Swap", "description": "Bounces between six terminals so fast he loses track of which agent is in prod." }
+        {
+          "name": "Token Bonfire",
+          "description": "Sets a million tokens ablaze before lunch and calls it research."
+        },
+        {
+          "name": "Hot Swap",
+          "description": "Bounces between six terminals so fast he loses track of which agent is in prod."
+        }
       ],
       "description": "A frontier cowboy of the agentic era who runs more agents than any human can track and burns tokens like a campfire. Optimistic, overextended, context-switching so fast he forgets what each terminal was doing. Lives the thrill and terror of orchestrating things that act on their own.",
       "imagePrompt": "Wild-west cowboy: a dusty cowboy in a ten-gallon hat and chaps swinging a glowing lasso, trying to herd a stampede of six wild robot-agent broncos charging in six directions, each branded with a different terminal prompt — one bolting toward a cliff edge labeled 'PROD'. Flaming token-coins scatter from his saddlebags. Sunset mesas, tumbleweeds, a frazzled-but-determined grin."
@@ -87,8 +131,14 @@
       "name": "The Context Firehose",
       "saying": "Just give it everything.",
       "moves": [
-        { "name": "Repo Dump", "description": "Pastes the entire codebase into context because choosing which files felt risky." },
-        { "name": "Sketchy MCP", "description": "Wires the agent to a random unvetted MCP server because it had a cool README." }
+        {
+          "name": "Repo Dump",
+          "description": "Pastes the entire codebase into context because choosing which files felt risky."
+        },
+        {
+          "name": "Sketchy MCP",
+          "description": "Wires the agent to a random unvetted MCP server because it had a cool README."
+        }
       ],
       "description": "A trusting soul who believes more context can only help and that access controls are for cowards. Dumps the whole repo, hooks the agent to every MCP it asks for, clicks 'allow all' without reading. YOLO incarnate. The fear underneath: the one thing you withhold is the thing it needed.",
       "imagePrompt": "Cute cartoon trash-panda raccoon with gremlin energy: wide-eyed and gleeful, jamming a fistful of sketchy glowing cables labeled 'MCP' into a giant friendly AI brain while the entire repo's files cascade into its mouth. A big red 'ALLOW ALL?' dialog already clicked YES, security padlocks popping off and tumbling in the background. Chaotic, neon server-room glow."
@@ -98,8 +148,14 @@
       "name": "The Dependency Prepper",
       "saying": "I've got a bunker full of node_modules.",
       "moves": [
-        { "name": "Left-Pad Flashback", "description": "Still hasn't recovered from the day eleven lines un-published and broke the entire internet." },
-        { "name": "Vendor Everything", "description": "Hand-copies every dependency into the repo so no registry can ever betray him again." }
+        {
+          "name": "Left-Pad Flashback",
+          "description": "Still hasn't recovered from the day eleven lines un-published and broke the entire internet."
+        },
+        {
+          "name": "Vendor Everything",
+          "description": "Hand-copies every dependency into the repo so no registry can ever betray him again."
+        }
       ],
       "description": "A doomsday prepper for the software supply chain. Keeps a bunker stocked with vendored dependencies and a spreadsheet of every npm compromise since left-pad. Certain the next install ships a zero-day and ends civilization. Often technically correct, never proportionate.",
       "imagePrompt": "Doomsday-prepper style: a wild-eyed survivalist in a tinfoil-lined hat and tactical vest crouched in an underground bunker stacked with canned goods labeled with package names and version hashes, clutching a printout of an npm security advisory. A wall map tracks 'SUPPLY CHAIN THREATS' with frantic red string; a flickering monitor reads 'npm compromised — again'. A gas mask hangs nearby. Paranoid, fortified, dimly lit."
@@ -109,8 +165,14 @@
       "name": "The Prompt Whisperer",
       "saying": "You're an expert. Make no mistakes.",
       "moves": [
-        { "name": "Phantom Tip", "description": "Promises the model a $200 tip it will never receive; quality mysteriously improves." },
-        { "name": "All-Caps Plea", "description": "When politeness fails, resorts to typing 'IMPORTANT: DO NOT HALLUCINATE' in all caps." }
+        {
+          "name": "Phantom Tip",
+          "description": "Promises the model a $200 tip it will never receive; quality mysteriously improves."
+        },
+        {
+          "name": "All-Caps Plea",
+          "description": "When politeness fails, resorts to typing 'IMPORTANT: DO NOT HALLUCINATE' in all caps."
+        }
       ],
       "description": "A gentle mystic who believes tone and ritual unlock the machine. Flatters, bribes, and soothes the model with incantations half-remembered from a benchmark paper. Nobody is sure the rituals work, including him — but they kind of do.",
       "imagePrompt": "Gentle 'horse whisperer' scene: a calm cowboy-sage leaning in to murmur into the ear of an enormous skittish glowing AI-creature — part wild stallion, part shimmering neural cloud — one hand raised soothingly. The beast's eyes soften; a faint ribbon of text reading 'you're an expert... make no mistakes...' drifts in the air. Golden-hour prairie, floating dust motes."

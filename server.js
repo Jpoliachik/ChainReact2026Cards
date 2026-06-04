@@ -44,6 +44,8 @@ function loadEnv(path) {
 loadEnv(join(__dirname, ".env"));
 
 const GEMINI_MODEL = process.env.GEMINI_IMAGE_MODEL || "gemini-2.5-flash-image";
+// Matches the gallery's 5:4 card art slot so the art is composed, not cropped.
+const ASPECT_RATIO = process.env.GEMINI_ASPECT_RATIO || "5:4";
 
 const MIME = {
   ".html": "text/html; charset=utf-8",
@@ -119,7 +121,10 @@ async function generateCard(id) {
     resp = await fetch(endpoint, {
       method: "POST",
       headers: { "Content-Type": "application/json", "x-goog-api-key": apiKey },
-      body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] }),
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: prompt }] }],
+        generationConfig: { imageConfig: { aspectRatio: ASPECT_RATIO } },
+      }),
     });
   } catch (err) {
     return { status: 502, body: { ok: false, error: `Network error: ${err}` } };
