@@ -43,22 +43,26 @@ each card has these fields:
 
 ```jsonc
 {
-  "id": "the-bridge-troll",        // kebab slug, stable
-  "name": "The Bridge Troll",      // VISIBLE — high-register "The ___", the headline
-  "saying": "That'll cost ya.",    // VISIBLE — < 60 chars, the one line they'd say
-  "moves": [                       // VISIBLE — exactly two; where the personality lives
-    { "name": "Toll of Complexity", "description": "one sentence on what it does" },
-    { "name": "Thread Hop",         "description": "one sentence on what it does" }
+  "id": "the-bridge-troll",         // kebab slug, stable
+  "name": "The Bridge Troll",       // VISIBLE — high-register "The ___", the headline
+  "hp": 130,                        // VISIBLE — flavor stat (no real balance)
+  "type": "nature",                 // VISIBLE — Pokémon-elemental type; sets the HP icon
+  "saying": "Crossing to native? That'll cost ya.", // VISIBLE — the one line they'd say
+  "moves": [                        // VISIBLE — exactly two; where the personality lives
+    { "name": "Riddle of the Crossing", "type": "nature",   "damage": "30", "iconCount": 2, "description": "one sentence" },
+    { "name": "Flattened to Fit",       "type": "strength", "damage": "90", "iconCount": 3, "description": "one sentence" }
   ],
+  "backgroundColor": "green",       // VISIBLE — frame color: a string or ["a","b"] gradient
   "description": "character bible", // INTERNAL — traits/personality/vibe, never shown
-  "imagePrompt": "Nano Banana prompt" // INTERNAL — the per-character generation prompt
+  "imagePrompt": "Nano Banana prompt", // INTERNAL — the per-character generation prompt
+  "image": "art/the-bridge-troll.png"  // the generated character art (the card's hero shot)
 }
 ```
 
-- **Visible to the human holding the card:** `name`, `saying`, the two `moves`.
+- **Visible on the card:** `name`, `hp`, `type`, `saying`, the two `moves`
+  (each with `type` / `damage` / `iconCount` / `description`), the art, and `backgroundColor`.
 - **Internal (building + generation only):** `description` (a short character bible so we
   reason about who they are) and `imagePrompt`.
-- An `image` field is added per card once art is generated.
 - Cut ideas live in [GRAVEYARD.md](GRAVEYARD.md), not in `cards.json`.
 
 ### `saying`
@@ -78,22 +82,27 @@ supporting props. It's prepended to every card's `imagePrompt` at generation tim
 `imagePrompt` only describes the character — their distinct art-style flavor, costume,
 props, and action. Keep characters visually distinct (no two near-identical figures).
 
-## Phase 2: the full Pokémon card (not built yet)
+### Type system
 
-Once the 30 are locked, each card grows:
+Each card and each move carries a Pokémon-elemental `type` — one of:
+`nature · fire · psychic · water · electric · cosmic · toxic · dream · crystal · sound · strength`.
+Icon + color for each live in `render/card.js`; the card's `type` drives the HP badge, and
+each move's `type` colors its energy pips. The deck skews `psychic` (the AI/mind cards
+cluster there). These are flavor, not balance.
 
-```jsonc
-{
-  "hp": 90,
-  "type": "...",                  // playful energy type (maps loosely to domain)
-  "categories": [],               // the little stat row
-  "moves": [
-    { "name": "Toll Collection", "type": "...", "damage": 30, "text": "one sentence" },
-    { "name": "Cross the Threshold", "type": "...", "damage": 60, "text": "one sentence" }
-  ],
-  "flavor": "italic bottom-of-card line",
-  "art": "path or prompt"
-}
-```
+### Stats: `hp`, `damage`, `iconCount`
 
-Don't add these knobs to the schema until Phase 1 (the 30) is locked.
+`hp` and `damage` are pure flavor — lean into dev gags (`"60"` for 60fps, `"16"` for the
+frame budget, `"404"`/`"500"`, `"4K"` for a giant diff, `"∞"`, `"1M"`). `damage` is a
+**string** so non-numeric jokes render. `iconCount` (1–4) is the move's energy cost, shown
+as that many type pips.
+
+## The rendered card (the "actual visual")
+
+The written card becomes a 816×1110 Pokémon-style trading card (yellow border, gradient
+frame, name plate, HP + type icon, framed art, saying, two moves with pips + damage).
+
+- `render/card.js` — the shared renderer (`createCard`), used by the gallery and the export.
+- `public/card.css` — the card stylesheet; `public/icons/` — the type-icon SVGs.
+- `pnpm export` → `card-exports/<id>.png` (300 DPI, print-ready); `pnpm start` shows them
+  live in the gallery; `pnpm build` bundles them into one shareable file.

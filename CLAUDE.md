@@ -36,26 +36,35 @@ writing, judging, or cutting cards. Key reminders:
 
 ## Phases
 
-- **Phase 1 (current): selection + character design.** Get to a strong set of cards, each
-  with a `profile` (who) and a `visual` (the look). `cards.json` holds the working set only,
-  four fields per card: `id`, `name`, `profile`, `visual`. Cut ideas go to `GRAVEYARD.md`,
-  not `cards.json`.
-- **Phase 2 (not built):** grow each card into the full Pokémon card (HP, type, categories,
-  two named moves w/ damage + flavor) and add generated art (`image` field). Don't add those
-  fields to the schema until the working set is locked.
+- **Phase 1: selection + character design.** Get to a strong set of cards, each with a
+  written identity (`name`, `saying`, two `moves`, a character `description`, an
+  `imagePrompt`). Cut ideas go to `GRAVEYARD.md`, not `cards.json`. (15 cards locked so far;
+  target 30.)
+- **Phase 2 (in progress): the actual visual.** Each card now grows the full Pokémon card —
+  `hp`, a Pokémon-elemental `type`, `backgroundColor`, and per-move `type` / `damage` /
+  `iconCount` — and renders to a 816×1110 trading card. See SPEC.md for the schema + type
+  system. The type/damage values are a **first pass tuned for refinement**, not final.
+
+  - `render/card.js` — the shared `createCard` renderer (ported from the Bob Ross trading-card
+    tool). `public/card.css` is its Tailwind stylesheet; `public/icons/` holds the type-icon
+    SVGs. One renderer feeds the gallery, the PNG export, and the static showcase.
+  - `pnpm export` (`export.js`, puppeteer + sharp) → `card-exports/<id>.png` at 300 DPI;
+    `pnpm export <id>` for one. The PNGs are committed.
 
 ## The gallery tool
 
-Zero-dependency (built-in `fetch` + a tiny `.env` parser, no npm packages). Viewing is the
-main use; edit `cards.json` directly to change card text.
+Viewing is the main use; edit `cards.json` directly to change a card, then reload.
 
 ```bash
 pnpm start        # → http://localhost:4317  (set PORT to override)
 ```
 
-- `server.js` — zero-dep Node server: `GET /api/cards`, `POST /api/generate`, serves `public/`.
-- `public/index.html` — single-file gallery: each card shows name, saying, moves, and an art
-  slot (placeholder until an `image` is generated).
+- `server.js` — Node server: `GET /api/cards`, `POST /api/generate`, serves `/render/card.js`
+  and `public/`. Itself still zero-dep (built-in `fetch` + a tiny `.env` parser).
+- `public/index.html` — gallery: renders the **actual 816×1110 card** for each entry via the
+  shared renderer, each in its own shadow root (so `card.css`'s Tailwind reset stays scoped
+  and never leaks into the gallery's dark/gold theme). Keeps the regenerate-art button and an
+  internal character/prompt expander.
 
 ### Art generation (Nano Banana / Gemini)
 
@@ -72,5 +81,6 @@ The gallery can generate card art via Google's `gemini-2.5-flash-image` ("Nano B
 ## Conventions
 
 - Use **pnpm**, not npm.
-- Keep it dependency-free unless there's a strong reason — this is a small personal tool.
+- Keep it lean. The server/gallery stay dependency-free; the only npm deps are `puppeteer` +
+  `sharp`, used solely by `pnpm export` to rasterize the cards (no zero-dep way to do that).
 - Card `id` is a stable kebab slug; `name` is high-register `The ___`.
