@@ -1,0 +1,11 @@
+{
+  "name": "chainreactcards",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Developer-archetype card deck for Chain React 2026 — selection & ranking tool",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  }
+}

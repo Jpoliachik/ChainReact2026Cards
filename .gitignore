@@ -1,0 +1,13 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+
+# Local backup written by server.js on each save
+cards.json.bak
+
+# Claude Code
+.claude/*
+!.claude/skills/

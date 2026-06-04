@@ -1,0 +1,296 @@
+{
+  "meta": {
+    "event": "Chain React 2026 — Portland, OR",
+    "target": 30,
+    "domains": [
+      "ai",
+      "native",
+      "motion",
+      "craft",
+      "process",
+      "conference"
+    ]
+  },
+  "cards": [
+    {
+      "id": "the-bridge-keeper",
+      "name": "The Bridge Keeper",
+      "profile": "Guards the crossing between JavaScript and native. Knows what truly happens when a call leaves the JS thread, and charges a toll in complexity. Speaks fluent Objective-C and Kotlin, and will gently remind you the New Architecture changed everything.",
+      "domain": "native",
+      "status": "locked",
+      "rating": null,
+      "favorite": true,
+      "notes": ""
+    },
+    {
+      "id": "the-yak-shaver",
+      "name": "The Yak Shaver",
+      "profile": "Set out to change one button's color. Three days later is patching a transitive dependency's Gradle config to fix the linter that broke the formatter. Has forgotten the original task. Is, somehow, having a wonderful time.",
+      "domain": "process",
+      "status": "locked",
+      "rating": null,
+      "favorite": false,
+      "notes": ""
+    },
+    {
+      "id": "the-expo-evangelist",
+      "name": "The Expo Evangelist",
+      "profile": "Has seen the promised land and it has no Xcode. Will tell you, unprompted, that you don't need to eject anymore. Radiates the deep calm of someone whose builds are simply handled. Possibly correct.",
+      "domain": "native",
+      "status": "locked",
+      "rating": null,
+      "favorite": false,
+      "notes": ""
+    },
+    {
+      "id": "the-demo-gods-supplicant",
+      "name": "The Demo Gods' Supplicant",
+      "profile": "Makes offerings before every live demo. Knows the wifi will betray them, the simulator will freeze, and the one untested path is the one they'll show. Prays anyway. Demos anyway. This is faith.",
+      "domain": "process",
+      "status": "locked",
+      "rating": null,
+      "favorite": false,
+      "notes": ""
+    },
+    {
+      "id": "the-refactor-mystic",
+      "name": "The Refactor Mystic",
+      "profile": "Sees the truer architecture shimmering beneath the code. Cannot ship until the structure is correct. The feature works — that is not the point. The feature is not yet beautiful.",
+      "domain": "craft",
+      "status": "locked",
+      "rating": null,
+      "favorite": false,
+      "notes": ""
+    },
+    {
+      "id": "the-offline-first-monk",
+      "name": "The Offline-First Monk",
+      "profile": "Builds for the subway, the basement, the rural two-lane road. Assumes the network is a lie. Treats connectivity as a pleasant surprise rather than a right. Wholly at peace with the sync queue.",
+      "domain": "native",
+      "status": "locked",
+      "rating": null,
+      "favorite": false,
+      "notes": ""
+    },
+    {
+      "id": "the-hallucination-archaeologist",
+      "name": "The Hallucination Archaeologist",
+      "profile": "Digs through code the AI wrote with total confidence, unearthing methods that have never existed in any library, anywhere. Carries a brush and a deep sigh.",
+      "domain": "ai",
+      "status": "candidate",
+      "rating": null,
+      "favorite": false,
+      "notes": ""
+    },
+    {
+      "id": "the-vibe-coder",
+      "name": "The Vibe Coder",
+      "profile": "Does not read the diff. Feels the diff. Communes with the agent, accepts all, and somehow ships. Terrifying. Possibly the future.",
+      "domain": "ai",
+      "status": "candidate",
+      "rating": null,
+      "favorite": false,
+      "notes": ""
+    },
+    {
+      "id": "the-prompt-whisperer",
+      "name": "The Prompt Whisperer",
+      "profile": "Believes the right incantation unlocks the machine spirit. Says 'please' and 'you're an expert' to a language model. It... kind of works?",
+      "domain": "ai",
+      "status": "candidate",
+      "rating": null,
+      "favorite": false,
+      "notes": ""
+    },
+    {
+      "id": "the-last-artisan",
+      "name": "The Last Artisan",
+      "profile": "Refuses the autocomplete. Types every character by hand, smug and unhurried. 'I like to understand my code.' Will outlive us all, or be the first against the wall.",
+      "domain": "ai",
+      "status": "candidate",
+      "rating": null,
+      "favorite": false,
+      "notes": ""
+    },
+    {
+      "id": "the-agent-wrangler",
+      "name": "The Agent Wrangler",
+      "profile": "Has six agents running in six terminals and has lost track of which one is editing prod. A shepherd whose flock has scattered across the hills.",
+      "domain": "ai",
+      "status": "candidate",
+      "rating": null,
+      "favorite": false,
+      "notes": ""
+    },
+    {
+      "id": "the-context-hoarder",
+      "name": "The Context Hoarder",
+      "profile": "Pastes the entire codebase into the window every time. Treats the token limit as a personal insult. Will not, under any circumstance, be told to be selective.",
+      "domain": "ai",
+      "status": "candidate",
+      "rating": null,
+      "favorite": false,
+      "notes": ""
+    },
+    {
+      "id": "the-reanimator",
+      "name": "The Reanimator",
+      "profile": "Bends elements to their will at 60fps. Speaks in springs and shared values. Makes things slide that need not slide. Pure motion, questionable restraint.",
+      "domain": "motion",
+      "status": "candidate",
+      "rating": null,
+      "favorite": false,
+      "notes": "Overlaps with The Gesture Handler — rank head-to-head, may merge."
+    },
+    {
+      "id": "the-gesture-handler",
+      "name": "The Gesture Handler",
+      "profile": "Will spend a full day on the pan-and-fling so it feels right in the thumb. Speaks with their hands; the hands are always demoing a swipe. Has opinions about the rubber-band at the edge of a scroll. The animation is invisible and perfect, and it took a week.",
+      "domain": "motion",
+      "status": "candidate",
+      "rating": null,
+      "favorite": false,
+      "notes": "Justin's pun idea: react-native-gesture-handler + physical hand gestures + the animation perfectionist."
+    },
+    {
+      "id": "the-standup-ghost",
+      "name": "The Standup Ghost",
+      "profile": "Present in body, camera off, 'no blockers.' Has not spoken in the meeting since March. A quiet, benevolent haunting.",
+      "domain": "process",
+      "status": "candidate",
+      "rating": null,
+      "favorite": false,
+      "notes": ""
+    },
+    {
+      "id": "the-merge-conflict-gladiator",
+      "name": "The Merge Conflict Gladiator",
+      "profile": "Enters the arena of <<<<<<< HEAD and emerges bloodied but victorious. Has resolved conflicts they did not understand and never will. Accept incoming. Accept current. Accept fate.",
+      "domain": "process",
+      "status": "candidate",
+      "rating": null,
+      "favorite": false,
+      "notes": ""
+    },
+    {
+      "id": "the-backwards-compatibility-martyr",
+      "name": "The Backwards-Compatibility Martyr",
+      "profile": "Suffers so that users on a 2019 Android phone may know peace. Maintains the polyfill nobody else will touch. Asks for nothing. Deserves everything.",
+      "domain": "native",
+      "status": "candidate",
+      "rating": null,
+      "favorite": false,
+      "notes": ""
+    },
+    {
+      "id": "the-hallway-track-sage",
+      "name": "The Hallway Track Sage",
+      "profile": "Has not attended a single session. The hallway is the conference. Has had four life-changing conversations by the coffee urn and missed every talk on purpose. This is the way.",
+      "domain": "conference",
+      "status": "candidate",
+      "rating": null,
+      "favorite": false,
+      "notes": "Conference-meta — lands harder in the room."
+    },
+    {
+      "id": "the-first-question-gladiator",
+      "name": "The First-Question Gladiator",
+      "profile": "Reaches the mic before the applause fades. 'More of a comment than a question.' The room knows. The speaker knows. Asks it anyway, for all of us who never would.",
+      "domain": "conference",
+      "status": "candidate",
+      "rating": null,
+      "favorite": false,
+      "notes": "Conference-meta."
+    },
+    {
+      "id": "the-swag-forager",
+      "name": "The Swag Forager",
+      "profile": "Has optimized the sponsor-booth loop for maximum t-shirt yield. Knows which booth restocked the good stickers. Tote bag is full by 10am. Will demo your product if it means a second water bottle.",
+      "domain": "conference",
+      "status": "candidate",
+      "rating": null,
+      "favorite": false,
+      "notes": "Conference-meta."
+    },
+    {
+      "id": "the-sticker-diplomat",
+      "name": "The Sticker Diplomat",
+      "profile": "Laptop lid is a treaty map of every conference attended. Trades stickers like currency, reads alliances in logos. Quietly the most connected person in the building. Soft power, hard shell.",
+      "domain": "conference",
+      "status": "candidate",
+      "rating": null,
+      "favorite": false,
+      "notes": "Conference-meta."
+    },
+    {
+      "id": "the-testflight-necromancer",
+      "name": "The TestFlight Necromancer",
+      "profile": "Submits the build at 11pm and refreshes App Store Connect like a slot machine. Has named all forty-seven builds. Knows the reviewer's timezone better than their own family's.",
+      "domain": "native",
+      "status": "candidate",
+      "rating": null,
+      "favorite": false,
+      "notes": ""
+    },
+    {
+      "id": "the-type-astronaut",
+      "name": "The Type Astronaut",
+      "profile": "Has typed the un-typeable. The generics are correct and no living human can read them. Left orbit somewhere around the third conditional type and has not returned. The compiler is happy. Ascended.",
+      "domain": "craft",
+      "status": "candidate",
+      "rating": null,
+      "favorite": false,
+      "notes": ""
+    },
+    {
+      "id": "the-console-log-detective",
+      "name": "The Console.log Detective",
+      "profile": "Refuses the debugger. Solves every mystery with strategically placed print statements. 'here', 'here2', 'WHY'. Cracks the case every time and ships one of the logs to prod.",
+      "domain": "craft",
+      "status": "candidate",
+      "rating": null,
+      "favorite": false,
+      "notes": "Universal-guilt card — everyone's guilty, so it bonds rather than stings."
+    },
+    {
+      "id": "the-dependency-doomsayer",
+      "name": "The Dependency Doomsayer",
+      "profile": "Runs npm audit and reads the results aloud at standup. Sees forty-seven critical vulnerabilities in a static marketing site and will not be calmed. The supply chain is coming for us all.",
+      "domain": "process",
+      "status": "candidate",
+      "rating": null,
+      "favorite": false,
+      "notes": ""
+    },
+    {
+      "id": "the-ship-it-gremlin",
+      "name": "The Ship-It Gremlin",
+      "profile": "Done is better than perfect, and also better than tested. Merges on Friday at 4:55. Lives without fear because lives without staging. The hotfix is part of the plan. The hotfix was always the plan.",
+      "domain": "process",
+      "status": "candidate",
+      "rating": null,
+      "favorite": false,
+      "notes": ""
+    },
+    {
+      "id": "the-flag-gardener",
+      "name": "The Flag Gardener",
+      "profile": "Tends a sprawling garden of feature flags, half of them rolled out, none of them removed. Cannot remember which are on in prod. Waters them all the same. Something in there has gone feral.",
+      "domain": "process",
+      "status": "candidate",
+      "rating": null,
+      "favorite": false,
+      "notes": ""
+    },
+    {
+      "id": "the-storybook-hermit",
+      "name": "The Storybook Hermit",
+      "profile": "Built the component library in perfect isolation — documented, themed, accessible, alone. Nobody imports it. They are at peace in their workshop, polishing buttons no one will press.",
+      "domain": "craft",
+      "status": "candidate",
+      "rating": null,
+      "favorite": false,
+      "notes": ""
+    }
+  ]
+}
