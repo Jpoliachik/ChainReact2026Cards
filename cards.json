@@ -14,11 +14,13 @@
       "moves": [
         {
           "name": "Misdirection",
+          "type": "psychic",
           "damage": "50",
           "description": "Buries a half-second of lag behind a flourish so smooth the hit lands before anyone notices they waited."
         },
         {
           "name": "Hypnotic Fling",
+          "type": "psychic",
           "damage": "60",
           "description": "Flicks a list into a buttery 60fps spin that leaves onlookers Mesmerized — they cannot look away."
         }
@@ -40,13 +42,15 @@
       "moves": [
         {
           "name": "Riddle of the Crossing",
+          "type": "nature",
           "damage": "30",
           "description": "Won't raise the gate until you answer his riddle — and the answer always comes back a few frames late."
         },
         {
           "name": "Flattened to Fit",
+          "type": "strength",
           "damage": "90",
-          "description": "Mashes every object into plain JSON before it may cross, so your data always arrives a little duller than it left."
+          "description": "Mashes every object into plain JSON to cross — your data arrives duller than it left."
         }
       ],
       "backgroundColor": "green",
@@ -63,11 +67,13 @@
       "moves": [
         {
           "name": "Just One More Frame",
+          "type": "cosmic",
           "damage": "16",
           "description": "Re-runs the same transition for the ninth hour straight; the move never resolves, because it's never quite right."
         },
         {
           "name": "Spring of Madness",
+          "type": "electric",
           "damage": "120",
           "description": "Bolts a bouncy spring onto an element that had no reason to move — now it overshoots every single time."
         }
@@ -89,11 +95,13 @@
       "moves": [
         {
           "name": "Sniff Test",
+          "type": "toxic",
           "damage": "70",
           "description": "Swirls a pull request, sips, and names which model wrote it from the aftertaste alone."
         },
         {
           "name": "Guardrail Pairing",
+          "type": "toxic",
           "damage": "100",
           "description": "Refuses to let an AI suggestion near main without a test and a lint rule chaperoning it."
         }
@@ -115,13 +123,15 @@
       "moves": [
         {
           "name": "Silent Treatment",
+          "type": "water",
           "damage": "0",
           "description": "Says absolutely nothing — and somehow that's exactly the help you needed to hear your own mistake."
         },
         {
           "name": "The Duck Knows",
+          "type": "psychic",
           "damage": "200",
-          "description": "Sits in serene rubber judgment until the bug confesses itself; takes none of the blame, accepts all of the credit."
+          "description": "Sits in serene rubber judgment until the bug confesses itself — takes no blame, all the credit."
         }
       ],
       "backgroundColor": "blue",
@@ -138,11 +148,13 @@
       "moves": [
         {
           "name": "Print Statement",
+          "type": "electric",
           "damage": "404",
           "description": "Drops a console.log('here') at the scene of every crime until the bug confesses."
         },
         {
           "name": "Ship the Evidence",
+          "type": "electric",
           "damage": "500",
           "description": "Accidentally deploys one of the logs straight to production."
         }
@@ -161,11 +173,13 @@
       "moves": [
         {
           "name": "Token Bonfire",
+          "type": "fire",
           "damage": "1M",
           "description": "Sets a million tokens ablaze before lunch and calls it research."
         },
         {
           "name": "Hot Swap",
+          "type": "electric",
           "damage": "6",
           "description": "Bounces between six terminals so fast he loses track of which agent is in prod."
         }
@@ -187,11 +201,13 @@
       "moves": [
         {
           "name": "Repo Dump",
+          "type": "psychic",
           "damage": "∞",
           "description": "Pastes the entire codebase into context because choosing which files felt risky."
         },
         {
           "name": "Sketchy MCP",
+          "type": "toxic",
           "damage": "50",
           "description": "Wires the agent to a random unvetted MCP server because it had a cool README."
         }
@@ -210,11 +226,13 @@
       "moves": [
         {
           "name": "Left-Pad Flashback",
+          "type": "toxic",
           "damage": "11",
           "description": "Still hasn't recovered from the day eleven lines un-published and broke the entire internet."
         },
         {
           "name": "Vendor Everything",
+          "type": "strength",
           "damage": "90",
           "description": "Hand-copies every dependency into the repo so no registry can ever betray him again."
         }
@@ -233,11 +251,13 @@
       "moves": [
         {
           "name": "Phantom Tip",
+          "type": "psychic",
           "damage": "200",
           "description": "Promises the model a $200 tip it will never receive; quality mysteriously improves."
         },
         {
           "name": "All-Caps Plea",
+          "type": "psychic",
           "damage": "40",
           "description": "When politeness fails, resorts to typing 'IMPORTANT: DO NOT HALLUCINATE' in all caps."
         }
@@ -256,13 +276,15 @@
       "moves": [
         {
           "name": "The Long Diff",
+          "type": "dream",
           "damage": "4K",
-          "description": "Wakes before the realm to read every line the agent wrote in the dark — all four thousand of them — before a single one reaches main."
+          "description": "Reads every line the agent wrote overnight — all four thousand — before a single one reaches main."
         },
         {
           "name": "Hold the Wall",
+          "type": "dream",
           "damage": "100",
-          "description": "Lets nothing past into the codebase unreviewed, no matter how confident the agent's overnight summary sounded."
+          "description": "Lets nothing into the codebase unreviewed, however confident the agent's overnight summary."
         }
       ],
       "backgroundColor": [
@@ -282,13 +304,15 @@
       "moves": [
         {
           "name": "It's Dangerous to Go Alone",
+          "type": "crystal",
           "damage": "3",
-          "description": "Refuses to let one dev context-switch between building, guarding, and architecting — splits the power three ways so each hero wields a single piece well."
+          "description": "Won't let one dev build, guard, and architect at once — splits the power three ways, a hero for each piece."
         },
         {
           "name": "Guard the Gates",
+          "type": "crystal",
           "damage": "110",
-          "description": "Lets the agents build with abandon inside the sandbox, but no pull request crosses into main without a human standing at the gate."
+          "description": "Lets the agents build with abandon in the sandbox, but no PR reaches main without a human at the gate."
         }
       ],
       "backgroundColor": [
@@ -308,13 +332,15 @@
       "moves": [
         {
           "name": "Sleight of Hand",
+          "type": "psychic",
           "damage": "80",
           "description": "Performs the one rehearsed happy path so smoothly the audience never sees the four that crash."
         },
         {
           "name": "The Loaded Deck",
+          "type": "psychic",
           "damage": "200",
-          "description": "Quietly stubs the flaky endpoint with a hardcoded response so the magic never depends on the venue wifi."
+          "description": "Stubs the flaky endpoint with a hardcoded response so the magic never depends on venue wifi."
         }
       ],
       "backgroundColor": "purple",
@@ -331,11 +357,13 @@
       "moves": [
         {
           "name": "Sub-Pixel Incision",
+          "type": "crystal",
           "damage": "1",
           "description": "Shifts a single element one point with a steady hand, and somehow the whole screen finally breathes."
         },
         {
           "name": "Eagle Eye",
+          "type": "crystal",
           "damage": "2",
           "description": "Spots the misaligned padding from across the room and cannot, will not, unsee it."
         }
@@ -357,11 +385,13 @@
       "moves": [
         {
           "name": "The Long Migration",
+          "type": "water",
           "damage": "40",
-          "description": "Sits in perfect calm through forty breaking changes and a thousand deprecation warnings without losing serenity."
+          "description": "Sits in perfect calm through forty breaking changes and a thousand deprecation warnings."
         },
         {
           "name": "Bear the Suffering",
+          "type": "water",
           "damage": "100",
           "description": "Absorbs the entire SDK bump alone so the rest of the team never has to open the changelog."
         }
@@ -383,13 +413,15 @@
       "moves": [
         {
           "name": "Patch-Package and Pray",
+          "type": "strength",
           "damage": "2",
-          "description": "Reaches into node_modules, fixes the broken native module by hand, and freezes it there forever with patch-package."
+          "description": "Fixes the broken native module by hand in node_modules and freezes it with patch-package."
         },
         {
           "name": "Do Not Upgrade",
+          "type": "strength",
           "damage": "90",
-          "description": "Guards an app ejected on an ancient RN version — the native folders are hand-tuned, and nobody dares run the upgrade."
+          "description": "Guards an app ejected on an ancient RN version — native folders hand-tuned, upgrade never run."
         }
       ],
       "backgroundColor": [
@@ -409,11 +441,13 @@
       "moves": [
         {
           "name": "Zero to Production",
+          "type": "fire",
           "damage": "60",
           "description": "Goes from `npx create-expo-app` to a live build in Expo Go before anyone else has finished `pod install`."
         },
         {
           "name": "No Native Rebuild",
+          "type": "fire",
           "damage": "100",
           "description": "Stays in pure JS on managed Expo, so there's never a native folder to rebuild — just reload and keep rolling."
         }
@@ -435,13 +469,15 @@
       "moves": [
         {
           "name": "Rite of behavior",
+          "type": "sound",
           "damage": "2",
-          "description": "Chants a different KeyboardAvoidingView `behavior` for each platform and prays the input clears the keyboard on one."
+          "description": "Chants a different KeyboardAvoidingView `behavior` per platform, praying the input clears on one."
         },
         {
           "name": "Banish the Rising Tide",
+          "type": "sound",
           "damage": "60",
-          "description": "Installs react-native-keyboard-controller at last, and the swelling keyboard is driven back beneath the fold for good."
+          "description": "Installs react-native-keyboard-controller at last, and the keyboard sinks beneath the fold."
         }
       ],
       "backgroundColor": [
@@ -461,13 +497,15 @@
       "moves": [
         {
           "name": "Patch It Live",
+          "type": "electric",
           "damage": "1.0.1",
-          "description": "Fires off an `eas update` and the fresh JS bundle lands on every device, skipping the whole App Store review queue."
+          "description": "Fires an `eas update` and the fresh JS bundle lands on every device, skipping the store review queue."
         },
         {
           "name": "Mind the Runtime Version",
+          "type": "electric",
           "damage": "86",
-          "description": "Slips in a change that touches native code; the runtimeVersion drifts and the slick OTA quietly reaches nobody."
+          "description": "Touches native code one day; the runtimeVersion drifts and the slick OTA quietly reaches nobody."
         }
       ],
       "backgroundColor": [
@@ -487,13 +525,15 @@
       "moves": [
         {
           "name": "Look Into My Eyes",
+          "type": "psychic",
           "damage": "1",
-          "description": "Locks eyes with the reviewer through love-letter notes and a flawless pre-logged-in demo account; the build glides through on the very first pass, expedited."
+          "description": "Charms the reviewer with sweet notes and a pre-logged-in demo, and the build sails through on the first pass."
         },
         {
           "name": "Guideline 4.3",
+          "type": "dream",
           "damage": "4.3",
-          "description": "The one charm she cannot cast back — a faceless rejection for 'spam, minimum functionality,' binding and unexplained, no matter how perfect the spell."
+          "description": "The one charm she can't cast back — a faceless rejection for 'minimum functionality.'"
         }
       ],
       "backgroundColor": [
@@ -501,7 +541,8 @@
         "purple"
       ],
       "description": "A glamorous sorceress who has mastered the dark, intimate art of App Store submission. She doesn't fear the review queue — she has seduced it. Reviewer notes written like love letters, a pristine pre-logged-in demo account, screenshots staged just so, metadata that whispers exactly what Apple wants to hear; her builds sail through on the first pass while everyone else eats three rejections. Knows the guidelines like scripture. The counterpart to the OTA Smuggler — where he sneaks past the gatekeeper, she charms it into saying yes. The terror underneath the confidence: the god is still faceless and capricious, and no spell is total — do everything right and Guideline 4.3 can still strike from nowhere, binding and unexplained.",
-      "imagePrompt": "A glamorous enchantress-sorceress with a sly knowing smile and swirling hypnotic spiral eyes, leaning in close and casting a charm spell with one outstretched hand — shimmering pink-and-violet enchantment magic and looping hypnotic spirals pouring from her fingertips and her gaze. Before her, a faceless robed App Store gatekeeper-reviewer (a cloaked figure with a softly glowing apple-shaped emblem on its chest) has gone glassy-eyed and slack under her spell, dreamily raising a giant glowing rubber stamp to bring it down on her floating submission scroll. The stamp reads 'APPROVED'. A small floating phone with a pristine glowing app hovers beside her like a charmed offering. Caricature: oversized seductive confident grin, huge mesmerizing hypnotic eyes, comic proportions. Dreamy enchanted setting where a temple gate meets a candlelit boudoir, drifting sparkles and incense smoke, rich seductive magenta-and-purple glow. Render only the one short label — 'APPROVED' on the stamp — cleanly and legibly, and no other text anywhere."
+      "imagePrompt": "A glamorous enchantress-sorceress with a sly knowing smile and swirling hypnotic spiral eyes, leaning in close and casting a charm spell with one outstretched hand — shimmering pink-and-violet enchantment magic and looping hypnotic spirals pouring from her fingertips and her gaze. Before her, a faceless robed App Store gatekeeper-reviewer (a cloaked figure with a softly glowing apple-shaped emblem on its chest) has gone glassy-eyed and slack under her spell, dreamily raising a giant glowing rubber stamp to bring it down on her floating submission scroll. The stamp reads 'APPROVED'. A small floating phone with a pristine glowing app hovers beside her like a charmed offering. Caricature: oversized seductive confident grin, huge mesmerizing hypnotic eyes, comic proportions. Dreamy enchanted setting where a temple gate meets a candlelit boudoir, drifting sparkles and incense smoke, rich seductive magenta-and-purple glow. Render only the one short label — 'APPROVED' on the stamp — cleanly and legibly, and no other text anywhere.",
+      "image": "art/the-app-store-enchantress.png"
     },
     {
       "id": "the-qa-phantom",
@@ -512,13 +553,15 @@
       "moves": [
         {
           "name": "Edge Case from Beyond",
+          "type": "dream",
           "damage": "13",
-          "description": "Conjures the case nobody built for — airplane mode mid-upload, a rotate at checkout — and the happy path crumbles."
+          "description": "Conjures the case nobody built for — a rotate at checkout — and the happy path crumbles."
         },
         {
           "name": "It Repros on My Device",
+          "type": "dream",
           "damage": "100",
-          "description": "Hits the impossible crash every time — but only in the release build, on a three-year-old Android no one else owns."
+          "description": "Hits the impossible crash every time — only in the release build, on an Android no one else owns."
         }
       ],
       "backgroundColor": [
@@ -538,13 +581,15 @@
       "moves": [
         {
           "name": "Hear Both Sides",
+          "type": "crystal",
           "damage": "2",
-          "description": "Weighs HEAD against incoming line by line — even the gnarled Podfile.lock conflict that no one else will touch."
+          "description": "Weighs HEAD against incoming line by line — even the Podfile.lock conflict no one else will touch."
         },
         {
           "name": "Ruling from the Bench",
+          "type": "crystal",
           "damage": "200",
-          "description": "Renders the binding verdict on the post-upgrade ios/ and android/ conflict, and the rebase comes out mercifully clean."
+          "description": "Renders the binding verdict on the post-upgrade ios/ and android/ conflict, and the rebase comes out clean."
         }
       ],
       "backgroundColor": [
@@ -554,6 +599,33 @@
       "description": "The calm, impartial arbiter every team needs when two branches collide and neither developer will yield — never more so than after a React Native upgrade, when the ios/, android/, and Podfile.lock conflicts pile up. Hears both sides, weighs the diff with a steady hand, and brings order to the chaos of '<<<<<<< HEAD'. Respected, fair, faintly theatrical in the wig — the senior who settles the standoff instead of bleeding in the arena.",
       "imagePrompt": "A dignified judge in a tall white curly barrister's wig and flowing black robe, perched high behind an ornate wooden courtroom bench, banging a single glowing gavel to settle a dispute. Below, two glowing rival code-branch streams are tangled together in tug-of-war, knotted with '<<<<<<<' conflict chevrons. To one side, a set of golden scales of justice weighs two little glowing code-blocks labeled 'HEAD' and 'incoming' in perfect balance. Stately wood-paneled courtroom, warm authoritative amber light, shafts of dignified sunlight. Caricature: oversized powdered wig, stern-but-fair expression, comic proportions. Render only the two short scale labels — 'HEAD' and 'incoming' — cleanly, and no other text.",
       "image": "art/the-merge-magistrate.png"
+    },
+    {
+      "id": "the-keypunch-hermit",
+      "name": "The Keypunch Hermit",
+      "hp": 640,
+      "type": "nature",
+      "saying": "Autocomplete is for people who don't know the next line.",
+      "moves": [
+        {
+          "name": "No Copilot",
+          "type": "strength",
+          "damage": "0",
+          "description": "Slaps away every glowing autocomplete the instant it appears — not one token has ever touched his code, and he intends to keep it that way."
+        },
+        {
+          "name": "Knows Every Line",
+          "type": "psychic",
+          "damage": "100%",
+          "description": "Alone among mortals, he can recite his entire system from memory — card by punched card — because no machine ever put a single line there for him."
+        }
+      ],
+      "backgroundColor": [
+        "green",
+        "teal"
+      ],
+      "description": "In the age of agents that burn a million tokens before lunch, the Keypunch Hermit retreated to his cave and never looked back. He writes every program by hand, punches every card himself, and feeds the stack into a clattering mainframe older than most of the attendees — not because he can't use AI, but because he took a vow not to. To him, code a machine wrote is code you don't understand, and code you don't understand isn't yours. He is gloriously, defiantly slow. He is also the only soul alive who knows every line of his system by heart, because nothing in it was ever suggested to him. The proud anti-AI holdout the whole agentic deck needs as its foil — and the card every token-burner secretly feels a pang looking at.",
+      "imagePrompt": "A grizzled, wild-bearded old hermit in a tattered cardigan and half-moon spectacles, hunched gleefully over an enormous clattering vintage mainframe, feeding a thick stack of punch cards into its slot by hand with the proud focus of a monk at prayer. Freshly-punched cards and curling ticker-tape spill everywhere around him. With his other hand he irritably swats away a little cloud of glowing, translucent AI agent-sprites that hover around him offering to help, holding out glowing wordless code-suggestion bubbles he refuses to even look at. A dim green-phosphor CRT terminal glows beside the mainframe. Caricature: oversized bushy eyebrows, huge stubborn squint, defiant proud grin, ink-stained fingers, comic proportions. Cozy cave-like retro-tech den lit by warm amber tubes and green screen-glow, towering shelves of punch-card boxes and reel-to-reel tape, deep atmospheric shadows. No text anywhere."
     }
   ]
 }
