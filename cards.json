@@ -201,25 +201,25 @@
       ],
       "description": "Sworn protector of the codebase, keeping the long watch while the autonomous agents grind through the night. Goes to bed with a prompt running and wakes to a wall of green-and-red diff that wrote itself in the dark. Trusts no summary, reads every line, reverts without mercy. Grim, loyal, perpetually under-slept — the shield that guards the realm of main from whatever crept in at 3am. Takes the oath seriously: the merge is dark and full of terrors.",
       "imagePrompt": "A grim, bundled-up night-watchman hero in the style of a frozen northern fantasy ranger, caricatured with an oversized shaggy black fur cloak swallowing his tiny determined face, standing guard atop a colossal wall in falling snow. The wall itself is built from stacked, faintly glowing blocks of code and commit-bricks, stretching off into blue twilight. He grips a great longsword whose blade glows softly like a cursor, holding it up to inspect a long unfurling scroll of diff — glowing green additions and red deletions scrolling down the parchment. Behind him, beyond the wall, the dark forest bristles with faint glowing eyes (the night's untested commits). Cold blue-and-white dawn palette, breath fogging, dramatic wintry light, heroic last-stand pose. No text anywhere.",
-      "image": ""
+      "image": "art/the-nights-watch.png"
     },
     {
       "id": "the-ai-triforce",
-      "name": "The Hero of the Realm",
-      "saying": "It's dangerous to go alone — so I'm leaving the chatbot here.",
+      "name": "The Triforce Bearer",
+      "saying": "It's dangerous to go alone. Take this.",
       "moves": [
         {
-          "name": "Master Sword",
-          "description": "Cleaves the gratuitous AI feature out of the product, leaving only the thing the app was actually good at."
+          "name": "It's Dangerous to Go Alone",
+          "description": "Refuses to let one dev context-switch between building, guarding, and architecting — splits the power three ways so each hero wields a single piece well."
         },
         {
-          "name": "Decline the Gift",
-          "description": "Politely refuses the merchant's 'It's dangerous to go alone — take this AI!' for the fortieth time this quarter."
+          "name": "Guard the Gates",
+          "description": "Lets the agents build with abandon inside the sandbox, but no pull request crosses into main without a human standing at the gate."
         }
       ],
-      "description": "A pint-sized green-clad hero on an endless quest to keep the realm — his app — free of bolted-on AI. Everywhere he turns, a glowing merchant pops out of the bushes: 'I have a solution for you! Let me show you how to add AI to your app!' He just wants to ship the small, sharp, beloved thing. Wields the Triforce not as power but as principle — focus, restraint, taste — and a sword for trimming every feature nobody asked for. Not anti-AI; anti-shoehorn. The bravest 'no' in the kingdom.",
-      "imagePrompt": "A pint-sized green-tunic'd fantasy hero (classic adventure-game knight energy, pointed cap, little leather boots) caricatured with a huge determined frown and oversized head, planted in a fighting stance with a gleaming sword raised and a round shield held up. Emblazoned on the shield is a single glowing golden triangle-of-three-triangles emblem. He is bravely fending off a pushy, grinning glowing AI-orb 'merchant' that has popped out of the bushes offering him a cursed, over-decorated treasure chest stuffed with chatbot bubbles and sparkles — and he is firmly turning it away with the shield. Lush green storybook overworld, rolling hills, a few pixel-flowers, bright heroic adventure-game palette, golden afternoon light. No text anywhere.",
-      "image": "art/the-ai-triforce.png"
+      "description": "Wielder of the AI Triforce — Gant Laborde's agentic-team method, where AI gives everyone superpowers but a dungeon with no locked doors is no place to ship from. Instead of one person context-switching (slower, and prone to error), the power splits three ways: the Builder ships features fast inside the sandbox but can't merge; the Protector owns safety, tests, and the constraints of what must never happen; the Organizer guards architecture and holds back the drift. Three humans guarding the gates — how you pull deterministic outcomes out of a non-deterministic machine. A tribute to Gant's piece; he'll be at Chain React.",
+      "imagePrompt": "A heroic pint-sized green-tunic'd fantasy adventurer (classic top-down adventure-game energy, pointed cap, little leather boots), caricatured with an oversized triumphant grin and huge bright eyes, standing in a victorious hero pose and raising overhead a single radiant golden Triforce — three glowing triangles fitted into one larger triangle, each of the three lit a distinct color and bearing a tiny icon: a little hammer, a little shield, and a little gear. A glowing legendary sword hangs at his hip. Around him, three small friendly glowing agent-sprite fairies buzz helpfully. Behind him stands a sturdy stone castle gateway with a closed, well-guarded door. Lush green storybook overworld, rolling hills, golden heroic light, bright saturated adventure-game palette. Render only the three small icons inside the triangles (hammer, shield, gear) — no words or text anywhere.",
+      "image": ""
     },
     {
       "id": "the-demo-illusionist",
