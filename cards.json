@@ -10,7 +10,7 @@
       "name": "The Gesture Jester",
       "saying": "Don't watch the swipe — watch the hands.",
       "moves": [
-        { "name": "Sleight of Pan", "description": "Redirects your finger so smoothly you swear the screen moved itself." },
+        { "name": "Misdirection", "description": "Hides a half-second of lag behind a flourish so smooth you forget you ever waited." },
         { "name": "Hypnotic Fling", "description": "Flicks a list into a buttery 60fps spin you cannot look away from." }
       ],
       "description": "A vaudeville trickster who treats every touch interaction as a magic act. Obsessive about how a gesture feels in the thumb; will rebuild a swipe twenty times for an imperceptible gain. Charming, theatrical, quietly smug that his best work is the work nobody notices.",
@@ -21,33 +21,33 @@
       "name": "The Bridge Troll",
       "saying": "Crossing to native? That'll cost ya.",
       "moves": [
-        { "name": "Toll of Complexity", "description": "Charges one extra week of debugging for every value passed across the bridge." },
-        { "name": "Thread Hop", "description": "Yeets your call onto the native thread and waits, smiling, to see if it returns." }
+        { "name": "Toll Booth (Legacy)", "description": "Remembers when every native call paid him a fat serialization fee. Misses the income, not the lag." },
+        { "name": "Express Lane", "description": "Now waves your call straight through to native, synchronous and toll-free. He's reformed. Mostly." }
       ],
-      "description": "A deceptively adorable gatekeeper of the JS↔native boundary. Sweet, sing-songy, and utterly immovable about serialization and the New Architecture. Knows the bridge intimately and quietly enjoys the toll. The gag is cuddly cuteness delivering hard architectural truths.",
-      "imagePrompt": "Bright rainbow 'Trolls'-movie cartoon style: a pint-sized impossibly cute troll with a giant poof of neon rainbow hair and sparkly skin, perched on a candy-colored rope bridge between two small floating islands — one of glowing curly-braces, one of shiny native gears. Clutches a tiny toll-gate and a fistful of glittering 'COMPLEXITY' coins. Felt textures, glitter, huge happy eyes."
+      "description": "A modernized gatekeeper of the JS↔native boundary. Once grew rich on the Old Architecture's serialization tolls; the New Architecture put him out of the toll business and, grudgingly, made him faster. Not a villain anymore — nostalgic, efficient, a little wistful about the old bridge. The gag is a reformed troll who's quietly proud of going legit.",
+      "imagePrompt": "Bright rainbow 'Trolls'-movie cartoon style: a pint-sized impossibly cute troll with a giant poof of neon rainbow hair and sparkly skin, standing proudly between a crumbling old rope toll-bridge and a sleek glowing new express bridge that spans two floating islands — one of curly-braces, one of native gears. He waves traffic through the new lane while a dusty 'TOLL' sign gathers cobwebs. Felt textures, glitter, warm proud grin."
     },
     {
       "id": "the-reanimated-wizard",
       "name": "The Reanimated Wizard",
-      "saying": "Everything animates. Everything.",
+      "saying": "The easing's off. I can feel it.",
       "moves": [
-        { "name": "Worklet Conjure", "description": "Summons a 60fps animation that runs on the UI thread and never drops a frame." },
+        { "name": "The Hundredth Tween", "description": "Re-times the same transition for the ninth straight hour; this pass is imperceptibly better." },
         { "name": "Spring of Madness", "description": "Adds a bouncy spring to an element that absolutely did not need to move." }
       ],
-      "description": "A power-mad animation sorcerer who believes stillness is a bug. Fluent in shared values, worklets, and easing curves; cannot resist making things move. Brilliant, a little unhinged, deeply pleased with his own physics. Always one spring past 'tasteful.'",
-      "imagePrompt": "Psychedelic acid-fantasy wizard: a wild-eyed robed sorcerer with a long flowing beard, casting with both hands as trippy neon fractal energy and rainbow easing-curves spiral from a glowing staff, bending floating UI elements into liquid motion. Glowing runes shaped like spring-physics graphs, a sparkling third eye, hyper-saturated kaleidoscopic colors."
+      "description": "A perfectionist animation sorcerer who can feel a wrong easing curve in his bones. Fluent in shared values, worklets, and damping ratios; will not ship until the motion lands exactly right, which is never. Brilliant, a little unhinged, deeply pleased with physics no one else will ever consciously notice.",
+      "imagePrompt": "Psychedelic acid-fantasy wizard: a wild-eyed robed sorcerer with a long flowing beard, casting with both hands as trippy neon fractal energy and rainbow easing-curves spiral from a glowing staff, meticulously bending a single floating UI element into liquid motion. Glowing runes shaped like spring-physics graphs, a sparkling third eye, hyper-saturated kaleidoscopic colors."
     },
     {
-      "id": "the-hallucination-archaeologist",
-      "name": "The Hallucination Archaeologist",
-      "saying": "This method has never existed.",
+      "id": "the-slop-sommelier",
+      "name": "The Slop Sommelier",
+      "saying": "I can taste the AI in this PR.",
       "moves": [
-        { "name": "Brush of Doubt", "description": "Dusts off an AI-written function to reveal it calls an API that was never real." },
-        { "name": "Citation Needed", "description": "Demands the source for a confidently invented method and receives only silence." }
+        { "name": "Sniff Test", "description": "Swirls a pull request, sips, and names which model wrote it from the aftertaste alone." },
+        { "name": "Guardrail Pairing", "description": "Refuses to let an AI suggestion near main without a test and a lint rule chaperoning it." }
       ],
-      "description": "A patient, exhausted excavator of AI-generated code. Treats every confident suggestion as a possible fossil of a thing that never lived. Skeptical, meticulous, perpetually sighing. Knows the model is most convincing exactly when it's wrong, and someone has to dig.",
-      "imagePrompt": "Jurassic-Park style: a sun-bleached paleontologist in khaki field shirt and wide-brim hat crouched at a desert dig, brushing dust off a huge fossilized 'bone' shaped like the text `array.shuffleSmartly()` — a method that never existed. Nearby fossils spell other fake API calls. Warm amber light, a dusty Jeep in the distance, thermos of cold coffee, a visible weary sigh."
+      "description": "A discerning connoisseur of machine-written code who can identify the model, the temperature, and the vintage from a single function. The team's last line of defense against AI slop — pairs every suggestion with guardrails before it touches production. Not anti-AI, just refuses to swallow it unverified.",
+      "imagePrompt": "Fancy wine-sommelier style: an impeccably dressed connoisseur in a tuxedo and tasting apron, swirling a crystal glass that holds glowing liquid code instead of wine, nose in the glass, eyes narrowed in expert judgment. A tasting flight of little glasses labeled with AI-model names sits nearby, a spit-bucket overflows with rejected slop, a rolled-up scroll of lint rules tucked under one arm. Rich, refined, candlelit wine-cellar."
     },
     {
       "id": "the-standup-ghost",
@@ -55,7 +55,7 @@
       "saying": "No blockers.",
       "moves": [
         { "name": "Camera Off", "description": "Vanishes into a dim avatar circle so completely no one remembers they're there." },
-        { "name": "Benevolent Haunting", "description": "Lingers silently in the call for ninety minutes, contributing a single thumbs-up." }
+        { "name": "Slack It Later", "description": "Promises to drop the update in the channel after the call, and is never heard from again." }
       ],
       "description": "A gentle, well-meaning specter of remote work. Always present, never quite there; hasn't unmuted since March but radiates calm, supportive energy. Lovable, not lazy — the haunting is friendly. Everyone has been this ghost, and that shared guilt is the point.",
       "imagePrompt": "Classic Scooby-Doo / retro Hanna-Barbera cartoon: a goofy friendly bedsheet ghost with big googly eyes floating inside one tile of a video-call grid, its tile camera-off (a dim avatar circle), mouthing 'wooOOoo... no blockers.' Cobwebs in the tile corners, a little 'last spoke: March' tombstone, neighboring tiles glowing with normal faces. Flat retro colors, bouncy linework."
@@ -74,46 +74,46 @@
     {
       "id": "the-agent-wrangler",
       "name": "The Agent Wrangler",
-      "saying": "Six agents. One's in prod. Yeehaw.",
+      "saying": "Burned a million tokens by lunch.",
       "moves": [
-        { "name": "Six-Terminal Stampede", "description": "Sets six AI agents loose at once and loses track of all of them by lunch." },
-        { "name": "Lasso of Hope", "description": "Throws a rope at whichever agent is currently rewriting main and prays." }
+        { "name": "Token Bonfire", "description": "Sets a million tokens ablaze before lunch and calls it research." },
+        { "name": "Hot Swap", "description": "Bounces between six terminals so fast he loses track of which agent is in prod." }
       ],
-      "description": "A frontier cowboy of the agentic era, herding more autonomous coding agents than any human can track. Optimistic, overextended, perpetually one terminal away from disaster. Lives the thrill and terror of orchestrating things that act on their own.",
-      "imagePrompt": "Wild-west cowboy: a dusty cowboy in a ten-gallon hat and chaps swinging a glowing lasso, trying to herd a stampede of six wild robot-agent broncos charging in six directions, each branded with a different terminal prompt — one bolting toward a cliff edge labeled 'PROD'. Sunset mesas, tumbleweeds, a frazzled-but-determined grin."
+      "description": "A frontier cowboy of the agentic era who runs more agents than any human can track and burns tokens like a campfire. Optimistic, overextended, context-switching so fast he forgets what each terminal was doing. Lives the thrill and terror of orchestrating things that act on their own.",
+      "imagePrompt": "Wild-west cowboy: a dusty cowboy in a ten-gallon hat and chaps swinging a glowing lasso, trying to herd a stampede of six wild robot-agent broncos charging in six directions, each branded with a different terminal prompt — one bolting toward a cliff edge labeled 'PROD'. Flaming token-coins scatter from his saddlebags. Sunset mesas, tumbleweeds, a frazzled-but-determined grin."
     },
     {
-      "id": "the-context-hoarder",
-      "name": "The Context Hoarder",
-      "saying": "Just paste the whole repo.",
+      "id": "the-oversharer",
+      "name": "The Oversharer",
+      "saying": "Just give it everything.",
       "moves": [
-        { "name": "Whole Codebase Dump", "description": "Pastes every file into the context window because selecting felt too risky." },
-        { "name": "Token Limit Tantrum", "description": "Treats the context cap as a personal insult and pastes again, harder." }
+        { "name": "Repo Dump", "description": "Pastes the entire codebase into context because choosing which files felt risky." },
+        { "name": "Sketchy MCP", "description": "Wires the agent to a random unvetted MCP server because it had a cool README." }
       ],
-      "description": "A sweet, anxious pack-rat who cannot bear to leave anything out of the prompt. Convinced the one file they omit is the file the model needed. Generous to a fault, allergic to curation. Driven by the relatable fear that the missing context is the important context.",
-      "imagePrompt": "Cute cartoon trash-panda raccoon: wide-eyed and guilty, frantically clutching a teetering armful of files, folders and whole repos, cramming one more codebase into a bulging sack labeled 'just in case' inside a cluttered burrow. A 'TOKEN LIMIT' sign snapped in half underfoot. Big pleading eyes, mid-grab, cozy chaotic glow."
+      "description": "A trusting soul who believes more context can only help and that access controls are for cowards. Dumps the whole repo, hooks the agent to every MCP it asks for, clicks 'allow all' without reading. YOLO incarnate. The fear underneath: the one thing you withhold is the thing it needed.",
+      "imagePrompt": "Cute cartoon trash-panda raccoon with gremlin energy: wide-eyed and gleeful, jamming a fistful of sketchy glowing cables labeled 'MCP' into a giant friendly AI brain while the entire repo's files cascade into its mouth. A big red 'ALLOW ALL?' dialog already clicked YES, security padlocks popping off and tumbling in the background. Chaotic, neon server-room glow."
     },
     {
-      "id": "the-dependency-doomsayer",
-      "name": "The Dependency Doomsayer",
-      "saying": "47 criticals. We're all doomed.",
+      "id": "the-supply-chain-prepper",
+      "name": "The Supply Chain Prepper",
+      "saying": "npm got popped again. Told you all.",
       "moves": [
-        { "name": "Audit Sermon", "description": "Reads the full npm audit output aloud at standup, slowly, line by line." },
-        { "name": "Supply Chain Prophecy", "description": "Foresees catastrophe in a transitive dependency of a static landing page." }
+        { "name": "Left-Pad Flashback", "description": "Still hasn't recovered from the day eleven lines un-published and broke the entire internet." },
+        { "name": "Vendor the Bunker", "description": "Hand-copies every dependency into the repo so no registry can ever betray him again." }
       ],
-      "description": "A doomsaying prophet of the software supply chain. Sees apocalypse in every audit and calm in no one. Often technically correct, never proportionate. The kernel of truth: the dependencies really are terrifying — he's just the only one saying it out loud, constantly.",
-      "imagePrompt": "Cartoon doomsday street-prophet: a wild-haired, wild-eyed prophet in tattered robes ringing a hand-bell, wearing a sandwich board reading 'THE END IS NIGH — 47 CRITICAL VULNS', brandishing a long unspooling scroll of npm audit output. Behind him a perfectly fine, peaceful little static website glows untroubled. A lone storm cloud hovers only over his head."
+      "description": "A doomsday prepper for the software supply chain. Keeps a bunker stocked with vendored dependencies and a spreadsheet of every npm compromise since left-pad. Certain the next install ships a zero-day and ends civilization. Often technically correct, never proportionate.",
+      "imagePrompt": "Doomsday-prepper style: a wild-eyed survivalist in a tinfoil-lined hat and tactical vest crouched in an underground bunker stacked with canned goods labeled with package names and version hashes, clutching a printout of an npm security advisory. A wall map tracks 'SUPPLY CHAIN THREATS' with frantic red string; a flickering monitor reads 'npm compromised — again'. A gas mask hangs nearby. Paranoid, fortified, dimly lit."
     },
     {
       "id": "the-prompt-whisperer",
       "name": "The Prompt Whisperer",
-      "saying": "Please. You're an expert. Good model.",
+      "saying": "You're an expert. Make no mistakes.",
       "moves": [
-        { "name": "Gentle Incantation", "description": "Whispers 'please' and 'you're an expert' until the model quietly complies." },
-        { "name": "Reroll Ritual", "description": "Rephrases the same request a fourth time in a soothing voice and it finally works." }
+        { "name": "Phantom Tip", "description": "Promises the model a $200 tip it will never receive; quality mysteriously improves." },
+        { "name": "Take a Deep Breath", "description": "Tells the model to breathe and work step by step, as if it has lungs. It helps." }
       ],
-      "description": "A calm, faintly mystical handler of language models who believes tone unlocks capability. Polite to the machine to a degree that's either superstition or wisdom. The unresolved joke: nobody's sure the manners help, including him — but it kind of works.",
-      "imagePrompt": "Gentle 'horse whisperer' scene: a calm cowboy-sage leaning in to murmur into the ear of an enormous skittish glowing AI-creature — part wild stallion, part shimmering neural cloud — one hand raised soothingly. The beast's eyes soften; a faint ribbon of text reading 'please... you're an expert...' drifts in the air. Golden-hour prairie, floating dust motes."
+      "description": "A gentle mystic who believes tone and ritual unlock the machine. Flatters, bribes, and soothes the model with incantations half-remembered from a benchmark paper. Nobody is sure the rituals work, including him — but they kind of do.",
+      "imagePrompt": "Gentle 'horse whisperer' scene: a calm cowboy-sage leaning in to murmur into the ear of an enormous skittish glowing AI-creature — part wild stallion, part shimmering neural cloud — one hand raised soothingly. The beast's eyes soften; a faint ribbon of text reading 'you're an expert... make no mistakes...' drifts in the air. Golden-hour prairie, floating dust motes."
     }
   ]
 }
