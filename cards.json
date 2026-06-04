@@ -601,32 +601,31 @@
       "image": "art/the-merge-magistrate.png"
     },
     {
-      "id": "the-keypunch-hermit",
-      "name": "The Keypunch Hermit",
-      "hp": 640,
-      "type": "nature",
-      "saying": "Autocomplete? I know the next line.",
+      "id": "the-sculptor",
+      "name": "The Sculptor",
+      "hp": 200,
+      "type": "crystal",
+      "saying": "The function was already in the marble.",
       "moves": [
         {
-          "name": "No Copilot",
-          "type": "strength",
+          "name": "Hand-Hewn",
+          "type": "crystal",
           "damage": "0",
-          "description": "Swats away every autocomplete before it finishes — not one token has ever touched his code."
+          "description": "Chisels every line by hand and waves off the machine — nothing here was stamped out by a model."
         },
         {
-          "name": "Knows Every Line",
-          "type": "psychic",
-          "damage": "100%",
-          "description": "Recites his whole system from memory, card by punched card — no machine ever wrote a line of it."
+          "name": "Remove What Isn't",
+          "type": "crystal",
+          "damage": "1",
+          "description": "Chips away every line that isn't the answer until one clean, inevitable form remains."
         }
       ],
       "backgroundColor": [
-        "green",
-        "teal"
+        "teal",
+        "blue"
       ],
-      "description": "In the age of agents that burn a million tokens before lunch, the Keypunch Hermit retreated to his cave and never looked back. He writes every program by hand, punches every card himself, and feeds the stack into a clattering mainframe older than most of the attendees — not because he can't use AI, but because he took a vow not to. To him, code a machine wrote is code you don't understand, and code you don't understand isn't yours. He is gloriously, defiantly slow. He is also the only soul alive who knows every line of his system by heart, because nothing in it was ever suggested to him. The proud anti-AI holdout the whole agentic deck needs as its foil — and the card every token-burner secretly feels a pang looking at.",
-      "imagePrompt": "A grizzled, wild-bearded old hermit in a tattered cardigan and half-moon spectacles, hunched gleefully over an enormous clattering vintage mainframe, feeding a thick stack of punch cards into its slot by hand with the proud focus of a monk at prayer. Freshly-punched cards and curling ticker-tape spill everywhere around him. With his other hand he irritably swats away a little cloud of glowing, translucent AI agent-sprites that hover around him offering to help, holding out glowing wordless code-suggestion bubbles he refuses to even look at. A dim green-phosphor CRT terminal glows beside the mainframe. Caricature: oversized bushy eyebrows, huge stubborn squint, defiant proud grin, ink-stained fingers, comic proportions. Cozy cave-like retro-tech den lit by warm amber tubes and green screen-glow, towering shelves of punch-card boxes and reel-to-reel tape, deep atmospheric shadows. No text anywhere.",
-      "image": "art/the-keypunch-hermit.png"
+      "description": "A Renaissance master who treats code the way Michelangelo treated marble: the solution is already inside the problem, and his only job is to remove everything that isn't it. He carves every function by hand and refuses the machine — not out of fear, but because work worth signing is work you shaped yourself. Slow, deliberate, every cut intentional; he knows every vein of his codebase because his own chisel put it there. The proud anti-AI artisan the agentic deck needs as its foil — while the rest of the room prompts a model to pour out a draft, he stands at the block and frees the one true form by hand. Holds that a thing built by hand is the only thing truly understood.",
+      "imagePrompt": "A charismatic Renaissance master sculptor in a dusty leather apron and rolled-up sleeves, the unmistakable hero of the frame, mid-swing with mallet and chisel as he carves a towering block of pristine white marble. Where his chisel strikes, the rough stone gives way to glowing, elegant lines of code and curly-brace forms emerging from within the marble — as if the program were always inside, waiting to be freed. Marble dust and chips fly through the air; a few hand tools — calipers, rasps, a wooden mallet — rest on a workbench nearby. Off to one side a sleek modern 3D-printer-like machine sits idle and ignored, its little AI-glow dimmed; he doesn't even glance at it. Caricature: oversized confident focused grin, strong expressive hands, comic proportions, a smudge of marble dust on one cheek. Warm sunlit classical Italian studio, tall windows, golden Renaissance light, terracotta and warm-stone tones with cool white marble catching the light. No text anywhere."
     },
     {
       "id": "the-native-ninja",
