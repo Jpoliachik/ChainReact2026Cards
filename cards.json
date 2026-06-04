@@ -14,16 +14,12 @@
       "moves": [
         {
           "name": "Misdirection",
-          "type": "psychic",
           "damage": "50",
-          "iconCount": 2,
           "description": "Buries a half-second of lag behind a flourish so smooth the hit lands before anyone notices they waited."
         },
         {
           "name": "Hypnotic Fling",
-          "type": "psychic",
           "damage": "60",
-          "iconCount": 3,
           "description": "Flicks a list into a buttery 60fps spin that leaves onlookers Mesmerized — they cannot look away."
         }
       ],
@@ -44,16 +40,12 @@
       "moves": [
         {
           "name": "Riddle of the Crossing",
-          "type": "nature",
           "damage": "30",
-          "iconCount": 2,
           "description": "Won't raise the gate until you answer his riddle — and the answer always comes back a few frames late."
         },
         {
           "name": "Flattened to Fit",
-          "type": "strength",
           "damage": "90",
-          "iconCount": 3,
           "description": "Mashes every object into plain JSON before it may cross, so your data always arrives a little duller than it left."
         }
       ],
@@ -71,16 +63,12 @@
       "moves": [
         {
           "name": "Just One More Frame",
-          "type": "cosmic",
           "damage": "16",
-          "iconCount": 2,
           "description": "Re-runs the same transition for the ninth hour straight; the move never resolves, because it's never quite right."
         },
         {
           "name": "Spring of Madness",
-          "type": "electric",
           "damage": "120",
-          "iconCount": 3,
           "description": "Bolts a bouncy spring onto an element that had no reason to move — now it overshoots every single time."
         }
       ],
@@ -101,16 +89,12 @@
       "moves": [
         {
           "name": "Sniff Test",
-          "type": "toxic",
           "damage": "70",
-          "iconCount": 2,
           "description": "Swirls a pull request, sips, and names which model wrote it from the aftertaste alone."
         },
         {
           "name": "Guardrail Pairing",
-          "type": "toxic",
           "damage": "100",
-          "iconCount": 3,
           "description": "Refuses to let an AI suggestion near main without a test and a lint rule chaperoning it."
         }
       ],
@@ -131,16 +115,12 @@
       "moves": [
         {
           "name": "Silent Treatment",
-          "type": "water",
           "damage": "0",
-          "iconCount": 1,
           "description": "Says absolutely nothing — and somehow that's exactly the help you needed to hear your own mistake."
         },
         {
           "name": "The Duck Knows",
-          "type": "psychic",
           "damage": "200",
-          "iconCount": 2,
           "description": "Sits in serene rubber judgment until the bug confesses itself; takes none of the blame, accepts all of the credit."
         }
       ],
@@ -158,16 +138,12 @@
       "moves": [
         {
           "name": "Print Statement",
-          "type": "electric",
           "damage": "404",
-          "iconCount": 2,
           "description": "Drops a console.log('here') at the scene of every crime until the bug confesses."
         },
         {
           "name": "Ship the Evidence",
-          "type": "electric",
           "damage": "500",
-          "iconCount": 1,
           "description": "Accidentally deploys one of the logs straight to production."
         }
       ],
@@ -185,16 +161,12 @@
       "moves": [
         {
           "name": "Token Bonfire",
-          "type": "fire",
           "damage": "1M",
-          "iconCount": 4,
           "description": "Sets a million tokens ablaze before lunch and calls it research."
         },
         {
           "name": "Hot Swap",
-          "type": "electric",
           "damage": "6",
-          "iconCount": 3,
           "description": "Bounces between six terminals so fast he loses track of which agent is in prod."
         }
       ],
@@ -215,16 +187,12 @@
       "moves": [
         {
           "name": "Repo Dump",
-          "type": "psychic",
           "damage": "∞",
-          "iconCount": 4,
           "description": "Pastes the entire codebase into context because choosing which files felt risky."
         },
         {
           "name": "Sketchy MCP",
-          "type": "toxic",
           "damage": "50",
-          "iconCount": 2,
           "description": "Wires the agent to a random unvetted MCP server because it had a cool README."
         }
       ],
@@ -242,16 +210,12 @@
       "moves": [
         {
           "name": "Left-Pad Flashback",
-          "type": "toxic",
           "damage": "11",
-          "iconCount": 1,
           "description": "Still hasn't recovered from the day eleven lines un-published and broke the entire internet."
         },
         {
           "name": "Vendor Everything",
-          "type": "strength",
           "damage": "90",
-          "iconCount": 3,
           "description": "Hand-copies every dependency into the repo so no registry can ever betray him again."
         }
       ],
@@ -269,16 +233,12 @@
       "moves": [
         {
           "name": "Phantom Tip",
-          "type": "psychic",
           "damage": "200",
-          "iconCount": 2,
           "description": "Promises the model a $200 tip it will never receive; quality mysteriously improves."
         },
         {
           "name": "All-Caps Plea",
-          "type": "psychic",
           "damage": "40",
-          "iconCount": 1,
           "description": "When politeness fails, resorts to typing 'IMPORTANT: DO NOT HALLUCINATE' in all caps."
         }
       ],
@@ -296,16 +256,12 @@
       "moves": [
         {
           "name": "The Long Diff",
-          "type": "dream",
           "damage": "4K",
-          "iconCount": 3,
           "description": "Wakes before the realm to read every line the agent wrote in the dark — all four thousand of them — before a single one reaches main."
         },
         {
           "name": "Hold the Wall",
-          "type": "dream",
           "damage": "100",
-          "iconCount": 3,
           "description": "Lets nothing past into the codebase unreviewed, no matter how confident the agent's overnight summary sounded."
         }
       ],
@@ -326,16 +282,12 @@
       "moves": [
         {
           "name": "It's Dangerous to Go Alone",
-          "type": "crystal",
           "damage": "3",
-          "iconCount": 3,
           "description": "Refuses to let one dev context-switch between building, guarding, and architecting — splits the power three ways so each hero wields a single piece well."
         },
         {
           "name": "Guard the Gates",
-          "type": "crystal",
           "damage": "110",
-          "iconCount": 2,
           "description": "Lets the agents build with abandon inside the sandbox, but no pull request crosses into main without a human standing at the gate."
         }
       ],
@@ -356,16 +308,12 @@
       "moves": [
         {
           "name": "Sleight of Hand",
-          "type": "psychic",
           "damage": "80",
-          "iconCount": 2,
           "description": "Performs the one rehearsed happy path so smoothly the audience never sees the four that crash."
         },
         {
           "name": "The Loaded Deck",
-          "type": "psychic",
           "damage": "200",
-          "iconCount": 1,
           "description": "Quietly stubs the flaky endpoint with a hardcoded response so the magic never depends on the venue wifi."
         }
       ],
@@ -383,16 +331,12 @@
       "moves": [
         {
           "name": "Sub-Pixel Incision",
-          "type": "crystal",
           "damage": "1",
-          "iconCount": 2,
           "description": "Shifts a single element one point with a steady hand, and somehow the whole screen finally breathes."
         },
         {
           "name": "Eagle Eye",
-          "type": "crystal",
           "damage": "2",
-          "iconCount": 1,
           "description": "Spots the misaligned padding from across the room and cannot, will not, unsee it."
         }
       ],
@@ -413,16 +357,12 @@
       "moves": [
         {
           "name": "The Long Migration",
-          "type": "water",
           "damage": "40",
-          "iconCount": 3,
           "description": "Sits in perfect calm through forty breaking changes and a thousand deprecation warnings without losing serenity."
         },
         {
           "name": "Bear the Suffering",
-          "type": "water",
           "damage": "100",
-          "iconCount": 2,
           "description": "Absorbs the entire SDK bump alone so the rest of the team never has to open the changelog."
         }
       ],
@@ -443,16 +383,12 @@
       "moves": [
         {
           "name": "Percussive Maintenance",
-          "type": "strength",
           "damage": "2",
-          "iconCount": 1,
           "description": "Delivers one well-aimed whack to the wheezing legacy box, and somehow the old thing purrs back to life."
         },
         {
           "name": "It's Load-Bearing",
-          "type": "strength",
           "damage": "90",
-          "iconCount": 3,
           "description": "Knows exactly which terrifying duct-taped hack the whole system secretly rests on, and guards it from anyone itching to 'clean it up'."
         }
       ],
@@ -461,7 +397,8 @@
         "orange"
       ],
       "description": "A grease-stained veteran who keeps the ancient, taped-together codebase running by feel. Doesn't fear the legacy mess — lives in it, can diagnose a regression by the sound it makes, and trusts intuition built over years under the hood. While the Greenfield Speedster races the shiny new car, the Mechanic keeps the old beast on the road. Maintain over rewrite, every time — the counterpart to the Speedster: give them the new build and they'll just go back to tuning the engine that actually ships.",
-      "imagePrompt": "A cheerful grease-stained mechanic in oil-smeared overalls, head and shoulders buried under the raised hood of a wheezing, battered, lovingly over-patched ancient engine cobbled together from duct tape, zip-ties, mismatched parts, and exposed wiring — yet it still chugs along, puffing little contented smoke-rings. One hand swings a big wrench, the other gives a confident thumbs-up; a coffee-stained service manual, an oil-can, and scattered spare parts surround the workbench. The machine reads as a hybrid of a vintage car engine and a creaky old server tower (the legacy codebase as an old motor). Caricature: oversized confident grin, a smudge of oil on one cheek, comic proportions. Warm cluttered garage, hanging work-light, a few sparks, deep amber greasy glow. No text anywhere."
+      "imagePrompt": "A cheerful grease-stained mechanic in oil-smeared overalls, head and shoulders buried under the raised hood of a wheezing, battered, lovingly over-patched ancient engine cobbled together from duct tape, zip-ties, mismatched parts, and exposed wiring — yet it still chugs along, puffing little contented smoke-rings. One hand swings a big wrench, the other gives a confident thumbs-up; a coffee-stained service manual, an oil-can, and scattered spare parts surround the workbench. The machine reads as a hybrid of a vintage car engine and a creaky old server tower (the legacy codebase as an old motor). Caricature: oversized confident grin, a smudge of oil on one cheek, comic proportions. Warm cluttered garage, hanging work-light, a few sparks, deep amber greasy glow. No text anywhere.",
+      "image": "art/the-brownfield-mechanic.png"
     },
     {
       "id": "the-greenfield-speedster",
@@ -472,16 +409,12 @@
       "moves": [
         {
           "name": "Zero to Production",
-          "type": "fire",
           "damage": "60",
-          "iconCount": 1,
           "description": "Floors it from 'npx create' to a shipped first build while everyone else is still reading the old README."
         },
         {
           "name": "No Speed Limit",
-          "type": "fire",
           "damage": "100",
-          "iconCount": 2,
           "description": "Opens the throttle on a wide, empty, freshly-paved repo — with nothing built yet, there's nothing to crash into."
         }
       ],
@@ -490,7 +423,8 @@
         "cyan"
       ],
       "description": "A starry-eyed racer who lives for the open road of an untouched repository, happiest at full throttle off the first commit. Craves clean architecture, zero tech debt, and a horizon with nothing built on it yet — every hard problem solved by starting fresh somewhere with no traffic. Allergic to legacy: hates nothing more than a mirror full of old code. The counterpart to the Brownfield Mechanic — give them the battered old engine and they'll just go find a faster, emptier track.",
-      "imagePrompt": "A grinning helmeted speed-racer in a sleek aerodynamic racing suit, the unmistakable hero of the frame, leaning hard into the cockpit of a glossy, brand-new, candy-bright concept race car blazing at top speed down a wide-open, freshly-paved empty highway at bright dewy dawn. Heavy motion-blur and speed-lines streak past, a lick of flame and sparks trailing from the exhaust, the road ahead utterly blank and open to the horizon, zero traffic. A green starting-flag whips past and a tiny '<App/>' decal sits on the spotless hood. Pristine, sunlit, exhilarating (NOT desert or dusty). Caricature: oversized confident grin, huge bright eyes behind the visor, comic proportions, thumbs-up. Vivid saturated racing-green and gold, glowing dawn light. Render only the one short label — '<App/>' on the hood — cleanly, and no other text."
+      "imagePrompt": "A grinning helmeted speed-racer in a sleek aerodynamic racing suit, the unmistakable hero of the frame, leaning hard into the cockpit of a glossy, brand-new, candy-bright concept race car blazing at top speed down a wide-open, freshly-paved empty highway at bright dewy dawn. Heavy motion-blur and speed-lines streak past, a lick of flame and sparks trailing from the exhaust, the road ahead utterly blank and open to the horizon, zero traffic. A green starting-flag whips past and a tiny '<App/>' decal sits on the spotless hood. Pristine, sunlit, exhilarating (NOT desert or dusty). Caricature: oversized confident grin, huge bright eyes behind the visor, comic proportions, thumbs-up. Vivid saturated racing-green and gold, glowing dawn light. Render only the one short label — '<App/>' on the hood — cleanly, and no other text.",
+      "image": "art/the-greenfield-speedster.png"
     },
     {
       "id": "the-keyboard-exorcist",
@@ -501,16 +435,12 @@
       "moves": [
         {
           "name": "Rite of behavior",
-          "type": "sound",
           "damage": "2",
-          "iconCount": 2,
           "description": "Chants a different sacred prop for each platform and prays the input field stops hiding behind the keyboard on exactly one of them."
         },
         {
           "name": "Banish the Rising Tide",
-          "type": "sound",
           "damage": "60",
-          "iconCount": 3,
           "description": "Drives the swelling keyboard back beneath the fold so the submit button may once again be seen by mortal thumbs."
         }
       ],
@@ -519,7 +449,8 @@
         "orange"
       ],
       "description": "A robed warrior-priest locked in eternal holy war with KeyboardAvoidingView. Knows a different incantation for every OS, trusts none of them fully, and keeps a vial of holy water for the build where the keyboard wins anyway. Universal RN suffering — everyone who has shipped a form on mobile has stood in this exact battle and whispered the same prayer.",
-      "imagePrompt": "A wild-eyed robed exorcist-priest mid-incantation, brandishing a glowing talisman in one hand and flinging a splash from a holy-water vial with the other, fending off a huge snarling demonic ON-SCREEN KEYBOARD monster that surges upward like a tide from the bottom of a giant glowing phone. At the top of the phone, a tiny app input field and submit button cower out of reach. Holy radiant light clashing against the dark keyboard demon. Caricature: oversized panicked-determined face, huge eyes, billowing robes, comic proportions. Dramatic chiaroscuro, embers and sparks, fiery red-and-gold supernatural glow. No text anywhere."
+      "imagePrompt": "A wild-eyed robed exorcist-priest mid-incantation, brandishing a glowing talisman in one hand and flinging a splash from a holy-water vial with the other, fending off a huge snarling demonic ON-SCREEN KEYBOARD monster that surges upward like a tide from the bottom of a giant glowing phone. At the top of the phone, a tiny app input field and submit button cower out of reach. Holy radiant light clashing against the dark keyboard demon. Caricature: oversized panicked-determined face, huge eyes, billowing robes, comic proportions. Dramatic chiaroscuro, embers and sparks, fiery red-and-gold supernatural glow. No text anywhere.",
+      "image": "art/the-keyboard-exorcist.png"
     },
     {
       "id": "the-ota-smuggler",
@@ -530,16 +461,12 @@
       "moves": [
         {
           "name": "Patch It Live",
-          "type": "electric",
           "damage": "1.0.1",
-          "iconCount": 2,
           "description": "Slips a hotfix straight onto every device over the air, skipping the week-long review queue entirely."
         },
         {
           "name": "Mind the Native Modules",
-          "type": "electric",
           "damage": "86",
-          "iconCount": 1,
           "description": "One day pushes a change that quietly touches native code, and the whole contraband bundle gets turned away at the gate."
         }
       ],
@@ -548,7 +475,8 @@
         "purple"
       ],
       "description": "A charming rogue who lives by the over-the-air update, beaming fixes to users at midnight rather than bowing to the App Store review queue. Mostly gets away with it — right up until a change brushes native code and forces a real submission. Cursed but shared: everyone with OTA updates has felt the thrill of patching prod live and dodging the line.",
-      "imagePrompt": "A sly cloaked rogue smuggler with a mischievous grin, tiptoeing through the dead of night past a drowsy 'app store' border-checkpoint guard booth where a uniformed inspector dozes. Over one shoulder he hauls a glowing contraband app-bundle crate, beaming it wirelessly — little glowing OTA signal-waves arcing over the fence — to a row of eager phones waiting on the far side. Moonlit heist atmosphere, long shadows, a striped checkpoint barrier. Caricature: exaggerated sneaky tiptoe, huge shifty eyes, finger to lips. Cool moonlit blues and electric-purple glow. No text anywhere."
+      "imagePrompt": "A sly cloaked rogue smuggler with a mischievous grin, tiptoeing through the dead of night past a drowsy 'app store' border-checkpoint guard booth where a uniformed inspector dozes. Over one shoulder he hauls a glowing contraband app-bundle crate, beaming it wirelessly — little glowing OTA signal-waves arcing over the fence — to a row of eager phones waiting on the far side. Moonlit heist atmosphere, long shadows, a striped checkpoint barrier. Caricature: exaggerated sneaky tiptoe, huge shifty eyes, finger to lips. Cool moonlit blues and electric-purple glow. No text anywhere.",
+      "image": "art/the-ota-smuggler.png"
     },
     {
       "id": "the-qa-phantom",
@@ -559,16 +487,12 @@
       "moves": [
         {
           "name": "Edge Case from Beyond",
-          "type": "dream",
           "damage": "13",
-          "iconCount": 2,
           "description": "Conjures the one scenario nobody designed for — airplane mode mid-upload, a rotate at checkout — and the happy path crumbles."
         },
         {
           "name": "It Repros on My Device",
-          "type": "dream",
           "damage": "100",
-          "iconCount": 3,
           "description": "Reproduces the impossible bug every single time on a three-year-old Android phone that no one else on the team owns."
         }
       ],
@@ -577,7 +501,8 @@
         "indigo"
       ],
       "description": "A spectral tester who haunts the happy path, materializing only to do the unthinkable thing a real user would absolutely do. Beloved and feared in equal measure: the bug they surface is the one that would have shipped. The human truth underneath — actual users really do rotate the device mid-payment, and someone has to be the ghost who proves it.",
-      "imagePrompt": "A translucent, softly glowing ghost-phantom wearing a conference QA lanyard, with a mischievous spectral grin, phasing its ethereal hands straight through a giant glowing smartphone to twist it sideways mid-transaction while one wispy finger flicks on airplane-mode. Around it float little glowing bug-spirits. In the corner, a tiny terrified developer-figure watches a crash bloom red across the screen. Playful haunted-house energy, not scary. Caricature: oversized gleeful spooky grin, big hollow glowing eyes, comic proportions. Moonlit purple-and-indigo haunted glow, drifting ectoplasm mist. No text anywhere."
+      "imagePrompt": "A translucent, softly glowing ghost-phantom wearing a conference QA lanyard, with a mischievous spectral grin, phasing its ethereal hands straight through a giant glowing smartphone to twist it sideways mid-transaction while one wispy finger flicks on airplane-mode. Around it float little glowing bug-spirits. In the corner, a tiny terrified developer-figure watches a crash bloom red across the screen. Playful haunted-house energy, not scary. Caricature: oversized gleeful spooky grin, big hollow glowing eyes, comic proportions. Moonlit purple-and-indigo haunted glow, drifting ectoplasm mist. No text anywhere.",
+      "image": "art/the-qa-phantom.png"
     },
     {
       "id": "the-merge-magistrate",
@@ -588,16 +513,12 @@
       "moves": [
         {
           "name": "Hear Both Sides",
-          "type": "crystal",
           "damage": "2",
-          "iconCount": 2,
           "description": "Calmly weighs HEAD against incoming, line by warring line, until the chevrons of conflict fall silent."
         },
         {
           "name": "Ruling from the Bench",
-          "type": "crystal",
           "damage": "200",
-          "iconCount": 3,
           "description": "Renders final judgment on whose code survives the merge; the verdict is binding and the rebase comes out mercifully clean."
         }
       ],
@@ -606,7 +527,8 @@
         "blue"
       ],
       "description": "The calm, impartial arbiter every team needs when two developers' branches collide and neither will yield. Hears both sides, weighs the diff with a steady hand, and brings order to the chaos of '<<<<<<< HEAD'. Respected, fair, faintly theatrical in the wig. A merge-conflict identity reframed as the peacemaker rather than the gladiator — the senior who settles the standoff instead of bleeding in the arena.",
-      "imagePrompt": "A dignified judge in a tall white curly barrister's wig and flowing black robe, perched high behind an ornate wooden courtroom bench, banging a single glowing gavel to settle a dispute. Below, two glowing rival code-branch streams are tangled together in tug-of-war, knotted with '<<<<<<<' conflict chevrons. To one side, a set of golden scales of justice weighs two little glowing code-blocks labeled 'HEAD' and 'incoming' in perfect balance. Stately wood-paneled courtroom, warm authoritative amber light, shafts of dignified sunlight. Caricature: oversized powdered wig, stern-but-fair expression, comic proportions. Render only the two short scale labels — 'HEAD' and 'incoming' — cleanly, and no other text."
+      "imagePrompt": "A dignified judge in a tall white curly barrister's wig and flowing black robe, perched high behind an ornate wooden courtroom bench, banging a single glowing gavel to settle a dispute. Below, two glowing rival code-branch streams are tangled together in tug-of-war, knotted with '<<<<<<<' conflict chevrons. To one side, a set of golden scales of justice weighs two little glowing code-blocks labeled 'HEAD' and 'incoming' in perfect balance. Stately wood-paneled courtroom, warm authoritative amber light, shafts of dignified sunlight. Caricature: oversized powdered wig, stern-but-fair expression, comic proportions. Render only the two short scale labels — 'HEAD' and 'incoming' — cleanly, and no other text.",
+      "image": "art/the-merge-magistrate.png"
     }
   ]
 }

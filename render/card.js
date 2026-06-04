@@ -4,8 +4,8 @@
  * Ported from the Bob Ross trading-card tool (the "actual visual"): a
  * Pokémon-style card at 816×1110 built from Tailwind classes (see
  * public/card.css) — thick yellow border, gradient background, name plate,
- * HP + type icon, framed character art, saying, and two moves with type pips
- * and damage values.
+ * HP + type icon, framed character art, saying, and two named moves with
+ * damage values.
  *
  * Field mapping (our cards.json -> this renderer):
  *   name              -> name plate
@@ -13,7 +13,7 @@
  *   image             -> framed character art (e.g. "art/<id>.png")
  *   saying            -> italic tagline under the art
  *   moves[].name      -> move title
- *   moves[].description, .type, .damage, .iconCount -> move row
+ *   moves[].description, .damage -> move row
  *   type              -> card's headline type (HP icon) — falls back to move 1
  *   backgroundColor   -> "green" | ["purple","pink"] | …  (palette below)
  *
@@ -66,36 +66,15 @@ function backgroundStyle(backgroundColor) {
   return COLOR_MAP[backgroundColor] || COLOR_MAP.indigo;
 }
 
-// A column of 1–4 type pips (the move's "energy cost"), wrapped to two rows
-// when there are more than two.
-function typePips(count, moveType) {
-  const t = typeOf(moveType);
-  const safe = Math.min(Math.max(count || 1, 1), 4);
-  const pip = `
-    <div class="w-8 h-8 rounded-full flex items-center justify-center" style="background-color: ${t.color};">
-      <img src="icons/${t.icon}" class="w-6 h-6 filter brightness-0 invert" />
-    </div>`;
-  const pips = Array.from({ length: safe }, () => pip);
-  if (safe <= 2) return `<div class="flex gap-2">${pips.join("")}</div>`;
-  return `
-    <div class="flex flex-col gap-1">
-      <div class="flex gap-2">${pips.slice(0, 2).join("")}</div>
-      <div class="flex gap-2">${pips.slice(2).join("")}</div>
-    </div>`;
-}
-
 function moveHtml(move) {
-  const { name, description, iconCount, damage, type = "nature" } = move;
+  const { name, description, damage } = move;
   return `
     <div class="flex items-center justify-between gap-4 w-full p-1">
-      <div class="flex gap-6">
-        ${typePips(iconCount, type)}
-        <div class="flex-1">
-          <span class="font-bold text-2xl">${name}</span>
-          <div class="mt-1 text-2xl leading-snug">${description}</div>
-        </div>
+      <div class="flex-1">
+        <span class="font-bold text-3xl">${name}</span>
+        <div class="mt-1 text-3xl leading-snug">${description}</div>
       </div>
-      <div class="text-3xl font-bold text-yellow-400">${damage ?? ""}</div>
+      <div class="text-4xl font-bold text-yellow-400">${damage ?? ""}</div>
     </div>`;
 }
 
@@ -122,7 +101,7 @@ function createCard(cardData) {
 
         <img src="${image}" class="mt-2 w-full h-[570px] object-cover rounded-xl border-4 border-yellow-500" />
 
-        <div class="mt-0 py-4 text-center border-y border-slate-500 text-2xl italic">
+        <div class="mt-0 py-4 text-center border-y border-slate-500 text-3xl italic">
           "${saying}"
         </div>
 
