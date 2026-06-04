@@ -28,33 +28,30 @@ me"), **delight** (funny/surprising), or **both**. A shrug means the card is dea
 7. **Curate the deck for spread.** 30 great cards all about "me and the AI" is a worse
    deck than 30 spanning the domains below. Watch the distribution.
 
-### Domains (for coverage)
+### Domains (a curation lens, not a card field)
 
 `ai` · `native` · `motion` · `craft` · `process` · `conference`
 
+Used only to reason about spread when choosing cards — not stored in `cards.json`.
 Conference-meta cards (Hallway Track Sage, First-Question Gladiator…) land _harder_ in
 the room because the context is live. Reserve ~5–6 slots.
 
 ## Card data — current schema (Phase 1: selection + character design)
 
-Stored in `cards.json`.
+`cards.json` holds the working set only. Four fields per card, nothing else — keep it
+minimal.
 
 ```jsonc
 {
   "id": "the-bridge-keeper",      // kebab slug, stable
   "name": "The Bridge Keeper",    // high-register, "The ___" — what the user sees first
-  "domain": "native",             // one of the domains above
-  "status": "locked | cut",       // locked = a current pick; cut = graveyard
   "profile": "2–3 sentences...",  // WHO they are — the posture; sets up the eventual moves
-  "visual": "vivid look...",      // WHAT they look like — the image-prompt seed (see below)
-  "image": "",                    // path to generated art, once it exists
-  "notes": ""                     // working notes / why kept or cut
+  "visual": "vivid look..."       // WHAT they look like — the image-prompt seed (see below)
 }
 ```
 
-- **locked** — a current pick (the working set we're developing).
-- **cut** — killed, kept in the graveyard so we don't regenerate it. `visual` left empty
-  for cut cards; we only design the look for picks.
+Cut ideas live in [GRAVEYARD.md](GRAVEYARD.md) (plain list) so we don't regenerate them —
+not in `cards.json`. An `image` field gets added per card when art is generated.
 
 ### The `visual` field
 

@@ -19,8 +19,7 @@ unrelated work into one commit and don't wait to be asked. Prefer many small com
 few large ones.
 
 - Sign off commit messages with the standard `Co-Authored-By` trailer.
-- `cards.json` edits (new cards, rewrites, status changes) are commit-worthy on their own.
-- Never commit `cards.json.bak` (gitignored — it's the server's local backup).
+- `cards.json` edits (new cards, profile/visual rewrites) are commit-worthy on their own.
 
 ## The design north star
 
@@ -37,26 +36,26 @@ writing, judging, or cutting cards. Key reminders:
 
 ## Phases
 
-- **Phase 1 (current): selection.** Get to 30 locked cards. `cards.json` is the source of
-  truth; **array order = stack rank** (top = best). `status` is `locked | candidate | cut`
-  (cut cards stay as a graveyard so we don't regenerate them).
-- **Phase 2 (not built):** grow each locked card into the full Pokémon card (HP, type,
-  categories, two named moves w/ damage + flavor + art). Don't add those fields to the
-  schema until the 30 are locked.
+- **Phase 1 (current): selection + character design.** Get to a strong set of cards, each
+  with a `profile` (who) and a `visual` (the look). `cards.json` holds the working set only,
+  four fields per card: `id`, `name`, `profile`, `visual`. Cut ideas go to `GRAVEYARD.md`,
+  not `cards.json`.
+- **Phase 2 (not built):** grow each card into the full Pokémon card (HP, type, categories,
+  two named moves w/ damage + flavor) and add generated art (`image` field). Don't add those
+  fields to the schema until the working set is locked.
 
-## The ranking tool
+## The gallery tool
 
-Zero-dependency. `cards.json` is read/written directly so file edits and browser edits stay
-in sync.
+Zero-dependency, **read-only** — just for viewing the cards. Edit `cards.json` directly to
+change them.
 
 ```bash
 pnpm start        # → http://localhost:4317
 ```
 
-- `server.js` — zero-dep Node server: `GET/PUT /api/cards`, serves `public/`, backs up to
-  `cards.json.bak` on each write.
-- `public/index.html` — single-file UI: drag-to-rank, ★ favorite, 1–5 rating,
-  status pills, inline name/profile edit, per-card notes, live domain coverage bar.
+- `server.js` — zero-dep Node server: `GET /api/cards`, serves `public/`.
+- `public/index.html` — single-file gallery: each card shows name, profile, "The Look"
+  (visual), and an art slot (placeholder until an `image` is added).
 
 ## Conventions
 
