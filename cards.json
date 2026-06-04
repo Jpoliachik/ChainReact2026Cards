@@ -21,8 +21,8 @@
       "name": "The Bridge Troll",
       "saying": "Crossing to native? That'll cost ya.",
       "moves": [
-        { "name": "Toll by the Kilobyte", "description": "Charges extra for every fat payload you serialize across to native. Travel light or pay up." },
-        { "name": "Margins Aren't What They Were", "description": "Grumbles that the New Architecture gutted his toll rate. Everyone keeps bringing it up. He's fine. He's FINE." }
+        { "name": "Toll by the Kilobyte", "description": "Deals more damage the fatter the payload you serialize across the bridge — travel light to soften the blow." },
+        { "name": "Toll Hike", "description": "Jacks up the crossing fee to recoup lost margins; its power drops a notch every time someone mentions the New Architecture." }
       ],
       "description": "The mythical troll of the JS↔native bridge: cross all you like, but try to send too much data and he'll charge you for it. Genuinely cautious about performance — every fat payload serialized over is a toll paid in dropped frames. Lately grumbles that the New Architecture thinned his margins, though he'd never admit business is down. Still guarding the bridge. Still eyeing your payload size.",
       "imagePrompt": "Bright rainbow 'Trolls'-movie cartoon style: a pint-sized impossibly cute troll with a giant poof of neon rainbow hair and sparkly skin, manning a toll-gate on a candy-colored bridge between two floating islands — one of glowing curly-braces, one of native gears. He holds out a hand for payment while eyeing a traveler hauling a comically huge bundle labeled 'DATA' across; his toll sign reads 'BY THE KILOBYTE'. In the background a glossy billboard for the sleek 'NEW ARCHITECTURE' express lane quietly steals his business. Felt textures, glitter, a sly grumpy grin."
