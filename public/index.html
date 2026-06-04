@@ -89,6 +89,28 @@ function fullPrompt(c) {
   return ART_DIR ? `${ART_DIR}\n\nCharacter — ${c.name}: ${c.imagePrompt}` : c.imagePrompt;
 }
 
+// Tailwind v4 declares the default values for its internal custom properties
+// (e.g. --tw-border-style: solid) with @property rules. Those only register at
+// the document level — when card.css is loaded *only* inside per-card shadow
+// roots, the registrations never happen, so var(--tw-border-style) is empty and
+// every border collapses to `none` (and gradients lose their stops). Re-register
+// the @property rules once in the light DOM; registered custom properties are
+// document-global, so the shadow-DOM cards then resolve them correctly. This is
+// invisible to the gallery's own theme — @property only declares properties, it
+// applies no styles to any element.
+async function registerCardProps() {
+  try {
+    const css = await (await fetch("card.css")).text();
+    const props = css.match(/@property[^{]+\{[^}]*\}/g);
+    if (!props) return;
+    const style = document.createElement("style");
+    style.textContent = props.join("\n");
+    document.head.appendChild(style);
+  } catch (e) {
+    console.warn("Couldn't register card @property defaults:", e);
+  }
+}
+
 // Render the real 816×1110 card into a shadow root, scaled to the preview
 // width. card.css is loaded inside the shadow so its global reset is contained.
 function mountCard(host, card) {
@@ -181,6 +203,7 @@ document.getElementById("genAll").onclick = async (e) => {
 };
 
 (async () => {
+  await registerCardProps(); // must run before cards mount so borders resolve
   const data = await (await fetch("/api/cards")).json();
   ART_DIR = data.meta.artDirection || "";
   CARDS = data.cards;
