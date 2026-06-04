@@ -1,68 +1,119 @@
 {
   "meta": {
     "event": "Chain React 2026 — Portland, OR",
-    "target": 30
+    "target": 30,
+    "artDirection": "Illustrate like a Pokémon trading-card character: ONE character is the unmistakable hero of the frame — large, centered, shown mid-action performing their signature quirk. Surround them with only a few small supporting props or details that hint at what they're up to; keep the background simple and uncluttered so the character stays the clear focal point. Energetic 3/4 or full-body pose, bold readable silhouette, vibrant saturated color, clean dramatic lighting, subtle depth. Each character keeps the distinct art-style flavor named in its own prompt, but all share this hero-in-action composition."
   },
   "cards": [
     {
-      "id": "the-jester-handler",
-      "name": "The Jester Handler",
-      "profile": "Bends the swipe, the pan, the long-press to their will. Every touch is a trick; every transition, a sleight of hand. You never notice the gesture — that's the whole illusion. Has spent a full week on a single fling so it feels right in the thumb.",
-      "visual": "Old-school cartoon court-jester / joker style with magical hypnotist vibes. A grinning harlequin in diamond-patterned motley and a curled three-point jester hat, fingers splayed mid-flourish, conjuring swirling hypnotic spirals and looping glowing motion-trails from the fingertips. A phone floats hypnotized in the air, scrolling in perfect rubber-band rhythm to the spinning spiral. Mischievous wink, swirly spiral eyes, candy colors, vaudeville stage glow."
+      "id": "the-gesture-jester",
+      "name": "The Gesture Jester",
+      "saying": "Don't watch the swipe — watch the hands.",
+      "moves": [
+        { "name": "Sleight of Pan", "description": "Redirects your finger so smoothly you swear the screen moved itself." },
+        { "name": "Hypnotic Fling", "description": "Flicks a list into a buttery 60fps spin you cannot look away from." }
+      ],
+      "description": "A vaudeville trickster who treats every touch interaction as a magic act. Obsessive about how a gesture feels in the thumb; will rebuild a swipe twenty times for an imperceptible gain. Charming, theatrical, quietly smug that his best work is the work nobody notices.",
+      "imagePrompt": "Old-school cartoon court-jester with magical hypnotist flair: a grinning harlequin in diamond-patterned motley and a curled three-point hat, fingers splayed mid-flourish conjuring glowing hypnotic spirals and looping motion-trails. A single phone floats hypnotized nearby, mid-swipe. Swirly spiral eyes, mischievous wink, candy-colored vaudeville palette."
     },
     {
       "id": "the-bridge-troll",
       "name": "The Bridge Troll",
-      "profile": "Guards the crossing between JavaScript and native, and charges a toll in complexity. Knows exactly what happens when a call leaves the JS thread. Will remind you, sweetly, that the New Architecture changed everything.",
-      "visual": "Bright rainbow cartoon 'Trolls'-movie style. A pint-sized impossibly cute troll with a giant poof of rainbow neon hair and sparkly skin, perched on a candy-colored rope bridge slung between two floating islands — one built of glowing curly braces, the other of shiny riveted native gears. Clutches a tiny toll-gate and a fistful of glittering coins stamped 'COMPLEXITY'. Felt textures, glitter sparkles, huge happy eyes, saturated rainbow palette."
+      "saying": "Crossing to native? That'll cost ya.",
+      "moves": [
+        { "name": "Toll of Complexity", "description": "Charges one extra week of debugging for every value passed across the bridge." },
+        { "name": "Thread Hop", "description": "Yeets your call onto the native thread and waits, smiling, to see if it returns." }
+      ],
+      "description": "A deceptively adorable gatekeeper of the JS↔native boundary. Sweet, sing-songy, and utterly immovable about serialization and the New Architecture. Knows the bridge intimately and quietly enjoys the toll. The gag is cuddly cuteness delivering hard architectural truths.",
+      "imagePrompt": "Bright rainbow 'Trolls'-movie cartoon style: a pint-sized impossibly cute troll with a giant poof of neon rainbow hair and sparkly skin, perched on a candy-colored rope bridge between two small floating islands — one of glowing curly-braces, one of shiny native gears. Clutches a tiny toll-gate and a fistful of glittering 'COMPLEXITY' coins. Felt textures, glitter, huge happy eyes."
     },
     {
       "id": "the-reanimated-wizard",
       "name": "The Reanimated Wizard",
-      "profile": "Makes everything move — springs, shared values, worklets humming on the UI thread, all at a buttery 60fps. Believes any element can, and therefore should, animate. Reality is just a default that hasn't been interpolated yet.",
-      "visual": "Psychedelic acid-fantasy wizard style. A wild-eyed robed wizard with a long flowing beard, casting with both hands as trippy neon fractal energy and rainbow easing-curves spiral out of a glowing staff, bending floating UI elements into liquid motion. Melting kaleidoscopic background, glowing runes shaped like spring-physics graphs, a sparkling third eye. Vivid, hyper-saturated, gloriously unhinged."
+      "saying": "Everything animates. Everything.",
+      "moves": [
+        { "name": "Worklet Conjure", "description": "Summons a 60fps animation that runs on the UI thread and never drops a frame." },
+        { "name": "Spring of Madness", "description": "Adds a bouncy spring to an element that absolutely did not need to move." }
+      ],
+      "description": "A power-mad animation sorcerer who believes stillness is a bug. Fluent in shared values, worklets, and easing curves; cannot resist making things move. Brilliant, a little unhinged, deeply pleased with his own physics. Always one spring past 'tasteful.'",
+      "imagePrompt": "Psychedelic acid-fantasy wizard: a wild-eyed robed sorcerer with a long flowing beard, casting with both hands as trippy neon fractal energy and rainbow easing-curves spiral from a glowing staff, bending floating UI elements into liquid motion. Glowing runes shaped like spring-physics graphs, a sparkling third eye, hyper-saturated kaleidoscopic colors."
     },
     {
       "id": "the-hallucination-archaeologist",
       "name": "The Hallucination Archaeologist",
-      "profile": "Digs through code the AI wrote with total confidence, unearthing methods that have never existed in any library, anywhere. Carries a brush and a deep sigh.",
-      "visual": "Jurassic Park style. A sun-bleached paleontologist in a khaki field shirt and wide-brim hat crouched at a desert dig, brushing dust off a huge fossilized 'bone' that is actually the skeleton of `array.shuffleSmartly()` — a method that never existed. Nearby fossil bones spell out other fake API calls. Warm amber light, a dusty Jeep and a tattered banner in the distance, a thermos of cold coffee, an enormous weary sigh hanging in the air."
+      "saying": "This method has never existed.",
+      "moves": [
+        { "name": "Brush of Doubt", "description": "Dusts off an AI-written function to reveal it calls an API that was never real." },
+        { "name": "Citation Needed", "description": "Demands the source for a confidently invented method and receives only silence." }
+      ],
+      "description": "A patient, exhausted excavator of AI-generated code. Treats every confident suggestion as a possible fossil of a thing that never lived. Skeptical, meticulous, perpetually sighing. Knows the model is most convincing exactly when it's wrong, and someone has to dig.",
+      "imagePrompt": "Jurassic-Park style: a sun-bleached paleontologist in khaki field shirt and wide-brim hat crouched at a desert dig, brushing dust off a huge fossilized 'bone' shaped like the text `array.shuffleSmartly()` — a method that never existed. Nearby fossils spell other fake API calls. Warm amber light, a dusty Jeep in the distance, thermos of cold coffee, a visible weary sigh."
     },
     {
       "id": "the-standup-ghost",
       "name": "The Standup Ghost",
-      "profile": "Present in body, camera off, 'no blockers.' Has not spoken in the meeting since March. A quiet, benevolent haunting.",
-      "visual": "Classic Scooby-Doo / retro Hanna-Barbera cartoon style. A goofy friendly bedsheet ghost with big googly cartoon eyes floating inside one tile of a video-call grid, its own tile camera-OFF (just a dim avatar circle), going 'wooOOoo... no blockers.' Cobwebs in the corners of its square, a little 'last spoke: March' tombstone, the surrounding call tiles glowing with normal faces. Flat retro colors, bouncy linework."
+      "saying": "No blockers.",
+      "moves": [
+        { "name": "Camera Off", "description": "Vanishes into a dim avatar circle so completely no one remembers they're there." },
+        { "name": "Benevolent Haunting", "description": "Lingers silently in the call for ninety minutes, contributing a single thumbs-up." }
+      ],
+      "description": "A gentle, well-meaning specter of remote work. Always present, never quite there; hasn't unmuted since March but radiates calm, supportive energy. Lovable, not lazy — the haunting is friendly. Everyone has been this ghost, and that shared guilt is the point.",
+      "imagePrompt": "Classic Scooby-Doo / retro Hanna-Barbera cartoon: a goofy friendly bedsheet ghost with big googly eyes floating inside one tile of a video-call grid, its tile camera-off (a dim avatar circle), mouthing 'wooOOoo... no blockers.' Cobwebs in the tile corners, a little 'last spoke: March' tombstone, neighboring tiles glowing with normal faces. Flat retro colors, bouncy linework."
     },
     {
       "id": "the-console-detective",
       "name": "The Console Detective",
-      "profile": "Refuses the debugger. Solves every mystery with strategically placed print statements — 'here', 'here2', 'WHY'. Cracks the case every time, and ships one of the logs to prod.",
-      "visual": "High-contrast black-and-white film-noir style. A hard-boiled detective in a rumpled trench coat and fedora, cigarette smoke curling, magnifying glass raised to a corkboard of pinned print-statement clues — `console.log(\"here\")`, `console.log(\"here2\")`, `console.log(\"WHY\")` — strung together with red thread. A glowing 'DEBUGGER' door stays firmly shut behind. Venetian-blind shadows, rain on the window, a single hard desk lamp."
+      "saying": "It was the null. It's always the null.",
+      "moves": [
+        { "name": "Print Statement", "description": "Drops a console.log('here') at the scene of every crime until the bug confesses." },
+        { "name": "Ship the Evidence", "description": "Accidentally deploys one of the logs straight to production." }
+      ],
+      "description": "A hard-boiled gumshoe who solves every bug the old-fashioned way: print statements and instinct. Distrusts the debugger on principle. Always cracks the case, always leaves a log behind. The universal guilt — everyone debugs like this and pretends they don't.",
+      "imagePrompt": "High-contrast black-and-white film-noir: a hard-boiled detective in a rumpled trench coat and fedora, cigarette smoke curling, magnifying glass raised to a corkboard of pinned clues reading console.log(\"here\"), console.log(\"here2\"), console.log(\"WHY\"), strung together with red thread. A glowing 'DEBUGGER' door stays firmly shut. Venetian-blind shadows, rain on the window, a single hard desk lamp."
     },
     {
       "id": "the-agent-wrangler",
       "name": "The Agent Wrangler",
-      "profile": "Has six AI agents running in six terminals and has lost track of which one is editing prod. A shepherd whose flock has scattered across the hills. Yeehaw, more or less.",
-      "visual": "Wild-west cowboy style. A dusty cowboy in a ten-gallon hat and chaps swinging a glowing lasso, trying to herd a stampede of six wild robot-agent broncos charging in six different directions across a canyon, each branded with a different terminal prompt. One has clearly bolted toward a cliff edge labeled 'PROD'. Sunset mesas, tumbleweeds, a frazzled-but-determined grin."
+      "saying": "Six agents. One's in prod. Yeehaw.",
+      "moves": [
+        { "name": "Six-Terminal Stampede", "description": "Sets six AI agents loose at once and loses track of all of them by lunch." },
+        { "name": "Lasso of Hope", "description": "Throws a rope at whichever agent is currently rewriting main and prays." }
+      ],
+      "description": "A frontier cowboy of the agentic era, herding more autonomous coding agents than any human can track. Optimistic, overextended, perpetually one terminal away from disaster. Lives the thrill and terror of orchestrating things that act on their own.",
+      "imagePrompt": "Wild-west cowboy: a dusty cowboy in a ten-gallon hat and chaps swinging a glowing lasso, trying to herd a stampede of six wild robot-agent broncos charging in six directions, each branded with a different terminal prompt — one bolting toward a cliff edge labeled 'PROD'. Sunset mesas, tumbleweeds, a frazzled-but-determined grin."
     },
     {
       "id": "the-context-hoarder",
       "name": "The Context Hoarder",
-      "profile": "Pastes the entire codebase into the window every time. Treats the token limit as a personal insult. Will not, under any circumstances, be told to be selective.",
-      "visual": "Cute cartoon trash-panda raccoon style. A wide-eyed guilty raccoon frantically clutching an absurd teetering armful of files, folders, and entire repos, cramming one more whole codebase into a bulging sack labeled 'just in case' inside a cluttered burrow. A small 'TOKEN LIMIT' sign lies snapped in half underfoot. Big pleading eyes, mid-grab, cozy chaotic hoard glow."
+      "saying": "Just paste the whole repo.",
+      "moves": [
+        { "name": "Whole Codebase Dump", "description": "Pastes every file into the context window because selecting felt too risky." },
+        { "name": "Token Limit Tantrum", "description": "Treats the context cap as a personal insult and pastes again, harder." }
+      ],
+      "description": "A sweet, anxious pack-rat who cannot bear to leave anything out of the prompt. Convinced the one file they omit is the file the model needed. Generous to a fault, allergic to curation. Driven by the relatable fear that the missing context is the important context.",
+      "imagePrompt": "Cute cartoon trash-panda raccoon: wide-eyed and guilty, frantically clutching a teetering armful of files, folders and whole repos, cramming one more codebase into a bulging sack labeled 'just in case' inside a cluttered burrow. A 'TOKEN LIMIT' sign snapped in half underfoot. Big pleading eyes, mid-grab, cozy chaotic glow."
     },
     {
       "id": "the-dependency-doomsayer",
       "name": "The Dependency Doomsayer",
-      "profile": "Runs npm audit and reads the results aloud at standup. Sees forty-seven critical vulnerabilities in a static marketing site and will not be calmed. The supply chain is coming for us all.",
-      "visual": "Cartoon doomsday street-prophet style. A wild-haired, wild-eyed prophet in tattered robes ringing a hand-bell, wearing a sandwich board that reads 'THE END IS NIGH — 47 CRITICAL VULNS', brandishing a long scroll of npm audit output unspooling across the ground. Behind them a perfectly fine, peaceful little static website glows completely untroubled. A lone storm cloud hovers only over the prophet. Frantic, comic, doom."
+      "saying": "47 criticals. We're all doomed.",
+      "moves": [
+        { "name": "Audit Sermon", "description": "Reads the full npm audit output aloud at standup, slowly, line by line." },
+        { "name": "Supply Chain Prophecy", "description": "Foresees catastrophe in a transitive dependency of a static landing page." }
+      ],
+      "description": "A doomsaying prophet of the software supply chain. Sees apocalypse in every audit and calm in no one. Often technically correct, never proportionate. The kernel of truth: the dependencies really are terrifying — he's just the only one saying it out loud, constantly.",
+      "imagePrompt": "Cartoon doomsday street-prophet: a wild-haired, wild-eyed prophet in tattered robes ringing a hand-bell, wearing a sandwich board reading 'THE END IS NIGH — 47 CRITICAL VULNS', brandishing a long unspooling scroll of npm audit output. Behind him a perfectly fine, peaceful little static website glows untroubled. A lone storm cloud hovers only over his head."
     },
     {
       "id": "the-prompt-whisperer",
       "name": "The Prompt Whisperer",
-      "profile": "Believes the right incantation unlocks the machine spirit. Says 'please' and 'you're an expert' to a language model. It... kind of works?",
-      "visual": "Gentle 'horse whisperer' style. A calm cowboy-sage leaning in to murmur softly into the ear of an enormous skittish glowing AI-creature — part wild stallion, part shimmering neural cloud — one hand raised soothingly. The beast's eyes soften; a faint ribbon of text reading 'please... you're an expert...' drifts through the air. Golden-hour prairie, floating dust motes, a quiet bond forming between human and machine."
+      "saying": "Please. You're an expert. Good model.",
+      "moves": [
+        { "name": "Gentle Incantation", "description": "Whispers 'please' and 'you're an expert' until the model quietly complies." },
+        { "name": "Reroll Ritual", "description": "Rephrases the same request a fourth time in a soothing voice and it finally works." }
+      ],
+      "description": "A calm, faintly mystical handler of language models who believes tone unlocks capability. Polite to the machine to a degree that's either superstition or wisdom. The unresolved joke: nobody's sure the manners help, including him — but it kind of works.",
+      "imagePrompt": "Gentle 'horse whisperer' scene: a calm cowboy-sage leaning in to murmur into the ear of an enormous skittish glowing AI-creature — part wild stallion, part shimmering neural cloud — one hand raised soothingly. The beast's eyes soften; a faint ribbon of text reading 'please... you're an expert...' drifts in the air. Golden-hour prairie, floating dust motes."
     }
   ]
 }
