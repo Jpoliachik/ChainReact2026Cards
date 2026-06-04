@@ -36,31 +36,47 @@ Used only to reason about spread when choosing cards — not stored in `cards.js
 Conference-meta cards (Hallway Track Sage, First-Question Gladiator…) land _harder_ in
 the room because the context is live. Reserve ~5–6 slots.
 
-## Card data — current schema (Phase 1: selection + character design)
+## Card data — current schema
 
-`cards.json` holds the working set only. Four fields per card, nothing else — keep it
-minimal.
+`cards.json` holds the working set. `meta.artDirection` is the shared composition (below);
+each card has these fields:
 
 ```jsonc
 {
-  "id": "the-bridge-keeper",      // kebab slug, stable
-  "name": "The Bridge Keeper",    // high-register, "The ___" — what the user sees first
-  "profile": "2–3 sentences...",  // WHO they are — the posture; sets up the eventual moves
-  "visual": "vivid look..."       // WHAT they look like — the image-prompt seed (see below)
+  "id": "the-bridge-troll",        // kebab slug, stable
+  "name": "The Bridge Troll",      // VISIBLE — high-register "The ___", the headline
+  "saying": "That'll cost ya.",    // VISIBLE — < 60 chars, the one line they'd say
+  "moves": [                       // VISIBLE — exactly two; where the personality lives
+    { "name": "Toll of Complexity", "description": "one sentence on what it does" },
+    { "name": "Thread Hop",         "description": "one sentence on what it does" }
+  ],
+  "description": "character bible", // INTERNAL — traits/personality/vibe, never shown
+  "imagePrompt": "Nano Banana prompt" // INTERNAL — the per-character generation prompt
 }
 ```
 
-Cut ideas live in [GRAVEYARD.md](GRAVEYARD.md) (plain list) so we don't regenerate them —
-not in `cards.json`. An `image` field gets added per card when art is generated.
+- **Visible to the human holding the card:** `name`, `saying`, the two `moves`.
+- **Internal (building + generation only):** `description` (a short character bible so we
+  reason about who they are) and `imagePrompt`.
+- An `image` field is added per card once art is generated.
+- Cut ideas live in [GRAVEYARD.md](GRAVEYARD.md), not in `cards.json`.
 
-### The `visual` field
+### `saying`
 
-The look carries the gag as much as the name does — they're a team. A good `visual` is a
-**specific, whimsical, made-up character** with concrete costume, props, setting, and mood,
-written so it can be handed almost verbatim to an image generator. Lean into the joke
-(Bridge Keeper = an actual barnacled troll at an actual bridge). Keep characters visually
-distinct from each other — watch for collisions (e.g. don't make three serene robed
-figures, or two gladiators).
+Incredibly short (< 60 chars), in their voice — the line you'd hear them say. Punchy.
+
+### `moves`
+
+Exactly two. Each is a `name` (punny/thematic) + a one-sentence effect. This is the comedy
+engine — quirks, sins, and signature behaviors land here, Pokémon-style.
+
+### `imagePrompt` + `meta.artDirection`
+
+`meta.artDirection` fixes the shared **Pokémon hero-shot composition** for the whole deck:
+one character as the clear, centered focal point, shown mid-action with only a few small
+supporting props. It's prepended to every card's `imagePrompt` at generation time, so each
+`imagePrompt` only describes the character — their distinct art-style flavor, costume,
+props, and action. Keep characters visually distinct (no two near-identical figures).
 
 ## Phase 2: the full Pokémon card (not built yet)
 
