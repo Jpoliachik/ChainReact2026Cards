@@ -9,6 +9,9 @@ Thumbs.db
 # Node
 node_modules/
 
+# Secrets
+.env
+
 # Local backup written by server.js on each save
 cards.json.bak
 

@@ -46,16 +46,28 @@ writing, judging, or cutting cards. Key reminders:
 
 ## The gallery tool
 
-Zero-dependency, **read-only** — just for viewing the cards. Edit `cards.json` directly to
-change them.
+Zero-dependency (built-in `fetch` + a tiny `.env` parser, no npm packages). Viewing is the
+main use; edit `cards.json` directly to change card text.
 
 ```bash
-pnpm start        # → http://localhost:4317
+pnpm start        # → http://localhost:4317  (set PORT to override)
 ```
 
-- `server.js` — zero-dep Node server: `GET /api/cards`, serves `public/`.
-- `public/index.html` — single-file gallery: each card shows name, profile, "The Look"
-  (visual), and an art slot (placeholder until an `image` is added).
+- `server.js` — zero-dep Node server: `GET /api/cards`, `POST /api/generate`, serves `public/`.
+- `public/index.html` — single-file gallery: each card shows name, saying, moves, and an art
+  slot (placeholder until an `image` is generated).
+
+### Art generation (Nano Banana / Gemini)
+
+The gallery can generate card art via Google's `gemini-2.5-flash-image` ("Nano Banana").
+
+- Copy `.env.example` → `.env` and add `GEMINI_API_KEY` (from https://aistudio.google.com/apikey).
+  `.env` is gitignored; the loader no-ops if the file is absent.
+- The **"Generate missing art"** header button fills every card without an image (sequential,
+  stops on first failure); each card also has a **↻ regenerate** button.
+- `POST /api/generate { id }` builds the prompt (`meta.artDirection` + the card's `imagePrompt`),
+  calls Gemini, writes `public/art/<id>.png`, and persists `image: "art/<id>.png"` back into
+  `cards.json` (with a `cards.json.bak` backup). Generated PNGs in `public/art/` are committed.
 
 ## Conventions
 

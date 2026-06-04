@@ -1,16 +1,49 @@
-// Zero-dependency local server for the Chain React Cards gallery.
-// Read-only: serves the UI and the cards.json data.
+// Local server for the Chain React Cards gallery.
+// Zero-dependency (built-in fetch + a tiny .env parser).
 //   node server.js   ->   http://localhost:4317
+//
+// Endpoints:
+//   GET  /api/cards      -> the cards.json payload
+//   POST /api/generate   -> { id }  generate art for one card via Gemini
+//                           ("Nano Banana" = gemini-2.5-flash-image)
+//
+// Needs a GEMINI_API_KEY (see .env.example). Grab one at
+//   https://aistudio.google.com/apikey
 
 import { createServer } from "node:http";
-import { readFile } from "node:fs/promises";
+import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { existsSync, readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join, extname } from "node:path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const PORT = 4317;
+const PORT = Number(process.env.PORT) || 4317;
 const CARDS_PATH = join(__dirname, "cards.json");
 const PUBLIC_DIR = join(__dirname, "public");
+const ART_DIR = join(PUBLIC_DIR, "art");
+
+// ── tiny .env loader (no dependency) ────────────────────────────────────────
+function loadEnv(path) {
+  if (!existsSync(path)) return;
+  for (const raw of readFileSync(path, "utf-8").split("\n")) {
+    const line = raw.trim();
+    if (!line || line.startsWith("#")) continue;
+    const eq = line.indexOf("=");
+    if (eq === -1) continue;
+    const key = line.slice(0, eq).trim();
+    let val = line.slice(eq + 1).trim();
+    if (
+      (val.startsWith('"') && val.endsWith('"')) ||
+      (val.startsWith("'") && val.endsWith("'"))
+    ) {
+      val = val.slice(1, -1);
+    }
+    if (key && !(key in process.env)) process.env[key] = val;
+  }
+}
+loadEnv(join(__dirname, ".env"));
+
+const GEMINI_MODEL = process.env.GEMINI_IMAGE_MODEL || "gemini-2.5-flash-image";
 
 const MIME = {
   ".html": "text/html; charset=utf-8",
@@ -27,6 +60,101 @@ function send(res, status, body, type = "text/plain; charset=utf-8") {
   res.writeHead(status, { "Content-Type": type });
   res.end(body);
 }
+const sendJson = (res, status, obj) =>
+  send(res, status, JSON.stringify(obj), MIME[".json"]);
+
+function readBody(req) {
+  return new Promise((resolve, reject) => {
+    let data = "";
+    req.on("data", (c) => (data += c));
+    req.on("end", () => resolve(data));
+    req.on("error", reject);
+  });
+}
+
+// Combine shared art direction with the card's own prompt — same shape the
+// gallery shows under "copy full".
+function buildPrompt(meta, card) {
+  const dir = meta.artDirection || "";
+  return dir
+    ? `${dir}\n\nCharacter — ${card.name}: ${card.imagePrompt}`
+    : card.imagePrompt;
+}
+
+// Pull the first inline image out of a Gemini generateContent response.
+function extractImage(json) {
+  const parts = json?.candidates?.[0]?.content?.parts || [];
+  for (const p of parts) {
+    const inline = p.inlineData || p.inline_data;
+    if (inline?.data) {
+      return { data: inline.data, mime: inline.mimeType || inline.mime_type };
+    }
+  }
+  return null;
+}
+
+async function generateCard(id) {
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) {
+    return {
+      status: 400,
+      body: {
+        ok: false,
+        error:
+          "No GEMINI_API_KEY set. Copy .env.example to .env and add your key (https://aistudio.google.com/apikey).",
+      },
+    };
+  }
+
+  const raw = await readFile(CARDS_PATH, "utf-8");
+  const doc = JSON.parse(raw);
+  const card = doc.cards.find((c) => c.id === id);
+  if (!card) return { status: 404, body: { ok: false, error: `No card "${id}"` } };
+
+  const prompt = buildPrompt(doc.meta || {}, card);
+  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
+
+  let resp;
+  try {
+    resp = await fetch(endpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "x-goog-api-key": apiKey },
+      body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] }),
+    });
+  } catch (err) {
+    return { status: 502, body: { ok: false, error: `Network error: ${err}` } };
+  }
+
+  const json = await resp.json().catch(() => null);
+  if (!resp.ok) {
+    const msg = json?.error?.message || `Gemini returned ${resp.status}`;
+    return { status: 502, body: { ok: false, error: msg } };
+  }
+
+  const img = extractImage(json);
+  if (!img) {
+    const finish = json?.candidates?.[0]?.finishReason;
+    return {
+      status: 502,
+      body: {
+        ok: false,
+        error: `No image in response${finish ? ` (finishReason: ${finish})` : ""}. The prompt may have been blocked.`,
+      },
+    };
+  }
+
+  await mkdir(ART_DIR, { recursive: true });
+  const ext = img.mime?.includes("jpeg") ? "jpg" : "png";
+  const fileName = `${id}.${ext}`;
+  await writeFile(join(ART_DIR, fileName), Buffer.from(img.data, "base64"));
+
+  // Persist the image path back into cards.json (with a .bak backup).
+  await writeFile(`${CARDS_PATH}.bak`, raw);
+  card.image = `art/${fileName}`;
+  await writeFile(CARDS_PATH, JSON.stringify(doc, null, 2) + "\n");
+
+  return { status: 200, body: { ok: true, id, image: card.image } };
+}
 
 const server = createServer(async (req, res) => {
   try {
@@ -35,6 +163,13 @@ const server = createServer(async (req, res) => {
     if (url.pathname === "/api/cards") {
       const data = await readFile(CARDS_PATH, "utf-8");
       return send(res, 200, data, MIME[".json"]);
+    }
+
+    if (url.pathname === "/api/generate" && req.method === "POST") {
+      const body = JSON.parse((await readBody(req)) || "{}");
+      if (!body.id) return sendJson(res, 400, { ok: false, error: "Missing id" });
+      const { status, body: out } = await generateCard(body.id);
+      return sendJson(res, status, out);
     }
 
     const path = url.pathname === "/" ? "/index.html" : url.pathname;
@@ -49,5 +184,7 @@ const server = createServer(async (req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`\n  Chain React Cards  →  http://localhost:${PORT}\n`);
+  const keyState = process.env.GEMINI_API_KEY ? "✓ key loaded" : "✗ no GEMINI_API_KEY";
+  console.log(`\n  Chain React Cards  →  http://localhost:${PORT}`);
+  console.log(`  Gemini: ${GEMINI_MODEL}  (${keyState})\n`);
 });
