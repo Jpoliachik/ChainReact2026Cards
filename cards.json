@@ -8,16 +8,28 @@
     {
       "id": "the-gesture-jester",
       "name": "The Gesture Jester",
+      "hp": 90,
+      "type": "psychic",
       "saying": "Don't watch the swipe — watch the hands.",
       "moves": [
         {
           "name": "Misdirection",
+          "type": "psychic",
+          "damage": "50",
+          "iconCount": 2,
           "description": "Buries a half-second of lag behind a flourish so smooth the hit lands before anyone notices they waited."
         },
         {
           "name": "Hypnotic Fling",
+          "type": "psychic",
+          "damage": "60",
+          "iconCount": 3,
           "description": "Flicks a list into a buttery 60fps spin that leaves onlookers Mesmerized — they cannot look away."
         }
+      ],
+      "backgroundColor": [
+        "purple",
+        "pink"
       ],
       "description": "A vaudeville trickster who treats every touch interaction as a magic act. Obsessive about how a gesture feels in the thumb; will rebuild a swipe twenty times for an imperceptible gain. Charming, theatrical, quietly smug that his best work is the work nobody notices.",
       "imagePrompt": "Old-school cartoon court-jester with magical hypnotist flair: a grinning harlequin in diamond-patterned motley and a curled three-point hat, fingers splayed mid-flourish conjuring glowing hypnotic spirals and looping motion-trails. A single phone floats hypnotized nearby, mid-swipe. Swirly spiral eyes, mischievous wink, candy-colored vaudeville palette.",
@@ -26,17 +38,26 @@
     {
       "id": "the-bridge-troll",
       "name": "The Bridge Troll",
+      "hp": 130,
+      "type": "nature",
       "saying": "Crossing to native? That'll cost ya.",
       "moves": [
         {
           "name": "Riddle of the Crossing",
+          "type": "nature",
+          "damage": "30",
+          "iconCount": 2,
           "description": "Won't raise the gate until you answer his riddle — and the answer always comes back a few frames late."
         },
         {
           "name": "Flattened to Fit",
+          "type": "strength",
+          "damage": "90",
+          "iconCount": 3,
           "description": "Mashes every object into plain JSON before it may cross, so your data always arrives a little duller than it left."
         }
       ],
+      "backgroundColor": "green",
       "description": "The mythical troll of the JS↔native bridge: cross all you like, but try to send too much data and he'll charge you for it. Genuinely cautious about performance — every fat payload serialized over is a toll paid in dropped frames. Lately grumbles that the New Architecture thinned his margins, though he'd never admit business is down. Still guarding the bridge. Still eyeing your payload size.",
       "imagePrompt": "Friendly good-vibes fairy-tale troll: a big round huggable troll with soft mossy-green skin, a bulbous nose, a goofy underbite with one snaggle-tooth, big gentle eyes and a sheepish good-natured grin, sitting cozily beneath a mossy stone bridge — politely holding out one giant hand to check the toll. The bridge clearly connects two different lands: the near bank is a bright, warm land of floating glowing curly-braces and rounded JavaScript-yellow blocks, marked by a small stone sign reading 'JS'; the far bank is a cooler land of sleek metal gears and native platform shapes, marked by a small stone sign reading 'NATIVE'. A tiny traveler hauls an absurdly oversized glowing bundle of data across the span toward the native side. High overhead, a sleek jet airplane streaks past trailing a small flag-banner that reads 'NEW ARCHITECTURE', quietly bypassing the little bridge. Warm storybook-fantasy palette, dappled golden light, lush riverbank, a trickle of water below. Render only those three short labels — 'JS', 'NATIVE', 'NEW ARCHITECTURE' — cleanly and legibly, and no other text anywhere.",
       "image": "art/the-bridge-troll.png"
@@ -44,16 +65,28 @@
     {
       "id": "the-reanimated-wizard",
       "name": "The Reanimated Wizard",
+      "hp": 100,
+      "type": "cosmic",
       "saying": "The easing's off. I can feel it.",
       "moves": [
         {
           "name": "Just One More Frame",
+          "type": "cosmic",
+          "damage": "16",
+          "iconCount": 2,
           "description": "Re-runs the same transition for the ninth hour straight; the move never resolves, because it's never quite right."
         },
         {
           "name": "Spring of Madness",
+          "type": "electric",
+          "damage": "120",
+          "iconCount": 3,
           "description": "Bolts a bouncy spring onto an element that had no reason to move — now it overshoots every single time."
         }
+      ],
+      "backgroundColor": [
+        "indigo",
+        "purple"
       ],
       "description": "A perfectionist animation sorcerer who can feel a wrong easing curve in his bones. Fluent in shared values, worklets, and damping ratios; will not ship until the motion lands exactly right, which is never. Brilliant, a little unhinged, deeply pleased with physics no one else will ever consciously notice.",
       "imagePrompt": "Psychedelic acid-fantasy wizard: a wild-eyed robed sorcerer with a long flowing beard, casting with both hands as trippy neon fractal energy and rainbow easing-curves spiral from a glowing staff, meticulously bending a single floating UI element into liquid motion. Glowing runes shaped like spring-physics graphs, a sparkling third eye, hyper-saturated kaleidoscopic colors.",
@@ -62,16 +95,28 @@
     {
       "id": "the-slop-sommelier",
       "name": "The Slop Sommelier",
+      "hp": 110,
+      "type": "toxic",
       "saying": "I can taste the AI in this PR.",
       "moves": [
         {
           "name": "Sniff Test",
+          "type": "toxic",
+          "damage": "70",
+          "iconCount": 2,
           "description": "Swirls a pull request, sips, and names which model wrote it from the aftertaste alone."
         },
         {
           "name": "Guardrail Pairing",
+          "type": "toxic",
+          "damage": "100",
+          "iconCount": 3,
           "description": "Refuses to let an AI suggestion near main without a test and a lint rule chaperoning it."
         }
+      ],
+      "backgroundColor": [
+        "green",
+        "yellow"
       ],
       "description": "A discerning connoisseur of machine-written code who can identify the model, the temperature, and the vintage from a single function. The team's last line of defense against AI slop — pairs every suggestion with guardrails before it touches production. Not anti-AI, just refuses to swallow it unverified.",
       "imagePrompt": "Fancy wine-sommelier style: an impeccably dressed connoisseur in a tuxedo and tasting apron, swirling a crystal glass that holds glowing liquid code instead of wine, nose in the glass, eyes narrowed in expert judgment. A tasting flight of little glasses of glowing code sits nearby, a spit-bucket overflows with rejected slop, a rolled-up scroll tucked under one arm. Exaggerated snooty caricature, rich refined candlelit wine-cellar.",
@@ -80,17 +125,26 @@
     {
       "id": "the-rubber-duck",
       "name": "The Rubber Duck",
+      "hp": 80,
+      "type": "water",
       "saying": "I'm listening.",
       "moves": [
         {
           "name": "Silent Treatment",
+          "type": "water",
+          "damage": "0",
+          "iconCount": 1,
           "description": "Says absolutely nothing — and somehow that's exactly the help you needed to hear your own mistake."
         },
         {
           "name": "The Duck Knows",
+          "type": "psychic",
+          "damage": "200",
+          "iconCount": 2,
           "description": "Sits in serene rubber judgment until the bug confesses itself; takes none of the blame, accepts all of the credit."
         }
       ],
+      "backgroundColor": "blue",
       "description": "The silent sage of every desk. You explain the impossible bug out loud, and somewhere around the third sentence the answer arrives — the duck never said a word. Patient, unbothered, quietly omniscient. Has solved more production incidents than any senior engineer and asked for nothing but a dry spot by the keyboard.",
       "imagePrompt": "A little yellow rubber duck as the wise hero of the frame, large and centered on a desk: glossy and round with a serene, all-knowing, faintly smug expression, somehow radiating calm omniscient wisdom like a tiny zen master. Exaggerated caricature — big knowing eyes, a subtle sage's smile. A faint soft glow or halo of insight around it; out of focus behind it, a frazzled developer mid-rant gestures at a glowing tangle of buggy code. Warm desk-lamp glow, cozy late-night home-office den, mugs and sticky notes, deep colored atmospheric background.",
       "image": "art/the-rubber-duck.png"
@@ -98,17 +152,26 @@
     {
       "id": "the-console-detective",
       "name": "The Console Detective",
+      "hp": 100,
+      "type": "electric",
       "saying": "It was the null. It's always the null.",
       "moves": [
         {
           "name": "Print Statement",
+          "type": "electric",
+          "damage": "404",
+          "iconCount": 2,
           "description": "Drops a console.log('here') at the scene of every crime until the bug confesses."
         },
         {
           "name": "Ship the Evidence",
+          "type": "electric",
+          "damage": "500",
+          "iconCount": 1,
           "description": "Accidentally deploys one of the logs straight to production."
         }
       ],
+      "backgroundColor": "orange",
       "description": "A hard-boiled gumshoe who solves every bug the old-fashioned way: print statements and instinct. Distrusts the debugger on principle. Always cracks the case, always leaves a log behind. The universal guilt — everyone debugs like this and pretends they don't.",
       "imagePrompt": "High-contrast black-and-white film-noir, tight dramatic close-up filling the frame: a hard-boiled detective in a rumpled trench coat and fedora leaning in, one squinting eye huge behind a raised magnifying glass as he scrutinizes a single small glowing buggy clue. Cigarette smoke curls past his face. Exaggerated heavy-jawed stubbled caricature, deep Venetian-blind shadows slashing across his features, rain-streaked window and one hard desk lamp behind him. Moody, characterful, intense.",
       "image": "art/the-console-detective.png"
@@ -116,16 +179,28 @@
     {
       "id": "the-agent-wrangler",
       "name": "The Agent Wrangler",
+      "hp": 120,
+      "type": "fire",
       "saying": "Now which one of y'all touched prod?",
       "moves": [
         {
           "name": "Token Bonfire",
+          "type": "fire",
+          "damage": "1M",
+          "iconCount": 4,
           "description": "Sets a million tokens ablaze before lunch and calls it research."
         },
         {
           "name": "Hot Swap",
+          "type": "electric",
+          "damage": "6",
+          "iconCount": 3,
           "description": "Bounces between six terminals so fast he loses track of which agent is in prod."
         }
+      ],
+      "backgroundColor": [
+        "red",
+        "orange"
       ],
       "description": "A frontier cowboy of the agentic era who runs more agents than any human can track and burns tokens like a campfire. Optimistic, overextended, context-switching so fast he forgets what each terminal was doing. Lives the thrill and terror of orchestrating things that act on their own.",
       "imagePrompt": "Wild-west cowboy in total rodeo chaos: a dusty cowboy in a ten-gallon hat astride one bucking glowing robot-agent bronco, hanging on for dear life with one hand while the other swings a glowing lasso to rope a whole stampede of OTHER wild robot-agent horses bolting off in every direction — one charging toward a cliff edge. Each robo-bronco is a different glowing mechanical creature. Exaggerated wide-eyed panic-grin caricature, flying dust and tumbleweeds, sunset mesas. Pure mayhem.",
@@ -134,17 +209,26 @@
     {
       "id": "the-context-hoarder",
       "name": "The Context Hoarder",
+      "hp": 90,
+      "type": "psychic",
       "saying": "Just give it everything.",
       "moves": [
         {
           "name": "Repo Dump",
+          "type": "psychic",
+          "damage": "∞",
+          "iconCount": 4,
           "description": "Pastes the entire codebase into context because choosing which files felt risky."
         },
         {
           "name": "Sketchy MCP",
+          "type": "toxic",
+          "damage": "50",
+          "iconCount": 2,
           "description": "Wires the agent to a random unvetted MCP server because it had a cool README."
         }
       ],
+      "backgroundColor": "purple",
       "description": "A trusting soul who believes more context can only help and that access controls are for cowards. Dumps the whole repo, hooks the agent to every MCP it asks for, clicks 'allow all' without reading. YOLO incarnate. The fear underneath: the one thing you withhold is the thing it needed.",
       "imagePrompt": "Cute cartoon trash-panda raccoon with gleeful gremlin energy, big silly caricature: wide-eyed and grinning ear to ear, arms thrown wide as it proudly hugs a giant overflowing armful of random junk — papers, tangled cables, folders and files spilling out everywhere, a few tumbling from its stuffed cheeks — beaming like 'yeah, this is ALL my context.' Bushy striped tail, mischievous sparkle in its eyes. Set in a cozy dim hoarder's den glowing with warm amber light — cluttered shelves and a colored, atmospheric backdrop framing him, never a plain white background.",
       "image": "art/the-context-hoarder.png"
@@ -152,17 +236,26 @@
     {
       "id": "the-dependency-prepper",
       "name": "The Dependency Prepper",
+      "hp": 140,
+      "type": "toxic",
       "saying": "I've got a bunker full of node_modules.",
       "moves": [
         {
           "name": "Left-Pad Flashback",
+          "type": "toxic",
+          "damage": "11",
+          "iconCount": 1,
           "description": "Still hasn't recovered from the day eleven lines un-published and broke the entire internet."
         },
         {
           "name": "Vendor Everything",
+          "type": "strength",
+          "damage": "90",
+          "iconCount": 3,
           "description": "Hand-copies every dependency into the repo so no registry can ever betray him again."
         }
       ],
+      "backgroundColor": "green",
       "description": "A doomsday prepper for the software supply chain. Keeps a bunker stocked with vendored dependencies and a spreadsheet of every npm compromise since left-pad. Certain the next install ships a zero-day and ends civilization. Often technically correct, never proportionate.",
       "imagePrompt": "Doomsday-prepper caricature: a wild-eyed survivalist in a tinfoil-lined hat and bulging tactical vest crouched paranoid in an underground bunker stacked floor-to-ceiling with canned goods and crates of hoarded code, clutching a crumpled printout to his chest. A wall map webbed with frantic red string tracks unseen threats; a gas mask and flashlight hang nearby. Exaggerated twitchy wide-eyed expression, comically over-prepared, dim flickering bunker light.",
       "image": "art/the-dependency-prepper.png"
@@ -170,17 +263,26 @@
     {
       "id": "the-prompt-whisperer",
       "name": "The Prompt Whisperer",
+      "hp": 70,
+      "type": "psychic",
       "saying": "You're an expert. Make no mistakes.",
       "moves": [
         {
           "name": "Phantom Tip",
+          "type": "psychic",
+          "damage": "200",
+          "iconCount": 2,
           "description": "Promises the model a $200 tip it will never receive; quality mysteriously improves."
         },
         {
           "name": "All-Caps Plea",
+          "type": "psychic",
+          "damage": "40",
+          "iconCount": 1,
           "description": "When politeness fails, resorts to typing 'IMPORTANT: DO NOT HALLUCINATE' in all caps."
         }
       ],
+      "backgroundColor": "purple",
       "description": "A gentle mystic who believes tone and ritual unlock the machine. Flatters, bribes, and soothes the model with incantations half-remembered from a benchmark paper. Nobody is sure the rituals work, including him — but they kind of do.",
       "imagePrompt": "A gentle robed mystic / incense-burning guru kneeling in devout supplication before a giant floating glowing AI oracle-orb, hands pressed together in prayer, lips pursed mid-whisper as he flatters and coaxes it. He humbly offers up a single shiny coin on a little cushion as a bribe; the orb glows warmer in response, a faint serene face forming within it, wisps of incense curling upward. Blissed-out half-lidded zen caricature, flowing robes, candlelit shrine, soft mystical glow and floating dust motes.",
       "image": "art/the-prompt-whisperer.png"
@@ -188,16 +290,28 @@
     {
       "id": "the-nights-watch",
       "name": "The Night's Watch",
+      "hp": 160,
+      "type": "dream",
       "saying": "Night gathered. The agent did not sleep.",
       "moves": [
         {
           "name": "The Long Diff",
+          "type": "dream",
+          "damage": "4K",
+          "iconCount": 3,
           "description": "Wakes before the realm to read every line the agent wrote in the dark — all four thousand of them — before a single one reaches main."
         },
         {
           "name": "Hold the Wall",
+          "type": "dream",
+          "damage": "100",
+          "iconCount": 3,
           "description": "Lets nothing past into the codebase unreviewed, no matter how confident the agent's overnight summary sounded."
         }
+      ],
+      "backgroundColor": [
+        "blue",
+        "indigo"
       ],
       "description": "Sworn protector of the codebase, keeping the long watch while the autonomous agents grind through the night. Goes to bed with a prompt running and wakes to a wall of green-and-red diff that wrote itself in the dark. Trusts no summary, reads every line, reverts without mercy. Grim, loyal, perpetually under-slept — the shield that guards the realm of main from whatever crept in at 3am. Takes the oath seriously: the merge is dark and full of terrors.",
       "imagePrompt": "A grim, bundled-up night-watchman hero in the style of a frozen northern fantasy ranger, caricatured with an oversized shaggy black fur cloak swallowing his tiny determined face, standing guard atop a colossal wall in falling snow. The wall itself is built from stacked, faintly glowing blocks of code and commit-bricks, stretching off into blue twilight. He grips a great longsword whose blade glows softly like a cursor, holding it up to inspect a long unfurling scroll of diff — glowing green additions and red deletions scrolling down the parchment. Behind him, beyond the wall, the dark forest bristles with faint glowing eyes (the night's untested commits). Cold blue-and-white dawn palette, breath fogging, dramatic wintry light, heroic last-stand pose. No text anywhere.",
@@ -206,16 +320,28 @@
     {
       "id": "the-ai-triforce",
       "name": "The Triforce Bearer",
+      "hp": 150,
+      "type": "crystal",
       "saying": "It's dangerous to go alone. Take this.",
       "moves": [
         {
           "name": "It's Dangerous to Go Alone",
+          "type": "crystal",
+          "damage": "3",
+          "iconCount": 3,
           "description": "Refuses to let one dev context-switch between building, guarding, and architecting — splits the power three ways so each hero wields a single piece well."
         },
         {
           "name": "Guard the Gates",
+          "type": "crystal",
+          "damage": "110",
+          "iconCount": 2,
           "description": "Lets the agents build with abandon inside the sandbox, but no pull request crosses into main without a human standing at the gate."
         }
+      ],
+      "backgroundColor": [
+        "yellow",
+        "green"
       ],
       "description": "Wielder of the AI Triforce — Gant Laborde's agentic-team method, where AI gives everyone superpowers but a dungeon with no locked doors is no place to ship from. Instead of one person context-switching (slower, and prone to error), the power splits three ways: the Builder ships features fast inside the sandbox but can't merge; the Protector owns safety, tests, and the constraints of what must never happen; the Organizer guards architecture and holds back the drift. Three humans guarding the gates — how you pull deterministic outcomes out of a non-deterministic machine. A tribute to Gant's piece; he'll be at Chain React.",
       "imagePrompt": "A heroic pint-sized green-tunic'd fantasy adventurer (classic top-down adventure-game energy, pointed cap, little leather boots), caricatured with an oversized triumphant grin and huge bright eyes, standing in a victorious hero pose and raising overhead a single radiant golden Triforce — three glowing triangles fitted into one larger triangle, each of the three lit a distinct color and bearing a tiny icon: a little hammer, a little shield, and a little gear. A glowing legendary sword hangs at his hip. Around him, three small friendly glowing agent-sprite fairies buzz helpfully. Behind him stands a sturdy stone castle gateway with a closed, well-guarded door. Lush green storybook overworld, rolling hills, golden heroic light, bright saturated adventure-game palette. Render only the three small icons inside the triangles (hammer, shield, gear) — no words or text anywhere.",
@@ -224,17 +350,26 @@
     {
       "id": "the-demo-illusionist",
       "name": "The Demo Illusionist",
+      "hp": 90,
+      "type": "psychic",
       "saying": "Don't refresh. Whatever you do, don't refresh.",
       "moves": [
         {
           "name": "Sleight of Hand",
+          "type": "psychic",
+          "damage": "80",
+          "iconCount": 2,
           "description": "Performs the one rehearsed happy path so smoothly the audience never sees the four that crash."
         },
         {
           "name": "The Loaded Deck",
+          "type": "psychic",
+          "damage": "200",
+          "iconCount": 1,
           "description": "Quietly stubs the flaky endpoint with a hardcoded response so the magic never depends on the venue wifi."
         }
       ],
+      "backgroundColor": "purple",
       "description": "A showman who has turned the live demo into a magic act. Behind the flawless on-stage run is a single happy path rehearsed forty times, a stubbed API or two, and a cape draped over the parts that don't work yet. Radiates total confidence while quietly praying nothing reloads. Universal-guilt card: everyone who has ever given a live demo knows the terror under the showmanship. The trick always works — as long as nobody touches the keyboard.",
       "imagePrompt": "A flamboyant stage magician in a tuxedo, top hat, and flowing cape, mid-flourish on a darkened conference stage under a single dramatic spotlight, triumphantly pulling a glowing, perfectly-running phone app out of a top hat as if by magic — beaming a showman's grin while a single bead of nervous sweat rolls down his temple. Just behind him, half-hidden by his cape, a chaotic tangle of duct tape, crossed wires, and a propped-up laptop shows the trick is held together by hope. Faint silhouettes of an audience in the dark foreground. Caricature: oversized confident grin, huge expressive eyes, theatrical posture. Moody spotlit stage, rich theatrical purples and golds, dramatic rim light. No text anywhere.",
       "image": "art/the-demo-illusionist.png"
@@ -242,16 +377,28 @@
     {
       "id": "the-pixel-surgeon",
       "name": "The Pixel Surgeon",
+      "hp": 100,
+      "type": "crystal",
       "saying": "That's two pixels off. I can see it from here.",
       "moves": [
         {
           "name": "Sub-Pixel Incision",
+          "type": "crystal",
+          "damage": "1",
+          "iconCount": 2,
           "description": "Shifts a single element one point with a steady hand, and somehow the whole screen finally breathes."
         },
         {
           "name": "Eagle Eye",
+          "type": "crystal",
+          "damage": "2",
+          "iconCount": 1,
           "description": "Spots the misaligned padding from across the room and cannot, will not, unsee it."
         }
+      ],
+      "backgroundColor": [
+        "teal",
+        "cyan"
       ],
       "description": "An exacting craftsperson who treats a layout like an operating table. Sees the 2px misalignment nobody else can, and will not close until it's perfect — often on a device they don't even own. Calm, precise, a little terrifying. The reason the UI feels right even though no one can say why. Not slow, just unwilling to ship a wound.",
       "imagePrompt": "A focused surgeon in teal scrubs, surgical mask, and a head-mounted magnifier lamp, leaning intently over a large glowing UI mockup laid out like a patient on an operating table. With tiny precision tools — calipers, tweezers, a glowing scalpel — they delicately nudge one single pixel-block into alignment. A monitor beside the table displays a pulsing layout grid instead of a heartbeat. Caricature: enormous magnified eyes behind the lens, intense steady concentration, oversized careful hands. Cool teal operating-room lighting, sterile but warm focal glow on the work. No text anywhere.",
@@ -260,16 +407,28 @@
     {
       "id": "the-upgrade-monk",
       "name": "The Upgrade Monk",
+      "hp": 130,
+      "type": "water",
       "saying": "The breaking changes are simply a teacher.",
       "moves": [
         {
           "name": "The Long Migration",
+          "type": "water",
+          "damage": "40",
+          "iconCount": 3,
           "description": "Sits in perfect calm through forty breaking changes and a thousand deprecation warnings without losing serenity."
         },
         {
           "name": "Bear the Suffering",
+          "type": "water",
+          "damage": "100",
+          "iconCount": 2,
           "description": "Absorbs the entire SDK bump alone so the rest of the team never has to open the changelog."
         }
+      ],
+      "backgroundColor": [
+        "orange",
+        "yellow"
       ],
       "description": "An ascetic who has made peace with the dependency upgrade everyone else dreads. Finds quiet enlightenment in the Expo SDK bump, the major-version migration, the changelog no one wants to read. Takes on the suffering so the team doesn't have to, and emerges serene on the other side of a green build. Patient, selfless, faintly amused by your fear of breaking changes.",
       "imagePrompt": "A serene bald monk in flowing saffron-orange robes, sitting in calm lotus meditation atop a misty mountain peak, a faint blissful smile on his face and a glowing halo of peace around him — utterly undisturbed while a swirling storm of red deprecation-warning triangles and crackling 'breaking change' lightning rages all around him. An impossibly long changelog scroll unrolls down the mountainside beside him; a small glowing package-box floats before him like an object of devotion. Caricature: oversized peaceful face, tiny knowing smile, exaggerated calm amid chaos. Misty mountaintop temple at warm dawn, soft golden light cutting through the storm. No text anywhere.",
