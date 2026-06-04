@@ -433,6 +433,180 @@
       "description": "An ascetic who has made peace with the dependency upgrade everyone else dreads. Finds quiet enlightenment in the Expo SDK bump, the major-version migration, the changelog no one wants to read. Takes on the suffering so the team doesn't have to, and emerges serene on the other side of a green build. Patient, selfless, faintly amused by your fear of breaking changes.",
       "imagePrompt": "A serene bald monk in flowing saffron-orange robes, sitting in calm lotus meditation atop a misty mountain peak, a faint blissful smile on his face and a glowing halo of peace around him — utterly undisturbed while a swirling storm of red deprecation-warning triangles and crackling 'breaking change' lightning rages all around him. An impossibly long changelog scroll unrolls down the mountainside beside him; a small glowing package-box floats before him like an object of devotion. Caricature: oversized peaceful face, tiny knowing smile, exaggerated calm amid chaos. Misty mountaintop temple at warm dawn, soft golden light cutting through the storm. No text anywhere.",
       "image": "art/the-upgrade-monk.png"
+    },
+    {
+      "id": "the-brownfield-archaeologist",
+      "name": "The Brownfield Archaeologist",
+      "hp": 160,
+      "type": "strength",
+      "saying": "Don't rewrite it — I know where the bodies are buried.",
+      "moves": [
+        {
+          "name": "Read the Strata",
+          "type": "strength",
+          "damage": "2014",
+          "iconCount": 2,
+          "description": "Dates any cursed file by its layers of commented-out code and names the developer who fled the year it was written."
+        },
+        {
+          "name": "Load-Bearing Hack",
+          "type": "strength",
+          "damage": "90",
+          "iconCount": 3,
+          "description": "Finds the terrifying untested function the whole app secretly rests on, and wisely refuses to touch it."
+        }
+      ],
+      "backgroundColor": [
+        "yellow",
+        "orange"
+      ],
+      "description": "A seasoned excavator who thrives in the 200k-line codebase everyone else fears. Reads commit history like rock strata, remembers why the haunted file exists, and treats legacy not as debt but as dig site. Unbothered by the mess — the mess is the job, and it pays the bills. The counterpart to the Greenfield Homesteader: where they want a blank repo, the Archaeologist wants the ruins.",
+      "imagePrompt": "An intrepid dusty adventurer-archaeologist in a worn khaki explorer's outfit and satchel, deep inside a torchlit underground tomb whose stone walls are carved with glowing ancient code-glyphs stacked in geological strata of old commits. Crouched with a small brush and a glowing lantern, gleefully dusting off one massive cracked load-bearing stone block etched with a single ancient function, as if it were buried treasure. Cobwebs, crumbling pillars, a coil of rope. Caricature: oversized delighted grin, huge curious eyes, comic proportions. Warm flickering golden torchlight, deep amber dust-mote atmosphere, rich shadowed ruin. No text anywhere."
+    },
+    {
+      "id": "the-greenfield-homesteader",
+      "name": "The Greenfield Homesteader",
+      "hp": 30,
+      "type": "nature",
+      "saying": "Give me an empty repo and a clean horizon.",
+      "moves": [
+        {
+          "name": "npx create-fresh-start",
+          "type": "nature",
+          "damage": "0",
+          "iconCount": 1,
+          "description": "Abandons the legacy repo entirely and scaffolds a brand-new one; day-one velocity has never felt so pure."
+        },
+        {
+          "name": "Not My Monolith",
+          "type": "nature",
+          "damage": "100",
+          "iconCount": 2,
+          "description": "Cannot bear to read another's code, and would rather rebuild the whole feature from a blank file than understand the old one."
+        }
+      ],
+      "backgroundColor": [
+        "green",
+        "cyan"
+      ],
+      "description": "A starry-eyed settler of untouched repositories, happiest at the moment of the first commit. Lives for clean architecture, zero tech debt, and a horizon with nothing built on it yet. Allergic to legacy: every hard problem is solved by starting over somewhere fresh. The counterpart to the Brownfield Archaeologist — give them the ruins and they'll just go homestead the next valley.",
+      "imagePrompt": "A beaming pioneer homesteader in dungarees and a straw hat, standing on a pristine, empty, rolling green meadow at fresh dewy dawn — proudly planting a single small glowing seedling that is just sprouting a tiny '<App/>' shoot from the soil. A little wooden 'create-' signpost stands beside a wheelbarrow full of fresh seed-packets. The horizon ahead is wide, blank, and untouched. Lush pastoral cottagecore vibe (NOT desert or western), soft pink-and-gold sunrise, dewdrops catching light. Caricature: oversized hopeful grin, huge bright eyes, comic proportions. Render only the two short labels — '<App/>' on the seedling and 'create-' on the signpost — cleanly, and no other text."
+    },
+    {
+      "id": "the-keyboard-exorcist",
+      "name": "The Keyboard Exorcist",
+      "hp": 120,
+      "type": "sound",
+      "saying": "'padding' on iOS, 'height' on Android, and a prayer.",
+      "moves": [
+        {
+          "name": "Rite of behavior",
+          "type": "sound",
+          "damage": "2",
+          "iconCount": 2,
+          "description": "Chants a different sacred prop for each platform and prays the input field stops hiding behind the keyboard on exactly one of them."
+        },
+        {
+          "name": "Banish the Rising Tide",
+          "type": "sound",
+          "damage": "60",
+          "iconCount": 3,
+          "description": "Drives the swelling keyboard back beneath the fold so the submit button may once again be seen by mortal thumbs."
+        }
+      ],
+      "backgroundColor": [
+        "red",
+        "orange"
+      ],
+      "description": "A robed warrior-priest locked in eternal holy war with KeyboardAvoidingView. Knows a different incantation for every OS, trusts none of them fully, and keeps a vial of holy water for the build where the keyboard wins anyway. Universal RN suffering — everyone who has shipped a form on mobile has stood in this exact battle and whispered the same prayer.",
+      "imagePrompt": "A wild-eyed robed exorcist-priest mid-incantation, brandishing a glowing talisman in one hand and flinging a splash from a holy-water vial with the other, fending off a huge snarling demonic ON-SCREEN KEYBOARD monster that surges upward like a tide from the bottom of a giant glowing phone. At the top of the phone, a tiny app input field and submit button cower out of reach. Holy radiant light clashing against the dark keyboard demon. Caricature: oversized panicked-determined face, huge eyes, billowing robes, comic proportions. Dramatic chiaroscuro, embers and sparks, fiery red-and-gold supernatural glow. No text anywhere."
+    },
+    {
+      "id": "the-ota-smuggler",
+      "name": "The OTA Smuggler",
+      "hp": 90,
+      "type": "electric",
+      "saying": "Why wait for review when you can patch it live?",
+      "moves": [
+        {
+          "name": "Patch It Live",
+          "type": "electric",
+          "damage": "1.0.1",
+          "iconCount": 2,
+          "description": "Slips a hotfix straight onto every device over the air, skipping the week-long review queue entirely."
+        },
+        {
+          "name": "Mind the Native Modules",
+          "type": "electric",
+          "damage": "86",
+          "iconCount": 1,
+          "description": "One day pushes a change that quietly touches native code, and the whole contraband bundle gets turned away at the gate."
+        }
+      ],
+      "backgroundColor": [
+        "blue",
+        "purple"
+      ],
+      "description": "A charming rogue who lives by the over-the-air update, beaming fixes to users at midnight rather than bowing to the App Store review queue. Mostly gets away with it — right up until a change brushes native code and forces a real submission. Cursed but shared: everyone with OTA updates has felt the thrill of patching prod live and dodging the line.",
+      "imagePrompt": "A sly cloaked rogue smuggler with a mischievous grin, tiptoeing through the dead of night past a drowsy 'app store' border-checkpoint guard booth where a uniformed inspector dozes. Over one shoulder he hauls a glowing contraband app-bundle crate, beaming it wirelessly — little glowing OTA signal-waves arcing over the fence — to a row of eager phones waiting on the far side. Moonlit heist atmosphere, long shadows, a striped checkpoint barrier. Caricature: exaggerated sneaky tiptoe, huge shifty eyes, finger to lips. Cool moonlit blues and electric-purple glow. No text anywhere."
+    },
+    {
+      "id": "the-qa-phantom",
+      "name": "The QA Phantom",
+      "hp": 130,
+      "type": "dream",
+      "saying": "What happens if I rotate the device mid-payment?",
+      "moves": [
+        {
+          "name": "Edge Case from Beyond",
+          "type": "dream",
+          "damage": "13",
+          "iconCount": 2,
+          "description": "Conjures the one scenario nobody designed for — airplane mode mid-upload, a rotate at checkout — and the happy path crumbles."
+        },
+        {
+          "name": "It Repros on My Device",
+          "type": "dream",
+          "damage": "100",
+          "iconCount": 3,
+          "description": "Reproduces the impossible bug every single time on a three-year-old Android phone that no one else on the team owns."
+        }
+      ],
+      "backgroundColor": [
+        "purple",
+        "indigo"
+      ],
+      "description": "A spectral tester who haunts the happy path, materializing only to do the unthinkable thing a real user would absolutely do. Beloved and feared in equal measure: the bug they surface is the one that would have shipped. The human truth underneath — actual users really do rotate the device mid-payment, and someone has to be the ghost who proves it.",
+      "imagePrompt": "A translucent, softly glowing ghost-phantom wearing a conference QA lanyard, with a mischievous spectral grin, phasing its ethereal hands straight through a giant glowing smartphone to twist it sideways mid-transaction while one wispy finger flicks on airplane-mode. Around it float little glowing bug-spirits. In the corner, a tiny terrified developer-figure watches a crash bloom red across the screen. Playful haunted-house energy, not scary. Caricature: oversized gleeful spooky grin, big hollow glowing eyes, comic proportions. Moonlit purple-and-indigo haunted glow, drifting ectoplasm mist. No text anywhere."
+    },
+    {
+      "id": "the-merge-magistrate",
+      "name": "The Merge Magistrate",
+      "hp": 140,
+      "type": "crystal",
+      "saying": "Both branches make their case — only one merges.",
+      "moves": [
+        {
+          "name": "Hear Both Sides",
+          "type": "crystal",
+          "damage": "2",
+          "iconCount": 2,
+          "description": "Calmly weighs HEAD against incoming, line by warring line, until the chevrons of conflict fall silent."
+        },
+        {
+          "name": "Ruling from the Bench",
+          "type": "crystal",
+          "damage": "200",
+          "iconCount": 3,
+          "description": "Renders final judgment on whose code survives the merge; the verdict is binding and the rebase comes out mercifully clean."
+        }
+      ],
+      "backgroundColor": [
+        "cyan",
+        "blue"
+      ],
+      "description": "The calm, impartial arbiter every team needs when two developers' branches collide and neither will yield. Hears both sides, weighs the diff with a steady hand, and brings order to the chaos of '<<<<<<< HEAD'. Respected, fair, faintly theatrical in the wig. A merge-conflict identity reframed as the peacemaker rather than the gladiator — the senior who settles the standoff instead of bleeding in the arena.",
+      "imagePrompt": "A dignified judge in a tall white curly barrister's wig and flowing black robe, perched high behind an ornate wooden courtroom bench, banging a single glowing gavel to settle a dispute. Below, two glowing rival code-branch streams are tangled together in tug-of-war, knotted with '<<<<<<<' conflict chevrons. To one side, a set of golden scales of justice weighs two little glowing code-blocks labeled 'HEAD' and 'incoming' in perfect balance. Stately wood-paneled courtroom, warm authoritative amber light, shafts of dignified sunlight. Caricature: oversized powdered wig, stern-but-fair expression, comic proportions. Render only the two short scale labels — 'HEAD' and 'incoming' — cleanly, and no other text."
     }
   ]
 }
