@@ -461,34 +461,6 @@
       "image": "art/the-greenfield-speedster.png"
     },
     {
-      "id": "the-keyboard-exorcist",
-      "name": "The Keyboard Exorcist",
-      "hp": 120,
-      "type": "sound",
-      "saying": "Back beneath the fold, foul keyboard!",
-      "moves": [
-        {
-          "name": "Rite of behavior",
-          "type": "sound",
-          "damage": "2",
-          "description": "Chants 'padding' on iOS and 'height' on Android, praying the input clears on at least one."
-        },
-        {
-          "name": "Banish the Rising Tide",
-          "type": "sound",
-          "damage": "60",
-          "description": "Installs react-native-keyboard-controller at last, and the keyboard sinks beneath the fold."
-        }
-      ],
-      "backgroundColor": [
-        "red",
-        "orange"
-      ],
-      "description": "A robed warrior-priest locked in eternal holy war with KeyboardAvoidingView. Knows a different incantation for every OS — 'padding' on iOS, 'height' on Android — trusts none of them fully, and keeps a vial of holy water for the build where the keyboard wins anyway. Universal RN suffering: everyone who has shipped a form on mobile has stood in this exact battle and whispered the same prayer.",
-      "imagePrompt": "A wild-eyed robed exorcist-priest mid-incantation, brandishing a glowing talisman in one hand and flinging a splash from a holy-water vial with the other, fending off a huge snarling demonic ON-SCREEN KEYBOARD monster that surges upward like a tide from the bottom of a giant glowing phone. At the top of the phone, a tiny app input field and submit button cower out of reach. Holy radiant light clashing against the dark keyboard demon. Caricature: oversized panicked-determined face, huge eyes, billowing robes, comic proportions. Dramatic chiaroscuro, embers and sparks, fiery red-and-gold supernatural glow. No text anywhere.",
-      "image": "art/the-keyboard-exorcist.png"
-    },
-    {
       "id": "the-ota-smuggler",
       "name": "The OTA Smuggler",
       "hp": 90,
@@ -601,34 +573,6 @@
       "image": "art/the-merge-magistrate.png"
     },
     {
-      "id": "the-keypunch-hermit",
-      "name": "The Keypunch Hermit",
-      "hp": 640,
-      "type": "nature",
-      "saying": "Autocomplete? I know the next line.",
-      "moves": [
-        {
-          "name": "No Copilot",
-          "type": "strength",
-          "damage": "0",
-          "description": "Swats away every autocomplete before it finishes — not one token has ever touched his code."
-        },
-        {
-          "name": "Knows Every Line",
-          "type": "psychic",
-          "damage": "100%",
-          "description": "Recites his whole system from memory, card by punched card — no machine ever wrote a line of it."
-        }
-      ],
-      "backgroundColor": [
-        "green",
-        "teal"
-      ],
-      "description": "In the age of agents that burn a million tokens before lunch, the Keypunch Hermit retreated to his cave and never looked back. He writes every program by hand, punches every card himself, and feeds the stack into a clattering mainframe older than most of the attendees — not because he can't use AI, but because he took a vow not to. To him, code a machine wrote is code you don't understand, and code you don't understand isn't yours. He is gloriously, defiantly slow. He is also the only soul alive who knows every line of his system by heart, because nothing in it was ever suggested to him. The proud anti-AI holdout the whole agentic deck needs as its foil — and the card every token-burner secretly feels a pang looking at.",
-      "imagePrompt": "A grizzled, wild-bearded old hermit in a tattered cardigan and half-moon spectacles, hunched gleefully over an enormous clattering vintage mainframe, feeding a thick stack of punch cards into its slot by hand with the proud focus of a monk at prayer. Freshly-punched cards and curling ticker-tape spill everywhere around him. With his other hand he irritably swats away a little cloud of glowing, translucent AI agent-sprites that hover around him offering to help, holding out glowing wordless code-suggestion bubbles he refuses to even look at. A dim green-phosphor CRT terminal glows beside the mainframe. Caricature: oversized bushy eyebrows, huge stubborn squint, defiant proud grin, ink-stained fingers, comic proportions. Cozy cave-like retro-tech den lit by warm amber tubes and green screen-glow, towering shelves of punch-card boxes and reel-to-reel tape, deep atmospheric shadows. No text anywhere.",
-      "image": "art/the-keypunch-hermit.png"
-    },
-    {
       "id": "the-native-ninja",
       "name": "The Native Ninja",
       "hp": 60,
@@ -653,7 +597,7 @@
         "cyan"
       ],
       "description": "The team's secret weapon, and never blocked. When React Native runs out of road — no library, no API, a platform limit everyone else accepts as final — the Native Ninja slips one layer down and does it in Swift or Kotlin. A TurboModule here, a native view manager there, a patched SDK nobody else dared open; it comes back working and no one's quite sure how. Fearless in Xcode and Android Studio, fluent below the bridge where most RN devs won't go. To him 'React Native can't do that' isn't a wall — it's a door he knows is unlocked from underneath. The counterpoint to the Bridge Troll: where the Troll guards the crossing, the Ninja treats it as a back door left open.",
-      "imagePrompt": "A sleek, acrobatic cartoon ninja in a dark indigo hood and mask, the unmistakable hero of the frame, caught mid-leap in a daring action pose — one hand flinging a glowing shuriken, the other vaulting clean over a tall barrier wall built of stacked glowing JavaScript-yellow code-blocks. A puff of ninja smoke trails behind him as he drops through a small open hatch at the base of the wall into a cooler glowing under-realm of sleek native platform gears, metal cogs and circuitry (the 'native side'). A katana glints on his back. Caricature: huge determined confident eyes above the mask, exaggerated dynamic pose, comic proportions, motion-trails and speed-lines. Moody dojo-rooftop-at-night atmosphere shading into electric-cyan glow rising from the native realm below, drifting smoke, deep saturated indigo-and-cyan palette with crackling electric accents. No text anywhere.",
+      "imagePrompt": "A sleek, acrobatic cartoon ninja in a dark indigo hood and mask, the unmistakable hero of the frame, caught mid-leap in a daring action pose as he springs across a dark chasm. He launches off a crumbling, glowing JavaScript-yellow stone ledge behind him — marked with a small carved 'JS' sign and a dead-end wall — because the JS world ran out of road. He soars toward a sleek, cooler 'native' landing platform of glowing metal gears, cogs and circuitry, where two tall glowing banners await him: one bearing the orange Swift logo (a simplified orange swift-bird silhouette) labeled 'Swift', the other bearing the Kotlin logo (a geometric gradient square of two folded triangular facets) labeled 'Kotlin'. In each hand he hurls a glowing shuriken — one shaped like the Swift bird, the other shaped like the Kotlin square — toward the native side. A puff of ninja smoke trails from the JS ledge; a katana glints on his back. Caricature: huge determined confident eyes above the mask, exaggerated dynamic leaping pose, comic proportions, with motion-trails and speed-lines tracing his arc from JS across to native. Moody night atmosphere over the chasm, electric-cyan glow rising from the native platform, deep saturated indigo-and-cyan palette with crackling electric accents. Render only the three short labels — 'JS', 'Swift', 'Kotlin' — cleanly and legibly, and no other text anywhere.",
       "image": "art/the-native-ninja.png"
     }
   ]
