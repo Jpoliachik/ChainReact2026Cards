@@ -435,62 +435,62 @@
       "image": "art/the-upgrade-monk.png"
     },
     {
-      "id": "the-brownfield-archaeologist",
-      "name": "The Brownfield Archaeologist",
+      "id": "the-brownfield-mechanic",
+      "name": "The Brownfield Mechanic",
       "hp": 160,
       "type": "strength",
-      "saying": "Don't rewrite it — I know where the bodies are buried.",
+      "saying": "Don't rewrite her — I know every rattle she's got.",
       "moves": [
         {
-          "name": "Read the Strata",
+          "name": "Percussive Maintenance",
           "type": "strength",
-          "damage": "2014",
-          "iconCount": 2,
-          "description": "Dates any cursed file by its layers of commented-out code and names the developer who fled the year it was written."
+          "damage": "2",
+          "iconCount": 1,
+          "description": "Delivers one well-aimed whack to the wheezing legacy box, and somehow the old thing purrs back to life."
         },
         {
-          "name": "Load-Bearing Hack",
+          "name": "It's Load-Bearing",
           "type": "strength",
           "damage": "90",
           "iconCount": 3,
-          "description": "Finds the terrifying untested function the whole app secretly rests on, and wisely refuses to touch it."
+          "description": "Knows exactly which terrifying duct-taped hack the whole system secretly rests on, and guards it from anyone itching to 'clean it up'."
         }
       ],
       "backgroundColor": [
         "yellow",
         "orange"
       ],
-      "description": "A seasoned excavator who thrives in the 200k-line codebase everyone else fears. Reads commit history like rock strata, remembers why the haunted file exists, and treats legacy not as debt but as dig site. Unbothered by the mess — the mess is the job, and it pays the bills. The counterpart to the Greenfield Homesteader: where they want a blank repo, the Archaeologist wants the ruins.",
-      "imagePrompt": "An intrepid dusty adventurer-archaeologist in a worn khaki explorer's outfit and satchel, deep inside a torchlit underground tomb whose stone walls are carved with glowing ancient code-glyphs stacked in geological strata of old commits. Crouched with a small brush and a glowing lantern, gleefully dusting off one massive cracked load-bearing stone block etched with a single ancient function, as if it were buried treasure. Cobwebs, crumbling pillars, a coil of rope. Caricature: oversized delighted grin, huge curious eyes, comic proportions. Warm flickering golden torchlight, deep amber dust-mote atmosphere, rich shadowed ruin. No text anywhere."
+      "description": "A grease-stained veteran who keeps the ancient, taped-together codebase running by feel. Doesn't fear the legacy mess — lives in it, can diagnose a regression by the sound it makes, and trusts intuition built over years under the hood. While the Greenfield Speedster races the shiny new car, the Mechanic keeps the old beast on the road. Maintain over rewrite, every time — the counterpart to the Speedster: give them the new build and they'll just go back to tuning the engine that actually ships.",
+      "imagePrompt": "A cheerful grease-stained mechanic in oil-smeared overalls, head and shoulders buried under the raised hood of a wheezing, battered, lovingly over-patched ancient engine cobbled together from duct tape, zip-ties, mismatched parts, and exposed wiring — yet it still chugs along, puffing little contented smoke-rings. One hand swings a big wrench, the other gives a confident thumbs-up; a coffee-stained service manual, an oil-can, and scattered spare parts surround the workbench. The machine reads as a hybrid of a vintage car engine and a creaky old server tower (the legacy codebase as an old motor). Caricature: oversized confident grin, a smudge of oil on one cheek, comic proportions. Warm cluttered garage, hanging work-light, a few sparks, deep amber greasy glow. No text anywhere."
     },
     {
-      "id": "the-greenfield-homesteader",
-      "name": "The Greenfield Homesteader",
+      "id": "the-greenfield-speedster",
+      "name": "The Greenfield Speedster",
       "hp": 30,
-      "type": "nature",
-      "saying": "Give me an empty repo and a clean horizon.",
+      "type": "fire",
+      "saying": "No legacy, no traffic, no speed limit.",
       "moves": [
         {
-          "name": "npx create-fresh-start",
-          "type": "nature",
-          "damage": "0",
+          "name": "Zero to Production",
+          "type": "fire",
+          "damage": "60",
           "iconCount": 1,
-          "description": "Abandons the legacy repo entirely and scaffolds a brand-new one; day-one velocity has never felt so pure."
+          "description": "Floors it from 'npx create' to a shipped first build while everyone else is still reading the old README."
         },
         {
-          "name": "Not My Monolith",
-          "type": "nature",
+          "name": "No Speed Limit",
+          "type": "fire",
           "damage": "100",
           "iconCount": 2,
-          "description": "Cannot bear to read another's code, and would rather rebuild the whole feature from a blank file than understand the old one."
+          "description": "Opens the throttle on a wide, empty, freshly-paved repo — with nothing built yet, there's nothing to crash into."
         }
       ],
       "backgroundColor": [
         "green",
         "cyan"
       ],
-      "description": "A starry-eyed settler of untouched repositories, happiest at the moment of the first commit. Lives for clean architecture, zero tech debt, and a horizon with nothing built on it yet. Allergic to legacy: every hard problem is solved by starting over somewhere fresh. The counterpart to the Brownfield Archaeologist — give them the ruins and they'll just go homestead the next valley.",
-      "imagePrompt": "A beaming pioneer homesteader in dungarees and a straw hat, standing on a pristine, empty, rolling green meadow at fresh dewy dawn — proudly planting a single small glowing seedling that is just sprouting a tiny '<App/>' shoot from the soil. A little wooden 'create-' signpost stands beside a wheelbarrow full of fresh seed-packets. The horizon ahead is wide, blank, and untouched. Lush pastoral cottagecore vibe (NOT desert or western), soft pink-and-gold sunrise, dewdrops catching light. Caricature: oversized hopeful grin, huge bright eyes, comic proportions. Render only the two short labels — '<App/>' on the seedling and 'create-' on the signpost — cleanly, and no other text."
+      "description": "A starry-eyed racer who lives for the open road of an untouched repository, happiest at full throttle off the first commit. Craves clean architecture, zero tech debt, and a horizon with nothing built on it yet — every hard problem solved by starting fresh somewhere with no traffic. Allergic to legacy: hates nothing more than a mirror full of old code. The counterpart to the Brownfield Mechanic — give them the battered old engine and they'll just go find a faster, emptier track.",
+      "imagePrompt": "A grinning helmeted speed-racer in a sleek aerodynamic racing suit, the unmistakable hero of the frame, leaning hard into the cockpit of a glossy, brand-new, candy-bright concept race car blazing at top speed down a wide-open, freshly-paved empty highway at bright dewy dawn. Heavy motion-blur and speed-lines streak past, a lick of flame and sparks trailing from the exhaust, the road ahead utterly blank and open to the horizon, zero traffic. A green starting-flag whips past and a tiny '<App/>' decal sits on the spotless hood. Pristine, sunlit, exhilarating (NOT desert or dusty). Caricature: oversized confident grin, huge bright eyes behind the visor, comic proportions, thumbs-up. Vivid saturated racing-green and gold, glowing dawn light. Render only the one short label — '<App/>' on the hood — cleanly, and no other text."
     },
     {
       "id": "the-keyboard-exorcist",
