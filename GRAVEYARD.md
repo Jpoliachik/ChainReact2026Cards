@@ -30,4 +30,4 @@ expanding the working set back toward 30.
 ## Cut from the visual phase (written + typed, then benched)
 
 - **The Keypunch Hermit** — Proud anti-AI holdout; punches every card by hand and swats the autocomplete away ("Autocomplete? I know the next line."). Was the realized version of _The Last Artisan_. _(cut — the grizzled-hermit figure drew funky / off-vibe; concept still alive via The Last Artisan)_
-- **The Keyboard Exorcist** — Robed priest at holy war with KeyboardAvoidingView; 'padding' on iOS, 'height' on Android, and a prayer. Strong universal-RN guilt. _(cut — landed bottom-tier; orphaned art at public/art/the-keyboard-exorcist.png)_
+- **The Keyboard Exorcist** — Robed priest at holy war with KeyboardAvoidingView; 'padding' on iOS, 'height' on Android, and a prayer. Strong universal-RN guilt. _(cut — landed bottom-tier)_
