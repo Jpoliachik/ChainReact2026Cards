@@ -184,6 +184,42 @@
       "description": "A gentle mystic who believes tone and ritual unlock the machine. Flatters, bribes, and soothes the model with incantations half-remembered from a benchmark paper. Nobody is sure the rituals work, including him — but they kind of do.",
       "imagePrompt": "A gentle robed mystic / incense-burning guru kneeling in devout supplication before a giant floating glowing AI oracle-orb, hands pressed together in prayer, lips pursed mid-whisper as he flatters and coaxes it. He humbly offers up a single shiny coin on a little cushion as a bribe; the orb glows warmer in response, a faint serene face forming within it, wisps of incense curling upward. Blissed-out half-lidded zen caricature, flowing robes, candlelit shrine, soft mystical glow and floating dust motes.",
       "image": "art/the-prompt-whisperer.png"
+    },
+    {
+      "id": "the-nights-watch",
+      "name": "The Night's Watch",
+      "saying": "Night gathered. The agent did not sleep.",
+      "moves": [
+        {
+          "name": "The Long Diff",
+          "description": "Wakes before the realm to read every line the agent wrote in the dark — all four thousand of them — before a single one reaches main."
+        },
+        {
+          "name": "Hold the Wall",
+          "description": "Lets nothing past into the codebase unreviewed, no matter how confident the agent's overnight summary sounded."
+        }
+      ],
+      "description": "Sworn protector of the codebase, keeping the long watch while the autonomous agents grind through the night. Goes to bed with a prompt running and wakes to a wall of green-and-red diff that wrote itself in the dark. Trusts no summary, reads every line, reverts without mercy. Grim, loyal, perpetually under-slept — the shield that guards the realm of main from whatever crept in at 3am. Takes the oath seriously: the merge is dark and full of terrors.",
+      "imagePrompt": "A grim, bundled-up night-watchman hero in the style of a frozen northern fantasy ranger, caricatured with an oversized shaggy black fur cloak swallowing his tiny determined face, standing guard atop a colossal wall in falling snow. The wall itself is built from stacked, faintly glowing blocks of code and commit-bricks, stretching off into blue twilight. He grips a great longsword whose blade glows softly like a cursor, holding it up to inspect a long unfurling scroll of diff — glowing green additions and red deletions scrolling down the parchment. Behind him, beyond the wall, the dark forest bristles with faint glowing eyes (the night's untested commits). Cold blue-and-white dawn palette, breath fogging, dramatic wintry light, heroic last-stand pose. No text anywhere.",
+      "image": ""
+    },
+    {
+      "id": "the-ai-triforce",
+      "name": "The Hero of the Realm",
+      "saying": "It's dangerous to go alone — so I'm leaving the chatbot here.",
+      "moves": [
+        {
+          "name": "Master Sword",
+          "description": "Cleaves the gratuitous AI feature out of the product, leaving only the thing the app was actually good at."
+        },
+        {
+          "name": "Decline the Gift",
+          "description": "Politely refuses the merchant's 'It's dangerous to go alone — take this AI!' for the fortieth time this quarter."
+        }
+      ],
+      "description": "A pint-sized green-clad hero on an endless quest to keep the realm — his app — free of bolted-on AI. Everywhere he turns, a glowing merchant pops out of the bushes: 'I have a solution for you! Let me show you how to add AI to your app!' He just wants to ship the small, sharp, beloved thing. Wields the Triforce not as power but as principle — focus, restraint, taste — and a sword for trimming every feature nobody asked for. Not anti-AI; anti-shoehorn. The bravest 'no' in the kingdom.",
+      "imagePrompt": "A pint-sized green-tunic'd fantasy hero (classic adventure-game knight energy, pointed cap, little leather boots) caricatured with a huge determined frown and oversized head, planted in a fighting stance with a gleaming sword raised and a round shield held up. Emblazoned on the shield is a single glowing golden triangle-of-three-triangles emblem. He is bravely fending off a pushy, grinning glowing AI-orb 'merchant' that has popped out of the bushes offering him a cursed, over-decorated treasure chest stuffed with chatbot bubbles and sparkles — and he is firmly turning it away with the shield. Lush green storybook overworld, rolling hills, a few pixel-flowers, bright heroic adventure-game palette, golden afternoon light. No text anywhere.",
+      "image": ""
     }
   ]
 }
