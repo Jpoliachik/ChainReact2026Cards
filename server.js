@@ -56,6 +56,7 @@ const MIME = {
   ".jpg": "image/jpeg",
   ".jpeg": "image/jpeg",
   ".webp": "image/webp",
+  ".svg": "image/svg+xml",
 };
 
 function send(res, status, body, type = "text/plain; charset=utf-8") {
