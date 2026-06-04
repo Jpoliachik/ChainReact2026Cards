@@ -21,11 +21,11 @@
       "name": "The Bridge Troll",
       "saying": "Crossing to native? That'll cost ya.",
       "moves": [
-        { "name": "Legacy Architecture", "description": "Back when the old bridge stood, he charged a serialization toll on every native call. The New Architecture tore his booth down." },
-        { "name": "Have You Migrated Yet?", "description": "Asks, unprompted, whether you've moved to the New Architecture. He already knows you haven't." }
+        { "name": "Toll by the Kilobyte", "description": "Charges extra for every fat payload you serialize across to native. Travel light or pay up." },
+        { "name": "Margins Aren't What They Were", "description": "Grumbles that the New Architecture gutted his toll rate. Everyone keeps bringing it up. He's fine. He's FINE." }
       ],
-      "description": "A modernized gatekeeper of the JS↔native boundary. Once grew rich on the Old Architecture's serialization tolls; the New Architecture put him out of the toll business and, grudgingly, made him faster. Not a villain anymore — nostalgic, efficient, a little wistful about the old bridge. The gag is a reformed troll who's quietly proud of going legit.",
-      "imagePrompt": "Bright rainbow 'Trolls'-movie cartoon style: a pint-sized impossibly cute troll with a giant poof of neon rainbow hair and sparkly skin, standing proudly between a crumbling old rope toll-bridge and a sleek glowing new express bridge that spans two floating islands — one of curly-braces, one of native gears. He waves traffic through the new lane while a dusty 'TOLL' sign gathers cobwebs. Felt textures, glitter, warm proud grin."
+      "description": "The mythical troll of the JS↔native bridge: cross all you like, but try to send too much data and he'll charge you for it. Genuinely cautious about performance — every fat payload serialized over is a toll paid in dropped frames. Lately grumbles that the New Architecture thinned his margins, though he'd never admit business is down. Still guarding the bridge. Still eyeing your payload size.",
+      "imagePrompt": "Bright rainbow 'Trolls'-movie cartoon style: a pint-sized impossibly cute troll with a giant poof of neon rainbow hair and sparkly skin, manning a toll-gate on a candy-colored bridge between two floating islands — one of glowing curly-braces, one of native gears. He holds out a hand for payment while eyeing a traveler hauling a comically huge bundle labeled 'DATA' across; his toll sign reads 'BY THE KILOBYTE'. In the background a glossy billboard for the sleek 'NEW ARCHITECTURE' express lane quietly steals his business. Felt textures, glitter, a sly grumpy grin."
     },
     {
       "id": "the-reanimated-wizard",
