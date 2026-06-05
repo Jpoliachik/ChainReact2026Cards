@@ -2,7 +2,7 @@
   "meta": {
     "event": "Chain React 2026 — Portland, OR",
     "target": 30,
-    "artDirection": "A single full-bleed CHARACTER ILLUSTRATION — artwork only, NOT a trading card. Absolutely no card frame, no border, no card template, no HP, no name plate, no energy symbols, no stat boxes, no card logos, no UI of any kind anywhere in the image. Just the raw painted illustration filling the whole frame, edge to edge. ONE character is the unmistakable hero of the frame — large, centered, shown mid-action performing their signature quirk. Surround them with only a few small supporting props or details that hint at what they're up to; keep the background simple and uncluttered so the character stays the clear focal point — but it must ALWAYS be a real, colored environment with mood and atmosphere. NEVER a plain white, gray, blank, or empty studio background; every image needs an actual setting with depth and color. Render in the energetic illustration style of Pokémon creature/character ART (the painted artwork itself, never the card it sits on): energetic 3/4 or full-body pose, bold readable silhouette, vibrant saturated color, clean dramatic lighting, subtle depth. Push every character toward exaggerated, silly CARICATURE — oversized expressive features, comic proportions, big playful energy. Tell the story mainly through visual imagery, props, pose and expression, and keep words to a minimum — avoid stray signs, billboards, screens of text or random written labels. (A card's OWN prompt may call for one or two short, intentional labels; when it does, render exactly those, cleanly and legibly, and no other text.) Each character keeps the distinct art-style flavor named in its own prompt, but all share this hero-in-action composition."
+    "artDirection": "A character illustration. ONE character is the unmistakable hero — large, centered, a bold silhouette, shown mid-action performing their signature quirk, exaggerated CARICATURE (oversized expressive features, comic proportions, big playful energy). Composition is minimalist: let generous negative space carry the frame. Tell the story through pose, expression, and one signature prop — not scattered objects. Render in the energetic style of Pokémon creature/character ART: vibrant color, clean dramatic lighting. Keep words to a minimum — no stray signs or text."
   },
   "cards": [
     {
@@ -30,7 +30,7 @@
         "pink"
       ],
       "description": "A vaudeville trickster who treats every touch interaction as a magic act. Obsessive about how a gesture feels in the thumb; will rebuild a swipe twenty times for an imperceptible gain. Charming, theatrical, quietly smug that his best work is the work nobody notices.",
-      "imagePrompt": "Old-school cartoon court-jester with magical hypnotist flair: a grinning harlequin in diamond-patterned motley and a curled three-point hat, fingers splayed mid-flourish conjuring glowing hypnotic spirals and looping motion-trails. A single phone floats hypnotized nearby, mid-swipe. Swirly spiral eyes, mischievous wink, candy-colored vaudeville palette.",
+      "imagePrompt": "Old-school cartoon court-jester with hypnotist flair: a grinning harlequin in diamond-patterned motley and a curled three-point hat, fingers splayed mid-flourish, conjuring glowing hypnotic spirals and looping ribbons of swipe-light that coil through the air. Swirly spiral eyes, mischievous wink. On a lamplit vaudeville stage, candy-colored.",
       "image": "art/the-gesture-jester.png"
     },
     {
@@ -55,7 +55,7 @@
       ],
       "backgroundColor": "green",
       "description": "The mythical troll of the JS↔native bridge: cross all you like, but try to send too much data and he'll charge you for it. Genuinely cautious about performance — every fat payload serialized over is a toll paid in dropped frames. Lately grumbles that the New Architecture thinned his margins, though he'd never admit business is down. Still guarding the bridge. Still eyeing your payload size.",
-      "imagePrompt": "Friendly good-vibes fairy-tale troll: a big round huggable troll with soft mossy-green skin, a bulbous nose, a goofy underbite with one snaggle-tooth, big gentle eyes and a sheepish good-natured grin, sitting cozily beneath a mossy stone bridge — politely holding out one giant hand to check the toll. The bridge clearly connects two different lands: the near bank is a bright, warm land of floating glowing curly-braces and rounded JavaScript-yellow blocks, marked by a small stone sign reading 'JS'; the far bank is a cooler land of sleek metal gears and native platform shapes, marked by a small stone sign reading 'NATIVE'. A tiny traveler hauls an absurdly oversized glowing bundle of data across the span toward the native side. High overhead, a sleek jet airplane streaks past trailing a small flag-banner that reads 'NEW ARCHITECTURE', quietly bypassing the little bridge. Warm storybook-fantasy palette, dappled golden light, lush riverbank, a trickle of water below. Render only those three short labels — 'JS', 'NATIVE', 'NEW ARCHITECTURE' — cleanly and legibly, and no other text anywhere.",
+      "imagePrompt": "Friendly fairy-tale troll: big, round and huggable, soft mossy-green skin, bulbous nose, a snaggle-toothed sheepish grin, sitting beneath a mossy stone bridge and politely holding out one giant hand for the toll. The bridge links two lands — a warm near bank of glowing JavaScript-yellow curly-braces (a small stone sign: 'JS') and a cool far bank of sleek metal gears (a sign: 'NATIVE') — while a tiny traveler lugs an oversized glowing data-bundle across. High overhead a jet streaks past trailing a banner reading 'NEW ARCHITECTURE', bypassing the little bridge. Lush sunlit riverbank, storybook palette. Render only the labels 'JS', 'NATIVE', and 'NEW ARCHITECTURE'.",
       "image": "art/the-bridge-troll.png"
     },
     {
@@ -83,7 +83,7 @@
         "purple"
       ],
       "description": "A perfectionist animation sorcerer who can feel a wrong easing curve in his bones. Fluent in shared values, worklets, and damping ratios; will not ship until the motion lands exactly right, which is never. Brilliant, a little unhinged, deeply pleased with physics no one else will ever consciously notice.",
-      "imagePrompt": "Psychedelic acid-fantasy wizard: a wild-eyed robed sorcerer with a long flowing beard, casting with both hands as trippy neon fractal energy and rainbow easing-curves spiral from a glowing staff, meticulously bending a single floating UI element into liquid motion. Glowing runes shaped like spring-physics graphs, a sparkling third eye, hyper-saturated kaleidoscopic colors.",
+      "imagePrompt": "Psychedelic acid-fantasy wizard: a wild-eyed robed sorcerer with a long flowing beard, casting with both hands as neon fractal energy and rainbow easing-curves spiral from a glowing staff, bending a single floating glyph into liquid motion. Runes shaped like spring-physics graphs orbit him, a sparkling third eye, hyper-saturated kaleidoscopic color.",
       "image": "art/the-reanimated-wizard.png"
     },
     {
@@ -111,7 +111,7 @@
         "yellow"
       ],
       "description": "A discerning connoisseur of machine-written code who can identify the model, the temperature, and the vintage from a single function. The team's last line of defense against AI slop — pairs every suggestion with guardrails before it touches production. Not anti-AI, just refuses to swallow it unverified.",
-      "imagePrompt": "Fancy wine-sommelier style: an impeccably dressed connoisseur in a tuxedo and tasting apron, swirling a crystal glass that holds glowing liquid code instead of wine, nose in the glass, eyes narrowed in expert judgment. A tasting flight of little glasses of glowing code sits nearby, a spit-bucket overflows with rejected slop, a rolled-up scroll tucked under one arm. Exaggerated snooty caricature, rich refined candlelit wine-cellar.",
+      "imagePrompt": "Fancy wine-sommelier: an impeccably dressed connoisseur in tuxedo and tasting apron, swirling a crystal glass of glowing liquid code, nose in the glass, eyes narrowed in expert judgment. A tasting flight of little code-glasses on the table beside him, a spit-bucket overflowing with rejected slop, a scroll under one arm. At a sunlit outdoor tasting table among rows of vines at golden hour.",
       "image": "art/the-slop-sommelier.png"
     },
     {
@@ -136,7 +136,7 @@
       ],
       "backgroundColor": "orange",
       "description": "A hard-boiled gumshoe who solves every bug the old-fashioned way: print statements and instinct. Distrusts the debugger on principle. Always cracks the case, always leaves a log behind. The universal guilt — everyone debugs like this and pretends they don't.",
-      "imagePrompt": "High-contrast black-and-white film-noir, tight dramatic close-up filling the frame: a hard-boiled detective in a rumpled trench coat and fedora leaning in, one squinting eye huge behind a raised magnifying glass as he scrutinizes a single small glowing buggy clue. Cigarette smoke curls past his face. Exaggerated heavy-jawed stubbled caricature, deep Venetian-blind shadows slashing across his features, rain-streaked window and one hard desk lamp behind him. Moody, characterful, intense.",
+      "imagePrompt": "High-contrast film-noir: a hard-boiled detective in a rumpled trench coat and fedora crouched over a single glowing buggy clue, one squinting eye huge behind a raised magnifying glass, cigarette smoke curling past. A rain-soaked noir alley at night, neon-slick puddles and one hard streetlamp casting deep slashing shadows. Moody and intense.",
       "image": "art/the-console-detective.png"
     },
     {
@@ -164,7 +164,7 @@
         "orange"
       ],
       "description": "A frontier cowboy of the agentic era who runs more agents than any human can track and burns tokens like a campfire. Optimistic, overextended, context-switching so fast he forgets what each terminal was doing. Lives the thrill and terror of orchestrating things that act on their own.",
-      "imagePrompt": "Wild-west cowboy in total rodeo chaos: a dusty cowboy in a ten-gallon hat astride one bucking glowing robot-agent bronco, hanging on for dear life with one hand while the other swings a glowing lasso to rope a whole stampede of OTHER wild robot-agent horses bolting off in every direction — one charging toward a cliff edge. Each robo-bronco is a different glowing mechanical creature. Exaggerated wide-eyed panic-grin caricature, flying dust and tumbleweeds, sunset mesas. Pure mayhem.",
+      "imagePrompt": "Wild-west cowboy in rodeo chaos: a dusty cowboy in a ten-gallon hat astride one bucking glowing robot-agent bronco, hanging on with one hand while the other swings a glowing lasso to rope a whole stampede of other runaway robot-agent horses bolting every direction — one charging toward a cliff edge. Each robo-bronco a different glowing mechanical creature. Flying dust and tumbleweeds, sunset mesas, pure mayhem.",
       "image": "art/the-agent-wrangler.png"
     },
     {
@@ -189,7 +189,7 @@
       ],
       "backgroundColor": "green",
       "description": "A doomsday prepper for the software supply chain. Keeps a bunker stocked with vendored dependencies and a spreadsheet of every npm compromise since left-pad. Certain the next install ships a zero-day and ends civilization. Often technically correct, never proportionate.",
-      "imagePrompt": "Doomsday-prepper caricature: a wild-eyed survivalist in a tinfoil-lined hat and bulging tactical vest crouched paranoid in an underground bunker stacked floor-to-ceiling with canned goods and crates of hoarded code, clutching a crumpled printout to his chest. A wall map webbed with frantic red string tracks unseen threats; a gas mask and flashlight hang nearby. Exaggerated twitchy wide-eyed expression, comically over-prepared, dim flickering bunker light.",
+      "imagePrompt": "Doomsday-prepper: a wild-eyed survivalist in a tinfoil-lined hat and bulging tactical vest crouched guarding the open blast-door of his hillside bunker, crates of hoarded code-cans piled around him, clutching a crumpled threat-printout webbed with red string. Gas mask and flashlight on his belt. A barren windswept wasteland at dusk, storm clouds gathering, twitchy and over-prepared.",
       "image": "art/the-dependency-prepper.png"
     },
     {
@@ -214,7 +214,7 @@
       ],
       "backgroundColor": "purple",
       "description": "A gentle mystic who believes tone and ritual unlock the machine. Flatters, bribes, and soothes the model with incantations half-remembered from a benchmark paper. Nobody is sure the rituals work, including him — but they kind of do.",
-      "imagePrompt": "A gentle robed mystic / incense-burning guru kneeling in devout supplication before a giant floating glowing AI oracle-orb, hands pressed together in prayer, lips pursed mid-whisper as he flatters and coaxes it. He humbly offers up a single shiny coin on a little cushion as a bribe; the orb glows warmer in response, a faint serene face forming within it, wisps of incense curling upward. Blissed-out half-lidded zen caricature, flowing robes, candlelit shrine, soft mystical glow and floating dust motes.",
+      "imagePrompt": "A gentle robed mystic kneeling in supplication before a giant floating glowing AI oracle-orb, hands pressed in prayer, lips pursed mid-whisper as he flatters and coaxes it, offering up a single shiny coin on a cushion as a bribe; the orb glows warmer, a faint serene face forming within, incense curling upward. An open-air cliff-top altar at night under a vast starry sky, soft mystical glow.",
       "image": "art/the-prompt-whisperer.png"
     },
     {
@@ -242,7 +242,7 @@
         "indigo"
       ],
       "description": "Sworn protector of the codebase, keeping the long watch while the autonomous agents grind through the night. Goes to bed with a prompt running and wakes to a wall of green-and-red diff that wrote itself in the dark. Trusts no summary, reads every line, reverts without mercy. Grim, loyal, perpetually under-slept — the shield that guards the realm of main from whatever crept in at 3am. Takes the oath seriously: the merge is dark and full of terrors.",
-      "imagePrompt": "A grim, bundled-up night-watchman hero in the style of a frozen northern fantasy ranger, caricatured with an oversized shaggy black fur cloak swallowing his tiny determined face, standing guard atop a colossal wall in falling snow. The wall itself is built from stacked, faintly glowing blocks of code and commit-bricks, stretching off into blue twilight. He grips a great longsword whose blade glows softly like a cursor, holding it up to inspect a long unfurling scroll of diff — glowing green additions and red deletions scrolling down the parchment. Behind him, beyond the wall, the dark forest bristles with faint glowing eyes (the night's untested commits). Cold blue-and-white dawn palette, breath fogging, dramatic wintry light, heroic last-stand pose. No text anywhere.",
+      "imagePrompt": "A grim bundled-up night-watchman in the style of a frozen northern fantasy ranger, an oversized shaggy black fur cloak swallowing his tiny determined face, standing guard atop a colossal wall built of faintly glowing code-blocks and commit-bricks that stretches into blue twilight. He grips a great longsword glowing like a cursor, holding up a long unfurling scroll of diff — glowing green additions and red deletions. Beyond the wall a dark forest bristles with faint glowing eyes. Cold blue dawn, falling snow, breath fogging.",
       "image": "art/the-nights-watch.png"
     },
     {
@@ -270,7 +270,7 @@
         "green"
       ],
       "description": "Wielder of the AI Triforce — Gant Laborde's agentic-team method, where AI gives everyone superpowers but a dungeon with no locked doors is no place to ship from. Instead of one person context-switching (slower, and prone to error), the power splits three ways: the Builder ships features fast inside the sandbox but can't merge; the Protector owns safety, tests, and the constraints of what must never happen; the Organizer guards architecture and holds back the drift. Three humans guarding the gates — how you pull deterministic outcomes out of a non-deterministic machine. A tribute to Gant's piece; he'll be at Chain React.",
-      "imagePrompt": "A heroic pint-sized green-tunic'd fantasy adventurer (classic top-down adventure-game energy, pointed cap, little leather boots), caricatured with an oversized triumphant grin and huge bright eyes, standing in a victorious hero pose and raising overhead a single radiant golden Triforce — three glowing triangles fitted into one larger triangle, each of the three lit a distinct color and bearing a tiny icon: a little hammer, a little shield, and a little gear. A glowing legendary sword hangs at his hip. Around him, three small friendly glowing agent-sprite fairies buzz helpfully. Behind him stands a sturdy stone castle gateway with a closed, well-guarded door. Lush green storybook overworld, rolling hills, golden heroic light, bright saturated adventure-game palette. Render only the three small icons inside the triangles (hammer, shield, gear) — no words or text anywhere.",
+      "imagePrompt": "A heroic pint-sized green-tunic'd fantasy adventurer (pointed cap, little leather boots, oversized grin), in a victorious pose raising overhead a radiant golden Triforce — three glowing triangles forming one larger triangle, each a distinct color bearing a tiny icon: a hammer, a shield, a gear. A legendary sword at his hip, three small friendly glowing agent-fairies buzzing around him, a guarded stone castle gateway behind. Lush green storybook overworld, rolling hills, golden light. Render only the three small icons inside the triangles (hammer, shield, gear) and no words.",
       "image": "art/the-ai-triforce.png"
     },
     {
@@ -295,7 +295,7 @@
       ],
       "backgroundColor": "purple",
       "description": "A showman who has turned the live demo into a magic act. Behind the flawless on-stage run is a single happy path rehearsed forty times, a stubbed API or two, and a cape draped over the parts that don't work yet. Radiates total confidence while quietly praying nothing reloads. Universal-guilt card: everyone who has ever given a live demo knows the terror under the showmanship. The trick always works — as long as nobody touches the keyboard.",
-      "imagePrompt": "A flamboyant stage magician in a tuxedo, top hat, and flowing cape, mid-flourish on a darkened conference stage under a single dramatic spotlight, triumphantly pulling a glowing, perfectly-running phone app out of a top hat as if by magic — beaming a showman's grin while a single bead of nervous sweat rolls down his temple. Just behind him, half-hidden by his cape, a chaotic tangle of duct tape, crossed wires, and a propped-up laptop shows the trick is held together by hope. Faint silhouettes of an audience in the dark foreground. Caricature: oversized confident grin, huge expressive eyes, theatrical posture. Moody spotlit stage, rich theatrical purples and golds, dramatic rim light. No text anywhere.",
+      "imagePrompt": "A flamboyant stage magician in tuxedo, top hat and flowing cape, mid-flourish on a darkened stage under a single spotlight, triumphantly pulling a glowing, perfectly-running app out of a top hat — beaming a showman's grin while one bead of nervous sweat rolls down his temple. Just behind him, half-hidden by his cape, a chaotic tangle of duct tape and crossed wires shows the trick is held together by hope. Faint audience silhouettes in the dark, rich theatrical purples and golds.",
       "image": "art/the-demo-illusionist.png"
     },
     {
@@ -323,7 +323,7 @@
         "cyan"
       ],
       "description": "An exacting craftsperson who treats a layout like an operating table. Sees the 2px misalignment nobody else can, and will not close until it's perfect — often on a device they don't even own. Calm, precise, a little terrifying. The reason the UI feels right even though no one can say why. Not slow, just unwilling to ship a wound.",
-      "imagePrompt": "A focused surgeon in teal scrubs, surgical mask, and a head-mounted magnifier lamp, leaning intently over a large glowing UI mockup laid out like a patient on an operating table. With tiny precision tools — calipers, tweezers, a glowing scalpel — they delicately nudge one single pixel-block into alignment. A monitor beside the table displays a pulsing layout grid instead of a heartbeat. Caricature: enormous magnified eyes behind the lens, intense steady concentration, oversized careful hands. Cool teal operating-room lighting, sterile but warm focal glow on the work. No text anywhere.",
+      "imagePrompt": "A focused surgeon in teal scrubs, surgical mask and a head-mounted magnifier lamp, leaning over a glowing UI mockup laid out like a patient on the operating table, delicately nudging one single pixel-block into alignment with tiny calipers and a glowing scalpel. A floating holographic layout-grid pulses beside the table like a heartbeat monitor. Enormous magnified eyes behind the lens, steady concentration, cool teal operating-room glow.",
       "image": "art/the-pixel-surgeon.png"
     },
     {
@@ -351,7 +351,7 @@
         "yellow"
       ],
       "description": "An ascetic who has made peace with the dependency upgrade everyone else dreads. Finds quiet enlightenment in the Expo SDK bump, the major-version migration, the changelog no one wants to read. Takes on the suffering so the team doesn't have to, and emerges serene on the other side of a green build. Patient, selfless, faintly amused by your fear of breaking changes.",
-      "imagePrompt": "A serene bald monk in flowing saffron-orange robes, sitting in calm lotus meditation atop a misty mountain peak, a faint blissful smile on his face and a glowing halo of peace around him — utterly undisturbed while a swirling storm of crackling 'breaking change' lightning rages all around him. An impossibly long changelog scroll unrolls down the mountainside beside him; a small glowing package-box floats before him like an object of devotion. Caricature: oversized peaceful face, tiny knowing smile, exaggerated calm amid chaos. Misty mountaintop temple at warm dawn, soft golden light cutting through the storm. No text anywhere.",
+      "imagePrompt": "A serene bald monk in flowing saffron robes, sitting in calm lotus meditation atop a misty mountain peak with a blissful smile and a glowing halo of peace — utterly undisturbed while a storm of crackling breaking-change lightning rages around him. An impossibly long changelog scroll unrolls down the mountainside; a small glowing package-box floats before him like an object of devotion. Warm dawn light cutting through the storm.",
       "image": "art/the-upgrade-monk.png"
     },
     {
@@ -379,7 +379,7 @@
         "orange"
       ],
       "description": "A grease-stained veteran keeping an app that was ejected back when React Native shipped — long before Expo existed — alive by feel. Lives in the bare workflow: hand-patches native modules, knows every line of the ios/ and android/ folders, and has refused every RN upgrade since. Maintain over rewrite, every time — the counterpart to the Greenfield Speedster, who'd just spin up a fresh Expo app instead of nursing the old beast.",
-      "imagePrompt": "A cheerful grease-stained mechanic in oil-smeared overalls, head and shoulders buried under the raised hood of a wheezing, battered, lovingly over-patched ancient engine cobbled together from duct tape, zip-ties, mismatched parts and exposed wiring — yet it still chugs along puffing contented smoke-rings. The machine reads as a hybrid of a vintage car engine and a creaky old server tower (an ejected legacy codebase as an old motor). One hand swings a big wrench, the other gives a confident thumbs-up. Two battered labeled crates sit at his feet reading 'ios/' and 'android/', with a coffee-stained service manual and an oil-can nearby. Caricature: oversized confident grin, a smudge of oil on one cheek, comic proportions. Warm cluttered garage, hanging work-light, a few sparks, deep amber greasy glow. Render only the two short crate labels — 'ios/' and 'android/' — cleanly, and no other text.",
+      "imagePrompt": "A cheerful grease-stained mechanic in oil-smeared overalls, half-buried under the raised hood of a wheezing, battered, lovingly over-patched ancient machine — a hybrid of a vintage car engine and a creaky old server tower, cobbled from duct tape, zip-ties and mismatched parts, still chugging out contented smoke-rings. One hand swings a big wrench, the other gives a confident thumbs-up. Two battered crates at his feet read 'ios/' and 'android/'; an oil-can and coffee-stained manual nearby. Warm cluttered garage, hanging work-light, a few sparks. Render only the two crate labels 'ios/' and 'android/'.",
       "image": "art/the-brownfield-mechanic.png"
     },
     {
@@ -407,7 +407,7 @@
         "cyan"
       ],
       "description": "A starry-eyed racer who lives for the open road of a fresh Expo app, happiest flooring it off the first commit. Craves clean architecture and zero native config — `npx create-expo-app`, never `pod install` — and is allergic to legacy and to native rebuilds, staying in managed Expo where a reload beats a recompile. The counterpart to the Brownfield Mechanic: hand them the battered ejected app and they'll just go spin up an empty one.",
-      "imagePrompt": "A grinning helmeted speed-racer in a sleek aerodynamic racing suit, the unmistakable hero of the frame, leaning hard into the cockpit of a glossy, brand-new, candy-bright concept race car blazing at top speed down a wide-open, freshly-paved empty highway at bright dewy dawn. Heavy motion-blur and speed-lines streak past, a lick of flame and sparks trailing from the exhaust, the road ahead utterly blank and open to the horizon, zero traffic — no pit crew, no garage, nothing to rebuild. A green starting-flag whips past and a tiny '<App/>' decal sits on the spotless hood. Pristine, sunlit, exhilarating (NOT desert or dusty). Caricature: oversized confident grin, huge bright eyes behind the visor, comic proportions, thumbs-up. Vivid saturated racing-green and gold, glowing dawn light. Render only the one short label — '<App/>' on the hood — cleanly, and no other text.",
+      "imagePrompt": "A grinning helmeted speed-racer in a sleek aerodynamic racing suit, leaning into the cockpit of a glossy, brand-new candy-bright concept race car blazing down a wide-open, freshly-paved empty highway at bright dewy dawn. Heavy motion-blur and speed-lines, a lick of flame trailing the exhaust, the road ahead utterly blank to the horizon, zero traffic — nothing to rebuild. A green starting-flag whips past; a tiny '<App/>' decal on the spotless hood. Vivid racing-green and gold, glowing dawn. Render only the one label '<App/>' on the hood.",
       "image": "art/the-greenfield-speedster.png"
     },
     {
@@ -435,7 +435,7 @@
         "orange"
       ],
       "description": "A robed warrior-priest locked in eternal holy war with KeyboardAvoidingView. Knows a different incantation for every OS — 'padding' on iOS, 'height' on Android — trusts none of them fully, and keeps a vial of holy water for the build where the keyboard wins anyway. Universal RN suffering: everyone who has shipped a form on mobile has stood in this exact battle and whispered the same prayer.",
-      "imagePrompt": "A wild-eyed robed exorcist-priest mid-incantation, brandishing a glowing talisman in one hand and flinging a splash from a holy-water vial with the other, fending off a huge snarling demonic ON-SCREEN KEYBOARD monster that surges upward like a tide from the bottom of a giant glowing phone. At the top of the phone, a tiny app input field and submit button cower out of reach. Holy radiant light clashing against the dark keyboard demon. Caricature: oversized panicked-determined face, huge eyes, billowing robes, comic proportions. Dramatic chiaroscuro, embers and sparks, fiery red-and-gold supernatural glow. No text anywhere.",
+      "imagePrompt": "A wild-eyed robed exorcist-priest mid-incantation, brandishing a glowing talisman in one hand and flinging holy water from a vial with the other, fending off a huge snarling demonic ON-SCREEN KEYBOARD monster that surges up like a tide from the bottom of a giant glowing phone, a tiny app input field cowering out of reach at the top. Holy radiant light clashing with the dark keyboard demon, embers and sparks, fiery red-and-gold glow.",
       "image": "art/the-keyboard-exorcist.png"
     },
     {
@@ -463,7 +463,7 @@
         "purple"
       ],
       "description": "A mischievous hooded cat-burglar who treats shipping past the App Store review queue as a gleeful midnight caper — why stand in the week-long line when you can slip across the rooftops and hand-deliver a fresh JS bundle while the city sleeps? Equal parts Assassin's Creed and Robin Hood, she beams `eas update` straight to grateful phones with a wink and a flourish, gone before the gate ever stirs. Gets away with it every time — until a change brushes native code, the runtimeVersion drifts, and her little parcel quietly reaches nobody. Cursed but shared: everyone running EAS Update knows the giddy thrill of patching prod live and dodging the line.",
-      "imagePrompt": "A mysterious hooded assassin in the Assassin's Creed mold — sleek pointed-hood cloak, face entirely lost in deep shadow beneath the hood (no visible features, just darkness and a faint glint), lean and poised — the unmistakable hero of the frame, moving in silent crouched stealth past a guarded checkpoint gate. Two stern, blocky uniformed sentries flank the gate, each bearing a glowing white Apple-logo emblem on chest and helmet, staring stiffly forward and utterly oblivious. Behind their backs the figure clutches a glowing contraband app-bundle parcel stamped 'eas update' and slips it through the gate to a row of delighted phones lighting up on the far side. Tense moonlit-smuggling mood, cool deep blues and electric-purple glow, long shadows and a single shaft of moonlight. Cinematic and atmospheric, not cartoonish. Render only the one short label — 'eas update' on the parcel — cleanly, and no other text.",
+      "imagePrompt": "A mysterious hooded assassin in the Assassin's Creed mold — sleek pointed-hood cloak, face lost in deep shadow, lean and poised — moving in silent crouched stealth past a guarded checkpoint gate. Two stern blocky uniformed sentries flank the gate, each bearing a glowing white Apple-logo emblem, staring forward, oblivious. Behind their backs he slips a glowing contraband app-bundle parcel stamped 'eas update' through to a row of delighted phones lighting up on the far side. Moonlit, cool blues and electric-purple, long shadows. Cinematic, not cartoonish. Render only the label 'eas update' on the parcel.",
       "image": "art/the-over-the-air-smuggler.png"
     },
     {
@@ -491,7 +491,7 @@
         "purple"
       ],
       "description": "A glamorous sorceress who has mastered the dark, intimate art of App Store submission. She doesn't fear the review queue — she has seduced it. Reviewer notes written like love letters, a pristine pre-logged-in demo account, screenshots staged just so, metadata that whispers exactly what Apple wants to hear; her builds sail through on the first pass while everyone else eats three rejections. Knows the guidelines like scripture. The counterpart to the OTA Smuggler — where he sneaks past the gatekeeper, she charms it into saying yes. The terror underneath the confidence: the god is still faceless and capricious, and no spell is total — do everything right and Guideline 4.3 can still strike from nowhere, binding and unexplained.",
-      "imagePrompt": "A glamorous enchantress-sorceress with a sly knowing smile and swirling hypnotic spiral eyes, leaning in close and casting a charm spell with one outstretched hand — shimmering pink-and-violet enchantment magic and looping hypnotic spirals pouring from her fingertips and her gaze. Before her, a faceless robed App Store gatekeeper-reviewer (a cloaked figure with a softly glowing apple-shaped emblem on its chest) has gone glassy-eyed and slack under her spell, dreamily raising a giant glowing rubber stamp to bring it down on her floating submission scroll. The stamp reads 'APPROVED'. A small floating phone with a pristine glowing app hovers beside her like a charmed offering. Caricature: oversized seductive confident grin, huge mesmerizing hypnotic eyes, comic proportions. Dreamy enchanted setting where a temple gate meets a candlelit boudoir, drifting sparkles and incense smoke, rich seductive magenta-and-purple glow. Render only the one short label — 'APPROVED' on the stamp — cleanly and legibly, and no other text anywhere.",
+      "imagePrompt": "A glamorous enchantress-sorceress with a sly knowing smile and swirling hypnotic spiral eyes, leaning in to cast a charm — shimmering pink-and-violet magic and looping spirals pouring from her fingertips and gaze. Before her a faceless robed App Store gatekeeper (a cloaked figure with a softly glowing apple emblem on its chest) has gone glassy-eyed and slack, dreamily raising a giant glowing rubber stamp reading 'APPROVED' over her floating submission scroll. At a grand enchanted temple gate at dusk, drifting sparkles and incense, rich magenta-and-purple glow. Render only the label 'APPROVED' on the stamp.",
       "image": "art/the-app-store-enchantress.png"
     },
     {
@@ -519,7 +519,7 @@
         "indigo"
       ],
       "description": "A spectral tester who haunts the happy path, materializing only to do the unthinkable thing a real user would absolutely do — rotate mid-payment, flip airplane mode mid-upload, all on the cheapest Android in the drawer. Beloved and feared in equal measure: the crash they surface, the one that only shows up in the release build, is the one that would have shipped. The human truth — actual users really do all of this, and someone has to be the ghost who proves it.",
-      "imagePrompt": "A translucent, softly glowing ghost-phantom wearing a conference QA lanyard, with a mischievous spectral grin, phasing its ethereal hands straight through a giant glowing smartphone to twist it sideways mid-transaction while one wispy finger flicks on airplane-mode. Around it float little glowing bug-spirits. In the corner, a tiny terrified developer-figure watches a crash bloom red across the screen. Playful haunted-house energy, not scary. Caricature: oversized gleeful spooky grin, big hollow glowing eyes, comic proportions. Moonlit purple-and-indigo haunted glow, drifting ectoplasm mist. No text anywhere.",
+      "imagePrompt": "A translucent, softly glowing ghost-phantom wearing a conference QA lanyard with a mischievous spectral grin, phasing its ethereal hands straight through a giant glowing smartphone to twist it sideways mid-transaction while one wispy finger flicks on airplane-mode. Little glowing bug-spirits float around it; in the corner a tiny terrified developer watches a crash bloom red. Playful haunted-house energy, moonlit purple-and-indigo glow, drifting ectoplasm mist.",
       "image": "art/the-qa-phantom.png"
     },
     {
@@ -547,7 +547,7 @@
         "blue"
       ],
       "description": "The calm, impartial arbiter every team needs when two branches collide and neither developer will yield — never more so than after a React Native upgrade, when the ios/, android/, and Podfile.lock conflicts pile up. Hears both sides, weighs the diff with a steady hand, and brings order to the chaos of '<<<<<<< HEAD'. Respected, fair, faintly theatrical in the wig — the senior who settles the standoff instead of bleeding in the arena.",
-      "imagePrompt": "A dignified judge in a tall white curly barrister's wig and flowing black robe, perched high behind an ornate wooden courtroom bench, banging a single glowing gavel to settle a dispute. Below, two glowing rival code-branch streams are tangled together in tug-of-war, knotted with '<<<<<<<' conflict chevrons. To one side, a set of golden scales of justice weighs two little glowing code-blocks labeled 'HEAD' and 'incoming' in perfect balance. Stately wood-paneled courtroom, warm authoritative amber light, shafts of dignified sunlight. Caricature: oversized powdered wig, stern-but-fair expression, comic proportions. Render only the two short scale labels — 'HEAD' and 'incoming' — cleanly, and no other text.",
+      "imagePrompt": "A dignified judge in a tall white curly barrister's wig and flowing black robe, perched high behind an ornate courtroom bench, banging a single glowing gavel. Below, two glowing rival code-branch streams are tangled in tug-of-war, knotted with '<<<<<<<' conflict chevrons; golden scales of justice weigh two little glowing code-blocks labeled 'HEAD' and 'incoming' in balance. Stately wood-paneled courtroom, warm amber light. Render only the two scale labels 'HEAD' and 'incoming'.",
       "image": "art/the-merge-magistrate.png"
     },
     {
@@ -575,7 +575,7 @@
         "yellow"
       ],
       "description": "A wholesome organic farmer of code who believes the best software is grown, not generated. Tends his repository like an heirloom garden — every function hand-planted, free-range, small-batch, lovingly weeded by hand. Looks on the room's factory-farmed AI slop the way a farmers-market regular eyes a vacuum-sealed TV dinner: politely horrified. Not a luddite — a craftsman who'd simply rather raise his code than order it. Slow by the seasons, but he knows every row because his own hands planted it, and what he ships is nourishing, traceable, and entirely his. The proud anti-AI artisan the agentic deck needs as its warm, earthy foil. Farm-to-table, commit by commit.",
-      "imagePrompt": "A wholesome, beaming organic farmer in worn denim overalls, rolled sleeves and a wide straw hat, the unmistakable hero of the frame, kneeling proudly in a lush, sun-drenched garden where CODE grows like heirloom crops — glowing curly-braces, leafy function-vines and plump code-vegetables sprouting from rich dark soil in tidy hand-tended rows. He cradles a wicker basket overflowing with freshly hand-picked glowing code snippets, a watering can and a small hand trowel beside him. Far off in the background a hulking industrial harvester-combine (faintly AI-glowing, churning out grey identical machine-made slop) works a barren field — and he has his back turned to it, entirely unbothered. Caricature: oversized warm proud grin, rosy cheeks, a smudge of soil on one cheek, comic proportions, big wholesome energy. Golden-hour sunlight, blue sky, rolling green farmland, warm earthy organic palette, butterflies and floating pollen motes drifting in the light. No text anywhere.",
+      "imagePrompt": "A wholesome beaming organic farmer in worn denim overalls, rolled sleeves and a wide straw hat, kneeling proudly in a lush sun-drenched garden where CODE grows like heirloom crops — glowing curly-braces, leafy function-vines and plump code-vegetables sprouting in tidy hand-tended rows. He cradles a wicker basket overflowing with freshly hand-picked glowing code snippets, watering can and trowel beside him. Far off, a hulking industrial harvester-combine (faintly AI-glowing, churning grey machine-made slop) works a barren field — and he's turned his back to it, unbothered. Golden-hour light, rolling green farmland, butterflies and pollen motes.",
       "image": "art/the-organic-code-farmer.png"
     },
     {
@@ -603,7 +603,7 @@
         "cyan"
       ],
       "description": "The team's secret weapon, and never blocked. When React Native runs out of road — no library, no API, a platform limit everyone else accepts as final — the Native Ninja slips one layer down and does it in Swift or Kotlin. A TurboModule here, a native view manager there, a patched SDK nobody else dared open; it comes back working and no one's quite sure how. Fearless in Xcode and Android Studio, fluent below the bridge where most RN devs won't go. To him 'React Native can't do that' isn't a wall — it's a door he knows is unlocked from underneath. The counterpoint to the Bridge Troll: where the Troll guards the crossing, the Ninja treats it as a back door left open.",
-      "imagePrompt": "A sleek, acrobatic cartoon ninja in a dark indigo hood and mask, the unmistakable hero of the frame, caught mid-leap in a daring action pose as he springs across a dark chasm. He launches off a crumbling, glowing JavaScript-yellow stone ledge behind him — marked with a small carved 'JS' sign and a dead-end wall — because the JS world ran out of road. He soars toward a sleek, cooler 'native' landing platform of glowing metal gears, cogs and circuitry, where two tall glowing banners await him: one bearing the orange Swift logo (a simplified orange swift-bird silhouette) labeled 'Swift', the other bearing the Kotlin logo (a geometric gradient square of two folded triangular facets) labeled 'Kotlin'. In each hand he hurls a glowing shuriken — one shaped like the Swift bird, the other shaped like the Kotlin square — toward the native side. A puff of ninja smoke trails from the JS ledge; a katana glints on his back. Caricature: huge determined confident eyes above the mask, exaggerated dynamic leaping pose, comic proportions, with motion-trails and speed-lines tracing his arc from JS across to native. Moody night atmosphere over the chasm, electric-cyan glow rising from the native platform, deep saturated indigo-and-cyan palette with crackling electric accents. Render only the three short labels — 'JS', 'Swift', 'Kotlin' — cleanly and legibly, and no other text anywhere.",
+      "imagePrompt": "A sleek acrobatic cartoon ninja in a dark indigo hood and mask, caught mid-leap across a dark chasm — launching off a crumbling glowing JavaScript-yellow ledge (a small carved 'JS' sign, a dead-end wall) toward a cooler 'native' platform of glowing metal gears and circuitry, where two banners await: the orange Swift bird labeled 'Swift' and the Kotlin square labeled 'Kotlin'. In each hand he hurls a glowing shuriken — one shaped like the Swift bird, one like the Kotlin square. Motion-trails and speed-lines trace his arc, a katana on his back. Moody night chasm, electric-cyan glow, deep indigo. Render only the labels 'JS', 'Swift', and 'Kotlin'.",
       "image": "art/the-native-ninja.png"
     },
     {
@@ -628,8 +628,64 @@
       ],
       "backgroundColor": "blue",
       "description": "A by-the-book beat cop who patrols the codebase enforcing the rules nobody loves until the day they save them. Pulls over PRs for transitive CVEs, writes citations for secrets committed in plaintext, mandates 2FA, and taps the update banner you've snoozed for a month. Not malicious — genuinely the reason the team isn't on the breach blog. Lovably over-zealous, immovable on policy, secretly soft. The law the OTA Smuggler keeps dodging at the border crossing, and the scourge of anyone who clicks 'allow all' without reading. Universal guilt under the badge: everyone has waved off the security update 'just one more day.'",
-      "imagePrompt": "A fit, athletic beat cop with a confident smirk, square-jawed and clean-shaven save for light stubble (no mustache), wearing mirrored aviator sunglasses and a black ball cap, the unmistakable hero of the frame. Muscular arms in a short-sleeved black police uniform shirt with a gold badge reading '401' on the chest; a loaded duty belt with a body-camera, radio and walkie-talkie at his waist, black tactical trousers and boots. He thrusts one white-gloved hand forward in a firm 'STOP' while the other holds up a citation pad, a torn ticket tearing off that reads 'CVE'. He has pulled over a cute little runaway software 'package' — a boxy pastel code-car with glowing curly-brace '{ }' eyes and a worried frowning face, sweat-drops beading, its amber hazard lights blinking guiltily — onto the wet shoulder of a night city street. Behind him idles a sleek police sedan cruiser with its red-and-blue light bar ablaze, washing the rain-slicked pavement in alternating red and blue glow. Night-city skyline of lit skyscrapers, a streetlamp and a tree, deep atmospheric backdrop. Caricature: confident heroic posture, big presence, a single disappointed raised eyebrow behind the shades. Cinematic night lighting, warm streetlamp glow against the cold red-and-blue light-bar wash. Render only the two short labels — '401' on the badge and 'CVE' on the ticket — cleanly and legibly, and no other text anywhere.",
+      "imagePrompt": "A fit athletic beat cop with a confident smirk, mirrored aviator sunglasses and a black ball cap, muscular arms in a short-sleeved black police uniform with a gold badge reading '401', a loaded duty belt (body-cam, radio). One white-gloved hand thrust forward in a firm 'STOP', the other holding up a citation pad tearing off a ticket that reads 'CVE'. He's pulled over a cute runaway software 'package' — a boxy pastel code-car with glowing curly-brace eyes and a guilty worried face, hazard lights blinking — onto a wet night-city shoulder. Behind him a police cruiser idles, its red-and-blue light bar ablaze on the rain-slicked street. Cinematic night lighting. Render only the labels '401' on the badge and 'CVE' on the ticket.",
       "image": "art/the-compliance-cop.png"
+    },
+    {
+      "id": "the-dark-mode-demon",
+      "name": "The Dark Mode Demon",
+      "hp": 30,
+      "type": "dream",
+      "saying": "Light mode? It burns.",
+      "moves": [
+        {
+          "name": "Sear of First Light",
+          "type": "fire",
+          "damage": "255",
+          "description": "An app flashes pure white at 2am; the retinas scorch and the demon shrieks back into the dark."
+        },
+        {
+          "name": "Reopen the Request",
+          "type": "dream",
+          "damage": "∞",
+          "description": "The dark-mode ticket won't stay closed — reopened every release until the whole app goes dark."
+        }
+      ],
+      "backgroundColor": [
+        "purple",
+        "blue"
+      ],
+      "description": "A gleeful little gremlin of the night who physically cannot abide a light background. Lives in solarized-dark terminals and dimmed IDEs, recoils hissing from any white screen, and one-stars every app that ships without a dark theme. Not a villain — the patron creature of everyone who's ever muttered 'why is this app trying to blind me' at 2am. The dark-mode feature request that haunts the issue tracker, given a face and a tail. Universal guilt: half the room is nodding.",
+      "imagePrompt": "A small, impish shadow-demon of the night — round and mischievous with big glowing moon-pale eyes, little curved horns, tattered bat-wings and a flicking pointed tail, body a deep velvety midnight-violet. Mid-stride and gleefully hauling an enormous billowing cloak of star-studded night sky across a searing, blown-out white landscape, dragging cozy darkness over the painful glare like pulling a blanket over the whole world. Behind him the land is scorched blinding white; under his trailing cloak it melts into soft restful dark dotted with stars and fireflies. He flinches and throws one clawed hand up against the harsh light, fanged grin half-smug half-pained, wisps of smoke curling off his singed skin. Cold harsh white burning into deep indigo-and-violet starlit calm.",
+      "image": "art/the-dark-mode-demon.png"
+    },
+    {
+      "id": "the-a11y-paladin",
+      "name": "The A11y Paladin",
+      "hp": 144,
+      "type": "sound",
+      "saying": "I guard the users the kingdom cannot see.",
+      "moves": [
+        {
+          "name": "The Blindfold Trial",
+          "type": "sound",
+          "damage": "44",
+          "description": "Journeys the full app by voice alone; any button found unnamed or thinner than 44 bars is vanquished."
+        },
+        {
+          "name": "Trial by Light",
+          "type": "crystal",
+          "damage": "4.5",
+          "description": "Holds every hue to the sacred 4.5 ratio; the faint grey-on-grey is banished into shadow."
+        }
+      ],
+      "backgroundColor": [
+        "teal",
+        "blue"
+      ],
+      "description": "The righteous conscience of the team — a holy warrior for the user nobody else designs for. Turns on VoiceOver and navigates the whole app eyes closed, finds the button that announces only 'button, button, button,' measures every contrast ratio, and refuses to ship a single unlabeled touchable or a tap target under 44 points. Beloved and a little exhausting; the reason the app works for everyone, not just the people who built it. Every number is real scripture — 44pt minimum tap target, 4.5:1 WCAG AA contrast. Defends the unseen user the way a paladin defends the weak.",
+      "imagePrompt": "A radiant holy paladin in gleaming armor, striding through a darkened twilight mountain pass and raising high a great glowing shield emblazoned with the universal accessibility symbol — a simple white figure with outstretched arms inside a circle. Holy light blazes from the shield and floods the path ahead, burning back the shadows so a trail of small grateful glowing wisp-travelers can follow safely behind him through ground no one else ever lit for them. A luminous sword of light in his other hand. A dim rugged mountain pass at dusk, transformed by warm golden-and-teal radiance pouring from the shield. Render only the accessibility symbol on the shield (the figure-in-a-circle icon) and no other words.",
+      "image": "art/the-a11y-paladin.png"
     }
   ]
 }
