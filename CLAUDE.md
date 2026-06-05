@@ -78,6 +78,23 @@ The gallery can generate card art via Google's `gemini-2.5-flash-image` ("Nano B
   calls Gemini, writes `public/art/<id>.png`, and persists `image: "art/<id>.png"` back into
   `cards.json` (with a `cards.json.bak` backup). Generated PNGs in `public/art/` are committed.
 
+## Two art layers — re-export after every art change (IMPORTANT)
+
+There are **two separate image artifacts per card**, and they do not update each other:
+
+1. `public/art/<id>.png` — the **raw character art** (from Gemini, or hand-swapped). The
+   gallery composites this live with the frame; changing it updates the gallery on reload.
+2. `card-exports/<id>.png` — the **full rasterized trading card** (frame + art + text),
+   produced only by `pnpm export`. **The published GitHub Pages site renders these**, not
+   `public/art/`.
+
+So whenever you **swap/regenerate art, rename a card `id`, or edit any visible field**
+(`name`, `saying`, moves, `hp`, `type`, colors), you MUST re-run `pnpm export <id>` and commit
+the new `card-exports/<id>.png` — otherwise the live site stays stale or shows the card broken.
+When you **cut or rename** a card, delete its now-orphaned `card-exports/<id>.png` (and
+`public/art/<id>.png`). `index.html` (the Pages entry point) reads `./cards.json` +
+`./card-exports/<id>.png`, falling back to an "art pending" tile when an export is missing.
+
 ## Conventions
 
 - Use **pnpm**, not npm.
