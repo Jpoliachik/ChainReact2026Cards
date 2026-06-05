@@ -449,7 +449,7 @@
           "name": "Air Assassination",
           "type": "electric",
           "damage": "100%",
-          "description": "A silent strike from above: a fresh `eas update` lands on every device before review ever sees the blade."
+          "description": "A silent strike from above: `eas update` lands on every device before review sees the blade."
         },
         {
           "name": "Stay in the Shadows",
@@ -463,7 +463,7 @@
         "purple"
       ],
       "description": "A mischievous hooded cat-burglar who treats shipping past the App Store review queue as a gleeful midnight caper — why stand in the week-long line when you can slip across the rooftops and hand-deliver a fresh JS bundle while the city sleeps? Equal parts Assassin's Creed and Robin Hood, she beams `eas update` straight to grateful phones with a wink and a flourish, gone before the gate ever stirs. Gets away with it every time — until a change brushes native code, the runtimeVersion drifts, and her little parcel quietly reaches nobody. Cursed but shared: everyone running EAS Update knows the giddy thrill of patching prod live and dodging the line.",
-      "imagePrompt": "A whimsical, sneaky hooded cat-burglar woman with playful Assassin's Creed energy — sleek hooded cloak, sly grin and a wink beneath the hood — the unmistakable hero of the frame, creeping on exaggerated cartoon-stealth tiptoes right past a guarded checkpoint gate. Two stern, blocky uniformed sentries flank the gate, each bearing a glowing white Apple-logo emblem on chest and helmet, staring stiffly forward and utterly oblivious. Behind their backs she clutches a glowing contraband app-bundle parcel stamped 'eas update' and slips it through the gate to a row of delighted phones lighting up on the far side. Cheeky midnight-smuggling caper mood, cool moonlit blues and electric-purple glow with a sprinkle of sparkle. Render only the one short label — 'eas update' on the parcel — cleanly, and no other text.",
+      "imagePrompt": "A mysterious hooded assassin in the Assassin's Creed mold — sleek pointed-hood cloak, face entirely lost in deep shadow beneath the hood (no visible features, just darkness and a faint glint), lean and poised — the unmistakable hero of the frame, moving in silent crouched stealth past a guarded checkpoint gate. Two stern, blocky uniformed sentries flank the gate, each bearing a glowing white Apple-logo emblem on chest and helmet, staring stiffly forward and utterly oblivious. Behind their backs the figure clutches a glowing contraband app-bundle parcel stamped 'eas update' and slips it through the gate to a row of delighted phones lighting up on the far side. Tense moonlit-smuggling mood, cool deep blues and electric-purple glow, long shadows and a single shaft of moonlight. Cinematic and atmospheric, not cartoonish. Render only the one short label — 'eas update' on the parcel — cleanly, and no other text.",
       "image": "art/the-over-the-air-smuggler.png"
     },
     {
