@@ -496,16 +496,16 @@
       "saying": "I left a hotfix under your pillow.",
       "moves": [
         {
-          "name": "Do it Live!",
+          "name": "Air Assassination",
           "type": "electric",
-          "damage": "1.0.1",
-          "description": "Done waiting on review — slams a fresh `eas update` onto every device, live, right now, no rehearsal."
+          "damage": "100%",
+          "description": "A silent strike from above: a fresh `eas update` lands on every device before review ever sees the blade."
         },
         {
-          "name": "Never Touch Native",
+          "name": "Stay in the Shadows",
           "type": "electric",
           "damage": "0",
-          "description": "Won't touch a single native module — pure JS means every fix flies over the air and never sees review."
+          "description": "Stays in pure JS, untouchable; one touch of native code trips the alarm and forces a real store review."
         }
       ],
       "backgroundColor": [
