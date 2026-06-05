@@ -555,19 +555,19 @@
       "name": "The Organic Code Farmer",
       "hp": 100,
       "type": "nature",
-      "saying": "Grown, not generated.",
+      "saying": "Free-range, organic, certified human.",
       "moves": [
         {
-          "name": "Hand-Grown",
+          "name": "Heirloom Variables",
           "type": "nature",
           "damage": "0",
-          "description": "Tends every function by hand in the open soil — no pesticides, no machine, not one generated row."
+          "description": "Refuses the monocrop of autocomplete. His variable names are heirloom stock: odd, local, and impossible to mistake for anyone else's."
         },
         {
           "name": "Knows Every Row",
           "type": "nature",
           "damage": "100%",
-          "description": "Knows every row of the codebase by heart, because his own two hands planted every line."
+          "description": "Knows every line by heart, because his own two hands planted it. When prod burns at 3am, he's the only soul who knows where it's buried."
         }
       ],
       "backgroundColor": [
