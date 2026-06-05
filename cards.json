@@ -493,7 +493,7 @@
       "name": "The Over-the-Air Smuggler",
       "hp": 90,
       "type": "electric",
-      "saying": "Why wait in line when I've got rooftops?",
+      "saying": "I left a hotfix under your pillow.",
       "moves": [
         {
           "name": "Do it Live!",
@@ -502,10 +502,10 @@
           "description": "Done waiting on review — slams a fresh `eas update` onto every device, live, right now, no rehearsal."
         },
         {
-          "name": "Mind the Runtime Version",
+          "name": "Never Touch Native",
           "type": "electric",
-          "damage": "86",
-          "description": "Touches native code one day; the runtimeVersion drifts and the slick OTA quietly reaches nobody."
+          "damage": "0",
+          "description": "Won't touch a single native module — pure JS means every fix flies over the air and never sees review."
         }
       ],
       "backgroundColor": [
