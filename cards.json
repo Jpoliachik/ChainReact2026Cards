@@ -387,7 +387,7 @@
       "name": "The Greenfield Speedster",
       "hp": 30,
       "type": "fire",
-      "saying": "Nothing built yet — nothing to crash into.",
+      "saying": "All gas, no brakes, until something breaks.",
       "moves": [
         {
           "name": "Zero to Production",
