@@ -74,9 +74,25 @@ The gallery can generate card art via Google's `gemini-2.5-flash-image` ("Nano B
   `.env` is gitignored; the loader no-ops if the file is absent.
 - The **"Generate missing art"** header button fills every card without an image (sequential,
   stops on first failure); each card also has a **↻ regenerate** button.
-- `POST /api/generate { id }` builds the prompt (`meta.artDirection` + the card's `imagePrompt`),
-  calls Gemini, writes `public/art/<id>.png`, and persists `image: "art/<id>.png"` back into
-  `cards.json` (with a `cards.json.bak` backup). Generated PNGs in `public/art/` are committed.
+- `POST /api/generate { id }` builds the prompt (`meta.artDirection` + the card's `imagePrompt`)
+  and calls Gemini. For a card with **no** art yet it writes `public/art/<id>.png` and persists
+  `image: "art/<id>.png"` into `cards.json` (with a `cards.json.bak` backup). Generated PNGs in
+  `public/art/` are committed.
+
+#### Non-destructive regenerate (keep-last + A/B)
+
+Regenerating a card that **already has** art never overwrites it. Three slots live side by side
+in `public/art/` (only the canonical is committed; `.new`/`.prev` are gitignored, local-only):
+
+- `<id>.png` — **canonical**, the chosen art (gallery + export read this)
+- `<id>.new.png` — **candidate**, a fresh regeneration awaiting a decision
+- `<id>.prev.png` — **previous**, the one-deep undo from the last keep
+
+Flow: regenerate writes a `.new` candidate; the gallery shows **current vs new ✦ side by side**
+with **↻ again / keep current / ✓ use new**. Keeping promotes the candidate to canonical and
+demotes the old canonical to `.prev` (persisting `image` in `cards.json`); a **↶ revert** button
+restores `.prev`. Endpoints: `POST /api/art/keep|discard|revert { id }`, `GET /api/art/state`.
+**Re-run `pnpm export <id>` after keeping/reverting** — the slots only touch `public/art/`.
 
 ## Two art layers — re-export after every art change (IMPORTANT)
 
