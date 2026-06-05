@@ -670,10 +670,10 @@
           "description": "Finds the key you left in AsyncStorage and writes you up — that belongs in the Keychain, son."
         },
         {
-          "name": "Failure to Update",
+          "name": "Running a Red",
           "type": "electric",
-          "damage": "99+",
-          "description": "The security patch you've snoozed for a month — he hits install and waits out the reboot."
+          "damage": "$300",
+          "description": "Your browser's Update button has glowed red for weeks — he books you for blowing the light."
         }
       ],
       "backgroundColor": "blue",
