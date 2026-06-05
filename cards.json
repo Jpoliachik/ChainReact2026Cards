@@ -601,31 +601,31 @@
       "image": "art/the-merge-magistrate.png"
     },
     {
-      "id": "the-sculptor",
-      "name": "The Sculptor",
-      "hp": 200,
-      "type": "crystal",
-      "saying": "The function was already in the marble.",
+      "id": "the-organic-code-farmer",
+      "name": "The Organic Code Farmer",
+      "hp": 100,
+      "type": "nature",
+      "saying": "Grown, not generated.",
       "moves": [
         {
-          "name": "Hand-Hewn",
-          "type": "crystal",
+          "name": "Hand-Grown",
+          "type": "nature",
           "damage": "0",
-          "description": "Chisels every line by hand and waves off the machine — nothing here was stamped out by a model."
+          "description": "Tends every function by hand in the open soil — no pesticides, no machine, not one generated row."
         },
         {
-          "name": "Remove What Isn't",
-          "type": "crystal",
-          "damage": "1",
-          "description": "Chips away every line that isn't the answer until one clean, inevitable form remains."
+          "name": "Knows Every Row",
+          "type": "nature",
+          "damage": "100%",
+          "description": "Knows every row of the codebase by heart, because his own two hands planted every line."
         }
       ],
       "backgroundColor": [
-        "teal",
-        "blue"
+        "green",
+        "yellow"
       ],
-      "description": "A Renaissance master who treats code the way Michelangelo treated marble: the solution is already inside the problem, and his only job is to remove everything that isn't it. He carves every function by hand and refuses the machine — not out of fear, but because work worth signing is work you shaped yourself. Slow, deliberate, every cut intentional; he knows every vein of his codebase because his own chisel put it there. The proud anti-AI artisan the agentic deck needs as its foil — while the rest of the room prompts a model to pour out a draft, he stands at the block and frees the one true form by hand. Holds that a thing built by hand is the only thing truly understood.",
-      "imagePrompt": "A charismatic Renaissance master sculptor in a dusty leather apron and rolled-up sleeves, the unmistakable hero of the frame, mid-swing with mallet and chisel as he carves a towering block of pristine white marble. Where his chisel strikes, the rough stone gives way to glowing, elegant lines of code and curly-brace forms emerging from within the marble — as if the program were always inside, waiting to be freed. Marble dust and chips fly through the air; a few hand tools — calipers, rasps, a wooden mallet — rest on a workbench nearby. Off to one side a sleek modern 3D-printer-like machine sits idle and ignored, its little AI-glow dimmed; he doesn't even glance at it. Caricature: oversized confident focused grin, strong expressive hands, comic proportions, a smudge of marble dust on one cheek. Warm sunlit classical Italian studio, tall windows, golden Renaissance light, terracotta and warm-stone tones with cool white marble catching the light. No text anywhere."
+      "description": "A wholesome organic farmer of code who believes the best software is grown, not generated. Tends his repository like an heirloom garden — every function hand-planted, free-range, small-batch, lovingly weeded by hand. Looks on the room's factory-farmed AI slop the way a farmers-market regular eyes a vacuum-sealed TV dinner: politely horrified. Not a luddite — a craftsman who'd simply rather raise his code than order it. Slow by the seasons, but he knows every row because his own hands planted it, and what he ships is nourishing, traceable, and entirely his. The proud anti-AI artisan the agentic deck needs as its warm, earthy foil. Farm-to-table, commit by commit.",
+      "imagePrompt": "A wholesome, beaming organic farmer in worn denim overalls, rolled sleeves and a wide straw hat, the unmistakable hero of the frame, kneeling proudly in a lush, sun-drenched garden where CODE grows like heirloom crops — glowing curly-braces, leafy function-vines and plump code-vegetables sprouting from rich dark soil in tidy hand-tended rows. He cradles a wicker basket overflowing with freshly hand-picked glowing code snippets, a watering can and a small hand trowel beside him. Far off in the background a hulking industrial harvester-combine (faintly AI-glowing, churning out grey identical machine-made slop) works a barren field — and he has his back turned to it, entirely unbothered. Caricature: oversized warm proud grin, rosy cheeks, a smudge of soil on one cheek, comic proportions, big wholesome energy. Golden-hour sunlight, blue sky, rolling green farmland, warm earthy organic palette, butterflies and floating pollen motes drifting in the light. No text anywhere."
     },
     {
       "id": "the-native-ninja",
