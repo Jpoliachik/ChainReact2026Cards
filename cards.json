@@ -493,7 +493,7 @@
       "name": "The Over-the-Air Smuggler",
       "hp": 90,
       "type": "electric",
-      "saying": "Why submit when `eas update` ships it tonight?",
+      "saying": "Why wait in line when I've got rooftops?",
       "moves": [
         {
           "name": "Patch It Live",
@@ -512,8 +512,8 @@
         "blue",
         "purple"
       ],
-      "description": "A hooded master infiltrator who lives by expo-updates — slipping a fresh JS bundle onto every device at midnight rather than bowing to the App Store review queue. Moves like a rooftop assassin: silent, precise, gone before the gate ever knew she passed. Mostly gets away with it — right up until a change brushes native code, the runtimeVersion no longer matches, and a real store submission is the only way through. Cursed but shared: everyone running EAS Update has felt the thrill of patching prod live and dodging the line.",
-      "imagePrompt": "A badass hooded assassin woman with Assassin's Creed energy — sleek hooded leather robes, a confident smirk beneath the deep hood — crouched in a dramatic rooftop pose at night. From one outstretched hand she beams a glowing contraband app-bundle, stamped 'eas update', down to phones waiting below in arcing signal-waves. Moonlit stealth-heist mood, cool deep blues and electric-purple glow. Render only the one short label — 'eas update' — cleanly, and no other text.",
+      "description": "A mischievous hooded cat-burglar who treats shipping past the App Store review queue as a gleeful midnight caper — why stand in the week-long line when you can slip across the rooftops and hand-deliver a fresh JS bundle while the city sleeps? Equal parts Assassin's Creed and Robin Hood, she beams `eas update` straight to grateful phones with a wink and a flourish, gone before the gate ever stirs. Gets away with it every time — until a change brushes native code, the runtimeVersion drifts, and her little parcel quietly reaches nobody. Cursed but shared: everyone running EAS Update knows the giddy thrill of patching prod live and dodging the line.",
+      "imagePrompt": "A mischievous hooded cat-burglar woman with playful Assassin's Creed energy — sleek hooded cloak, a sly grin and a wink beneath the hood — striking a fun, theatrical tiptoe-and-flourish pose along a moonlit rooftop. With a flick of her hand she tosses a glowing app-bundle parcel, stamped 'eas update', down to a row of phones below that light up with delighted little glows as it lands. Whimsical midnight-caper mood — bouncy and charming rather than grim — cool moonlit blues and electric-purple glow with a sprinkle of sparkle. Render only the one short label — 'eas update' — cleanly, and no other text.",
       "image": "art/the-over-the-air-smuggler.png"
     },
     {
