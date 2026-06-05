@@ -26,3 +26,4 @@ expanding the working set back toward 30.
 - **The Flag Gardener** — Tends a sprawling garden of feature flags, none removed. Something in there has gone feral.
 - **The Storybook Hermit** — Built the component library in perfect isolation. Nobody imports it.
 - **The Backwards-Compatibility Martyr** — Suffers so users on a 2019 Android phone may know peace.
+- **The Rubber Duck** — Silent sage of the desk; you explain the bug aloud and the answer arrives, duck having said nothing ("I'm listening."). _(cut from the working set — the duck is a prop, not a person you self-identify as)_

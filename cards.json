@@ -115,31 +115,6 @@
       "image": "art/the-slop-sommelier.png"
     },
     {
-      "id": "the-rubber-duck",
-      "name": "The Rubber Duck",
-      "hp": 80,
-      "type": "water",
-      "saying": "I'm listening.",
-      "moves": [
-        {
-          "name": "Silent Treatment",
-          "type": "water",
-          "damage": "0",
-          "description": "Says absolutely nothing — and somehow that's exactly the help you needed to hear your own mistake."
-        },
-        {
-          "name": "The Duck Knows",
-          "type": "psychic",
-          "damage": "200",
-          "description": "Sits in serene rubber judgment until the bug confesses itself — takes no blame, all the credit."
-        }
-      ],
-      "backgroundColor": "blue",
-      "description": "The silent sage of every desk. You explain the impossible bug out loud, and somewhere around the third sentence the answer arrives — the duck never said a word. Patient, unbothered, quietly omniscient. Has solved more production incidents than any senior engineer and asked for nothing but a dry spot by the keyboard.",
-      "imagePrompt": "A little yellow rubber duck as the wise hero of the frame, large and centered on a desk: glossy and round with a serene, all-knowing, faintly smug expression, somehow radiating calm omniscient wisdom like a tiny zen master. Exaggerated caricature — big knowing eyes, a subtle sage's smile. A faint soft glow or halo of insight around it; out of focus behind it, a frazzled developer mid-rant gestures at a glowing tangle of buggy code. Warm desk-lamp glow, cozy late-night home-office den, mugs and sticky notes, deep colored atmospheric background.",
-      "image": "art/the-rubber-duck.png"
-    },
-    {
       "id": "the-console-detective",
       "name": "The Console Detective",
       "hp": 100,
