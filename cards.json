@@ -496,10 +496,10 @@
       "saying": "Why wait in line when I've got rooftops?",
       "moves": [
         {
-          "name": "Patch It Live",
+          "name": "Do it Live!",
           "type": "electric",
           "damage": "1.0.1",
-          "description": "Fires an `eas update` and the fresh JS bundle lands on every device, skipping the store review queue."
+          "description": "Done waiting on review — slams a fresh `eas update` onto every device, live, right now, no rehearsal."
         },
         {
           "name": "Mind the Runtime Version",
@@ -678,7 +678,8 @@
       ],
       "backgroundColor": "blue",
       "description": "A by-the-book beat cop who patrols the codebase enforcing the rules nobody loves until the day they save them. Pulls over PRs for transitive CVEs, writes citations for secrets committed in plaintext, mandates 2FA, and taps the update banner you've snoozed for a month. Not malicious — genuinely the reason the team isn't on the breach blog. Lovably over-zealous, immovable on policy, secretly soft. The natural foe of the Context Hoarder, who clicks 'allow all' on everything the cop would book him for — and the law the OTA Smuggler keeps dodging at the border crossing. Universal guilt under the badge: everyone has waved off the security update 'just one more day.'",
-      "imagePrompt": "A rotund, good-natured beat cop in a crisp navy-blue uniform and peaked cap, mirrored aviator sunglasses and a bushy mustache, the unmistakable hero of the frame, standing with one white-gloved hand raised in a firm 'STOP' while the other scribbles on a citation pad. He has pulled over a glowing little runaway software 'package' — a cute boxy code-car with curly-brace headlights — onto the shoulder of a night city street, its hazard lights blinking guiltily. A radar gun and a chunky walkie-talkie hang from his utility belt; a polished police motorcycle with a red-and-blue light bar sits behind him, washing the scene in alternating red and blue police glow. A gold badge on his chest reads '401'; the torn ticket fluttering from his pad reads 'CVE'. Caricature: oversized stern-but-secretly-soft face, huge mustache, comic proportions, a single disappointed raised eyebrow. Warm sodium streetlamps mixing with the cold red-and-blue light-bar wash, deep night-city backdrop with depth and atmosphere. Render only the two short labels — '401' on the badge and 'CVE' on the ticket — cleanly and legibly, and no other text anywhere."
+      "imagePrompt": "A rotund, good-natured beat cop in a crisp navy-blue uniform and peaked cap, mirrored aviator sunglasses and a bushy mustache, the unmistakable hero of the frame, standing with one white-gloved hand raised in a firm 'STOP' while the other scribbles on a citation pad. He has pulled over a glowing little runaway software 'package' — a cute boxy code-car with curly-brace headlights — onto the shoulder of a night city street, its hazard lights blinking guiltily. A radar gun and a chunky walkie-talkie hang from his utility belt; a polished police motorcycle with a red-and-blue light bar sits behind him, washing the scene in alternating red and blue police glow. A gold badge on his chest reads '401'; the torn ticket fluttering from his pad reads 'CVE'. Caricature: oversized stern-but-secretly-soft face, huge mustache, comic proportions, a single disappointed raised eyebrow. Warm sodium streetlamps mixing with the cold red-and-blue light-bar wash, deep night-city backdrop with depth and atmosphere. Render only the two short labels — '401' on the badge and 'CVE' on the ticket — cleanly and legibly, and no other text anywhere.",
+      "image": "art/the-compliance-cop.png"
     }
   ]
 }
