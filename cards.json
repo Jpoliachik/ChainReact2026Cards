@@ -561,13 +561,13 @@
           "name": "Heirloom Variables",
           "type": "nature",
           "damage": "0",
-          "description": "Refuses the monocrop of autocomplete. His variable names are heirloom stock: odd, local, and impossible to mistake for anyone else's."
+          "description": "No monocrop autocomplete here — his variable names are heirloom stock: odd, local, unmistakably his."
         },
         {
           "name": "Knows Every Row",
           "type": "nature",
           "damage": "100%",
-          "description": "Knows every line by heart, because his own two hands planted it. When prod burns at 3am, he's the only soul who knows where it's buried."
+          "description": "Planted every line by hand, so he knows it by heart. When prod burns at 3am, he alone knows where it's buried."
         }
       ],
       "backgroundColor": [
