@@ -11,7 +11,7 @@
 //   https://aistudio.google.com/apikey
 
 import { createServer } from "node:http";
-import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { readFile, writeFile, mkdir, rename, unlink } from "node:fs/promises";
 import { existsSync, readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join, extname } from "node:path";
@@ -21,6 +21,21 @@ const PORT = Number(process.env.PORT) || 4317;
 const CARDS_PATH = join(__dirname, "cards.json");
 const PUBLIC_DIR = join(__dirname, "public");
 const ART_DIR = join(PUBLIC_DIR, "art");
+
+// Non-destructive art slots per card live side by side in ART_DIR:
+//   <id>.png        canonical  — the chosen art (gallery + export read this)
+//   <id>.new.png    candidate  — a fresh regeneration awaiting keep/discard
+//   <id>.prev.png   previous   — one-deep undo, the last canonical before a keep
+// Regenerate writes the candidate and never touches canonical/cards.json until
+// you keep it. The .new/.prev slots are gitignored — only canonical is committed.
+const ART_EXTS = ["png", "jpg", "jpeg", "webp"];
+function slotFile(id, suffix = "") {
+  for (const ext of ART_EXTS) {
+    const name = `${id}${suffix}.${ext}`;
+    if (existsSync(join(ART_DIR, name))) return name;
+  }
+  return null;
+}
 
 // ── tiny .env loader (no dependency) ────────────────────────────────────────
 function loadEnv(path) {
@@ -171,16 +186,82 @@ async function generateCard(id) {
 
   await mkdir(ART_DIR, { recursive: true });
   const ext = img.mime?.includes("jpeg") ? "jpg" : "png";
-  const fileName = `${id}.${ext}`;
-  await writeFile(join(ART_DIR, fileName), Buffer.from(img.data, "base64"));
+  const buf = Buffer.from(img.data, "base64");
 
-  // Persist the image path back into cards.json. persistImage re-reads the
-  // file fresh under a write lock and touches only this card, so a concurrent
-  // generate or manual edit made during the (slow) Gemini call above survives.
+  // If this card already has canonical art, this is a REGENERATE: write a pending
+  // candidate (.new) and leave the canonical + cards.json untouched so the old
+  // art survives for an A/B compare. Otherwise it's a first generation: write the
+  // canonical directly and persist, the original behavior.
+  if (slotFile(id, "")) {
+    const stale = slotFile(id, ".new");
+    if (stale) await unlink(join(ART_DIR, stale));
+    const fileName = `${id}.new.${ext}`;
+    await writeFile(join(ART_DIR, fileName), buf);
+    const current = card.image || `art/${slotFile(id, "")}`;
+    return { status: 200, body: { ok: true, id, pending: true, candidate: `art/${fileName}`, current } };
+  }
+
+  const fileName = `${id}.${ext}`;
+  await writeFile(join(ART_DIR, fileName), buf);
+  // persistImage re-reads the file fresh under a write lock and touches only this
+  // card, so a concurrent generate or manual edit during the slow call survives.
   const image = `art/${fileName}`;
   await persistImage(id, image);
+  return { status: 200, body: { ok: true, id, pending: false, image } };
+}
 
+// Promote the pending candidate to canonical, demoting the old canonical to the
+// one-deep undo slot (.prev). Persists the new canonical path into cards.json.
+async function keepCandidate(id) {
+  const cand = slotFile(id, ".new");
+  if (!cand) return { status: 400, body: { ok: false, error: "No pending art to keep" } };
+  const current = slotFile(id, "");
+  if (current) {
+    const oldPrev = slotFile(id, ".prev");
+    if (oldPrev) await unlink(join(ART_DIR, oldPrev));
+    const curExt = current.split(".").pop();
+    await rename(join(ART_DIR, current), join(ART_DIR, `${id}.prev.${curExt}`));
+  }
+  const ext = cand.split(".").pop();
+  const fileName = `${id}.${ext}`;
+  await rename(join(ART_DIR, cand), join(ART_DIR, fileName));
+  const image = `art/${fileName}`;
+  await persistImage(id, image);
   return { status: 200, body: { ok: true, id, image } };
+}
+
+// Drop the pending candidate, keeping the current canonical as-is.
+async function discardCandidate(id) {
+  const cand = slotFile(id, ".new");
+  if (cand) await unlink(join(ART_DIR, cand));
+  return { status: 200, body: { ok: true, id } };
+}
+
+// One-deep undo: restore the .prev canonical, discarding the current one.
+async function revertCanonical(id) {
+  const prev = slotFile(id, ".prev");
+  if (!prev) return { status: 400, body: { ok: false, error: "No previous art to revert to" } };
+  const current = slotFile(id, "");
+  if (current) await unlink(join(ART_DIR, current));
+  const ext = prev.split(".").pop();
+  const fileName = `${id}.${ext}`;
+  await rename(join(ART_DIR, prev), join(ART_DIR, fileName));
+  const image = `art/${fileName}`;
+  await persistImage(id, image);
+  return { status: 200, body: { ok: true, id, image } };
+}
+
+// Report which cards have a pending candidate and/or an undo slot, so the gallery
+// can show the A/B compare and revert affordances on load.
+async function artState() {
+  const doc = JSON.parse(await readFile(CARDS_PATH, "utf-8"));
+  const state = {};
+  for (const c of doc.cards) {
+    const cand = slotFile(c.id, ".new");
+    const prev = slotFile(c.id, ".prev");
+    if (cand || prev) state[c.id] = { candidate: cand ? `art/${cand}` : null, prev: !!prev };
+  }
+  return state;
 }
 
 const server = createServer(async (req, res) => {
@@ -199,10 +280,21 @@ const server = createServer(async (req, res) => {
       return send(res, 200, data, MIME[".js"]);
     }
 
-    if (url.pathname === "/api/generate" && req.method === "POST") {
+    if (url.pathname === "/api/art/state") {
+      return sendJson(res, 200, await artState());
+    }
+
+    // generate / keep / discard / revert all take { id } and return { status, body }.
+    const idActions = {
+      "/api/generate": generateCard,
+      "/api/art/keep": keepCandidate,
+      "/api/art/discard": discardCandidate,
+      "/api/art/revert": revertCanonical,
+    };
+    if (idActions[url.pathname] && req.method === "POST") {
       const body = JSON.parse((await readBody(req)) || "{}");
       if (!body.id) return sendJson(res, 400, { ok: false, error: "Missing id" });
-      const { status, body: out } = await generateCard(body.id);
+      const { status, body: out } = await idActions[url.pathname](body.id);
       return sendJson(res, status, out);
     }
 

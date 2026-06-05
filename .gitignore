@@ -18,6 +18,11 @@ dist/
 # Local backup written by server.js on each save
 cards.json.bak
 
+# Non-destructive art slots: pending candidate (.new) + one-deep undo (.prev).
+# Only the chosen canonical art/<id>.png is committed; alternates stay local.
+public/art/*.new.*
+public/art/*.prev.*
+
 # Claude Code
 .claude/*
 !.claude/skills/

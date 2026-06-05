@@ -63,6 +63,17 @@
   .copy { background: var(--panel-2); border: 1px solid var(--line); color: var(--muted);
     border-radius: 7px; padding: 6px 9px; font-size: 11px; cursor: pointer; white-space: nowrap; }
   .copy:hover { border-color: var(--gold); color: var(--ink); }
+
+  /* A/B compare shown when a regeneration is pending a keep/discard decision. */
+  .ab { display: flex; gap: 8px; }
+  .ab-col { position: relative; margin: 0; flex: 1; border-radius: 12px; overflow: hidden;
+    border: 1px solid var(--line); background: #000; }
+  .ab-col img { width: 100%; display: block; aspect-ratio: 5 / 4; object-fit: cover; }
+  .ab-col figcaption { position: absolute; bottom: 0; left: 0; right: 0; text-align: center;
+    font-size: 11px; padding: 3px; background: #000000aa; color: var(--muted); }
+  .ab-col.is-new { border-color: var(--gold); }
+  .ab-col.is-new figcaption { color: var(--gold); }
+  .revert { color: var(--muted); }
 </style>
 </head>
 <body>
@@ -84,6 +95,8 @@ const CARD_W = 816, CARD_H = 1110, PREVIEW_W = 340;
 const SCALE = PREVIEW_W / CARD_W;
 let ART_DIR = "";
 let CARDS = [];
+let PENDING = {}; // id -> candidate art path awaiting a keep/discard decision
+let PREV = {};    // id -> true when a one-deep undo (.prev) slot exists
 
 function fullPrompt(c) {
   return ART_DIR ? `${ART_DIR}\n\nCharacter — ${c.name}: ${c.imagePrompt}` : c.imagePrompt;
@@ -136,7 +149,12 @@ async function generate(c, btn) {
     });
     const j = await r.json();
     if (!r.ok || !j.ok) throw new Error(j.error || r.statusText);
-    c.image = j.image + "?t=" + Date.now(); // cache-bust the refreshed art
+    if (j.pending) {
+      // Regeneration: a candidate is waiting beside the current art for A/B.
+      PENDING[c.id] = j.candidate;
+    } else {
+      c.image = j.image + "?t=" + Date.now(); // first-time art; cache-bust it
+    }
     renderAll();
     return true;
   } catch (e) {
@@ -146,16 +164,28 @@ async function generate(c, btn) {
   }
 }
 
-function cellEl(c) {
-  const cell = document.createElement("div");
-  cell.className = "cell";
-  const genLabel = c.image ? "↻ regenerate art" : "✦ generate art";
-  cell.innerHTML = `
-    <div class="preview"></div>
-    <div class="controls">
-      <span class="name">${esc(c.name)}</span>
-      <button class="gen">${genLabel}</button>
-    </div>
+// Resolve a pending candidate (keep / discard) or undo a prior keep (revert).
+async function resolveArt(c, action) {
+  try {
+    const r = await fetch("/api/art/" + action, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id: c.id }),
+    });
+    const j = await r.json();
+    if (!r.ok || !j.ok) throw new Error(j.error || r.statusText);
+    delete PENDING[c.id];
+    if (action === "keep") { c.image = j.image + "?t=" + Date.now(); PREV[c.id] = true; }
+    if (action === "revert") { c.image = j.image + "?t=" + Date.now(); delete PREV[c.id]; }
+    renderAll();
+  } catch (e) {
+    alert(`Couldn't ${action} "${c.name}":\n\n${e.message}`);
+  }
+}
+
+// The internal character/prompt expander, shared by both cell modes.
+function internalEl(c) {
+  return `
     <details class="internal">
       <summary>internal — character & prompt</summary>
       <div class="int-block">
@@ -170,13 +200,60 @@ function cellEl(c) {
         </div>
       </div>
     </details>`;
-  mountCard(cell.querySelector(".preview"), c);
-  cell.querySelector(".gen").onclick = e => generate(c, e.target);
-  cell.querySelector(".copy").onclick = e => {
+}
+
+function wireCopy(cell, c) {
+  cell.querySelector(".copy.copyfull").onclick = e => {
     navigator.clipboard.writeText(fullPrompt(c));
     e.target.textContent = "copied ✓";
     setTimeout(() => (e.target.textContent = "copy full"), 1200);
   };
+}
+
+// A/B compare mode: a regeneration is waiting beside the current art.
+function pendingCellEl(c) {
+  const cell = document.createElement("div");
+  cell.className = "cell";
+  const cur = c.image || "";
+  const neu = PENDING[c.id] + (PENDING[c.id].includes("?") ? "" : "?t=" + Date.now());
+  cell.innerHTML = `
+    <div class="ab">
+      <figure class="ab-col"><img src="${esc(cur)}" alt="" /><figcaption>current</figcaption></figure>
+      <figure class="ab-col is-new"><img src="${esc(neu)}" alt="" /><figcaption>new ✦</figcaption></figure>
+    </div>
+    <div class="controls">
+      <span class="name">${esc(c.name)}</span>
+      <button class="copy again" title="discard this candidate and generate another">↻ again</button>
+      <button class="copy discard">keep current</button>
+      <button class="gen keep">✓ use new</button>
+    </div>
+    ${internalEl(c).replace('class="copy"', 'class="copy copyfull"')}`;
+  cell.querySelector(".keep").onclick = () => resolveArt(c, "keep");
+  cell.querySelector(".discard").onclick = () => resolveArt(c, "discard");
+  cell.querySelector(".again").onclick = e => generate(c, e.target);
+  wireCopy(cell, c);
+  return cell;
+}
+
+function cellEl(c) {
+  if (PENDING[c.id]) return pendingCellEl(c);
+  const cell = document.createElement("div");
+  cell.className = "cell";
+  const genLabel = c.image ? "↻ regenerate art" : "✦ generate art";
+  const revertBtn = PREV[c.id]
+    ? `<button class="copy revert" title="restore the previous art">↶ revert</button>` : "";
+  cell.innerHTML = `
+    <div class="preview"></div>
+    <div class="controls">
+      <span class="name">${esc(c.name)}</span>
+      ${revertBtn}
+      <button class="gen">${genLabel}</button>
+    </div>
+    ${internalEl(c).replace('class="copy"', 'class="copy copyfull"')}`;
+  mountCard(cell.querySelector(".preview"), c);
+  cell.querySelector(".gen").onclick = e => generate(c, e.target);
+  if (revertBtn) cell.querySelector(".revert").onclick = () => resolveArt(c, "revert");
+  wireCopy(cell, c);
   return cell;
 }
 
@@ -207,6 +284,14 @@ document.getElementById("genAll").onclick = async (e) => {
   const data = await (await fetch("/api/cards")).json();
   ART_DIR = data.meta.artDirection || "";
   CARDS = data.cards;
+  // Restore any pending candidates / undo slots left over from a prior session.
+  try {
+    const state = await (await fetch("/api/art/state")).json();
+    for (const [id, s] of Object.entries(state)) {
+      if (s.candidate) PENDING[id] = s.candidate;
+      if (s.prev) PREV[id] = true;
+    }
+  } catch {}
   document.getElementById("sub").textContent = data.meta.event;
   document.getElementById("count").innerHTML =
     `<b>${data.cards.length}</b> cards · target <b>${data.meta.target || 30}</b>`;
