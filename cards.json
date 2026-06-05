@@ -359,7 +359,7 @@
       "name": "The Brownfield Mechanic",
       "hp": 160,
       "type": "strength",
-      "saying": "Ejected in 2016. Still shipping. Don't touch it.",
+      "saying": "Don't fix the rattle — the rattle's load-bearing.",
       "moves": [
         {
           "name": "Patch-Package and Pray",
