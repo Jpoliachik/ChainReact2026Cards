@@ -27,3 +27,4 @@ expanding the working set back toward 30.
 - **The Storybook Hermit** — Built the component library in perfect isolation. Nobody imports it.
 - **The Backwards-Compatibility Martyr** — Suffers so users on a 2019 Android phone may know peace.
 - **The Rubber Duck** — Silent sage of the desk; you explain the bug aloud and the answer arrives, duck having said nothing ("I'm listening."). _(cut from the working set — the duck is a prop, not a person you self-identify as)_
+- **The Context Hoarder** ⭐ — Believes more context can only help and that access controls are for cowards: dumps the whole repo, clicks 'allow all', wires the agent to any sketchy MCP. YOLO incarnate. _(cut from the working set — sits in the crowded AI/psychic cluster; its 'allow all' posture now lives on as a foil note in The Compliance Cop)_

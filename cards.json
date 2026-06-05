@@ -168,31 +168,6 @@
       "image": "art/the-agent-wrangler.png"
     },
     {
-      "id": "the-context-hoarder",
-      "name": "The Context Hoarder",
-      "hp": 90,
-      "type": "psychic",
-      "saying": "Just give it everything.",
-      "moves": [
-        {
-          "name": "Repo Dump",
-          "type": "psychic",
-          "damage": "∞",
-          "description": "Pastes the entire codebase into context because choosing which files felt risky."
-        },
-        {
-          "name": "Sketchy MCP",
-          "type": "toxic",
-          "damage": "50",
-          "description": "Wires the agent to a random unvetted MCP server because it had a cool README."
-        }
-      ],
-      "backgroundColor": "purple",
-      "description": "A trusting soul who believes more context can only help and that access controls are for cowards. Dumps the whole repo, hooks the agent to every MCP it asks for, clicks 'allow all' without reading. YOLO incarnate. The fear underneath: the one thing you withhold is the thing it needed.",
-      "imagePrompt": "Cute cartoon trash-panda raccoon with gleeful gremlin energy, big silly caricature: wide-eyed and grinning ear to ear, arms thrown wide as it proudly hugs a giant overflowing armful of random junk — papers, tangled cables, folders and files spilling out everywhere, a few tumbling from its stuffed cheeks — beaming like 'yeah, this is ALL my context.' Bushy striped tail, mischievous sparkle in its eyes. Set in a cozy dim hoarder's den glowing with warm amber light — cluttered shelves and a colored, atmospheric backdrop framing him, never a plain white background.",
-      "image": "art/the-context-hoarder.png"
-    },
-    {
       "id": "the-dependency-prepper",
       "name": "The Dependency Prepper",
       "hp": 140,
@@ -652,7 +627,7 @@
         }
       ],
       "backgroundColor": "blue",
-      "description": "A by-the-book beat cop who patrols the codebase enforcing the rules nobody loves until the day they save them. Pulls over PRs for transitive CVEs, writes citations for secrets committed in plaintext, mandates 2FA, and taps the update banner you've snoozed for a month. Not malicious — genuinely the reason the team isn't on the breach blog. Lovably over-zealous, immovable on policy, secretly soft. The natural foe of the Context Hoarder, who clicks 'allow all' on everything the cop would book him for — and the law the OTA Smuggler keeps dodging at the border crossing. Universal guilt under the badge: everyone has waved off the security update 'just one more day.'",
+      "description": "A by-the-book beat cop who patrols the codebase enforcing the rules nobody loves until the day they save them. Pulls over PRs for transitive CVEs, writes citations for secrets committed in plaintext, mandates 2FA, and taps the update banner you've snoozed for a month. Not malicious — genuinely the reason the team isn't on the breach blog. Lovably over-zealous, immovable on policy, secretly soft. The law the OTA Smuggler keeps dodging at the border crossing, and the scourge of anyone who clicks 'allow all' without reading. Universal guilt under the badge: everyone has waved off the security update 'just one more day.'",
       "imagePrompt": "A rotund, good-natured beat cop in a crisp navy-blue uniform and peaked cap, mirrored aviator sunglasses and a bushy mustache, the unmistakable hero of the frame, standing with one white-gloved hand raised in a firm 'STOP' while the other scribbles on a citation pad. He has pulled over a glowing little runaway software 'package' — a cute boxy code-car with curly-brace headlights — onto the shoulder of a night city street, its hazard lights blinking guiltily. A radar gun and a chunky walkie-talkie hang from his utility belt; a polished police motorcycle with a red-and-blue light bar sits behind him, washing the scene in alternating red and blue police glow. A gold badge on his chest reads '401'; the torn ticket fluttering from his pad reads 'CVE'. Caricature: oversized stern-but-secretly-soft face, huge mustache, comic proportions, a single disappointed raised eyebrow. Warm sodium streetlamps mixing with the cold red-and-blue light-bar wash, deep night-city backdrop with depth and atmosphere. Render only the two short labels — '401' on the badge and 'CVE' on the ticket — cleanly and legibly, and no other text anywhere.",
       "image": "art/the-compliance-cop.png"
     }
