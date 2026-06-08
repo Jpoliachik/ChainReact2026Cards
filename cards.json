@@ -728,10 +728,10 @@
           "description": "Senses which docs the moment needs and drops them into the agent's context, right on the beat."
         },
         {
-          "name": "Deep Cut",
-          "type": "ai",
-          "damage": "B-side",
-          "description": "Pulls the obscure migration guide or buried ADR nobody else remembered, right when it's needed."
+          "name": "Cut the Record",
+          "type": "process",
+          "damage": "33⅓",
+          "description": "Catches the fix nobody wrote down and presses it to wax — 'did you update the docs with this?'"
         }
       ],
       "backgroundColor": [
