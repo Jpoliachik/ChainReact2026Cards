@@ -350,7 +350,7 @@
         "yellow"
       ],
       "description": "An ascetic who has made peace with the dependency upgrade everyone else dreads. Finds quiet enlightenment in the Expo SDK bump, the major-version migration, the changelog no one wants to read. Takes on the suffering so the team doesn't have to, and emerges serene on the other side of a green build. Patient, selfless, faintly amused by your fear of breaking changes.",
-      "imagePrompt": "A serene bald monk in saffron robes, sitting in calm meditation with a faint glowing aura of peace, deliberately drawing a furious storm of crackling breaking-change lightning into himself — the bolts bending toward him and away from a small cluster of grateful devs sheltering untouched behind him. Atop a misty mountain peak, a glowing SDK package floating before him. Warm dawn light cutting through the dark storm, the monk the clear focus. Render no words.",
+      "imagePrompt": "A serene bald monk in flowing saffron robes, eyes closed in a blissful half-smile, sitting in calm lotus meditation with a soft glowing halo of peace. A single glowing SDK package floats before him like an object of devotion; an impossibly long changelog scroll unfurls gently down the mountainside beside him. Faint deprecation-warning glyphs drift down around him like falling cherry-blossom petals. Atop a tranquil misty mountain peak at soft golden dawn, utterly at peace — the monk the clear focus. Render no words.",
       "image": "art/the-upgrade-monk.png"
     },
     {
