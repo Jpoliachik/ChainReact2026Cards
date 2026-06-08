@@ -326,34 +326,6 @@
       "image": "art/the-pixel-surgeon.png"
     },
     {
-      "id": "the-upgrade-monk",
-      "name": "The Upgrade Monk",
-      "hp": 130,
-      "type": "water",
-      "saying": "The breaking changes are simply a teacher.",
-      "moves": [
-        {
-          "name": "The Long Migration",
-          "type": "water",
-          "damage": "40",
-          "description": "Sits in perfect calm through forty breaking changes and a thousand deprecation warnings."
-        },
-        {
-          "name": "Bear the Suffering",
-          "type": "water",
-          "damage": "100",
-          "description": "Absorbs the entire SDK bump alone so the rest of the team never has to open the changelog."
-        }
-      ],
-      "backgroundColor": [
-        "orange",
-        "yellow"
-      ],
-      "description": "An ascetic who has made peace with the dependency upgrade everyone else dreads. Finds quiet enlightenment in the Expo SDK bump, the major-version migration, the changelog no one wants to read. Takes on the suffering so the team doesn't have to, and emerges serene on the other side of a green build. Patient, selfless, faintly amused by your fear of breaking changes.",
-      "imagePrompt": "A serene bald monk in flowing saffron robes, sitting in calm lotus meditation atop a misty mountain peak with a blissful smile and a glowing halo of peace — utterly undisturbed while a storm of crackling breaking-change lightning rages around him. An impossibly long changelog scroll unrolls down the mountainside; a small glowing package-box floats before him like an object of devotion. Warm dawn light cutting through the storm.",
-      "image": "art/the-upgrade-monk.png"
-    },
-    {
       "id": "the-brownfield-mechanic",
       "name": "The Brownfield Mechanic",
       "hp": 160,
@@ -712,85 +684,32 @@
       "image": "art/the-render-drill-sergeant.png"
     },
     {
-      "id": "the-hydra-slayer",
-      "name": "The Hydra Slayer",
-      "hp": 150,
-      "type": "strength",
-      "saying": "Closed forty. Forty-two opened overnight.",
+      "id": "the-one-true-pope",
+      "name": "The One True Pope",
+      "hp": 1,
+      "type": "fire",
+      "saying": "Tabs are heresy. The matter is closed.",
       "moves": [
         {
-          "name": "Whittle the Mountain",
-          "type": "nature",
-          "damage": "1",
-          "description": "Chips the prod backlog down one ticket at a time — steady, unglamorous, never reaching zero."
+          "name": "Papal Bull",
+          "type": "cosmic",
+          "damage": "∞",
+          "description": "Declares it infallible doctrine — tabs heresy, `any` a mortal sin — the matter forever closed."
         },
         {
-          "name": "Two More Appear",
-          "type": "strength",
-          "damage": "x2",
-          "description": "Slays one prod bug and watches two fresh reports spawn from the wound."
-        }
-      ],
-      "backgroundColor": "green",
-      "description": "A tireless workhorse who lives in the prod bug queue, clearing the endless backlog one ticket at a time. Finds quiet pride in a falling number that never reaches zero — every triage session another head lopped off a hydra that grows two more by morning. Not glamorous, never the keynote, but the reason the app stays usable while everyone else chases the new thing. Steady, patient, faintly grim about the regrowth. The unsung counterweight to the Greenfield Speedster: someone has to maintain what shipped.",
-      "imagePrompt": "A weary but determined cartoon knight in dented armor, sleeves rolled up, swinging a glowing sword at a towering many-headed HYDRA whose every neck ends not in a snake-head but in a glowing red bug-ticket card with an angry little face. One head freshly lopped off, and from the stump two new ticket-heads already sprouting with a 'pop'. The knight stands knee-deep in a murky swamp atop a mound of slain, crossed-out tickets, sweat flying, a tiny satisfied grin. Green swamp lair, shafts of light, heroic-but-endless mood. Render no words.",
-      "image": "art/the-hydra-slayer.png"
-    },
-    {
-      "id": "the-log-diviner",
-      "name": "The Log Diviner",
-      "hp": 90,
-      "type": "psychic",
-      "saying": "'It crashed' isn't a repro. But the logs remember.",
-      "moves": [
-        {
-          "name": "Read the Entrails",
-          "type": "psychic",
-          "damage": "1",
-          "description": "Divines what the user actually did from a wall of Sentry breadcrumbs and one furious one-star."
-        },
-        {
-          "name": "Needle in the Stack",
-          "type": "dream",
-          "damage": "10K",
-          "description": "Scrolls ten thousand log lines to find the one stack trace that explains everything."
-        }
-      ],
-      "backgroundColor": [
-        "indigo",
-        "purple"
-      ],
-      "description": "A mystic who reads production telemetry like tea leaves. Handed a vague support ticket — 'app froze, fix it' — she descends into the Sentry dashboard and reconstructs the whole doomed session from breadcrumbs, timestamps, and a single stack trace buried ten thousand lines deep. Where the Console Detective works the local crime scene with print statements and instinct, the Log Diviner works the cold case from afar, divining truth from production noise no one else can stand to read. Patient, eye-strained, quietly oracular.",
-      "imagePrompt": "A hooded mystic fortune-teller hunched over a glowing crystal ball — but inside the orb, instead of smoke, a scrolling cascade of log lines, timestamps and red stack-traces swirls. Both hands spread over the glass, eyes glowing faintly as she reads it; a crumpled paper support-ticket scrawled with a sad face clutched in one hand. Candles, hanging talismans shaped like little error-icons, stacks of scrolls around her. A dim velvet-draped divination tent, deep indigo-and-purple glow, mystical not noir. Render no words.",
-      "image": "art/the-log-diviner.png"
-    },
-    {
-      "id": "the-patch-pope",
-      "name": "The Patch Pope",
-      "hp": 70,
-      "type": "electric",
-      "saying": "That typo fix? That's a release.",
-      "moves": [
-        {
-          "name": "Every Commit a Release",
-          "type": "electric",
-          "damage": "+1",
-          "description": "Bumps the patch version for a one-character change; the deploy pipeline never once gets to rest."
-        },
-        {
-          "name": "Bump the Number",
-          "type": "electric",
-          "damage": "0.0.32861",
-          "description": "The version reads 0.0.32861 and still climbs — semver lost meaning thousands of releases ago."
+          "name": "Reignite the Schism",
+          "type": "fire",
+          "damage": "404",
+          "description": "Drops 'Expo or bare?' into a calm PR thread and the holy war devours the entire standup."
         }
       ],
       "backgroundColor": [
         "yellow",
         "orange"
       ],
-      "description": "A devout believer that no change is too small to ship. Every commit — a typo fix, a comment tweak, a whitespace nudge — is consecrated with its own point release, blessed and deployed to the faithful. The version number long ago spiraled past sense into the tens of thousands, and he wears it like vestments. Joyful, compulsive, allergic to batching. Drives the release pipeline like a bell that never stops ringing. The team teases him, but nothing he writes sits unreleased — and he sleeps fine knowing main and prod are never more than one commit apart.",
-      "imagePrompt": "A beaming pope/cardinal figure in flowing gold-and-white vestments and a tall mitre, standing on a cathedral balcony with both arms raised in benediction, gripping a glowing crozier-staff topped with a small rocket symbol and a banner reading 'DEPLOY'. Below, a flock of tiny cute commit-creatures (little glowing orbs with faces) gaze up adoringly as release-confetti and light rain down. Behind him a giant ornate cathedral tally-board displays in big illuminated numerals 'v0.0.32861'. Warm gold-and-orange holy light, stained-glass glow, jubilant. Render only the labels 'DEPLOY' on the banner and 'v0.0.32861' on the board.",
-      "image": "art/the-patch-pope.png"
+      "description": "A zealot who holds every contested developer convention as a matter of doctrine and salvation — and has seen the One True Way. Tabs over spaces, Expo over bare, `any` as mortal sin, Redux dead and Zustand risen: each is not a preference but revealed truth, declared infallibly and defended to the death in the PR thread. Excommunicates heretics with a single comment, reignites settled holy wars for sport, and treats Prettier as a false peace that ended honest debate. Beloved and exhausting in equal measure; under the fury he genuinely cares that the codebase keep one faith. Universal guilt: everyone has a hill, and everyone has died on it.",
+      "imagePrompt": "A fierce pope in gold-and-crimson vestments and a tall mitre, mid-decree — slamming down a glowing papal staff with righteous fury, a burning edict blazing above his free hand. A towering stained-glass cathedral rises behind him. Gold-and-crimson holy light, the pope the clear focus. Render no words.",
+      "image": "art/the-one-true-pope.png"
     },
     {
       "id": "the-docs-inquisitor",
@@ -817,7 +736,7 @@
         "yellow"
       ],
       "description": "The keeper of institutional memory and the gentle terror of the merge queue. Every pull request, however perfect, meets the same comment: 'Did you update the docs?' Treats an undocumented change as quiet heresy — not malicious, genuinely the only reason anyone can onboard, debug at 3am, or remember why that flag exists. Blocks with a smile, relents the moment the README catches up. Beloved and a little exhausting; the team groans, then thanks them six months later. Self-claimed proudly by everyone who's ever been the one writing it all down.",
-      "imagePrompt": "A stern robed inquisitor-monk in a deep cowl, lit by candlelight in a vast archive of towering leather doc-tomes and shelved scrolls, holding aloft a single glowing unrolled scroll stamped 'README' and pointing an accusing finger downward. On a small dock before him a sweating, guilty little PR-creature (a glowing pull-request card with stick arms and wide panicked eyes) stands on trial. A wax stamp on the lectern reads 'UNDOCUMENTED'. Warm orange-and-amber candlelight, scholarly gothic gloom, theatrical judgment. Render only the labels 'README' on the scroll and 'UNDOCUMENTED' on the stamp.",
+      "imagePrompt": "A stern robed inquisitor-monk in a deep cowl, candlelit, holding a single glowing scroll marked 'README' aloft in one hand and leveling an accusing finger straight at the viewer. Behind him, a dim archive of towering doc-tomes fading into shadow. Warm amber candlelight, gothic gloom, the inquisitor the clear focus. Render only the label 'README' on the scroll.",
       "image": "art/the-docs-inquisitor.png"
     },
     {
@@ -845,7 +764,7 @@
         "purple"
       ],
       "description": "The boundless idea-fountain of the team — a founder, PM, or stakeholder whose mind never stops generating the next brilliant feature. Each new thought is genuinely good, delivered with such warmth and conviction that no one can bring themselves to say no, and a sprint that was full an hour ago quietly rearranges itself to chase it. Not a villain — the visionary spark that keeps the product ambitious — but every idea is someone else's unplanned week. Magnetic, optimistic, allergic to 'later.' The card you hand the person who's always three features ahead of the roadmap. Affectionate barb: the song is beautiful, and the rocks are real.",
-      "imagePrompt": "A radiant, glamorous siren-muse perched on a rocky outcrop in a moonlit sea, mid-song with arms outstretched, glowing musical notes and little shimmering idea-lightbulbs pouring from her voice and drifting across the water. Out on the waves a small wooden ship with a sail marked 'ROADMAP' steers helplessly toward the rocks, its tiny dev-sailor crew leaning over the rails enchanted, eyes full of stars, oars forgotten. Beautiful and alluring rather than menacing — pink-and-purple twilight, sea-spray sparkle, dreamy bioluminescence. Render only the label 'ROADMAP' on the sail.",
+      "imagePrompt": "A glamorous siren rising large from the sea, mid-song — her glowing song pours from her mouth and swells into one towering wave. Atop that wave a small boat marked 'ENGINEERING' is tossed high, its tiny crew hanging on. Open sea, wide empty twilight sky, the siren the clear focus. Pink-and-purple dusk, dreamy glow, alluring not menacing. Render only the label 'ENGINEERING' on the boat.",
       "image": "art/the-scope-siren.png"
     }
   ]
