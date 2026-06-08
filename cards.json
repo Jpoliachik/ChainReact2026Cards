@@ -95,7 +95,7 @@
         {
           "name": "Sniff Test",
           "type": "toxic",
-          "damage": "70",
+          "damage": "0.7",
           "description": "Swirls a pull request, sips, and names which model wrote it from the aftertaste alone."
         },
         {
@@ -129,7 +129,7 @@
         {
           "name": "Ship the Evidence",
           "type": "electric",
-          "damage": "500",
+          "damage": "-500",
           "description": "Accidentally deploys one of the logs straight to production."
         }
       ],
@@ -201,7 +201,7 @@
         {
           "name": "Phantom Tip",
           "type": "psychic",
-          "damage": "200",
+          "damage": "$200",
           "description": "Promises the model a $200 tip it will never receive; quality mysteriously improves."
         },
         {
@@ -341,7 +341,7 @@
         {
           "name": "Do Not Upgrade",
           "type": "strength",
-          "damage": "90",
+          "damage": "0.59",
           "description": "Guards an app ejected on an ancient RN version — native folders hand-tuned, upgrade never run."
         }
       ],
@@ -531,7 +531,7 @@
         {
           "name": "Heirloom Variables",
           "type": "nature",
-          "damage": "0",
+          "damage": "0%",
           "description": "No monocrop AI here — his variable names are heirloom stock: odd, local, unmistakably his."
         },
         {
