@@ -163,7 +163,7 @@
         "orange"
       ],
       "description": "A frontier cowboy of the agentic era who runs more agents than any human can track and burns tokens like a campfire. Optimistic, overextended, context-switching so fast he forgets what each terminal was doing. Lives the thrill and terror of orchestrating things that act on their own.",
-      "imagePrompt": "Wild-west cowboy in rodeo chaos: a dusty cowboy in a ten-gallon hat astride one bucking glowing robot-agent bronco, hanging on with one hand while the other swings a glowing lasso to rope a whole stampede of other runaway robot-agent horses bolting every direction — one charging toward a cliff edge. Each robo-bronco a different glowing mechanical creature. Flying dust and tumbleweeds, sunset mesas, pure mayhem.",
+      "imagePrompt": "A classic dusty wild-west cowboy in a ten-gallon hat and chaps, mid-rodeo — hanging onto one bucking bronco with one hand while swinging a glowing lasso with the other to rope two more breaking loose. The broncos are unmistakably AI agents: glowing horses made of flowing terminal-green code with blinking-cursor glints for eyes, each branded on the flank with a glowing four-pointed AI sparkle ✦ like a cattle brand. Kicked-up dust and a sunset mesa behind, the cowboy the clear hero. Render only the ✦ sparkle brand on the horses, no other words.",
       "image": "art/the-agent-wrangler.png"
     },
     {
