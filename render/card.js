@@ -22,20 +22,19 @@
  * export.js, and build.js all share one source of truth.
  */
 
-// Pokémon-elemental type system. Each type -> circular icon badge + color.
-// Icons live in public/icons/ and are rendered white via a CSS invert filter.
+// Deck-native type system — the domains this deck actually curates around
+// (see SPEC.md), not generic Pokémon elements. Each type -> circular icon
+// badge + color. Icons live in public/icons/, rendered white via a CSS invert
+// filter. A card's `type` drives the HP badge; each move's `type` shows inline.
 const TYPE_CONFIG = {
-  nature: { icon: "tree.svg", color: "#16a34a", name: "Nature" },
-  fire: { icon: "flame.svg", color: "#dc2626", name: "Fire" },
-  psychic: { icon: "eye.svg", color: "#9333ea", name: "Psychic" },
-  water: { icon: "droplet.svg", color: "#2563eb", name: "Water" },
-  electric: { icon: "bolt.svg", color: "#eab308", name: "Electric" },
-  cosmic: { icon: "spiral.svg", color: "#ec4899", name: "Cosmic" },
-  toxic: { icon: "biohazard.svg", color: "#84cc16", name: "Toxic" },
-  dream: { icon: "moon.svg", color: "#4f46e5", name: "Dream" },
-  crystal: { icon: "gem.svg", color: "#06b6d4", name: "Crystal" },
-  sound: { icon: "music.svg", color: "#ea580c", name: "Sound" },
-  strength: { icon: "dumbbell.svg", color: "#dc2626", name: "Strength" },
+  ai: { icon: "sparkle.svg", color: "#8b5cf6", name: "AI" },
+  native: { icon: "chip.svg", color: "#2563eb", name: "Native" },
+  motion: { icon: "wave.svg", color: "#06b6d4", name: "Motion" },
+  craft: { icon: "gem.svg", color: "#ec4899", name: "Craft" },
+  ship: { icon: "rocket.svg", color: "#f59e0b", name: "Ship" },
+  debug: { icon: "bug.svg", color: "#65a30d", name: "Debug" },
+  security: { icon: "shield.svg", color: "#dc2626", name: "Security" },
+  process: { icon: "gear.svg", color: "#475569", name: "Process" },
 };
 
 const COLOR_MAP = {
@@ -52,7 +51,7 @@ const COLOR_MAP = {
 };
 
 function typeOf(key) {
-  return TYPE_CONFIG[key] || TYPE_CONFIG.nature;
+  return TYPE_CONFIG[key] || TYPE_CONFIG.process;
 }
 
 // Resolve backgroundColor into a CSS background — single solid or a left→right

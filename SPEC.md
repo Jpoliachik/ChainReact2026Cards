@@ -46,11 +46,11 @@ each card has these fields:
   "id": "the-bridge-troll",         // kebab slug, stable
   "name": "The Bridge Troll",       // VISIBLE — high-register "The ___", the headline
   "hp": 130,                        // VISIBLE — flavor stat (no real balance)
-  "type": "nature",                 // VISIBLE — Pokémon-elemental type; sets the HP icon
+  "type": "native",                 // VISIBLE — deck-domain type; sets the HP icon
   "saying": "Crossing to native? That'll cost ya.", // VISIBLE — the one line they'd say
   "moves": [                        // VISIBLE — exactly two; where the personality lives
-    { "name": "Riddle of the Crossing", "type": "nature",   "damage": "30", "description": "≤ 2 lines (~95 chars)" },
-    { "name": "Flattened to Fit",       "type": "strength", "damage": "90", "description": "≤ 2 lines (~95 chars)" }
+    { "name": "Riddle of the Crossing", "type": "native", "damage": "30", "description": "≤ 2 lines (~95 chars)" },
+    { "name": "Flattened to Fit",       "type": "native", "damage": "90", "description": "≤ 2 lines (~95 chars)" }
   ],
   "backgroundColor": "green",       // VISIBLE — frame color: a string or ["a","b"] gradient
   "description": "character bible", // INTERNAL — traits/personality/vibe, never shown
@@ -87,12 +87,25 @@ props, and action. Keep characters visually distinct (no two near-identical figu
 
 ### Type system
 
-Each card and each move carries a Pokémon-elemental `type` — one of:
-`nature · fire · psychic · water · electric · cosmic · toxic · dream · crystal · sound · strength`.
-Icon + color for each live in `render/card.js`; the card's `type` drives the HP badge, and each
-move's `type` shows as a single circular icon inline beside the move name. (This replaced the
-old 1–4 energy-cost pips — one clean icon per move, not a count.) The deck skews `psychic`
-(the AI/mind cards cluster there). These are flavor, not balance.
+Each card and each move carries a `type` — but these are **the deck's own domains**, not
+generic Pokémon elements. The type icon tells you what _kind_ of dev energy the card is.
+One of eight:
+
+`ai · native · motion · craft · ship · debug · security · process`
+
+- **ai** (sparkle) — agents, models, prompts, context, the slop wars
+- **native** (chip) — the JS↔native bridge, Swift/Kotlin, legacy/brownfield, the OS layer
+- **motion** (wave) — animation, gestures, render perf, frames
+- **craft** (gem) — pixels, a11y, theming, the meticulous polish
+- **ship** (rocket) — release, deploy, OTA, store submission, versioning, fresh projects
+- **debug** (bug) — the hunt: console logs, QA, crashes, fugitive bugs
+- **security** (shield) — supply chain, secrets, policy, CVEs
+- **process** (gear) — git, migrations, scope, demos — keeping the machine honest
+
+Icon + color for each live in `render/card.js` (`public/icons/<icon>.svg`); the card's `type`
+drives the HP badge, and each move's `type` shows as a single circular icon inline beside the
+move name. A move often differs from its card's type (dual-type texture — e.g. a `native` card
+with a `craft` move). The deck skews `ai` (it's an AI-era deck). These are flavor, not balance.
 
 ### Stats: `hp`, `damage`
 

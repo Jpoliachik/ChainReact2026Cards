@@ -41,9 +41,10 @@ writing, judging, or cutting cards. Key reminders:
   `imagePrompt`). Cut ideas go to `GRAVEYARD.md`, not `cards.json`. (15 cards locked so far;
   target 30.)
 - **Phase 2 (in progress): the actual visual.** Each card now grows the full Pokémon card —
-  `hp`, a Pokémon-elemental `type`, `backgroundColor`, and per-move `type` / `damage` /
-  `iconCount` — and renders to a 816×1110 trading card. See SPEC.md for the schema + type
-  system. The type/damage values are a **first pass tuned for refinement**, not final.
+  `hp`, a deck-domain `type` (`ai · native · motion · craft · ship · debug · security ·
+  process`), `backgroundColor`, and a per-move `type` / `damage` — and renders to a 816×1110
+  trading card. See SPEC.md for the schema + type system. The type/damage values are tuned
+  for refinement, not final.
 
   - `render/card.js` — the shared `createCard` renderer (ported from the Bob Ross trading-card
     tool). `public/card.css` is its Tailwind stylesheet; `public/icons/` holds the type-icon

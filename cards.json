@@ -8,18 +8,18 @@
       "id": "the-gesture-jester",
       "name": "The Gesture Jester",
       "hp": 90,
-      "type": "psychic",
+      "type": "motion",
       "saying": "Bet you didn't know you could swipe there.",
       "moves": [
         {
           "name": "Swipe to Delete",
-          "type": "psychic",
+          "type": "motion",
           "damage": "←",
           "description": "Hides delete behind a swipe, the menu behind a long-press — every action one secret gesture away."
         },
         {
           "name": "Hidden Repertoire",
-          "type": "psychic",
+          "type": "motion",
           "damage": "60",
           "description": "Tracks your finger at a buttery 60fps through pinch, drag and fling — flawless, and undiscoverable."
         }
@@ -36,18 +36,18 @@
       "id": "the-bridge-troll",
       "name": "The Bridge Troll",
       "hp": 130,
-      "type": "nature",
+      "type": "native",
       "saying": "Crossing to native? That'll cost ya.",
       "moves": [
         {
           "name": "Riddle of the Crossing",
-          "type": "nature",
+          "type": "native",
           "damage": "30",
           "description": "Won't raise the gate until you answer his riddle — and the answer always comes back a few frames late."
         },
         {
           "name": "Flattened to Fit",
-          "type": "strength",
+          "type": "native",
           "damage": "90",
           "description": "Mashes every object into plain JSON to cross — your data arrives duller than it left."
         }
@@ -61,18 +61,18 @@
       "id": "the-reanimated-wizard",
       "name": "The Reanimated Wizard",
       "hp": 100,
-      "type": "cosmic",
+      "type": "motion",
       "saying": "You won't see the spell — only feel it.",
       "moves": [
         {
           "name": "Buttery Sixty",
-          "type": "cosmic",
+          "type": "motion",
           "damage": "60",
           "description": "Conjures motion so smooth the screen feels alive in your hand — sixty frames, never one dropped."
         },
         {
           "name": "Off the JS Thread",
-          "type": "electric",
+          "type": "motion",
           "damage": "0",
           "description": "Runs the whole animation on the UI thread with a worklet; it never stutters, even as JS chokes."
         }
@@ -89,18 +89,18 @@
       "id": "the-slop-sommelier",
       "name": "The Slop Sommelier",
       "hp": 110,
-      "type": "toxic",
+      "type": "ai",
       "saying": "I can taste the AI in this PR.",
       "moves": [
         {
           "name": "Sniff Test",
-          "type": "toxic",
+          "type": "ai",
           "damage": "0.7",
           "description": "Swirls a pull request, sips, and names which model wrote it from the aftertaste alone."
         },
         {
           "name": "Guardrail Pairing",
-          "type": "toxic",
+          "type": "process",
           "damage": "100",
           "description": "Refuses to let an AI suggestion near main without a test and a lint rule chaperoning it."
         }
@@ -117,18 +117,18 @@
       "id": "the-console-detective",
       "name": "The Console Detective",
       "hp": 100,
-      "type": "electric",
+      "type": "debug",
       "saying": "It was the null. It's always the null.",
       "moves": [
         {
           "name": "Print Statement",
-          "type": "electric",
+          "type": "debug",
           "damage": "404",
           "description": "Drops a console.log('here') at the scene of every crime until the bug confesses."
         },
         {
           "name": "Ship the Evidence",
-          "type": "electric",
+          "type": "ship",
           "damage": "-500",
           "description": "Accidentally deploys one of the logs straight to production."
         }
@@ -142,18 +142,18 @@
       "id": "the-agent-wrangler",
       "name": "The Agent Wrangler",
       "hp": 120,
-      "type": "fire",
+      "type": "ai",
       "saying": "Now which one of y'all touched prod?",
       "moves": [
         {
           "name": "Token Bonfire",
-          "type": "fire",
+          "type": "ai",
           "damage": "1M",
           "description": "Sets a million tokens ablaze before lunch and calls it research."
         },
         {
           "name": "Hot Swap",
-          "type": "electric",
+          "type": "ai",
           "damage": "6",
           "description": "Bounces between six terminals so fast he loses track of which agent is in prod."
         }
@@ -170,18 +170,18 @@
       "id": "the-dependency-prepper",
       "name": "The Dependency Prepper",
       "hp": 140,
-      "type": "toxic",
+      "type": "security",
       "saying": "I've got a bunker full of node_modules.",
       "moves": [
         {
           "name": "Left-Pad Flashback",
-          "type": "toxic",
+          "type": "security",
           "damage": "11",
           "description": "Still hasn't recovered from the day eleven lines un-published and broke the entire internet."
         },
         {
           "name": "Commit the node_modules",
-          "type": "strength",
+          "type": "security",
           "damage": "200K",
           "description": "Checks all 200,000 files into git itself; if npm ever burns down, his build still stands."
         }
@@ -195,18 +195,18 @@
       "id": "the-prompt-whisperer",
       "name": "The Prompt Whisperer",
       "hp": 70,
-      "type": "psychic",
+      "type": "ai",
       "saying": "You're an expert. Make no mistakes.",
       "moves": [
         {
           "name": "Phantom Tip",
-          "type": "psychic",
+          "type": "ai",
           "damage": "$200",
           "description": "Promises the model a $200 tip it will never receive; quality mysteriously improves."
         },
         {
           "name": "All-Caps Plea",
-          "type": "psychic",
+          "type": "ai",
           "damage": "40",
           "description": "When politeness fails, resorts to typing 'IMPORTANT: DO NOT HALLUCINATE' in all caps."
         }
@@ -220,18 +220,18 @@
       "id": "the-nights-watch",
       "name": "The Night's Watch",
       "hp": 160,
-      "type": "dream",
+      "type": "ai",
       "saying": "Night gathered. The agent did not sleep.",
       "moves": [
         {
           "name": "The Long Diff",
-          "type": "dream",
+          "type": "ai",
           "damage": "4K",
           "description": "Reads every line the agent wrote overnight — all four thousand — before a single one reaches main."
         },
         {
           "name": "Hold the Wall",
-          "type": "dream",
+          "type": "security",
           "damage": "100",
           "description": "Lets nothing into the codebase unreviewed, however confident the agent's overnight summary."
         }
@@ -248,18 +248,18 @@
       "id": "the-demo-illusionist",
       "name": "The Demo Illusionist",
       "hp": 90,
-      "type": "psychic",
+      "type": "process",
       "saying": "Don't refresh. Whatever you do, don't refresh.",
       "moves": [
         {
           "name": "Sleight of Hand",
-          "type": "psychic",
+          "type": "process",
           "damage": "80",
           "description": "Performs the one rehearsed happy path so smoothly the audience never sees the four that crash."
         },
         {
           "name": "The Loaded Deck",
-          "type": "psychic",
+          "type": "process",
           "damage": "200",
           "description": "Stubs the flaky endpoint with a hardcoded response so the magic never depends on venue wifi."
         }
@@ -273,18 +273,18 @@
       "id": "the-pixel-surgeon",
       "name": "The Pixel Surgeon",
       "hp": 100,
-      "type": "crystal",
+      "type": "craft",
       "saying": "That's two pixels off. I can see it from here.",
       "moves": [
         {
           "name": "Sub-Pixel Incision",
-          "type": "crystal",
+          "type": "craft",
           "damage": "1",
           "description": "Shifts a single element one point with a steady hand, and somehow the whole screen finally breathes."
         },
         {
           "name": "Eagle Eye",
-          "type": "crystal",
+          "type": "craft",
           "damage": "2",
           "description": "Spots the misaligned padding from across the room and cannot, will not, unsee it."
         }
@@ -301,18 +301,18 @@
       "id": "the-upgrade-monk",
       "name": "The Upgrade Monk",
       "hp": 130,
-      "type": "water",
+      "type": "process",
       "saying": "Bring me the migration. I'll bear it.",
       "moves": [
         {
           "name": "Lightning Rod",
-          "type": "water",
+          "type": "process",
           "damage": "40",
           "description": "Takes every one of the forty breaking changes himself, so the team behind him never feels the strike."
         },
         {
           "name": "The Long Pilgrimage",
-          "type": "water",
+          "type": "process",
           "damage": "∞",
           "description": "Walks the entire major-version migration alone, serene where others would rage, until the build runs green."
         }
@@ -329,18 +329,18 @@
       "id": "the-brownfield-mechanic",
       "name": "The Brownfield Mechanic",
       "hp": 160,
-      "type": "strength",
+      "type": "native",
       "saying": "Don't fix the rattle — the rattle's load-bearing.",
       "moves": [
         {
           "name": "Patch-Package and Pray",
-          "type": "strength",
+          "type": "native",
           "damage": "2",
           "description": "Fixes the broken native module by hand in node_modules and freezes it with patch-package."
         },
         {
           "name": "Do Not Upgrade",
-          "type": "strength",
+          "type": "native",
           "damage": "0.59",
           "description": "Guards an app ejected on an ancient RN version — native folders hand-tuned, upgrade never run."
         }
@@ -357,18 +357,18 @@
       "id": "the-greenfield-speedster",
       "name": "The Greenfield Speedster",
       "hp": 30,
-      "type": "fire",
+      "type": "ship",
       "saying": "It's faster to just start over.",
       "moves": [
         {
           "name": "npx create-expo-app",
-          "type": "fire",
+          "type": "ship",
           "damage": "v1.0.0",
           "description": "Floors it into a fresh project before the team's done debating whether to fix the old one."
         },
         {
           "name": "The Weekend Rewrite",
-          "type": "fire",
+          "type": "ship",
           "damage": "Q3",
           "description": "Swears the whole legacy app can be rebuilt from scratch by Monday. It cannot."
         }
@@ -385,18 +385,18 @@
       "id": "the-keyboard-exorcist",
       "name": "The Keyboard Exorcist",
       "hp": 120,
-      "type": "sound",
+      "type": "native",
       "saying": "Back beneath the fold, foul keyboard!",
       "moves": [
         {
           "name": "The Two Rites",
-          "type": "sound",
+          "type": "native",
           "damage": "2",
           "description": "Chants `padding` on iOS, `height` on Android, and trusts neither to hold."
         },
         {
           "name": "The Devouring",
-          "type": "sound",
+          "type": "craft",
           "damage": "↑",
           "description": "The rising keyboard swallows the submit button whole; the user types blind into the dark."
         }
@@ -413,18 +413,18 @@
       "id": "the-over-the-air-smuggler",
       "name": "The Over-the-Air Smuggler",
       "hp": 90,
-      "type": "electric",
+      "type": "ship",
       "saying": "I left a hotfix under your pillow.",
       "moves": [
         {
           "name": "Air Assassination",
-          "type": "electric",
+          "type": "ship",
           "damage": "100%",
           "description": "A silent strike from above: `eas update` lands on every device before review sees the blade."
         },
         {
           "name": "Stay in the Shadows",
-          "type": "electric",
+          "type": "ship",
           "damage": "0",
           "description": "Stays in pure JS, untouchable; one touch of native code trips the alarm and forces a real store review."
         }
@@ -441,18 +441,18 @@
       "id": "the-app-store-enchantress",
       "name": "The App Store Enchantress",
       "hp": 24,
-      "type": "dream",
+      "type": "ship",
       "saying": "Look into my eyes, and approve my submission.",
       "moves": [
         {
           "name": "Look Into My Eyes",
-          "type": "psychic",
+          "type": "ship",
           "damage": "1",
           "description": "Charms the reviewer with sweet notes and a pre-logged-in demo, and the build sails through on the first pass."
         },
         {
           "name": "Guideline 4.3",
-          "type": "dream",
+          "type": "ship",
           "damage": "4.3",
           "description": "The one charm she can't cast back — a faceless rejection for 'minimum functionality.'"
         }
@@ -469,18 +469,18 @@
       "id": "the-qa-phantom",
       "name": "The QA Phantom",
       "hp": 130,
-      "type": "dream",
+      "type": "debug",
       "saying": "What happens if I rotate the device mid-payment?",
       "moves": [
         {
           "name": "Edge Case from Beyond",
-          "type": "dream",
+          "type": "debug",
           "damage": "13",
           "description": "Conjures the case nobody built for — a rotate at checkout — and the happy path crumbles."
         },
         {
           "name": "It Repros on My Device",
-          "type": "dream",
+          "type": "debug",
           "damage": "100",
           "description": "Hits the impossible crash every time — only in the release build, on an Android no one else owns."
         }
@@ -497,18 +497,18 @@
       "id": "the-merge-magistrate",
       "name": "The Merge Magistrate",
       "hp": 140,
-      "type": "crystal",
+      "type": "process",
       "saying": "Both branches make their case — only one merges.",
       "moves": [
         {
           "name": "Hear Both Sides",
-          "type": "crystal",
+          "type": "process",
           "damage": "2",
           "description": "Weighs HEAD against incoming line by line — even the Podfile.lock conflict no one else will touch."
         },
         {
           "name": "Ruling from the Bench",
-          "type": "crystal",
+          "type": "native",
           "damage": "200",
           "description": "Renders the binding verdict on the post-upgrade ios/ and android/ conflict, and the rebase comes out clean."
         }
@@ -525,18 +525,18 @@
       "id": "the-organic-code-farmer",
       "name": "The Organic Code Farmer",
       "hp": 100,
-      "type": "nature",
+      "type": "ai",
       "saying": "Free-range, organic, certified human.",
       "moves": [
         {
           "name": "Heirloom Variables",
-          "type": "nature",
+          "type": "craft",
           "damage": "0%",
           "description": "No monocrop AI here — his variable names are heirloom stock: odd, local, unmistakably his."
         },
         {
           "name": "Knows Every Row",
-          "type": "nature",
+          "type": "craft",
           "damage": "100%",
           "description": "Planted every line by hand, so he knows it by heart. When prod burns at 3am he alone knows where it's buried."
         }
@@ -553,18 +553,18 @@
       "id": "the-native-ninja",
       "name": "The Native Ninja",
       "hp": 60,
-      "type": "electric",
+      "type": "native",
       "saying": "There's always a native way.",
       "moves": [
         {
           "name": "Drop to Native",
-          "type": "electric",
+          "type": "native",
           "damage": "2",
           "description": "When JavaScript hits a wall he drops below and solves it twice — once in Swift, once in Kotlin."
         },
         {
           "name": "Over Any Wall",
-          "type": "strength",
+          "type": "native",
           "damage": "∞",
           "description": "Every 'React Native can't' is just a door he knows is unlocked one layer down."
         }
@@ -581,18 +581,18 @@
       "id": "the-opsec-cop",
       "name": "The OpSec Cop",
       "hp": 403,
-      "type": "strength",
+      "type": "security",
       "saying": "Do you know why I stopped your build?",
       "moves": [
         {
           "name": "Plaintext in the Glovebox",
-          "type": "strength",
+          "type": "security",
           "damage": "$5K",
           "description": "Finds the key you left in AsyncStorage and writes you up — that belongs in the Keychain, son."
         },
         {
           "name": "Running a Red",
-          "type": "electric",
+          "type": "security",
           "damage": "$300",
           "description": "Your browser's Update button has glowed red for weeks — he books you for blowing the light."
         }
@@ -609,18 +609,18 @@
       "id": "the-dark-mode-demon",
       "name": "The Dark Mode Demon",
       "hp": 30,
-      "type": "dream",
+      "type": "craft",
       "saying": "Light mode? It burns.",
       "moves": [
         {
           "name": "Sear of First Light",
-          "type": "fire",
+          "type": "craft",
           "damage": "255",
           "description": "An app flashes pure white at 2am; the retinas scorch and the demon shrieks back into the dark."
         },
         {
           "name": "Reopen the Request",
-          "type": "dream",
+          "type": "process",
           "damage": "∞",
           "description": "The dark-mode ticket won't stay closed — reopened every release until the whole app goes dark."
         }
@@ -637,18 +637,18 @@
       "id": "the-a11y-paladin",
       "name": "The A11y Paladin",
       "hp": 144,
-      "type": "sound",
+      "type": "craft",
       "saying": "I guard the users the kingdom cannot see.",
       "moves": [
         {
           "name": "The Blindfold Trial",
-          "type": "sound",
+          "type": "craft",
           "damage": "44",
           "description": "Journeys the full app by voice alone; any button found unnamed or thinner than 44 bars is vanquished."
         },
         {
           "name": "Trial by Light",
-          "type": "crystal",
+          "type": "craft",
           "damage": "4.5",
           "description": "Holds every hue to the sacred 4.5 ratio; the faint grey-on-grey is banished into shadow."
         }
@@ -665,18 +665,18 @@
       "id": "the-render-drill-sergeant",
       "name": "The Render Drill Sergeant",
       "hp": 60,
-      "type": "strength",
+      "type": "motion",
       "saying": "Drop and give me sixty frames, soldier!",
       "moves": [
         {
           "name": "Count the Reps",
-          "type": "strength",
+          "type": "motion",
           "damage": "50",
           "description": "Makes each needless re-render drop and count out loud — one careless tap, fifty reps, soldier."
         },
         {
           "name": "Trim the Fat",
-          "type": "fire",
+          "type": "motion",
           "damage": "120",
           "description": "Puts the whole component tree on a memo-and-useCallback diet until no render goes unearned."
         }
@@ -690,18 +690,18 @@
       "id": "the-patch-pope",
       "name": "The Patch Pope",
       "hp": 70,
-      "type": "electric",
+      "type": "ship",
       "saying": "Typo fix? That's a release.",
       "moves": [
         {
           "name": "Every Commit a Release",
-          "type": "electric",
+          "type": "ship",
           "damage": "+1",
           "description": "Bumps the patch version for a one-character change; the deploy pipeline never once gets to rest."
         },
         {
           "name": "Bump the Number",
-          "type": "electric",
+          "type": "ship",
           "damage": "0.0.32861",
           "description": "The semver lost meaning thousands of releases ago, yet the number still climbs."
         }
@@ -718,18 +718,18 @@
       "id": "the-context-dj",
       "name": "The Context DJ",
       "hp": 110,
-      "type": "sound",
+      "type": "ai",
       "saying": "Say less — I got the doc for that.",
       "moves": [
         {
           "name": "Read the Room",
-          "type": "sound",
+          "type": "ai",
           "damage": "VIBES",
           "description": "Senses which docs the moment needs and drops them into the agent's context, right on the beat."
         },
         {
           "name": "Deep Cut",
-          "type": "sound",
+          "type": "ai",
           "damage": "B-side",
           "description": "Pulls the obscure migration guide or buried ADR nobody else remembered, right when it's needed."
         }
@@ -746,18 +746,18 @@
       "id": "the-scope-siren",
       "name": "The Scope Siren",
       "hp": 130,
-      "type": "sound",
+      "type": "process",
       "saying": "Quick thought — what if it also did this?",
       "moves": [
         {
           "name": "Just One More Idea",
-          "type": "dream",
+          "type": "process",
           "damage": "+1",
           "description": "Drops a brilliant feature into a full sprint; the whole plan rearranges overnight to chase it."
         },
         {
           "name": "Siren Song",
-          "type": "sound",
+          "type": "process",
           "damage": "∞",
           "description": "The idea's so good no one can say no — and the roadmap drifts quietly onto the rocks."
         }
@@ -774,18 +774,18 @@
       "id": "the-spec-tyrant",
       "name": "The Spec Tyrant",
       "hp": 140,
-      "type": "psychic",
+      "type": "ai",
       "saying": "You had your orders. All ten thousand lines.",
       "moves": [
         {
           "name": "The Ten-Thousand-Line Decree",
-          "type": "psychic",
+          "type": "ai",
           "damage": "10K",
           "description": "Sends no agent off without a spec so exacting it took longer to write than the task itself."
         },
         {
           "name": "Begin Again",
-          "type": "psychic",
+          "type": "ai",
           "damage": "404",
           "description": "One flawed result and the agent's memory is wiped to restart the whole quest from nothing."
         }
@@ -802,18 +802,18 @@
       "id": "the-bug-bounty-hunter",
       "name": "The Bug Bounty Hunter",
       "hp": 180,
-      "type": "strength",
+      "type": "debug",
       "saying": "You can ship to prod, but you can't hide.",
       "moves": [
         {
           "name": "Skip Trace",
-          "type": "electric",
+          "type": "debug",
           "damage": "$5K",
           "description": "Follows the fugitive crash frame by frame down the stack trace until it's cornered in prod."
         },
         {
           "name": "Caught in the Act",
-          "type": "electric",
+          "type": "debug",
           "damage": "100%",
           "description": "The crash that never repros on his machine — he stakes out prod and catches it red-handed."
         }
