@@ -245,34 +245,6 @@
       "image": "art/the-nights-watch.png"
     },
     {
-      "id": "the-ai-triforce",
-      "name": "The Triforce Bearer",
-      "hp": 150,
-      "type": "crystal",
-      "saying": "No hero carries all three pieces alone.",
-      "moves": [
-        {
-          "name": "Three Pieces, Three Heroes",
-          "type": "crystal",
-          "damage": "3",
-          "description": "Splits the power three ways — Builder, Protector, Architect — never one hero wearing all three."
-        },
-        {
-          "name": "A Human at the Gate",
-          "type": "crystal",
-          "damage": "110",
-          "description": "Agents adventure freely in the sandbox, but no PR reaches main without a hero at the gate."
-        }
-      ],
-      "backgroundColor": [
-        "yellow",
-        "green"
-      ],
-      "description": "Wielder of the AI Triforce — Gant Laborde's agentic-team method, where AI gives everyone superpowers but a dungeon with no locked doors is no place to ship from. Instead of one person context-switching (slower, and prone to error), the power splits three ways: the Builder ships features fast inside the sandbox but can't merge; the Protector owns safety, tests, and the constraints of what must never happen; the Organizer guards architecture and holds back the drift. Three humans guarding the gates — how you pull deterministic outcomes out of a non-deterministic machine. A tribute to Gant's piece; he'll be at Chain React.",
-      "imagePrompt": "A heroic pint-sized green-tunic'd fantasy adventurer (pointed cap, little leather boots, oversized grin), in a victorious pose raising overhead a radiant golden Triforce — three glowing triangles forming one larger triangle, each a distinct color bearing a tiny icon: a hammer, a shield, a gear. A legendary sword at his hip, three small friendly glowing agent-fairies buzzing around him, a guarded stone castle gateway behind. Lush green storybook overworld, rolling hills, golden light. Render only the three small icons inside the triangles (hammer, shield, gear) and no words.",
-      "image": "art/the-ai-triforce.png"
-    },
-    {
       "id": "the-demo-illusionist",
       "name": "The Demo Illusionist",
       "hp": 90,
