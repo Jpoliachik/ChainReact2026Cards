@@ -578,9 +578,9 @@
       "image": "art/the-native-ninja.png"
     },
     {
-      "id": "the-compliance-cop",
-      "name": "The Compliance Cop",
-      "hp": 401,
+      "id": "the-opsec-cop",
+      "name": "The OpSec Cop",
+      "hp": 403,
       "type": "strength",
       "saying": "Do you know why I stopped your build?",
       "moves": [
@@ -598,9 +598,9 @@
         }
       ],
       "backgroundColor": "blue",
-      "description": "A by-the-book beat cop who patrols the codebase enforcing the rules nobody loves until the day they save them. Pulls over PRs for transitive CVEs, writes citations for secrets committed in plaintext, mandates 2FA, and taps the update banner you've snoozed for a month. Not malicious — genuinely the reason the team isn't on the breach blog. Lovably over-zealous, immovable on policy, secretly soft. The law the OTA Smuggler keeps dodging at the border crossing, and the scourge of anyone who clicks 'allow all' without reading. Universal guilt under the badge: everyone has waved off the security update 'just one more day.'",
-      "imagePrompt": "A lean, slim-fit beat cop with a confident smirk, mirrored aviator sunglasses and a peaked cap, a crisp short-sleeved black police uniform and a gold badge reading '401' — leaning down to the driver's-side window of a pulled-over car, one hand resting on the roof, the other holding a citation pad with a ticket reading 'CVE', caught mid-sentence. The car is a cute boxy pastel software 'package' with glowing curly-brace eyes and a guilty worried look, hazard lights blinking. A police cruiser idles behind, red-and-blue light bar ablaze on a rain-slick night street. Clear classic traffic-stop framing, the cop at the window the clear focus. Render only the labels '401' on the badge and 'CVE' on the ticket.",
-      "image": "art/the-compliance-cop.png"
+      "description": "A by-the-book OpSec cop who patrols the codebase enforcing the rules nobody loves until the day they save them. Pulls over PRs for transitive CVEs, writes citations for secrets committed in plaintext, mandates 2FA, and taps the update banner you've snoozed for a month. Not malicious — genuinely the reason the team isn't on the breach blog. Lovably over-zealous, immovable on policy, secretly soft. The law the OTA Smuggler keeps dodging at the border crossing, and the scourge of anyone who clicks 'allow all' without reading. Universal guilt under the badge: everyone has waved off the security update 'just one more day.'",
+      "imagePrompt": "A confident male cop in mirrored aviator sunglasses and a peaked patrol cap, a gold badge reading '403', standing at a rain-slick city intersection at night — one hand on his duty belt, the other holding up a freshly-torn citation toward the viewer with a knowing smirk, like he's just caught you. A tall traffic signal glows hard RED beside him; his cruiser idles behind with its light bar flashing red-and-blue. Cinematic night lighting, the cop the clear focus. Render only the label '403' on the badge.",
+      "image": "art/the-opsec-cop.png"
     },
     {
       "id": "the-dark-mode-demon",
