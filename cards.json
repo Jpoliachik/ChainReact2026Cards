@@ -330,19 +330,19 @@
       "name": "The Upgrade Monk",
       "hp": 130,
       "type": "water",
-      "saying": "The breaking changes are simply a teacher.",
+      "saying": "Bring me the migration. I'll bear it.",
       "moves": [
         {
-          "name": "The Long Migration",
+          "name": "Lightning Rod",
           "type": "water",
           "damage": "40",
-          "description": "Sits in perfect calm through forty breaking changes and a thousand deprecation warnings."
+          "description": "Takes every one of the forty breaking changes himself, so the team behind him never feels the strike."
         },
         {
-          "name": "Bear the Suffering",
+          "name": "The Long Pilgrimage",
           "type": "water",
-          "damage": "100",
-          "description": "Absorbs the entire SDK bump alone so the rest of the team never has to open the changelog."
+          "damage": "∞",
+          "description": "Walks the entire major-version migration alone, serene where others would rage, until the build runs green."
         }
       ],
       "backgroundColor": [
@@ -350,7 +350,7 @@
         "yellow"
       ],
       "description": "An ascetic who has made peace with the dependency upgrade everyone else dreads. Finds quiet enlightenment in the Expo SDK bump, the major-version migration, the changelog no one wants to read. Takes on the suffering so the team doesn't have to, and emerges serene on the other side of a green build. Patient, selfless, faintly amused by your fear of breaking changes.",
-      "imagePrompt": "A serene bald monk in flowing saffron robes, sitting in calm lotus meditation atop a misty mountain peak with a blissful smile and a glowing halo of peace — utterly undisturbed while a storm of crackling breaking-change lightning rages around him. An impossibly long changelog scroll unrolls down the mountainside; a small glowing package-box floats before him like an object of devotion. Warm dawn light cutting through the storm.",
+      "imagePrompt": "A serene bald monk in saffron robes, sitting in calm meditation with a faint glowing aura of peace, deliberately drawing a furious storm of crackling breaking-change lightning into himself — the bolts bending toward him and away from a small cluster of grateful devs sheltering untouched behind him. Atop a misty mountain peak, a glowing SDK package floating before him. Warm dawn light cutting through the dark storm, the monk the clear focus. Render no words.",
       "image": "art/the-upgrade-monk.png"
     },
     {
@@ -417,16 +417,16 @@
       "saying": "Back beneath the fold, foul keyboard!",
       "moves": [
         {
-          "name": "Rite of behavior",
+          "name": "The Two Rites",
           "type": "sound",
           "damage": "2",
-          "description": "Chants 'padding' on iOS and 'height' on Android, praying the input clears on at least one."
+          "description": "Chants `padding` on iOS, `height` on Android, and trusts neither to hold."
         },
         {
-          "name": "Banish the Rising Tide",
+          "name": "The Devouring",
           "type": "sound",
-          "damage": "60",
-          "description": "Installs react-native-keyboard-controller at last, and the keyboard sinks beneath the fold."
+          "damage": "↑",
+          "description": "The rising keyboard swallows the submit button whole; the user types blind into the dark."
         }
       ],
       "backgroundColor": [
