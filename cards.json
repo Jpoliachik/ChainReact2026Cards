@@ -180,10 +180,10 @@
           "description": "Still hasn't recovered from the day eleven lines un-published and broke the entire internet."
         },
         {
-          "name": "Vendor Everything",
+          "name": "Commit the node_modules",
           "type": "strength",
-          "damage": "90",
-          "description": "Hand-copies every dependency into the repo so no registry can ever betray him again."
+          "damage": "200K",
+          "description": "Checks all 200,000 files into git itself; if npm ever burns down, his build still stands."
         }
       ],
       "backgroundColor": "green",
@@ -386,19 +386,19 @@
       "name": "The Greenfield Speedster",
       "hp": 30,
       "type": "fire",
-      "saying": "All gas, no brakes, until something breaks.",
+      "saying": "It's faster to just start over.",
       "moves": [
         {
-          "name": "Zero to Production",
+          "name": "npx create-expo-app",
           "type": "fire",
-          "damage": "60",
-          "description": "Goes from `npx create-expo-app` to a live build in Expo Go before anyone else has finished `pod install`."
+          "damage": "v1.0.0",
+          "description": "Floors it into a fresh project before the team's done debating whether to fix the old one."
         },
         {
-          "name": "No Native Rebuild",
+          "name": "The Weekend Rewrite",
           "type": "fire",
-          "damage": "100",
-          "description": "Stays in pure JS on managed Expo, so there's never a native folder to rebuild — just reload and keep rolling."
+          "damage": "Q3",
+          "description": "Swears the whole legacy app can be rebuilt from scratch by Monday. It cannot."
         }
       ],
       "backgroundColor": [
@@ -406,7 +406,7 @@
         "cyan"
       ],
       "description": "A starry-eyed racer who lives for the open road of a fresh Expo app, happiest flooring it off the first commit. Craves clean architecture and zero native config — `npx create-expo-app`, never `pod install` — and is allergic to legacy and to native rebuilds, staying in managed Expo where a reload beats a recompile. The counterpart to the Brownfield Mechanic: hand them the battered ejected app and they'll just go spin up an empty one.",
-      "imagePrompt": "A grinning helmeted speed-racer in a sleek aerodynamic racing suit, leaning into the cockpit of a glossy, brand-new candy-bright concept race car blazing down a wide-open, freshly-paved empty highway at bright dewy dawn. Heavy motion-blur and speed-lines, a lick of flame trailing the exhaust, the road ahead utterly blank to the horizon, zero traffic — nothing to rebuild. A green starting-flag whips past; a tiny '<App/>' decal on the spotless hood. Vivid racing-green and gold, glowing dawn. Render only the one label '<App/>' on the hood.",
+      "imagePrompt": "A grinning helmeted racer in a sleek racing suit, flooring a candy-bright concept race car at full speed straight across a vast, wide-open green meadow — tall grass and wildflowers spraying up in its wake, rolling green hills running to an empty horizon, nothing built anywhere in sight. Heavy motion-blur and speed-lines, a lick of flame at the exhaust. Bright dewy morning, vivid racing-green and gold, the speeding car the clear focus. Render only the label '<App/>' on the hood.",
       "image": "art/the-greenfield-speedster.png"
     },
     {
