@@ -7,8 +7,7 @@ expanding the working set back toward 30.
 
 - **The Hydra Slayer** ⭐ — Grinds the endless prod bug backlog; closes forty, forty-two open overnight. Lop one head, two more appear. _(written + art generated, then cut from the working set — the "maintaining what shipped" cluster can revive it.)_
 - **The Log Diviner** — Reads Sentry logs and breadcrumbs from a support ticket to reconstruct what the user actually did. _(cut — too close to the Console Detective; both are "investigate the bug" postures.)_
-- **The Upgrade Monk** — Serene ascetic who absorbs the Expo SDK bump and breaking-change migrations so the team never has to open the changelog. _(cut from the working set.)_
-- **The Point-Release Priest** ⭐ — Every commit deserves its own release; the version reads 0.0.32861 and still climbs. Darin & Jamon's "Power Deployer" idea, displaced when the Pope became holy-war doctrine. _(revivable, maybe as a non-clergy "Release Bellringer.")_
+- **The One True Pope** ⭐ — Holds dev conventions as infallible doctrine and wages holy war (tabs vs spaces, Expo vs bare, `any` a mortal sin); excommunicates heretics. A reframe of The Patch Pope, benched when we reverted to the point-release version. _(strong revival — could ride alongside Patch Pope as a non-clergy "Crusader/Zealot.")_
 - **The Vibe Coder** ⭐ — Does not read the diff. Feels the diff. Communes with the agent, accepts all, somehow ships. Possibly the future.
 - **The Yak Shaver** ⭐ — Set out to change one button's color; three days deep in a Gradle config, having a wonderful time.
 - **The Demo Gods' Supplicant** — Makes offerings before every live demo. The wifi will betray them. Prays anyway.

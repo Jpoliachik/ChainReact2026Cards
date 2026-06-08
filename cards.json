@@ -326,6 +326,34 @@
       "image": "art/the-pixel-surgeon.png"
     },
     {
+      "id": "the-upgrade-monk",
+      "name": "The Upgrade Monk",
+      "hp": 130,
+      "type": "water",
+      "saying": "The breaking changes are simply a teacher.",
+      "moves": [
+        {
+          "name": "The Long Migration",
+          "type": "water",
+          "damage": "40",
+          "description": "Sits in perfect calm through forty breaking changes and a thousand deprecation warnings."
+        },
+        {
+          "name": "Bear the Suffering",
+          "type": "water",
+          "damage": "100",
+          "description": "Absorbs the entire SDK bump alone so the rest of the team never has to open the changelog."
+        }
+      ],
+      "backgroundColor": [
+        "orange",
+        "yellow"
+      ],
+      "description": "An ascetic who has made peace with the dependency upgrade everyone else dreads. Finds quiet enlightenment in the Expo SDK bump, the major-version migration, the changelog no one wants to read. Takes on the suffering so the team doesn't have to, and emerges serene on the other side of a green build. Patient, selfless, faintly amused by your fear of breaking changes.",
+      "imagePrompt": "A serene bald monk in flowing saffron robes, sitting in calm lotus meditation atop a misty mountain peak with a blissful smile and a glowing halo of peace — utterly undisturbed while a storm of crackling breaking-change lightning rages around him. An impossibly long changelog scroll unrolls down the mountainside; a small glowing package-box floats before him like an object of devotion. Warm dawn light cutting through the storm.",
+      "image": "art/the-upgrade-monk.png"
+    },
+    {
       "id": "the-brownfield-mechanic",
       "name": "The Brownfield Mechanic",
       "hp": 160,
@@ -684,32 +712,32 @@
       "image": "art/the-render-drill-sergeant.png"
     },
     {
-      "id": "the-one-true-pope",
-      "name": "The One True Pope",
-      "hp": 1,
-      "type": "fire",
-      "saying": "Tabs are heresy. The matter is closed.",
+      "id": "the-patch-pope",
+      "name": "The Patch Pope",
+      "hp": 70,
+      "type": "electric",
+      "saying": "That typo fix? That's a release.",
       "moves": [
         {
-          "name": "Papal Bull",
-          "type": "cosmic",
-          "damage": "∞",
-          "description": "Declares it infallible doctrine — tabs heresy, `any` a mortal sin — the matter forever closed."
+          "name": "Every Commit a Release",
+          "type": "electric",
+          "damage": "+1",
+          "description": "Bumps the patch version for a one-character change; the deploy pipeline never once gets to rest."
         },
         {
-          "name": "Reignite the Schism",
-          "type": "fire",
-          "damage": "404",
-          "description": "Drops 'Expo or bare?' into a calm PR thread and the holy war devours the entire standup."
+          "name": "Bump the Number",
+          "type": "electric",
+          "damage": "0.0.32861",
+          "description": "The version reads 0.0.32861 and still climbs — semver lost meaning thousands of releases ago."
         }
       ],
       "backgroundColor": [
         "yellow",
         "orange"
       ],
-      "description": "A zealot who holds every contested developer convention as a matter of doctrine and salvation — and has seen the One True Way. Tabs over spaces, Expo over bare, `any` as mortal sin, Redux dead and Zustand risen: each is not a preference but revealed truth, declared infallibly and defended to the death in the PR thread. Excommunicates heretics with a single comment, reignites settled holy wars for sport, and treats Prettier as a false peace that ended honest debate. Beloved and exhausting in equal measure; under the fury he genuinely cares that the codebase keep one faith. Universal guilt: everyone has a hill, and everyone has died on it.",
-      "imagePrompt": "A fierce pope in gold-and-crimson vestments and a tall mitre, mid-decree — slamming down a glowing papal staff with righteous fury, a burning edict blazing above his free hand. A towering stained-glass cathedral rises behind him. Gold-and-crimson holy light, the pope the clear focus. Render no words.",
-      "image": "art/the-one-true-pope.png"
+      "description": "A devout believer that no change is too small to ship. Every commit — a typo fix, a comment tweak, a whitespace nudge — is consecrated with its own point release, blessed and deployed to the faithful. The version number long ago spiraled past sense into the tens of thousands, and he wears it like vestments. Joyful, compulsive, allergic to batching. Drives the release pipeline like a bell that never stops ringing. The team teases him, but nothing he writes sits unreleased — and he sleeps fine knowing main and prod are never more than one commit apart.",
+      "imagePrompt": "A beaming pope/cardinal figure in flowing gold-and-white vestments and a tall mitre, standing on a cathedral balcony with both arms raised in benediction, gripping a glowing crozier-staff topped with a small rocket symbol and a banner reading 'DEPLOY'. Below, a flock of tiny cute commit-creatures (little glowing orbs with faces) gaze up adoringly as release-confetti and light rain down. Behind him a giant ornate cathedral tally-board displays in big illuminated numerals 'v0.0.32861'. Warm gold-and-orange holy light, stained-glass glow, jubilant. Render only the labels 'DEPLOY' on the banner and 'v0.0.32861' on the board.",
+      "image": "art/the-patch-pope.png"
     },
     {
       "id": "the-docs-inquisitor",
