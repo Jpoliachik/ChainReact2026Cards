@@ -62,27 +62,27 @@
       "name": "The Reanimated Wizard",
       "hp": 100,
       "type": "cosmic",
-      "saying": "The easing's off. I can feel it.",
+      "saying": "You won't see the spell — only feel it.",
       "moves": [
         {
-          "name": "Just One More Frame",
+          "name": "Buttery Sixty",
           "type": "cosmic",
-          "damage": "16",
-          "description": "Re-runs the same transition for the ninth hour straight; the move never resolves, because it's never quite right."
+          "damage": "60",
+          "description": "Conjures motion so smooth the screen feels alive in your hand — sixty frames, never one dropped."
         },
         {
-          "name": "Spring of Madness",
+          "name": "Off the JS Thread",
           "type": "electric",
-          "damage": "120",
-          "description": "Bolts a bouncy spring onto an element that had no reason to move — now it overshoots every single time."
+          "damage": "0",
+          "description": "Runs the whole animation on the UI thread with a worklet; it never stutters, even as JS chokes."
         }
       ],
       "backgroundColor": [
         "indigo",
         "purple"
       ],
-      "description": "A perfectionist animation sorcerer who can feel a wrong easing curve in his bones. Fluent in shared values, worklets, and damping ratios; will not ship until the motion lands exactly right, which is never. Brilliant, a little unhinged, deeply pleased with physics no one else will ever consciously notice.",
-      "imagePrompt": "Psychedelic acid-fantasy wizard: a wild-eyed robed sorcerer with a long flowing beard, casting with both hands as neon fractal energy and rainbow easing-curves spiral from a glowing staff, bending a single floating glyph into liquid motion. Runes shaped like spring-physics graphs orbit him, a sparkling third eye, hyper-saturated kaleidoscopic color.",
+      "description": "A sorcerer of motion who can feel a wrong easing curve in his bones — and bend it right. Fluent in shared values, worklets, and damping ratios, he conjures transitions so smooth and physical they feel less like code than magic: a list that flings just so, a sheet that settles like silk, a tap that lands with weight. Runs it all on the UI thread so it never drops a frame. The reason the app feels expensive. You won't consciously notice his work — you'll just feel that everything is alive.",
+      "imagePrompt": "A masterful sorcerer in flowing robes, calm and assured, sweeping both hands to conjure a ribbon of glowing motion — a single UI element trailing a perfect arc of light that bends and settles like liquid silk. Graceful easing-curves of light spiral around him. A dark starlit space, deep indigo-and-purple glow, the wizard the clear focus. Render no words.",
       "image": "art/the-reanimated-wizard.png"
     },
     {
