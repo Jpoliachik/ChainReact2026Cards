@@ -532,13 +532,13 @@
           "name": "Heirloom Variables",
           "type": "nature",
           "damage": "0",
-          "description": "No monocrop autocomplete here — his variable names are heirloom stock: odd, local, unmistakably his."
+          "description": "No monocrop AI here — his variable names are heirloom stock: odd, local, unmistakably his."
         },
         {
           "name": "Knows Every Row",
           "type": "nature",
           "damage": "100%",
-          "description": "Planted every line by hand, so he knows it by heart. When prod burns at 3am, he alone knows where it's buried."
+          "description": "Planted every line by hand, so he knows it by heart. When prod burns at 3am he alone knows where it's buried."
         }
       ],
       "backgroundColor": [
@@ -724,14 +724,14 @@
         {
           "name": "Read the Room",
           "type": "sound",
-          "damage": "RTFM",
+          "damage": "VIBES",
           "description": "Senses which docs the moment needs and drops them into the agent's context, right on the beat."
         },
         {
-          "name": "Did You Update the Docs?",
+          "name": "Deep Cut",
           "type": "sound",
-          "damage": "45",
-          "description": "Slides the same friendly ask onto every PR with a grin, keeping the whole crate of docs fresh."
+          "damage": "B-side",
+          "description": "Pulls the obscure migration guide or buried ADR nobody else remembered, right when it's needed."
         }
       ],
       "backgroundColor": [
@@ -739,7 +739,7 @@
         "pink"
       ],
       "description": "The crowd-pleasing selector of the codebase — part hype-man, part librarian. He never polices docs; he serves them. Reads what the room — and every agent — is missing and drops the exact reference into context at the perfect moment, so nothing hallucinates and nobody codes blind. Keeps the whole crate organized and fresh, slides a friendly 'did you update the docs with this?' onto every PR, and treats good context like a great set: the right track at the right time. Generous, tasteful, tuned-in — the reason the agents always have what they need and the team always finds the doc. Where the old gatekeepers nagged, the Context DJ just keeps the floor moving.",
-      "imagePrompt": "A cool, grinning DJ in big headphones behind a glowing turntable rig, one hand spinning a record that's actually a glowing 'README' disc, the other thrown up mid-drop — as a crowd of little glowing agent-bots below throw their hands up for the doc he just dropped. A crate of doc-records beside the decks. Neon club lighting, vivid color, pure crowd-pleasing energy, the DJ the clear focus. Render only the label 'README' on the disc.",
+      "imagePrompt": "A fun, beaming DJ — friendly and animated, lanky not buff — in big retro headphones and a flashy sequined outfit, behind a glowing turntable rig, one hand spinning a record that's actually a glowing 'README' disc, the other thrown up in joy. Above him a sparkling disco ball scatters colorful light across a packed dance floor of little glowing agent-bots boogieing with their hands up. Bright, joyful retro-disco energy, saturated rainbow lighting, the DJ the clear hero. Render only the label 'README' on the disc.",
       "image": "art/the-context-dj.png"
     },
     {
@@ -812,10 +812,10 @@
           "description": "Follows the fugitive crash frame by frame down the stack trace until it's cornered in prod."
         },
         {
-          "name": "Cuff the Heisenbug",
-          "type": "psychic",
+          "name": "Caught in the Act",
+          "type": "electric",
           "damage": "100%",
-          "description": "The bug only crashes when no one's watching — he repros it on camera and reads it its rights."
+          "description": "The crash that never repros on his machine — he stakes out prod and catches it red-handed."
         }
       ],
       "backgroundColor": [
