@@ -293,8 +293,9 @@ document.getElementById("genAll").onclick = async (e) => {
     }
   } catch {}
   document.getElementById("sub").textContent = data.meta.event;
+  const withArt = data.cards.filter(c => c.image).length;
   document.getElementById("count").innerHTML =
-    `<b>${data.cards.length}</b> cards · target <b>${data.meta.target || 30}</b>`;
+    `<b>${data.cards.length}</b> cards · <b>${withArt}</b> with art`;
   document.getElementById("artdir").innerHTML =
     `<b>Shared art direction</b><br>${esc(ART_DIR)}`;
   renderAll();
