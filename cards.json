@@ -82,7 +82,7 @@
         "purple"
       ],
       "description": "A sorcerer of motion who can feel a wrong easing curve in his bones — and bend it right. Fluent in shared values, worklets, and damping ratios, he conjures transitions so smooth and physical they feel less like code than magic: a list that flings just so, a sheet that settles like silk, a tap that lands with weight. Runs it all on the UI thread so it never drops a frame. The reason the app feels expensive. You won't consciously notice his work — you'll just feel that everything is alive.",
-      "imagePrompt": "A classic wizard — tall pointed star-flecked wizard hat, long flowing white beard, billowing robes — joyful and masterful, beaming with confidence as he sweeps both hands to conjure ribbons of glowing rainbow motion: a single UI element trailing a perfect arc of liquid light that bends and settles like silk. Swirling psychedelic easing-curves and kaleidoscopic color spiral around him in vivid candy-bright hues. A radiant, dreamlike space bursting with saturated rainbow light, the wizard the clear focus. Render no words.",
+      "imagePrompt": "A classic wizard — tall pointed star-flecked hat, long flowing white beard, billowing robes — standing atop an ancient stone tower balcony and raising a glowing staff overhead. With a sweep of the staff he conducts a great swirling ribbon of enchanted UI elements and glyphs, bringing them to life and sweeping them through the air in one flawless, liquid, eased arc that loops around him like a living current. Rich painterly fantasy detail, vivid candy-bright psychedelic color, a swirling aurora-and-galaxy sky behind. The wizard the clear focus, mid-cast. Render no words.",
       "image": "art/the-reanimated-wizard.png"
     },
     {
