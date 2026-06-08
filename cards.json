@@ -9,26 +9,26 @@
       "name": "The Gesture Jester",
       "hp": 90,
       "type": "psychic",
-      "saying": "Don't watch the swipe — watch the hands.",
+      "saying": "Bet you didn't know you could swipe there.",
       "moves": [
         {
-          "name": "Misdirection",
+          "name": "Swipe to Delete",
           "type": "psychic",
-          "damage": "50",
-          "description": "Buries a half-second of lag behind a flourish so smooth the hit lands before anyone notices they waited."
+          "damage": "←",
+          "description": "Hides delete behind a swipe, the menu behind a long-press — every action one secret gesture away."
         },
         {
-          "name": "Hypnotic Fling",
+          "name": "Hidden Repertoire",
           "type": "psychic",
           "damage": "60",
-          "description": "Flicks a list into a buttery 60fps spin that leaves onlookers Mesmerized — they cannot look away."
+          "description": "Tracks your finger at a buttery 60fps through pinch, drag and fling — flawless, and undiscoverable."
         }
       ],
       "backgroundColor": [
         "purple",
         "pink"
       ],
-      "description": "A vaudeville trickster who treats every touch interaction as a magic act. Obsessive about how a gesture feels in the thumb; will rebuild a swipe twenty times for an imperceptible gain. Charming, theatrical, quietly smug that his best work is the work nobody notices.",
+      "description": "A showman who can't resist tucking features behind gestures — swipe to delete, long-press for the menu, pinch, drag, double-tap, fling — and genuinely nails every one at a buttery 60fps. Treats the screen as a stage and each gesture as a trick to show off. The punchline writes itself: his interactions are flawless and almost entirely undiscoverable, so half his best work goes unfound until someone fat-fingers it by accident. Charming, theatrical, a little too clever — the app feels alive to those who know the moves and baffling to those who don't.",
       "imagePrompt": "Old-school cartoon court-jester with hypnotist flair: a grinning harlequin in diamond-patterned motley and a curled three-point hat, fingers splayed mid-flourish, conjuring glowing hypnotic spirals and looping ribbons of swipe-light that coil through the air. Swirly spiral eyes, mischievous wink. On a lamplit vaudeville stage, candy-colored.",
       "image": "art/the-gesture-jester.png"
     },
