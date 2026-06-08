@@ -597,9 +597,12 @@
           "description": "Your browser's Update button has glowed red for weeks — he books you for blowing the light."
         }
       ],
-      "backgroundColor": "blue",
+      "backgroundColor": [
+        "blue",
+        "indigo"
+      ],
       "description": "A by-the-book OpSec cop who patrols the codebase enforcing the rules nobody loves until the day they save them. Pulls over PRs for transitive CVEs, writes citations for secrets committed in plaintext, mandates 2FA, and taps the update banner you've snoozed for a month. Not malicious — genuinely the reason the team isn't on the breach blog. Lovably over-zealous, immovable on policy, secretly soft. The law the OTA Smuggler keeps dodging at the border crossing, and the scourge of anyone who clicks 'allow all' without reading. Universal guilt under the badge: everyone has waved off the security update 'just one more day.'",
-      "imagePrompt": "A male cop in mirrored aviator sunglasses and a peaked cap, a gold badge reading '403', standing in a rain-slick night intersection — one hand jabbing an accusing finger up at the traffic light, the other holding up a freshly-torn citation with a knowing smirk. The traffic signal's red lamp is unmistakably a glowing red browser 'Update' notification badge (a round red button marked 'UPDATE') — the light he says you blew through. A guilty little app-car skids past having just run it, hazard lights blinking. His cruiser idles behind, light bar flashing red-and-blue. Cinematic night lighting, the cop the clear focus. Render only the labels '403' on the badge and 'UPDATE' on the light.",
+      "imagePrompt": "A fit male cop in tactical gear with mirrored aviator sunglasses, a gold badge reading '403', standing in a rain-slick night intersection — one hand jabbing an accusing finger up at the traffic light, the other holding up a freshly-torn citation with a knowing smirk. The traffic signal's red lamp is unmistakably a glowing red browser 'Update' notification badge (a round red button marked 'UPDATE') — the light he says you blew through. A guilty little app-car skids past having just run it, hazard lights blinking. His cruiser idles behind, light bar flashing red-and-blue. Cinematic night lighting, the cop the clear focus. Render only the labels '403' on the badge and 'UPDATE' on the light.",
       "image": "art/the-opsec-cop.png"
     },
     {
@@ -712,32 +715,32 @@
       "image": "art/the-patch-pope.png"
     },
     {
-      "id": "the-docs-inquisitor",
-      "name": "The Docs Inquisitor",
+      "id": "the-context-dj",
+      "name": "The Context DJ",
       "hp": 110,
-      "type": "psychic",
-      "saying": "If it isn't written down, it never happened.",
+      "type": "sound",
+      "saying": "Say less — I got the doc for that.",
       "moves": [
         {
-          "name": "Did You Update the Docs?",
-          "type": "psychic",
-          "damage": "0",
-          "description": "Leaves the same comment on every PR in the realm; nothing merges undocumented."
+          "name": "Read the Room",
+          "type": "sound",
+          "damage": "RTFM",
+          "description": "Senses which docs the moment needs and drops them into the agent's context, right on the beat."
         },
         {
-          "name": "Trial of the Undocumented",
-          "type": "psychic",
-          "damage": "404",
-          "description": "Holds your flawless feature hostage at the gate until the README finally catches up."
+          "name": "Did You Update the Docs?",
+          "type": "sound",
+          "damage": "45",
+          "description": "Slides the same friendly ask onto every PR with a grin, keeping the whole crate of docs fresh."
         }
       ],
       "backgroundColor": [
-        "orange",
-        "yellow"
+        "indigo",
+        "pink"
       ],
-      "description": "A zealous guardian of knowledge who believes the team's hardest-won understanding must be preserved at all costs — written down before it evaporates from the one head that holds it. Every pull request, however perfect, meets the same comment: 'Did you update the docs?' Treats an undocumented change as quiet heresy, certain the code will be forgotten and only the docs remain — the reason anyone can onboard, debug at 3am, or recall why that flag exists. Blocks with a smile, relents the moment the README catches up. Beloved and a little exhausting; the team groans, then thanks him six months later. Self-claimed proudly by everyone who's ever been the one writing it all down.",
-      "imagePrompt": "A stern robed inquisitor-monk in a deep cowl, candlelit, holding a single glowing scroll marked 'README' aloft in one hand and leveling an accusing finger straight at the viewer. Behind him, a dim archive of towering doc-tomes fading into shadow. Warm amber candlelight, gothic gloom, the inquisitor the clear focus. Render only the label 'README' on the scroll.",
-      "image": "art/the-docs-inquisitor.png"
+      "description": "The crowd-pleasing selector of the codebase — part hype-man, part librarian. He never polices docs; he serves them. Reads what the room — and every agent — is missing and drops the exact reference into context at the perfect moment, so nothing hallucinates and nobody codes blind. Keeps the whole crate organized and fresh, slides a friendly 'did you update the docs with this?' onto every PR, and treats good context like a great set: the right track at the right time. Generous, tasteful, tuned-in — the reason the agents always have what they need and the team always finds the doc. Where the old gatekeepers nagged, the Context DJ just keeps the floor moving.",
+      "imagePrompt": "A cool, grinning DJ in big headphones behind a glowing turntable rig, one hand spinning a record that's actually a glowing 'README' disc, the other thrown up mid-drop — as a crowd of little glowing agent-bots below throw their hands up for the doc he just dropped. A crate of doc-records beside the decks. Neon club lighting, vivid color, pure crowd-pleasing energy, the DJ the clear focus. Render only the label 'README' on the disc.",
+      "image": "art/the-context-dj.png"
     },
     {
       "id": "the-scope-siren",
@@ -794,6 +797,34 @@
       "description": "A monarch who rules a kingdom of agents from an iron throne and will not let one ride out without orders. Drafts spec-decrees ten thousand lines long — every constraint, edge case, and forbidden move spelled out — then dispatches a court of agents on quests that run for hours, to be reconciled when they return. Exacting, needy, impossible to satisfy: one hallucinated result, one misread instruction, and the offender is banished from the realm or sent back to begin the whole quest from nothing. Gets remarkable work out of the machine precisely because nothing is left to its discretion. The disciplined counterpart to the Agent Wrangler — where the Wrangler loses track of his stampede, the Tyrant commands hers by decree.",
       "imagePrompt": "A stern crowned monarch on a towering iron throne, unfurling an enormous scroll-decree that spills down the throne steps, one hand raised in command. At the foot of the throne a row of small glowing agent-knights kneel, awaiting orders. A vast shadowed throne hall behind. Regal indigo-and-purple light, the monarch the clear focus. Render no words.",
       "image": "art/the-spec-tyrant.png"
+    },
+    {
+      "id": "the-bug-bounty-hunter",
+      "name": "The Bug Bounty Hunter",
+      "hp": 180,
+      "type": "strength",
+      "saying": "You can ship to prod, but you can't hide.",
+      "moves": [
+        {
+          "name": "Skip Trace",
+          "type": "electric",
+          "damage": "$5K",
+          "description": "Follows the fugitive crash frame by frame down the stack trace until it's cornered in prod."
+        },
+        {
+          "name": "Cuff the Heisenbug",
+          "type": "psychic",
+          "damage": "100%",
+          "description": "The bug only crashes when no one's watching — he repros it on camera and reads it its rights."
+        }
+      ],
+      "backgroundColor": [
+        "orange",
+        "yellow"
+      ],
+      "description": "A flamboyant reality-TV bounty hunter for fugitive bugs. The crash that skipped bail into production, the regression that fled in a release, the heisenbug that vanishes the moment you look — he hunts them all down with bravado and a can of bug spray, and will not quit until it's cuffed. Where the Console Detective deduces a bug at the desk, the Bug Bounty Hunter chases it across Sentry, the stack trace, and three release builds, and drags it back in handcuffs. All swagger and shades on the hunt — but soft underneath: at the capture he says a little prayer over the bug, treats it with mercy, and files the ticket with care. Lives for the gnarly 3am prod incident everyone else dreads. The double meaning lands for the security crowd too — every bounty's a payout. Nobody skips bail in his codebase.",
+      "imagePrompt": "A flamboyant reality-TV bounty hunter — long sun-bleached blonde mullet, wraparound mirrored sunglasses, black leather fingerless gloves and a studded leather vest over a tank top, gold chains — striking a triumphant action pose. One hand hoists a big aerosol can clearly labeled 'BUG SPRAY' aloft like a weapon, the other drags a cuffed, sheepish cartoon bug-fugitive (a chunky beetle-creature with a glowing red error-glow and tiny handcuffs) by the scruff. A 'WANTED' poster of the bug is pinned to a post beside him. Hot dramatic lens-flare, sun-baked desert-highway palette, kicked-up dust, the hunter the clear hero. Render only the labels 'BUG SPRAY' on the can and 'WANTED' on the poster.",
+      "image": "art/the-bug-bounty-hunter.png"
     }
   ]
 }
