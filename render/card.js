@@ -107,7 +107,7 @@ function createCard(cardData) {
 
         <img src="${image}" class="mt-2 w-full object-cover rounded-xl border-4 border-yellow-500" style="height: 520px;" />
 
-        <div class="mt-1 py-6 text-center border-y border-slate-500 text-3xl italic">
+        <div class="mt-1 py-6 text-center border-b border-slate-500 text-3xl italic">
           "${saying}"
         </div>
 
