@@ -249,19 +249,19 @@
       "name": "The Triforce Bearer",
       "hp": 150,
       "type": "crystal",
-      "saying": "It's dangerous to go alone. Take this.",
+      "saying": "No hero carries all three pieces alone.",
       "moves": [
         {
-          "name": "It's Dangerous to Go Alone",
+          "name": "Three Pieces, Three Heroes",
           "type": "crystal",
           "damage": "3",
-          "description": "Won't let one dev build, guard, and architect at once — splits the power three ways, a hero for each piece."
+          "description": "Splits the power three ways — Builder, Protector, Architect — never one hero wearing all three."
         },
         {
-          "name": "Guard the Gates",
+          "name": "A Human at the Gate",
           "type": "crystal",
           "damage": "110",
-          "description": "Lets the agents build with abandon in the sandbox, but no PR reaches main without a human at the gate."
+          "description": "Agents adventure freely in the sandbox, but no PR reaches main without a hero at the gate."
         }
       ],
       "backgroundColor": [
