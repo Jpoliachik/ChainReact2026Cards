@@ -794,6 +794,34 @@
       "description": "The boundless idea-fountain of the team — a founder, PM, or stakeholder whose mind never stops generating the next brilliant feature. Each new thought is genuinely good, delivered with such warmth and conviction that no one can bring themselves to say no, and a sprint that was full an hour ago quietly rearranges itself to chase it. Not a villain — the visionary spark that keeps the product ambitious — but every idea is someone else's unplanned week. Magnetic, optimistic, allergic to 'later.' The card you hand the person who's always three features ahead of the roadmap. Affectionate barb: the song is beautiful, and the rocks are real.",
       "imagePrompt": "A glamorous siren rising large from the sea, mid-song — her glowing song pours from her mouth and swells into one towering wave. Atop that wave a small boat marked 'ENGINEERING' is tossed high, its tiny crew hanging on. Open sea, wide empty twilight sky, the siren the clear focus. Pink-and-purple dusk, dreamy glow, alluring not menacing. Render only the label 'ENGINEERING' on the boat.",
       "image": "art/the-scope-siren.png"
+    },
+    {
+      "id": "the-spec-tyrant",
+      "name": "The Spec Tyrant",
+      "hp": 140,
+      "type": "psychic",
+      "saying": "You had your orders. All ten thousand lines.",
+      "moves": [
+        {
+          "name": "The Ten-Thousand-Line Decree",
+          "type": "psychic",
+          "damage": "10K",
+          "description": "Sends no agent off without a spec so exacting it took longer to write than the task itself."
+        },
+        {
+          "name": "Begin Again",
+          "type": "psychic",
+          "damage": "404",
+          "description": "One flawed result and the agent's memory is wiped to restart the whole quest from nothing."
+        }
+      ],
+      "backgroundColor": [
+        "indigo",
+        "purple"
+      ],
+      "description": "A monarch who rules a kingdom of agents from an iron throne and will not let one ride out without orders. Drafts spec-decrees ten thousand lines long — every constraint, edge case, and forbidden move spelled out — then dispatches a court of agents on quests that run for hours, to be reconciled when they return. Exacting, needy, impossible to satisfy: one hallucinated result, one misread instruction, and the offender is banished from the realm or sent back to begin the whole quest from nothing. Gets remarkable work out of the machine precisely because nothing is left to its discretion. The disciplined counterpart to the Agent Wrangler — where the Wrangler loses track of his stampede, the Tyrant commands hers by decree.",
+      "imagePrompt": "A stern crowned monarch on a towering iron throne, unfurling an enormous scroll-decree that spills down the throne steps, one hand raised in command. At the foot of the throne a row of small glowing agent-knights kneel, awaiting orders. A vast shadowed throne hall behind. Regal indigo-and-purple light, the monarch the clear focus. Render no words.",
+      "image": "art/the-spec-tyrant.png"
     }
   ]
 }
