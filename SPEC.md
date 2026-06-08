@@ -111,7 +111,11 @@ with a `craft` move). The deck skews `ai` (it's an AI-era deck). These are flavo
 
 `hp` and `damage` are pure flavor — lean into dev gags (`"60"` for 60fps, `"16"` for the
 frame budget, `"404"`/`"500"`, `"4K"` for a giant diff, `"∞"`, `"1M"`). `damage` is a
-**string** so non-numeric jokes render.
+**string** so non-numeric jokes render. Guidance for the value: if a move does real
+"damage," show a number (a meaningful dev-number gag beats an arbitrary one); a **negative**
+number is the self-own — a move that backfires on your own side (`"-500"` on Ship the
+Evidence: shipping a debug log to prod); and a purely silly move can carry a thematic string
+(`"VIBES"`, `"B-side"`, `"Q3"`). Keep the deck cohesive — every value should _mean_ something.
 
 ## The rendered card (the "actual visual")
 
