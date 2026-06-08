@@ -94,7 +94,7 @@ One of eight:
 `ai · native · motion · craft · ship · debug · security · process`
 
 - **ai** (sparkle) — agents, models, prompts, context, the slop wars
-- **native** (chip) — the JS↔native bridge, Swift/Kotlin, legacy/brownfield, the OS layer
+- **native** (phone) — the JS↔native bridge, Swift/Kotlin, legacy/brownfield, the OS layer
 - **motion** (wave) — animation, gestures, render perf, frames
 - **craft** (gem) — pixels, a11y, theming, the meticulous polish
 - **ship** (rocket) — release, deploy, OTA, store submission, versioning, fresh projects

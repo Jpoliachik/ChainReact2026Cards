@@ -28,7 +28,7 @@
 // filter. A card's `type` drives the HP badge; each move's `type` shows inline.
 const TYPE_CONFIG = {
   ai: { icon: "sparkle.svg", color: "#8b5cf6", name: "AI" },
-  native: { icon: "chip.svg", color: "#2563eb", name: "Native" },
+  native: { icon: "phone.svg", color: "#2563eb", name: "Native" },
   motion: { icon: "wave.svg", color: "#06b6d4", name: "Motion" },
   craft: { icon: "gem.svg", color: "#ec4899", name: "Craft" },
   ship: { icon: "rocket.svg", color: "#f59e0b", name: "Ship" },
