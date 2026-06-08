@@ -744,7 +744,7 @@
       "name": "The Docs Inquisitor",
       "hp": 110,
       "type": "psychic",
-      "saying": "Did you update the docs? I don't see the docs.",
+      "saying": "If it isn't written down, it never happened.",
       "moves": [
         {
           "name": "Did You Update the Docs?",
@@ -763,7 +763,7 @@
         "orange",
         "yellow"
       ],
-      "description": "The keeper of institutional memory and the gentle terror of the merge queue. Every pull request, however perfect, meets the same comment: 'Did you update the docs?' Treats an undocumented change as quiet heresy — not malicious, genuinely the only reason anyone can onboard, debug at 3am, or remember why that flag exists. Blocks with a smile, relents the moment the README catches up. Beloved and a little exhausting; the team groans, then thanks them six months later. Self-claimed proudly by everyone who's ever been the one writing it all down.",
+      "description": "A zealous guardian of knowledge who believes the team's hardest-won understanding must be preserved at all costs — written down before it evaporates from the one head that holds it. Every pull request, however perfect, meets the same comment: 'Did you update the docs?' Treats an undocumented change as quiet heresy, certain the code will be forgotten and only the docs remain — the reason anyone can onboard, debug at 3am, or recall why that flag exists. Blocks with a smile, relents the moment the README catches up. Beloved and a little exhausting; the team groans, then thanks him six months later. Self-claimed proudly by everyone who's ever been the one writing it all down.",
       "imagePrompt": "A stern robed inquisitor-monk in a deep cowl, candlelit, holding a single glowing scroll marked 'README' aloft in one hand and leveling an accusing finger straight at the viewer. Behind him, a dim archive of towering doc-tomes fading into shadow. Warm amber candlelight, gothic gloom, the inquisitor the clear focus. Render only the label 'README' on the scroll.",
       "image": "art/the-docs-inquisitor.png"
     },
