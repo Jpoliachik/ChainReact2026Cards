@@ -512,16 +512,16 @@
       "saying": "Can it be done in React Native? Always.",
       "moves": [
         {
-          "name": "Drop to Native",
+          "name": "Backdoor Strike",
           "type": "native",
           "damage": "11",
           "description": "When JS hits a wall he drops below and strikes twice — once in Swift, once in Kotlin."
         },
         {
-          "name": "Backdoor",
+          "name": "Native Speed",
           "type": "native",
-          "damage": "100%",
-          "description": "Every 'React Native can't' is a door he opens from underneath — no wall the opponent raises holds."
+          "damage": "120",
+          "description": "Skips the bridge entirely and runs on the metal. The frame lands before the opponent even reacts."
         }
       ],
       "backgroundColor": ["indigo", "cyan"],
@@ -670,7 +670,7 @@
         {
           "name": "Cut the Record",
           "type": "process",
-          "damage": "10",
+          "damage": "20",
           "description": "Catches the fix nobody wrote down and presses it to wax — 'did you update the docs with this?'"
         }
       ],
