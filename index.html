@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<!--
+  <!--
   Static, view-only showcase served by GitHub Pages.
 
   Two experiences, one file (no server, no build):
@@ -12,310 +12,830 @@
   Card metadata comes from ./cards.json. (The interactive gallery with live rendering +
   art generation lives in public/index.html and needs the Node server: `pnpm start`.)
 -->
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Chain React Cards — Which one are you?</title>
-<meta property="og:title" content="Chain React Cards" />
-<meta property="og:description" content="Developer-archetype cards for Chain React 2026 — which one are you?" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
-<style>
-  :root {
-    --bg: #14131a; --panel: #1d1b26; --ink: #ece9f5;
-    --muted: #9b96b0; --faint: #5d5872; --line: #2f2c3d; --gold: #d9b35e;
-    --violet: #7b68c8;
-  }
-  * { box-sizing: border-box; }
-  html, body { height: 100%; }
-  body { margin: 0; background: var(--bg); color: var(--ink);
-    font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    -webkit-font-smoothing: antialiased; }
-  h1, h2, .serif { font-family: "Cormorant Garamond", "Iowan Old Style", Georgia, serif; }
-  button { font: inherit; cursor: pointer; }
-  .hidden { display: none !important; }
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chain React Cards — Which one are you?</title>
+    <meta property="og:title" content="Chain React Cards" />
+    <meta property="og:description" content="Developer-archetype cards for Chain React 2026 — which one are you?" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #14131a;
+        --panel: #1d1b26;
+        --ink: #ece9f5;
+        --muted: #9b96b0;
+        --faint: #5d5872;
+        --line: #2f2c3d;
+        --gold: #d9b35e;
+        --violet: #7b68c8;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font:
+          15px/1.55 -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      h1,
+      h2,
+      .serif {
+        font-family: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
+      }
+      button {
+        font: inherit;
+        cursor: pointer;
+      }
+      .hidden {
+        display: none !important;
+      }
 
-  /* faint mystical backdrop */
-  body::before { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0;
-    background:
-      radial-gradient(1200px 760px at 50% -12%, rgba(217,179,94,.14), transparent 60%),
-      radial-gradient(900px 560px at 88% 112%, rgba(123,104,200,.14), transparent 60%),
-      radial-gradient(700px 520px at 8% 92%, rgba(123,104,200,.08), transparent 60%),
-      radial-gradient(130% 130% at 50% 38%, transparent 52%, rgba(0,0,0,.55) 100%); }
-  body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0;
-    opacity: .045; mix-blend-mode: overlay;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
-  .stage { position: relative; z-index: 1; }
+      /* faint mystical backdrop */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+        background:
+          radial-gradient(1200px 760px at 50% -12%, rgba(217, 179, 94, 0.14), transparent 60%),
+          radial-gradient(900px 560px at 88% 112%, rgba(123, 104, 200, 0.14), transparent 60%),
+          radial-gradient(700px 520px at 8% 92%, rgba(123, 104, 200, 0.08), transparent 60%),
+          radial-gradient(130% 130% at 50% 38%, transparent 52%, rgba(0, 0, 0, 0.55) 100%);
+      }
+      body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+        opacity: 0.045;
+        mix-blend-mode: overlay;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      }
+      .stage {
+        position: relative;
+        z-index: 1;
+      }
 
-  /* ---------- INTRO ---------- */
-  .intro { position: relative; min-height: 100vh; display: flex; flex-direction: column;
-    align-items: center; justify-content: center; text-align: center; padding: 48px 24px; }
+      /* ---------- INTRO ---------- */
+      .intro {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 48px 24px 84px;
+      }
 
-  /* fanned deck "crown" — the signature motif */
-  .deck { display: flex; justify-content: center; align-items: flex-end; margin-bottom: 36px;
-    animation: rise .7s ease both, bob 6.5s ease-in-out .7s infinite; }
-  .mini { width: 72px; aspect-ratio: 3 / 4; border-radius: 10px; position: relative;
-    background: linear-gradient(155deg, #2a2238, #15111d 72%);
-    border: 1px solid rgba(217,179,94,.5);
-    box-shadow: inset 0 0 0 3px rgba(18,14,24,.95), inset 0 0 22px rgba(217,179,94,.14), 0 14px 26px rgba(0,0,0,.5);
-    display: flex; align-items: center; justify-content: center; }
-  .mini::after { content: "✦"; color: var(--gold); font-size: 22px; opacity: .9; text-shadow: 0 0 12px rgba(217,179,94,.7); }
-  .mini.l { transform: rotate(-14deg) translateY(12px); margin-right: -18px; }
-  .mini.c { transform: translateY(-10px); z-index: 2; border-color: rgba(217,179,94,.8);
-    box-shadow: inset 0 0 0 3px rgba(18,14,24,.95), inset 0 0 26px rgba(217,179,94,.22),
-      0 20px 34px rgba(0,0,0,.55), 0 0 42px rgba(217,179,94,.22); }
-  .mini.r { transform: rotate(14deg) translateY(12px); margin-left: -18px; }
+      /* fanned deck "crown" — the signature motif */
+      .deck {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-bottom: 36px;
+        animation:
+          rise 0.7s ease both,
+          bob 6.5s ease-in-out 0.7s infinite;
+      }
+      .mini {
+        width: 72px;
+        aspect-ratio: 3 / 4;
+        border-radius: 10px;
+        position: relative;
+        background: linear-gradient(155deg, #2a2238, #15111d 72%);
+        border: 1px solid rgba(217, 179, 94, 0.5);
+        box-shadow:
+          inset 0 0 0 3px rgba(18, 14, 24, 0.95),
+          inset 0 0 22px rgba(217, 179, 94, 0.14),
+          0 14px 26px rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .mini::after {
+        content: "✦";
+        color: var(--gold);
+        font-size: 22px;
+        opacity: 0.9;
+        text-shadow: 0 0 12px rgba(217, 179, 94, 0.7);
+      }
+      .mini.l {
+        transform: rotate(-14deg) translateY(12px);
+        margin-right: -18px;
+      }
+      .mini.c {
+        transform: translateY(-10px);
+        z-index: 2;
+        border-color: rgba(217, 179, 94, 0.8);
+        box-shadow:
+          inset 0 0 0 3px rgba(18, 14, 24, 0.95),
+          inset 0 0 26px rgba(217, 179, 94, 0.22),
+          0 20px 34px rgba(0, 0, 0, 0.55),
+          0 0 42px rgba(217, 179, 94, 0.22);
+      }
+      .mini.r {
+        transform: rotate(14deg) translateY(12px);
+        margin-left: -18px;
+      }
 
-  .eyebrow { font-family: "Cinzel", Georgia, serif; text-transform: uppercase;
-    letter-spacing: 3.5px; font-size: 12px; font-weight: 600; color: var(--gold);
-    max-width: 32ch; line-height: 1.75; animation: rise .7s ease .08s both; }
-  .intro h1 { font-size: clamp(48px, 10vw, 98px); margin: 8px 0 0; line-height: .98;
-    font-weight: 600; letter-spacing: -.5px; text-shadow: 0 0 44px rgba(217,179,94,.12);
-    animation: rise .7s ease .16s both; }
-  .intro .lede { color: var(--muted); max-width: 28ch; margin: 22px auto 8px; font-size: 17px;
-    animation: rise .7s ease .26s both; }
-  .intro .event { font-size: 12.5px; letter-spacing: .3px; animation: rise .7s ease .34s both; }
-  .intro .event a { color: var(--faint); text-decoration: none;
-    border-bottom: 1px solid rgba(93,88,114,.5); padding-bottom: 1px; transition: color .14s ease, border-color .14s ease; }
-  .intro .event a:hover { color: var(--gold); border-bottom-color: var(--gold); }
-  .cta { margin-top: 40px; display: flex; flex-direction: column; align-items: center; gap: 18px;
-    animation: rise .7s ease .44s both; }
+      .eyebrow {
+        font-family: "Cinzel", Georgia, serif;
+        text-transform: uppercase;
+        letter-spacing: 3.5px;
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--gold);
+        max-width: 32ch;
+        line-height: 1.75;
+        animation: rise 0.7s ease 0.08s both;
+      }
+      .intro h1 {
+        font-size: clamp(48px, 10vw, 98px);
+        margin: 8px 0 0;
+        line-height: 0.98;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+        text-shadow: 0 0 44px rgba(217, 179, 94, 0.12);
+        animation: rise 0.7s ease 0.16s both;
+      }
+      .intro .lede {
+        color: var(--muted);
+        max-width: 28ch;
+        margin: 22px auto 8px;
+        font-size: 17px;
+        animation: rise 0.7s ease 0.26s both;
+      }
+      .cta {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        animation: rise 0.7s ease 0.44s both;
+      }
 
-  .btn-primary { position: relative; overflow: hidden; border: none; cursor: pointer; color: #251c08;
-    background: linear-gradient(180deg, #f2d68f 0%, #e4bf6c 48%, #d4a951 100%);
-    padding: 17px 48px; border-radius: 999px; font-size: 17px; font-weight: 700; letter-spacing: .3px;
-    box-shadow: 0 12px 30px rgba(217,179,94,.30), inset 0 1px 0 rgba(255,255,255,.55), inset 0 -2px 6px rgba(150,104,24,.45);
-    transition: transform .14s ease, box-shadow .14s ease; }
-  .btn-primary:hover { transform: translateY(-2px);
-    box-shadow: 0 18px 42px rgba(217,179,94,.44), inset 0 1px 0 rgba(255,255,255,.6), inset 0 -2px 6px rgba(150,104,24,.45); }
-  .btn-primary::after { content: ""; position: absolute; top: -10%; left: -60%; width: 38%; height: 120%;
-    background: linear-gradient(105deg, transparent, rgba(255,255,255,.6), transparent);
-    transform: skewX(-18deg); animation: sheen 5s ease-in-out infinite; }
-  .btn-link { background: none; border: none; cursor: pointer; color: var(--muted); font-size: 13px;
-    letter-spacing: .4px; text-decoration: underline; text-underline-offset: 4px;
-    text-decoration-color: rgba(155,150,176,.4); padding: 6px; transition: color .14s ease; }
-  .btn-link:hover { color: var(--gold); text-decoration-color: var(--gold); }
+      .btn-primary {
+        position: relative;
+        overflow: hidden;
+        border: none;
+        cursor: pointer;
+        color: #251c08;
+        background: linear-gradient(180deg, #f2d68f 0%, #e4bf6c 48%, #d4a951 100%);
+        padding: 17px 48px;
+        border-radius: 999px;
+        font-size: 17px;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+        box-shadow:
+          0 12px 30px rgba(217, 179, 94, 0.3),
+          inset 0 1px 0 rgba(255, 255, 255, 0.55),
+          inset 0 -2px 6px rgba(150, 104, 24, 0.45);
+        transition:
+          transform 0.14s ease,
+          box-shadow 0.14s ease;
+      }
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow:
+          0 18px 42px rgba(217, 179, 94, 0.44),
+          inset 0 1px 0 rgba(255, 255, 255, 0.6),
+          inset 0 -2px 6px rgba(150, 104, 24, 0.45);
+      }
+      .btn-primary::after {
+        content: "";
+        position: absolute;
+        top: -10%;
+        left: -60%;
+        width: 38%;
+        height: 120%;
+        background: linear-gradient(105deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+        transform: skewX(-18deg);
+        animation: sheen 5s ease-in-out infinite;
+      }
+      .btn-link {
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: var(--muted);
+        font-size: 13px;
+        letter-spacing: 0.4px;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        text-decoration-color: rgba(155, 150, 176, 0.4);
+        padding: 6px;
+        transition: color 0.14s ease;
+      }
+      .btn-link:hover {
+        color: var(--gold);
+        text-decoration-color: var(--gold);
+      }
 
-  .spark { position: absolute; pointer-events: none; color: var(--gold); z-index: 0;
-    filter: drop-shadow(0 0 6px rgba(217,179,94,.7)); animation: twinkle 3.4s ease-in-out infinite; }
+      .spark {
+        position: absolute;
+        pointer-events: none;
+        color: var(--gold);
+        z-index: 0;
+        filter: drop-shadow(0 0 6px rgba(217, 179, 94, 0.7));
+        animation: twinkle 3.4s ease-in-out infinite;
+      }
 
-  /* ---------- QUIZ ---------- */
-  .quiz { min-height: 100vh; display: flex; flex-direction: column;
-    align-items: center; justify-content: center; padding: 56px 24px; max-width: 720px; margin: 0 auto; }
-  .dots { display: flex; gap: 9px; margin-bottom: 28px; }
-  .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--line); transition: background .2s ease; }
-  .dot.on { background: var(--gold); }
-  .qhead { text-align: center; }
-  .qstep { text-transform: uppercase; letter-spacing: 2.5px; font-size: 11px; color: var(--faint); }
-  .qtext { font-size: clamp(24px, 4.4vw, 34px); margin: 12px 0 4px; font-weight: 600; line-height: 1.2; }
-  .qhint { color: var(--muted); font-size: 14px; min-height: 1.4em; }
-  .answers { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px; margin: 30px 0 0; }
-  .answer { text-align: left; background: var(--panel); color: var(--ink); border: 1px solid var(--line);
-    border-radius: 13px; padding: 17px 20px; font-size: 16px; line-height: 1.35;
-    display: flex; align-items: center; gap: 14px; transition: border-color .12s ease, background .12s ease, transform .12s ease; }
-  .answer:hover { border-color: var(--gold); background: #241f2e; transform: translateX(3px); }
-  .answer .mark { color: var(--gold); flex: none; font-size: 18px; opacity: .8; }
-  .quiz-foot { margin-top: 26px; }
+      /* ---------- persistent footer (all views) ---------- */
+      .site-foot {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 3;
+        pointer-events: none;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 16px 16px calc(14px + env(safe-area-inset-bottom));
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        color: var(--faint);
+        background: linear-gradient(to top, rgba(20, 19, 26, 0.94), rgba(20, 19, 26, 0.6) 55%, transparent);
+      }
+      .site-foot a {
+        pointer-events: auto;
+        color: var(--faint);
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        transition: color 0.14s ease;
+      }
+      .site-foot a:hover {
+        color: var(--gold);
+      }
+      .site-foot .sep {
+        opacity: 0.45;
+      }
+      .site-foot svg {
+        width: 14px;
+        height: 14px;
+        fill: currentColor;
+        display: block;
+      }
 
-  /* ---------- RESULT ---------- */
-  .result { min-height: 100vh; display: flex; flex-direction: column;
-    align-items: center; justify-content: center; padding: 48px 24px 64px; text-align: center; gap: 4px; }
-  .result .eyebrow { margin-bottom: 4px; }
-  .result h2 { font-size: clamp(30px, 6vw, 50px); margin: 2px 0 0; font-weight: 600; }
-  .result .saying { color: var(--muted); font-style: italic; max-width: 32ch; margin: 12px 0 26px; font-size: 17px; }
-  .result-card { width: min(360px, 84vw); border-radius: 16px; overflow: hidden; background: #000;
-    box-shadow: 0 22px 60px rgba(0,0,0,.55); }
-  .result-card img { display: block; width: 100%; height: auto; }
-  .result-actions { margin-top: 32px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
-  .btn-ghost { background: none; border: 1px solid var(--line); color: var(--ink);
-    padding: 13px 26px; border-radius: 999px; font-size: 15px; transition: border-color .12s ease, background .12s ease; }
-  .btn-ghost:hover { border-color: var(--gold); background: #241f2e; }
+      /* ---------- QUIZ ---------- */
+      .quiz {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 56px 24px 88px;
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      .dots {
+        display: flex;
+        gap: 9px;
+        margin-bottom: 28px;
+      }
+      .dot {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: var(--line);
+        transition: background 0.2s ease;
+      }
+      .dot.on {
+        background: var(--gold);
+      }
+      .qhead {
+        text-align: center;
+      }
+      .qstep {
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-size: 11px;
+        color: var(--faint);
+      }
+      .qtext {
+        font-size: clamp(24px, 4.4vw, 34px);
+        margin: 12px 0 4px;
+        font-weight: 600;
+        line-height: 1.2;
+      }
+      .qhint {
+        color: var(--muted);
+        font-size: 14px;
+        min-height: 1.4em;
+      }
+      .answers {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        max-width: 560px;
+        margin: 30px 0 0;
+      }
+      .answer {
+        text-align: left;
+        background: var(--panel);
+        color: var(--ink);
+        border: 1px solid var(--line);
+        border-radius: 13px;
+        padding: 17px 20px;
+        font-size: 16px;
+        line-height: 1.35;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        transition:
+          border-color 0.12s ease,
+          background 0.12s ease,
+          transform 0.12s ease;
+      }
+      .answer:hover {
+        border-color: var(--gold);
+        background: #241f2e;
+        transform: translateX(3px);
+      }
+      .answer .mark {
+        color: var(--gold);
+        flex: none;
+        font-size: 18px;
+        opacity: 0.8;
+      }
+      .quiz-foot {
+        margin-top: 26px;
+      }
 
-  /* ---------- GALLERY ---------- */
-  .wrap { max-width: 1280px; margin: 0 auto; padding: 28px 24px 120px; }
-  .gal-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
-  .gal-head h1 { font-size: 28px; margin: 0; font-weight: 600; }
-  .sub { color: var(--muted); font-size: 13px; }
-  .count { font-size: 13px; color: var(--muted); }
-  .count b { color: var(--ink); }
-  .gal-head .btn-ghost { margin-left: auto; padding: 9px 18px; font-size: 13px; }
-  .grid { display: grid; gap: 26px; margin-top: 28px; justify-items: center;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
-  .card { width: 320px; border-radius: 14px; overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,.4); background: #000; }
-  .card img { display: block; width: 100%; height: auto; }
-  .card.placeholder { aspect-ratio: 816 / 1110; display: flex; flex-direction: column;
-    align-items: center; justify-content: center; gap: 10px;
-    border: 1px solid var(--line); background: var(--panel); }
-  .glyph { font-size: 32px; color: var(--gold); opacity: .85; }
-  .pending { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--faint); }
+      /* ---------- RESULT ---------- */
+      .result {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 48px 24px 88px;
+        text-align: center;
+        gap: 4px;
+      }
+      .result .eyebrow {
+        margin-bottom: 4px;
+      }
+      .result h2 {
+        font-size: clamp(30px, 6vw, 50px);
+        margin: 2px 0 0;
+        font-weight: 600;
+      }
+      .result .saying {
+        color: var(--muted);
+        font-style: italic;
+        max-width: 32ch;
+        margin: 12px 0 26px;
+        font-size: 17px;
+      }
+      .result-card {
+        width: min(360px, 84vw);
+        border-radius: 16px;
+        overflow: hidden;
+        background: #000;
+        box-shadow: 0 22px 60px rgba(0, 0, 0, 0.55);
+      }
+      .result-card img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .result-actions {
+        margin-top: 32px;
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .btn-ghost {
+        background: none;
+        border: 1px solid var(--line);
+        color: var(--ink);
+        padding: 13px 26px;
+        border-radius: 999px;
+        font-size: 15px;
+        transition:
+          border-color 0.12s ease,
+          background 0.12s ease;
+      }
+      .btn-ghost:hover {
+        border-color: var(--gold);
+        background: #241f2e;
+      }
 
-  /* shared entrance + ambient animation */
-  .fade { animation: fade .32s ease both; }
-  @keyframes fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
-  @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
-  @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
-  @keyframes sheen { 0%, 22% { left: -60%; } 62%, 100% { left: 135%; } }
-  @keyframes twinkle {
-    0%, 100% { opacity: .12; transform: scale(.7) rotate(0deg); }
-    50% { opacity: .9; transform: scale(1.15) rotate(18deg); } }
-  @media (prefers-reduced-motion: reduce) {
-    .fade, .deck, .eyebrow, .intro h1, .intro .lede, .intro .event, .cta, .spark { animation: none !important; }
-    .btn-primary::after { display: none; }
-    .answer:hover, .btn-primary:hover { transform: none; }
-  }
-</style>
-</head>
-<body>
-<div class="stage" id="stage"></div>
+      /* ---------- GALLERY ---------- */
+      .wrap {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 28px 24px 120px;
+      }
+      .gal-head {
+        display: flex;
+        align-items: baseline;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+      .gal-head h1 {
+        font-size: 28px;
+        margin: 0;
+        font-weight: 600;
+      }
+      .sub {
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .count {
+        font-size: 13px;
+        color: var(--muted);
+      }
+      .count b {
+        color: var(--ink);
+      }
+      .gal-head .btn-ghost {
+        margin-left: auto;
+        padding: 9px 18px;
+        font-size: 13px;
+      }
+      .grid {
+        display: grid;
+        gap: 26px;
+        margin-top: 28px;
+        justify-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      }
+      .card {
+        width: 320px;
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        background: #000;
+      }
+      .card img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .card.placeholder {
+        aspect-ratio: 816 / 1110;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border: 1px solid var(--line);
+        background: var(--panel);
+      }
+      .glyph {
+        font-size: 32px;
+        color: var(--gold);
+        opacity: 0.85;
+      }
+      .pending {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: var(--faint);
+      }
 
-<script>
-const esc = s => (s||"").replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+      /* shared entrance + ambient animation */
+      .fade {
+        animation: fade 0.32s ease both;
+      }
+      @keyframes fade {
+        from {
+          opacity: 0;
+          transform: translateY(8px);
+        }
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(16px);
+        }
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+      @keyframes bob {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-9px);
+        }
+      }
+      @keyframes sheen {
+        0%,
+        22% {
+          left: -60%;
+        }
+        62%,
+        100% {
+          left: 135%;
+        }
+      }
+      @keyframes twinkle {
+        0%,
+        100% {
+          opacity: 0.12;
+          transform: scale(0.7) rotate(0deg);
+        }
+        50% {
+          opacity: 0.9;
+          transform: scale(1.15) rotate(18deg);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .fade,
+        .deck,
+        .eyebrow,
+        .intro h1,
+        .intro .lede,
+        .cta,
+        .spark {
+          animation: none !important;
+        }
+        .btn-primary::after {
+          display: none;
+        }
+        .answer:hover,
+        .btn-primary:hover {
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="stage" id="stage"></div>
+    <footer class="site-foot">
+      <a href="https://chainreactconf.com/" target="_blank" rel="noopener">Made for Chain React 2026, Portland OR</a>
+      <span class="sep">·</span>
+      <a href="https://github.com/Jpoliachik/ChainReact2026Cards" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" aria-hidden="true">
+          <path
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+          ></path>
+        </svg>
+        GitHub
+      </a>
+    </footer>
 
-/* ----------------------------------------------------------------------------
+    <script>
+      const esc = (s) =>
+        (s || "").replace(/[&<>"]/g, (m) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[m]);
+
+      /* ----------------------------------------------------------------------------
    The decision tree. Mirror of QUIZ.md — keep both in sync.
    A node is either a QUESTION  { q, hint?, options: [{label, node}] }
                   or a LEAF     "<card-id>"  (a string).
 ---------------------------------------------------------------------------- */
-const leaf = id => id;
-const QUIZ = {
-  q: "Which is most you?",
-  hint: "Answer on instinct — your gut is the whole read.",
-  options: [
-    { label: "It's me and the machines now.", node: {
-        q: "Where do you actually stand on the AI?",
+      const leaf = (id) => id;
+      const QUIZ = {
+        q: "Which is most you?",
+        hint: "Answer on instinct — your gut is the whole read.",
         options: [
-          { label: "All in — let it cook.", node: {
-              q: "And your move is…",
+          {
+            label: "It's me and the machines now.",
+            node: {
+              q: "Where do you actually stand on the AI?",
               options: [
-                { label: "I run a whole stampede of agents at once.", node: leaf("the-agent-wrangler") },
-                { label: "I coax it with the perfectly-worded prompt.", node: leaf("the-prompt-whisperer") },
-                { label: "I cue up exactly the right context, on demand.", node: leaf("the-context-dj") },
-                { label: "I hand it a 10,000-line spec and hold it to all of it.", node: leaf("the-spec-tyrant") },
-              ] } },
-          { label: "I keep AI on a short leash.", node: {
-              q: "How much do you let it in?",
+                {
+                  label: "All in — let it cook.",
+                  node: {
+                    q: "And your move is…",
+                    options: [
+                      { label: "I run a whole stampede of agents at once.", node: leaf("the-agent-wrangler") },
+                      { label: "I coax it with the perfectly-worded prompt.", node: leaf("the-prompt-whisperer") },
+                      { label: "I cue up exactly the right context, on demand.", node: leaf("the-context-dj") },
+                      {
+                        label: "I hand it a 10,000-line spec and hold it to all of it.",
+                        node: leaf("the-spec-tyrant"),
+                      },
+                    ],
+                  },
+                },
+                {
+                  label: "I keep AI on a short leash.",
+                  node: {
+                    q: "How much do you let it in?",
+                    options: [
+                      { label: "Not at all — I grow my code by hand.", node: leaf("the-organic-code-farmer") },
+                      { label: "I read every overnight line myself, solo.", node: leaf("the-nights-watch") },
+                      {
+                        label: "I can taste which model wrote a PR — no slop passes.",
+                        node: leaf("the-slop-sommelier"),
+                      },
+                    ],
+                  },
+                },
+              ],
+            },
+          },
+
+          {
+            label: "I live down in the native layer.",
+            node: {
+              q: "What's your world?",
               options: [
-                { label: "Not at all — I grow my code by hand.", node: leaf("the-organic-code-farmer") },
-                { label: "I read every overnight line myself, solo.", node: leaf("the-nights-watch") },
-                { label: "I can taste which model wrote a PR — no slop passes.", node: leaf("the-slop-sommelier") },
-              ] } },
-        ] } },
+                { label: "A giant legacy app I keep alive by hand.", node: leaf("the-brownfield-mechanic") },
+                { label: "The line between JS and native — I own that crossing.", node: leaf("the-bridge-troll") },
+                { label: "When RN runs out of road, I drop into Swift / Kotlin.", node: leaf("the-native-ninja") },
+                { label: "The cursed native bug nobody else can reproduce.", node: leaf("the-keyboard-exorcist") },
+              ],
+            },
+          },
 
-    { label: "I live down in the native layer.", node: {
-        q: "What's your world?",
-        options: [
-          { label: "A giant legacy app I keep alive by hand.", node: leaf("the-brownfield-mechanic") },
-          { label: "The line between JS and native — I own that crossing.", node: leaf("the-bridge-troll") },
-          { label: "When RN runs out of road, I drop into Swift / Kotlin.", node: leaf("the-native-ninja") },
-          { label: "The cursed native bug nobody else can reproduce.", node: leaf("the-keyboard-exorcist") },
-        ] } },
-
-    { label: "It has to FEEL right or I can't ship.", node: {
-        q: "Static layout, or living motion?",
-        options: [
-          { label: "Static — the pixels have to be exact.", node: {
-              q: "The flaw you can't unsee is…",
+          {
+            label: "It has to FEEL right or I can't ship.",
+            node: {
+              q: "Static layout, or living motion?",
               options: [
-                { label: "Two pixels of misalignment.", node: leaf("the-pixel-surgeon") },
-                { label: "A light-mode screen searing my retinas.", node: leaf("the-dark-mode-demon") },
-                { label: "A screen reader hitting an unlabeled button.", node: leaf("the-a11y-paladin") },
-              ] } },
-          { label: "Motion — it has to move just right.", node: {
-              q: "What has to be perfect?",
+                {
+                  label: "Static — the pixels have to be exact.",
+                  node: {
+                    q: "The flaw you can't unsee is…",
+                    options: [
+                      { label: "Two pixels of misalignment.", node: leaf("the-pixel-surgeon") },
+                      { label: "A light-mode screen searing my retinas.", node: leaf("the-dark-mode-demon") },
+                      { label: "A screen reader hitting an unlabeled button.", node: leaf("the-a11y-paladin") },
+                    ],
+                  },
+                },
+                {
+                  label: "Motion — it has to move just right.",
+                  node: {
+                    q: "What has to be perfect?",
+                    options: [
+                      { label: "The easing curve / the transition.", node: leaf("the-reanimated-wizard") },
+                      { label: "The swipe — it has to be buttery.", node: leaf("the-gesture-jester") },
+                      { label: "Sixty frames. No dropped frames. Ever.", node: leaf("the-render-drill-sergeant") },
+                    ],
+                  },
+                },
+              ],
+            },
+          },
+
+          {
+            label: "Shipping is the whole game.",
+            node: {
+              q: "The App Store stands between you and your users. You…",
               options: [
-                { label: "The easing curve / the transition.", node: leaf("the-reanimated-wizard") },
-                { label: "The swipe — it has to be buttery.", node: leaf("the-gesture-jester") },
-                { label: "Sixty frames. No dropped frames. Ever.", node: leaf("the-render-drill-sergeant") },
-              ] } },
-        ] } },
+                {
+                  label: "Start fresh and sprint — faster to rewrite than to fix.",
+                  node: leaf("the-greenfield-speedster"),
+                },
+                {
+                  label: "Sneak a JS bundle over the wall — gone by morning.",
+                  node: leaf("the-over-the-air-smuggler"),
+                },
+                { label: "Charm the reviewer into a first-pass yes.", node: leaf("the-app-store-enchantress") },
+                { label: "Deploy on Fridays and bless the build.", node: leaf("the-patch-pope") },
+              ],
+            },
+          },
 
-    { label: "Shipping is the whole game.", node: {
-        q: "The App Store stands between you and your users. You…",
-        options: [
-          { label: "Start fresh and sprint — faster to rewrite than to fix.", node: leaf("the-greenfield-speedster") },
-          { label: "Sneak a JS bundle over the wall — gone by morning.", node: leaf("the-over-the-air-smuggler") },
-          { label: "Charm the reviewer into a first-pass yes.", node: leaf("the-app-store-enchantress") },
-          { label: "Deploy on Fridays and bless the build.", node: leaf("the-patch-pope") },
-        ] } },
-
-    { label: "Someone has to keep this from falling apart.", node: {
-        q: "In the chaos, you're the one who…",
-        options: [
-          { label: "Hunts down the bug everyone else gave up on.", node: {
-              q: "You corner it by…",
+          {
+            label: "Someone has to keep this from falling apart.",
+            node: {
+              q: "In the chaos, you're the one who…",
               options: [
-                { label: "console.log and instinct.", node: leaf("the-console-detective") },
-                { label: "Doing what no sane user would.", node: leaf("the-qa-phantom") },
-                { label: "Chasing it all the way into prod.", node: leaf("the-bug-bounty-hunter") },
-              ] } },
-          { label: "Keeps the team and the process from melting down.", node: {
-              q: "What do you wrangle?",
-              options: [
-                { label: "The merge-conflict standoff.", node: leaf("the-merge-magistrate") },
-                { label: "The live demo, by sleight of hand.", node: leaf("the-demo-illusionist") },
-                { label: "Scope — I'm the one going “what if it also did this?”", node: leaf("the-scope-siren") },
-              ] } },
-          { label: "Stands guard over the stuff that blows up later.", node: {
-              q: "Your watch is…",
-              options: [
-                { label: "The dreaded SDK upgrade — I endure it so the team won't.", node: leaf("the-upgrade-monk") },
-                { label: "A bunker of vendored deps — the registry will betray us.", node: leaf("the-dependency-prepper") },
-                { label: "The build itself — I stop it when it's unsafe.", node: leaf("the-opsec-cop") },
-              ] } },
-        ] } },
-  ],
-};
+                {
+                  label: "Hunts down the bug everyone else gave up on.",
+                  node: {
+                    q: "You corner it by…",
+                    options: [
+                      { label: "console.log and instinct.", node: leaf("the-console-detective") },
+                      { label: "Doing what no sane user would.", node: leaf("the-qa-phantom") },
+                      { label: "Chasing it all the way into prod.", node: leaf("the-bug-bounty-hunter") },
+                    ],
+                  },
+                },
+                {
+                  label: "Keeps the team and the process from melting down.",
+                  node: {
+                    q: "What do you wrangle?",
+                    options: [
+                      { label: "The merge-conflict standoff.", node: leaf("the-merge-magistrate") },
+                      { label: "The live demo, by sleight of hand.", node: leaf("the-demo-illusionist") },
+                      { label: "Scope — I'm the one going “what if it also did this?”", node: leaf("the-scope-siren") },
+                    ],
+                  },
+                },
+                {
+                  label: "Stands guard over the stuff that blows up later.",
+                  node: {
+                    q: "Your watch is…",
+                    options: [
+                      {
+                        label: "The dreaded SDK upgrade — I endure it so the team won't.",
+                        node: leaf("the-upgrade-monk"),
+                      },
+                      {
+                        label: "A bunker of vendored deps — the registry will betray us.",
+                        node: leaf("the-dependency-prepper"),
+                      },
+                      { label: "The build itself — I stop it when it's unsafe.", node: leaf("the-opsec-cop") },
+                    ],
+                  },
+                },
+              ],
+            },
+          },
+        ],
+      };
 
-/* longest remaining depth from a node (for the progress dots) */
-const isLeaf = n => typeof n === "string";
-function depth(node) {
-  if (isLeaf(node)) return 0;
-  return 1 + Math.max(...node.options.map(o => depth(o.node)));
-}
+      /* longest remaining depth from a node (for the progress dots) */
+      const isLeaf = (n) => typeof n === "string";
+      function depth(node) {
+        if (isLeaf(node)) return 0;
+        return 1 + Math.max(...node.options.map((o) => depth(o.node)));
+      }
 
-const stage = document.getElementById("stage");
-let META = {}, BYID = {};
+      const stage = document.getElementById("stage");
+      let META = {},
+        BYID = {};
 
-/* ---------- views ---------- */
-function showIntro() {
-  const sparks = [
-    { t: 18, l: 13, s: 15, d: 0 }, { t: 23, l: 84, s: 10, d: 1.1 }, { t: 57, l: 9, s: 12, d: .5 },
-    { t: 70, l: 88, s: 16, d: 1.7 }, { t: 40, l: 93, s: 9, d: .3 }, { t: 80, l: 28, s: 11, d: 2.2 },
-  ].map(p => `<span class="spark" style="top:${p.t}%;left:${p.l}%;font-size:${p.s}px;animation-delay:${p.d}s">✦</span>`).join("");
-  stage.innerHTML = `
+      /* ---------- views ---------- */
+      function showIntro() {
+        const sparks = [
+          { t: 18, l: 13, s: 15, d: 0 },
+          { t: 23, l: 84, s: 10, d: 1.1 },
+          { t: 57, l: 9, s: 12, d: 0.5 },
+          { t: 70, l: 88, s: 16, d: 1.7 },
+          { t: 40, l: 93, s: 9, d: 0.3 },
+          { t: 80, l: 28, s: 11, d: 2.2 },
+        ]
+          .map(
+            (p) =>
+              `<span class="spark" style="top:${p.t}%;left:${p.l}%;font-size:${p.s}px;animation-delay:${p.d}s">✦</span>`,
+          )
+          .join("");
+        stage.innerHTML = `
     <div class="intro">
       ${sparks}
       <div class="deck" aria-hidden="true">
         <span class="mini l"></span><span class="mini c"></span><span class="mini r"></span>
       </div>
-      <div class="eyebrow">${CARDS.length} whimsical characters from the React Native world</div>
+      <div class="eyebrow">${CARDS.length} whimsical characters from the React Native developer world</div>
       <h1>Which one are you?</h1>
       <p class="lede">Answer a few quick questions and the cards will reveal your true form.</p>
-      <div class="event">Made for <a href="https://chainreactconf.com/" target="_blank" rel="noopener">Chain React 2026, Portland OR</a></div>
       <div class="cta">
         <button class="btn-primary" id="start">Start the quiz</button>
         <button class="btn-link" id="see-all">or see all the cards</button>
       </div>
     </div>`;
-  stage.querySelector("#start").onclick = startQuiz;
-  stage.querySelector("#see-all").onclick = showGallery;
-}
+        stage.querySelector("#start").onclick = startQuiz;
+        stage.querySelector("#see-all").onclick = showGallery;
+      }
 
-let path = []; // chosen nodes, root first
+      let path = []; // chosen nodes, root first
 
-function startQuiz() { path = [QUIZ]; renderQuestion(); }
+      function startQuiz() {
+        path = [QUIZ];
+        renderQuestion();
+      }
 
-function renderQuestion() {
-  const node = path[path.length - 1];
-  const step = path.length;                 // 1-based
-  // dots = steps already taken + the remaining depth from here (incl. this question)
-  const totalSteps = (step - 1) + Math.max(depth(node), 1);
-  const dots = Array.from({ length: totalSteps }, (_, i) =>
-    `<span class="dot ${i < step ? "on" : ""}"></span>`).join("");
+      function renderQuestion() {
+        const node = path[path.length - 1];
+        const step = path.length; // 1-based
+        // dots = steps already taken + the remaining depth from here (incl. this question)
+        const totalSteps = step - 1 + Math.max(depth(node), 1);
+        const dots = Array.from(
+          { length: totalSteps },
+          (_, i) => `<span class="dot ${i < step ? "on" : ""}"></span>`,
+        ).join("");
 
-  stage.innerHTML = `
+        stage.innerHTML = `
     <div class="quiz fade">
       <div class="dots">${dots}</div>
       <div class="qhead">
@@ -324,33 +844,41 @@ function renderQuestion() {
         <div class="qhint">${esc(node.hint || "")}</div>
       </div>
       <div class="answers">
-        ${node.options.map((o, i) =>
-          `<button class="answer" data-i="${i}"><span class="mark">✦</span><span>${esc(o.label)}</span></button>`).join("")}
+        ${node.options
+          .map(
+            (o, i) =>
+              `<button class="answer" data-i="${i}"><span class="mark">✦</span><span>${esc(o.label)}</span></button>`,
+          )
+          .join("")}
       </div>
       <div class="quiz-foot">
         <button class="btn-link" id="back">${step > 1 ? "← back" : "← start over"}</button>
       </div>
     </div>`;
 
-  stage.querySelectorAll(".answer").forEach(btn => {
-    btn.onclick = () => {
-      const next = node.options[+btn.dataset.i].node;
-      if (isLeaf(next)) showResult(next);
-      else { path.push(next); renderQuestion(); }
-    };
-  });
-  stage.querySelector("#back").onclick = () => {
-    path.pop();
-    if (path.length === 0) showIntro(); else renderQuestion();
-  };
-}
+        stage.querySelectorAll(".answer").forEach((btn) => {
+          btn.onclick = () => {
+            const next = node.options[+btn.dataset.i].node;
+            if (isLeaf(next)) showResult(next);
+            else {
+              path.push(next);
+              renderQuestion();
+            }
+          };
+        });
+        stage.querySelector("#back").onclick = () => {
+          path.pop();
+          if (path.length === 0) showIntro();
+          else renderQuestion();
+        };
+      }
 
-function showResult(id) {
-  const card = BYID[id] || {};
-  const art = card.image
-    ? `<div class="result-card"><img src="card-exports/${esc(id)}.png" alt="${esc(card.name)}" /></div>`
-    : `<div class="result-card card placeholder"><span class="glyph">✦</span><span class="pending">art pending</span></div>`;
-  stage.innerHTML = `
+      function showResult(id) {
+        const card = BYID[id] || {};
+        const art = card.image
+          ? `<div class="result-card"><img src="card-exports/${esc(id)}.png" alt="${esc(card.name)}" /></div>`
+          : `<div class="result-card card placeholder"><span class="glyph">✦</span><span class="pending">art pending</span></div>`;
+        stage.innerHTML = `
     <div class="result fade">
       <div class="eyebrow">You are</div>
       <h2 class="serif">The ${esc(card.name || "")}</h2>
@@ -361,24 +889,24 @@ function showResult(id) {
         <button class="btn-ghost" id="retake">Retake the quiz</button>
       </div>
     </div>`;
-  stage.querySelector("#all").onclick = showGallery;
-  stage.querySelector("#retake").onclick = startQuiz;
-}
+        stage.querySelector("#all").onclick = showGallery;
+        stage.querySelector("#retake").onclick = startQuiz;
+      }
 
-function cardEl(c) {
-  const el = document.createElement("div");
-  if (c.image) {
-    el.className = "card";
-    el.innerHTML = `<img loading="lazy" src="card-exports/${esc(c.id)}.png" alt="${esc(c.name)}" />`;
-  } else {
-    el.className = "card placeholder";
-    el.innerHTML = `<span class="glyph">✦</span><span class="pending">${esc(c.name)} — art pending</span>`;
-  }
-  return el;
-}
+      function cardEl(c) {
+        const el = document.createElement("div");
+        if (c.image) {
+          el.className = "card";
+          el.innerHTML = `<img loading="lazy" src="card-exports/${esc(c.id)}.png" alt="${esc(c.name)}" />`;
+        } else {
+          el.className = "card placeholder";
+          el.innerHTML = `<span class="glyph">✦</span><span class="pending">${esc(c.name)} — art pending</span>`;
+        }
+        return el;
+      }
 
-function showGallery() {
-  stage.innerHTML = `
+      function showGallery() {
+        stage.innerHTML = `
     <div class="wrap fade">
       <div class="gal-head">
         <h1 class="serif">Chain React Cards</h1>
@@ -388,21 +916,21 @@ function showGallery() {
       </div>
       <div class="grid" id="grid"></div>
     </div>`;
-  const grid = stage.querySelector("#grid");
-  CARDS.forEach(c => grid.appendChild(cardEl(c)));
-  stage.querySelector("#quiz").onclick = showIntro;
-  window.scrollTo(0, 0);
-}
+        const grid = stage.querySelector("#grid");
+        CARDS.forEach((c) => grid.appendChild(cardEl(c)));
+        stage.querySelector("#quiz").onclick = showIntro;
+        window.scrollTo(0, 0);
+      }
 
-/* ---------- boot ---------- */
-let CARDS = [];
-(async () => {
-  const data = await (await fetch("./cards.json")).json();
-  META = data.meta || {};
-  CARDS = data.cards || [];
-  BYID = Object.fromEntries(CARDS.map(c => [c.id, c]));
-  showIntro();
-})();
-</script>
-</body>
+      /* ---------- boot ---------- */
+      let CARDS = [];
+      (async () => {
+        const data = await (await fetch("./cards.json")).json();
+        META = data.meta || {};
+        CARDS = data.cards || [];
+        BYID = Object.fromEntries(CARDS.map((c) => [c.id, c]));
+        showIntro();
+      })();
+    </script>
+  </body>
 </html>
