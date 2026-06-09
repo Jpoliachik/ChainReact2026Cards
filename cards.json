@@ -32,20 +32,20 @@
     {
       "id": "the-bridge-troll",
       "name": "The Bridge Troll",
-      "hp": 130,
+      "hp": 140,
       "type": "native",
       "saying": "Crossing to native? That'll cost ya.",
       "moves": [
         {
           "name": "Riddle of the Crossing",
           "type": "native",
-          "damage": "30",
+          "damage": "60",
           "description": "The opponent can't act until they answer his riddle — and the reply always comes back a few frames late."
         },
         {
           "name": "Flattened to Fit",
           "type": "native",
-          "damage": "90",
+          "damage": "60",
           "description": "Mashes the opponent's data into plain JSON to cross; it arrives so dull their next hit lands weak."
         }
       ],
@@ -71,7 +71,7 @@
           "name": "Off the JS Thread",
           "type": "motion",
           "damage": "0",
-          "description": "Animates on the UI thread; the opponent can choke the JS thread all they like, this never stutters."
+          "description": "Animates on the UI thread - opponent can't block no matter how hard the JS thread tries."
         }
       ],
       "backgroundColor": ["indigo", "purple"],
@@ -84,18 +84,18 @@
       "name": "The Slop Sommelier",
       "hp": 110,
       "type": "ai",
-      "saying": "I can taste the AI in this PR.",
+      "saying": "This PR smells like AI.",
       "moves": [
         {
           "name": "Sniff Test",
           "type": "ai",
-          "damage": "0.7",
+          "damage": "5.5",
           "description": "Swirls the opponent's PR, sips, and names the model from the aftertaste — their AI cover is blown."
         },
         {
           "name": "Guardrail Pairing",
           "type": "process",
-          "damage": "100",
+          "damage": "50",
           "description": "Chaperones every AI move with a test and a lint rule — the opponent's next unverified attack is blocked."
         }
       ],
@@ -114,13 +114,13 @@
         {
           "name": "Print Statement",
           "type": "debug",
-          "damage": "404",
+          "damage": "40",
           "description": "Drops console.log('here') at the scene until the opponent's hidden bug confesses its position."
         },
         {
           "name": "Ship the Evidence",
           "type": "ship",
-          "damage": "-500",
+          "damage": "-50",
           "description": "Accidentally deploys one of the logs to prod — the damage lands on your own side of the field."
         }
       ],
@@ -132,7 +132,7 @@
     {
       "id": "the-agent-wrangler",
       "name": "The Agent Wrangler",
-      "hp": 120,
+      "hp": 110,
       "type": "ai",
       "saying": "Now which one of y'all touched prod?",
       "moves": [
@@ -157,7 +157,7 @@
     {
       "id": "the-dependency-prepper",
       "name": "The Dependency Prepper",
-      "hp": 140,
+      "hp": 200,
       "type": "security",
       "saying": "I've got a bunker full of node_modules.",
       "moves": [
@@ -170,7 +170,7 @@
         {
           "name": "Commit the node_modules",
           "type": "security",
-          "damage": "200K",
+          "damage": "20",
           "description": "Commits all 200,000 files to git — if npm ever burns down his build still stands. Defense way up."
         }
       ],
@@ -184,7 +184,7 @@
       "name": "The Prompt Whisperer",
       "hp": 70,
       "type": "ai",
-      "saying": "You're an expert. Make no mistakes.",
+      "saying": "You are an expert. Make no mistakes.",
       "moves": [
         {
           "name": "Phantom Tip",
@@ -207,7 +207,7 @@
     {
       "id": "the-nights-watch",
       "name": "The Night's Watch",
-      "hp": 160,
+      "hp": 120,
       "type": "ai",
       "saying": "Night gathered. The agent did not sleep.",
       "moves": [
@@ -220,7 +220,7 @@
         {
           "name": "Hold the Wall",
           "type": "security",
-          "damage": "100",
+          "damage": "60",
           "description": "Lets nothing in unreviewed — blocks the opponent's next move however confident the agent's summary."
         }
       ],
@@ -232,7 +232,7 @@
     {
       "id": "the-demo-illusionist",
       "name": "The Demo Illusionist",
-      "hp": 90,
+      "hp": 60,
       "type": "process",
       "saying": "Don't refresh. Whatever you do, don't refresh.",
       "moves": [
@@ -244,8 +244,8 @@
         },
         {
           "name": "The Loaded Deck",
-          "type": "process",
-          "damage": "200",
+          "type": "ship",
+          "damage": "100",
           "description": "Stubs the flaky endpoint with a hardcoded response — the demo can't fail and this attack never misses."
         }
       ],
@@ -257,7 +257,7 @@
     {
       "id": "the-pixel-surgeon",
       "name": "The Pixel Surgeon",
-      "hp": 100,
+      "hp": 90,
       "type": "craft",
       "saying": "That's two pixels off. I can see it from here.",
       "moves": [
@@ -287,16 +287,16 @@
       "saying": "Bring me the migration. I'll bear it.",
       "moves": [
         {
-          "name": "Lightning Rod",
-          "type": "process",
-          "damage": "40",
-          "description": "Draws all forty breaking changes onto himself so the team behind him takes none of the strike."
+          "name": "Fabric of Patience",
+          "type": "motion",
+          "damage": "60",
+          "description": "Reweaves the entire renderer thread by thread; a migration this calm can't be interrupted."
         },
         {
-          "name": "The Long Pilgrimage",
+          "name": "Bear the Migration",
           "type": "process",
-          "damage": "∞",
-          "description": "Walks the whole major-version migration alone, serene; nothing the opponent does ends it early."
+          "damage": "130",
+          "description": "Bears the whole major-version upgrade alone; the heavier the changelog, the less it moves him."
         }
       ],
       "backgroundColor": ["orange", "yellow"],
@@ -365,7 +365,7 @@
           "name": "The Two Rites",
           "type": "native",
           "damage": "2",
-          "description": "`padding` on iOS, `height` on Android — one rite holds, one fails, and never the same one twice."
+          "description": "Sets `padding` on iOS, `height` on Android - one rite holds, one fails - never the same one twice."
         },
         {
           "name": "The Devouring",
@@ -400,7 +400,7 @@
         }
       ],
       "backgroundColor": ["blue", "purple"],
-      "description": "A mischievous hooded cat-burglar who treats shipping past the App Store review queue as a gleeful midnight caper — why stand in the week-long line when you can slip across the rooftops and hand-deliver a fresh JS bundle while the city sleeps? Equal parts Assassin's Creed and Robin Hood, she beams `eas update` straight to grateful phones with a wink and a flourish, gone before the gate ever stirs. Gets away with it every time — until a change brushes native code, the runtimeVersion drifts, and her little parcel quietly reaches nobody. Cursed but shared: everyone running EAS Update knows the giddy thrill of patching prod live and dodging the line.",
+      "description": "A mischievous hooded burglar who treats shipping past the App Store review queue as a gleeful midnight caper — why stand in the week-long line when you can slip across the rooftops and hand-deliver a fresh JS bundle while the city sleeps? Equal parts Assassin's Creed and Robin Hood, she beams `eas update` straight to grateful phones with a wink and a flourish, gone before the gate ever stirs. Gets away with it every time — until a change brushes native code, the runtimeVersion drifts, and her little parcel quietly reaches nobody. Cursed but shared: everyone running EAS Update knows the giddy thrill of patching prod live and dodging the line.",
       "imagePrompt": "A mysterious hooded assassin in the Assassin's Creed mold — sleek pointed-hood cloak, face lost in deep shadow, lean and poised — moving in silent crouched stealth past a guarded checkpoint gate. Two stern blocky uniformed sentries flank the gate, each bearing a glowing white Apple-logo emblem, staring forward, oblivious. Behind their backs he slips a glowing contraband app-bundle parcel stamped 'eas update' through to a row of delighted phones lighting up on the far side. Moonlit, cool blues and electric-purple, long shadows. Cinematic, not cartoonish. Render only the label 'eas update' on the parcel.",
       "image": "art/the-over-the-air-smuggler.png"
     },
