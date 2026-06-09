@@ -63,7 +63,7 @@ each card has these fields:
   (each a `name` / `type` / `damage` / `description`), the art, and `backgroundColor`.
 - **Internal (building + generation only):** `description` (a short character bible so we
   reason about who they are) and `imagePrompt`.
-- Cut ideas live in [GRAVEYARD.md](GRAVEYARD.md), not in `cards.json`.
+- Cut ideas stay out of `cards.json`.
 
 ### `saying`
 

@@ -5,8 +5,7 @@ tarot register, Pokémon mechanics. Handed out at the conference: _"which one ar
 
 **▶ Live deck: https://jpoliachik.github.io/ChainReact2026Cards/**
 
-See [SPEC.md](SPEC.md) for the design north star and card schema, and
-[GRAVEYARD.md](GRAVEYARD.md) for cut ideas.
+See [SPEC.md](SPEC.md) for the design north star and card schema.
 
 ## The cards
 

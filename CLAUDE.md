@@ -34,24 +34,6 @@ writing, judging, or cutting cards. Key reminders:
 - **Curate for spread** across domains: `ai · native · motion · craft · process · conference`.
   Conference-meta cards land hardest in the room. Watch the coverage bar.
 
-## Phases
-
-- **Phase 1: selection + character design.** Get to a strong set of cards, each with a
-  written identity (`name`, `saying`, two `moves`, a character `description`, an
-  `imagePrompt`). Cut ideas go to `GRAVEYARD.md`, not `cards.json`. (15 cards locked so far;
-  target 30.)
-- **Phase 2 (in progress): the actual visual.** Each card now grows the full Pokémon card —
-  `hp`, a deck-domain `type` (`ai · native · motion · craft · ship · debug · security ·
-  process · fire`), `backgroundColor`, and a per-move `type` / `damage` — and renders to a 816×1110
-  trading card. See SPEC.md for the schema + type system. The type/damage values are tuned
-  for refinement, not final.
-
-  - `render/card.js` — the shared `createCard` renderer (ported from the Bob Ross trading-card
-    tool). `public/card.css` is its Tailwind stylesheet; `public/icons/` holds the type-icon
-    SVGs. One renderer feeds the gallery, the PNG export, and the static showcase.
-  - `pnpm export` (`export.js`, puppeteer + sharp) → `card-exports/<id>.png` at 300 DPI;
-    `pnpm export <id>` for one. The PNGs are committed.
-
 ## The gallery tool
 
 Viewing is the main use; edit `cards.json` directly to change a card, then reload.
