@@ -7,27 +7,24 @@
     {
       "id": "the-gesture-jester",
       "name": "The Gesture Jester",
-      "hp": 90,
+      "hp": 60,
       "type": "motion",
-      "saying": "Bet you didn't know you could swipe there.",
+      "saying": "Betcha didn't know you could swipe there!",
       "moves": [
         {
           "name": "Swipe to Delete",
           "type": "motion",
           "damage": "←",
-          "description": "Hides delete behind a swipe, the menu behind a long-press — every action one secret gesture away."
+          "description": "Hides every action behind a secret gesture — the opponent fumbles the input and their attack misses."
         },
         {
           "name": "Hidden Repertoire",
           "type": "motion",
           "damage": "60",
-          "description": "Tracks your finger at a buttery 60fps through pinch, drag and fling — flawless, and undiscoverable."
+          "description": "Strikes through pinch, drag and fling at a flawless 60fps — so smooth the opponent never sees it land."
         }
       ],
-      "backgroundColor": [
-        "purple",
-        "pink"
-      ],
+      "backgroundColor": ["purple", "pink"],
       "description": "A showman who can't resist tucking features behind gestures — swipe to delete, long-press for the menu, pinch, drag, double-tap, fling — and genuinely nails every one at a buttery 60fps. Treats the screen as a stage and each gesture as a trick to show off. The punchline writes itself: his interactions are flawless and almost entirely undiscoverable, so half his best work goes unfound until someone fat-fingers it by accident. Charming, theatrical, a little too clever — the app feels alive to those who know the moves and baffling to those who don't.",
       "imagePrompt": "Old-school cartoon court-jester with hypnotist flair: a grinning harlequin in diamond-patterned motley and a curled three-point hat, fingers splayed mid-flourish, conjuring glowing hypnotic spirals and looping ribbons of swipe-light that coil through the air. Swirly spiral eyes, mischievous wink. On a lamplit vaudeville stage, candy-colored.",
       "image": "art/the-gesture-jester.png"
@@ -43,13 +40,13 @@
           "name": "Riddle of the Crossing",
           "type": "native",
           "damage": "30",
-          "description": "Won't raise the gate until you answer his riddle — and the answer always comes back a few frames late."
+          "description": "The opponent can't act until they answer his riddle — and the reply always comes back a few frames late."
         },
         {
           "name": "Flattened to Fit",
           "type": "native",
           "damage": "90",
-          "description": "Mashes every object into plain JSON to cross — your data arrives duller than it left."
+          "description": "Mashes the opponent's data into plain JSON to cross; it arrives so dull their next hit lands weak."
         }
       ],
       "backgroundColor": "green",
@@ -62,25 +59,22 @@
       "name": "The Reanimated Wizard",
       "hp": 100,
       "type": "motion",
-      "saying": "You won't see the spell — only feel it.",
+      "saying": "You shall not pass - if FPS drops!",
       "moves": [
         {
           "name": "Buttery Sixty",
           "type": "motion",
           "damage": "60",
-          "description": "Conjures motion so smooth the screen feels alive in your hand — sixty frames, never one dropped."
+          "description": "Motion so smooth — sixty frames, never one dropped — the opponent is mesmerized and skips a turn."
         },
         {
           "name": "Off the JS Thread",
           "type": "motion",
           "damage": "0",
-          "description": "Runs the whole animation on the UI thread with a worklet; it never stutters, even as JS chokes."
+          "description": "Animates on the UI thread; the opponent can choke the JS thread all they like, this never stutters."
         }
       ],
-      "backgroundColor": [
-        "indigo",
-        "purple"
-      ],
+      "backgroundColor": ["indigo", "purple"],
       "description": "A sorcerer of motion who can feel a wrong easing curve in his bones — and bend it right. Fluent in shared values, worklets, and damping ratios, he conjures transitions so smooth and physical they feel less like code than magic: a list that flings just so, a sheet that settles like silk, a tap that lands with weight. Runs it all on the UI thread so it never drops a frame. The reason the app feels expensive. You won't consciously notice his work — you'll just feel that everything is alive.",
       "imagePrompt": "A classic wizard — tall pointed star-flecked hat, long flowing white beard, billowing robes — standing atop an ancient stone tower balcony and raising a glowing staff overhead. The staff is crowned not with a gem but with a glistening golden pat of enchanted magical butter, softly glowing and melting in slow buttery drips that trail luminous gold. With a sweep of the staff he conducts a great swirling ribbon of enchanted UI elements and glyphs, bringing them to life and sweeping them through the air in one flawless, liquid, butter-smooth eased arc that loops around him like a living current, slick and glossy as melted butter. Rich painterly fantasy detail, vivid candy-bright psychedelic color, a swirling aurora-and-galaxy sky behind. The wizard the clear focus, mid-cast. Render no words.",
       "image": "art/the-reanimated-wizard.png"
@@ -96,19 +90,16 @@
           "name": "Sniff Test",
           "type": "ai",
           "damage": "0.7",
-          "description": "Swirls a pull request, sips, and names which model wrote it from the aftertaste alone."
+          "description": "Swirls the opponent's PR, sips, and names the model from the aftertaste — their AI cover is blown."
         },
         {
           "name": "Guardrail Pairing",
           "type": "process",
           "damage": "100",
-          "description": "Refuses to let an AI suggestion near main without a test and a lint rule chaperoning it."
+          "description": "Chaperones every AI move with a test and a lint rule — the opponent's next unverified attack is blocked."
         }
       ],
-      "backgroundColor": [
-        "green",
-        "yellow"
-      ],
+      "backgroundColor": ["green", "yellow"],
       "description": "A discerning connoisseur of machine-written code who can identify the model, the temperature, and the vintage from a single function. The team's last line of defense against AI slop — pairs every suggestion with guardrails before it touches production. Not anti-AI, just refuses to swallow it unverified.",
       "imagePrompt": "Fancy wine-sommelier: an impeccably dressed connoisseur in tuxedo and tasting apron, swirling a crystal glass of glowing liquid code, nose in the glass, eyes narrowed in expert judgment. A tasting flight of little code-glasses on the table beside him, a spit-bucket overflowing with rejected slop, a scroll under one arm. At a sunlit outdoor tasting table among rows of vines at golden hour.",
       "image": "art/the-slop-sommelier.png"
@@ -124,13 +115,13 @@
           "name": "Print Statement",
           "type": "debug",
           "damage": "404",
-          "description": "Drops a console.log('here') at the scene of every crime until the bug confesses."
+          "description": "Drops console.log('here') at the scene until the opponent's hidden bug confesses its position."
         },
         {
           "name": "Ship the Evidence",
           "type": "ship",
           "damage": "-500",
-          "description": "Accidentally deploys one of the logs straight to production."
+          "description": "Accidentally deploys one of the logs to prod — the damage lands on your own side of the field."
         }
       ],
       "backgroundColor": "orange",
@@ -149,19 +140,16 @@
           "name": "Token Bonfire",
           "type": "ai",
           "damage": "1M",
-          "description": "Sets a million tokens ablaze before lunch and calls it research."
+          "description": "Sets a million tokens ablaze before lunch and calls it research — huge damage, and the bill comes due."
         },
         {
           "name": "Hot Swap",
           "type": "ai",
           "damage": "6",
-          "description": "Bounces between six terminals so fast he loses track of which agent is in prod."
+          "description": "Bounces across six terminals so fast he confuses himself — one's in prod and he's not sure which."
         }
       ],
-      "backgroundColor": [
-        "red",
-        "orange"
-      ],
+      "backgroundColor": ["red", "orange"],
       "description": "A frontier cowboy of the agentic era who runs more agents than any human can track and burns tokens like a campfire. Optimistic, overextended, context-switching so fast he forgets what each terminal was doing. Lives the thrill and terror of orchestrating things that act on their own.",
       "imagePrompt": "A classic dusty wild-west cowboy in a ten-gallon hat and chaps, mid-rodeo — hanging onto one bucking bronco with one hand while swinging a glowing lasso with the other to rope two more breaking loose. The broncos are unmistakably AI agents: glowing horses made of flowing terminal-green code with blinking-cursor glints for eyes, each branded on the flank with a glowing four-pointed AI sparkle ✦ like a cattle brand. Kicked-up dust and a sunset mesa behind, the cowboy the clear hero. Render only the ✦ sparkle brand on the horses, no other words.",
       "image": "art/the-agent-wrangler.png"
@@ -177,13 +165,13 @@
           "name": "Left-Pad Flashback",
           "type": "security",
           "damage": "11",
-          "description": "Still hasn't recovered from the day eleven lines un-published and broke the entire internet."
+          "description": "Eleven unpublished lines once broke the internet; the flashback freezes both sides in dread for a turn."
         },
         {
           "name": "Commit the node_modules",
           "type": "security",
           "damage": "200K",
-          "description": "Checks all 200,000 files into git itself; if npm ever burns down, his build still stands."
+          "description": "Commits all 200,000 files to git — if npm ever burns down his build still stands. Defense way up."
         }
       ],
       "backgroundColor": "green",
@@ -202,13 +190,13 @@
           "name": "Phantom Tip",
           "type": "ai",
           "damage": "$200",
-          "description": "Promises the model a $200 tip it will never receive; quality mysteriously improves."
+          "description": "Promises the model a $200 tip it'll never get; quality mysteriously rises and this move hits harder."
         },
         {
           "name": "All-Caps Plea",
           "type": "ai",
           "damage": "40",
-          "description": "When politeness fails, resorts to typing 'IMPORTANT: DO NOT HALLUCINATE' in all caps."
+          "description": "Politeness failing, screams 'IMPORTANT: DO NOT HALLUCINATE' — the all-caps plea rattles the opponent."
         }
       ],
       "backgroundColor": "purple",
@@ -227,19 +215,16 @@
           "name": "The Long Diff",
           "type": "ai",
           "damage": "4K",
-          "description": "Reads every line the agent wrote overnight — all four thousand — before a single one reaches main."
+          "description": "Reads all four thousand lines the agent wrote overnight — nothing the opponent slipped in goes unseen."
         },
         {
           "name": "Hold the Wall",
           "type": "security",
           "damage": "100",
-          "description": "Lets nothing into the codebase unreviewed, however confident the agent's overnight summary."
+          "description": "Lets nothing in unreviewed — blocks the opponent's next move however confident the agent's summary."
         }
       ],
-      "backgroundColor": [
-        "blue",
-        "indigo"
-      ],
+      "backgroundColor": ["blue", "indigo"],
       "description": "Sworn protector of the codebase, keeping the long watch while the autonomous agents grind through the night. Goes to bed with a prompt running and wakes to a wall of green-and-red diff that wrote itself in the dark. Trusts no summary, reads every line, reverts without mercy. Grim, loyal, perpetually under-slept — the shield that guards the realm of main from whatever crept in at 3am. Takes the oath seriously: the merge is dark and full of terrors.",
       "imagePrompt": "A grim bundled-up night-watchman in the style of a frozen northern fantasy ranger, an oversized shaggy black fur cloak swallowing his tiny determined face, standing guard atop a colossal wall built of faintly glowing code-blocks and commit-bricks that stretches into blue twilight. He grips a great longsword glowing like a cursor, holding up a long unfurling scroll of diff — glowing green additions and red deletions. Beyond the wall a dark forest bristles with faint glowing eyes. Cold blue dawn, falling snow, breath fogging.",
       "image": "art/the-nights-watch.png"
@@ -255,13 +240,13 @@
           "name": "Sleight of Hand",
           "type": "process",
           "damage": "80",
-          "description": "Performs the one rehearsed happy path so smoothly the audience never sees the four that crash."
+          "description": "Runs the one rehearsed happy path so smoothly the opponent never sees the four crashes it hides."
         },
         {
           "name": "The Loaded Deck",
           "type": "process",
           "damage": "200",
-          "description": "Stubs the flaky endpoint with a hardcoded response so the magic never depends on venue wifi."
+          "description": "Stubs the flaky endpoint with a hardcoded response — the demo can't fail and this attack never misses."
         }
       ],
       "backgroundColor": "purple",
@@ -280,19 +265,16 @@
           "name": "Sub-Pixel Incision",
           "type": "craft",
           "damage": "1",
-          "description": "Shifts a single element one point with a steady hand, and somehow the whole screen finally breathes."
+          "description": "Shifts one element a single point; the whole layout finally breathes and the team's nerves are healed."
         },
         {
           "name": "Eagle Eye",
           "type": "craft",
           "damage": "2",
-          "description": "Spots the misaligned padding from across the room and cannot, will not, unsee it."
+          "description": "Spots the 2px misalignment from across the room — the opponent's flaw is exposed and can't be hidden."
         }
       ],
-      "backgroundColor": [
-        "teal",
-        "cyan"
-      ],
+      "backgroundColor": ["teal", "cyan"],
       "description": "An exacting craftsperson who treats a layout like an operating table. Sees the 2px misalignment nobody else can, and will not close until it's perfect — often on a device they don't even own. Calm, precise, a little terrifying. The reason the UI feels right even though no one can say why. Not slow, just unwilling to ship a wound.",
       "imagePrompt": "A focused surgeon in teal scrubs, surgical mask and a head-mounted magnifier lamp, leaning over a glowing UI mockup laid out like a patient on the operating table, delicately nudging one single pixel-block into alignment with tiny calipers and a glowing scalpel. A floating holographic layout-grid pulses beside the table like a heartbeat monitor. Enormous magnified eyes behind the lens, steady concentration, cool teal operating-room glow.",
       "image": "art/the-pixel-surgeon.png"
@@ -308,19 +290,16 @@
           "name": "Lightning Rod",
           "type": "process",
           "damage": "40",
-          "description": "Takes every one of the forty breaking changes himself, so the team behind him never feels the strike."
+          "description": "Draws all forty breaking changes onto himself so the team behind him takes none of the strike."
         },
         {
           "name": "The Long Pilgrimage",
           "type": "process",
           "damage": "∞",
-          "description": "Walks the entire major-version migration alone, serene where others would rage, until the build runs green."
+          "description": "Walks the whole major-version migration alone, serene; nothing the opponent does ends it early."
         }
       ],
-      "backgroundColor": [
-        "orange",
-        "yellow"
-      ],
+      "backgroundColor": ["orange", "yellow"],
       "description": "An ascetic who has made peace with the dependency upgrade everyone else dreads. Finds quiet enlightenment in the Expo SDK bump, the major-version migration, the changelog no one wants to read. Takes on the suffering so the team doesn't have to, and emerges serene on the other side of a green build. Patient, selfless, faintly amused by your fear of breaking changes.",
       "imagePrompt": "A serene bald monk in flowing saffron robes, eyes closed in a blissful half-smile, sitting in calm lotus meditation with a soft glowing halo of peace. A single glowing SDK package floats before him like an object of devotion; an impossibly long changelog scroll unfurls gently down the mountainside beside him. Faint deprecation-warning glyphs drift down around him like falling cherry-blossom petals. Atop a tranquil misty mountain peak at soft golden dawn, utterly at peace — the monk the clear focus. Render no words.",
       "image": "art/the-upgrade-monk.png"
@@ -336,19 +315,16 @@
           "name": "Patch-Package and Pray",
           "type": "native",
           "damage": "2",
-          "description": "Fixes the broken native module by hand in node_modules and freezes it with patch-package."
+          "description": "Hand-fixes the native module and freezes it with patch-package — the opponent can't touch it now."
         },
         {
           "name": "Do Not Upgrade",
           "type": "native",
           "damage": "0.59",
-          "description": "Guards an app ejected on an ancient RN version — native folders hand-tuned, upgrade never run."
+          "description": "Guards an app on an ancient RN version, upgrade never run — no force on the field can move him."
         }
       ],
-      "backgroundColor": [
-        "yellow",
-        "orange"
-      ],
+      "backgroundColor": ["yellow", "orange"],
       "description": "A grease-stained veteran keeping an app that was ejected back when React Native shipped — long before Expo existed — alive by feel. Lives in the bare workflow: hand-patches native modules, knows every line of the ios/ and android/ folders, and has refused every RN upgrade since. Maintain over rewrite, every time — the counterpart to the Greenfield Speedster, who'd just spin up a fresh Expo app instead of nursing the old beast.",
       "imagePrompt": "A cheerful grease-stained mechanic in oil-smeared overalls, half-buried under the raised hood of a wheezing, battered, lovingly over-patched ancient machine — a hybrid of a vintage car engine and a creaky old server tower, cobbled from duct tape, zip-ties and mismatched parts, still chugging out contented smoke-rings. One hand swings a big wrench, the other gives a confident thumbs-up. Two battered crates at his feet read 'ios/' and 'android/'; an oil-can and coffee-stained manual nearby. Warm cluttered garage, hanging work-light, a few sparks. Render only the two crate labels 'ios/' and 'android/'.",
       "image": "art/the-brownfield-mechanic.png"
@@ -364,19 +340,16 @@
           "name": "npx create-expo-app",
           "type": "ship",
           "damage": "v1.0.0",
-          "description": "Floors it into a fresh project before the team's done debating whether to fix the old one."
+          "description": "Floors it into a fresh project before the team finishes debating the old one — always moves first."
         },
         {
           "name": "The Weekend Rewrite",
           "type": "ship",
           "damage": "Q3",
-          "description": "Swears the whole legacy app can be rebuilt from scratch by Monday. It cannot."
+          "description": "Swears the whole app can be rebuilt by Monday — charges a turn, and the move never quite lands."
         }
       ],
-      "backgroundColor": [
-        "green",
-        "cyan"
-      ],
+      "backgroundColor": ["green", "cyan"],
       "description": "A starry-eyed racer who lives for the open road of a fresh Expo app, happiest flooring it off the first commit. Craves clean architecture and zero native config — `npx create-expo-app`, never `pod install` — and is allergic to legacy and to native rebuilds, staying in managed Expo where a reload beats a recompile. The counterpart to the Brownfield Mechanic: hand them the battered ejected app and they'll just go spin up an empty one.",
       "imagePrompt": "A grinning helmeted racer in a sleek racing suit, flooring a candy-bright concept race car at full speed straight across a vast, wide-open green meadow — tall grass and wildflowers spraying up in its wake, rolling green hills running to an empty horizon, nothing built anywhere in sight. Heavy motion-blur and speed-lines, a lick of flame at the exhaust. Bright dewy morning, vivid racing-green and gold, the speeding car the clear focus. Render only the label '<App/>' on the hood.",
       "image": "art/the-greenfield-speedster.png"
@@ -392,19 +365,16 @@
           "name": "The Two Rites",
           "type": "native",
           "damage": "2",
-          "description": "Chants `padding` on iOS, `height` on Android, and trusts neither to hold."
+          "description": "`padding` on iOS, `height` on Android — one rite holds, one fails, and never the same one twice."
         },
         {
           "name": "The Devouring",
           "type": "craft",
           "damage": "↑",
-          "description": "The rising keyboard swallows the submit button whole; the user types blind into the dark."
+          "description": "The rising keyboard swallows the submit button — the opponent is left typing blind into the dark."
         }
       ],
-      "backgroundColor": [
-        "red",
-        "orange"
-      ],
+      "backgroundColor": ["red", "orange"],
       "description": "A robed warrior-priest locked in eternal holy war with KeyboardAvoidingView. Knows a different incantation for every OS — 'padding' on iOS, 'height' on Android — trusts none of them fully, and keeps a vial of holy water for the build where the keyboard wins anyway. Universal RN suffering: everyone who has shipped a form on mobile has stood in this exact battle and whispered the same prayer.",
       "imagePrompt": "A wild-eyed robed exorcist-priest mid-incantation, brandishing a glowing talisman in one hand and flinging holy water from a vial with the other, fending off a huge snarling demonic ON-SCREEN KEYBOARD monster that surges up like a tide from the bottom of a giant glowing phone, a tiny app input field cowering out of reach at the top. Holy radiant light clashing with the dark keyboard demon, embers and sparks, fiery red-and-gold glow.",
       "image": "art/the-keyboard-exorcist.png"
@@ -420,19 +390,16 @@
           "name": "Air Assassination",
           "type": "ship",
           "damage": "100%",
-          "description": "A silent strike from above: `eas update` lands on every device before review sees the blade."
+          "description": "A silent strike from above — `eas update` hits every device before review's guard can even raise."
         },
         {
           "name": "Stay in the Shadows",
           "type": "ship",
           "damage": "0",
-          "description": "Stays in pure JS, untouchable; one touch of native code trips the alarm and forces a real store review."
+          "description": "Stays in pure JS, untouchable — until one touch of native trips the alarm and breaks the stealth."
         }
       ],
-      "backgroundColor": [
-        "blue",
-        "purple"
-      ],
+      "backgroundColor": ["blue", "purple"],
       "description": "A mischievous hooded cat-burglar who treats shipping past the App Store review queue as a gleeful midnight caper — why stand in the week-long line when you can slip across the rooftops and hand-deliver a fresh JS bundle while the city sleeps? Equal parts Assassin's Creed and Robin Hood, she beams `eas update` straight to grateful phones with a wink and a flourish, gone before the gate ever stirs. Gets away with it every time — until a change brushes native code, the runtimeVersion drifts, and her little parcel quietly reaches nobody. Cursed but shared: everyone running EAS Update knows the giddy thrill of patching prod live and dodging the line.",
       "imagePrompt": "A mysterious hooded assassin in the Assassin's Creed mold — sleek pointed-hood cloak, face lost in deep shadow, lean and poised — moving in silent crouched stealth past a guarded checkpoint gate. Two stern blocky uniformed sentries flank the gate, each bearing a glowing white Apple-logo emblem, staring forward, oblivious. Behind their backs he slips a glowing contraband app-bundle parcel stamped 'eas update' through to a row of delighted phones lighting up on the far side. Moonlit, cool blues and electric-purple, long shadows. Cinematic, not cartoonish. Render only the label 'eas update' on the parcel.",
       "image": "art/the-over-the-air-smuggler.png"
@@ -448,19 +415,16 @@
           "name": "Look Into My Eyes",
           "type": "ship",
           "damage": "1",
-          "description": "Charms the reviewer with sweet notes and a pre-logged-in demo, and the build sails through on the first pass."
+          "description": "Charms the reviewer with love-letter notes and a pre-logged-in demo; they wave it through, dazed."
         },
         {
           "name": "Guideline 4.3",
           "type": "ship",
           "damage": "4.3",
-          "description": "The one charm she can't cast back — a faceless rejection for 'minimum functionality.'"
+          "description": "The one charm she can't undo — a faceless 'minimum functionality' rejection strikes from nowhere."
         }
       ],
-      "backgroundColor": [
-        "pink",
-        "purple"
-      ],
+      "backgroundColor": ["pink", "purple"],
       "description": "A glamorous sorceress who has mastered the dark, intimate art of App Store submission. She doesn't fear the review queue — she has seduced it. Reviewer notes written like love letters, a pristine pre-logged-in demo account, screenshots staged just so, metadata that whispers exactly what Apple wants to hear; her builds sail through on the first pass while everyone else eats three rejections. Knows the guidelines like scripture. The counterpart to the OTA Smuggler — where he sneaks past the gatekeeper, she charms it into saying yes. The terror underneath the confidence: the god is still faceless and capricious, and no spell is total — do everything right and Guideline 4.3 can still strike from nowhere, binding and unexplained.",
       "imagePrompt": "A glamorous enchantress-sorceress with a sly knowing smile and swirling hypnotic spiral eyes, leaning in to cast a charm — shimmering pink-and-violet magic and looping spirals pouring from her fingertips and gaze. Before her a faceless robed App Store gatekeeper (a cloaked figure with a softly glowing apple emblem on its chest) has gone glassy-eyed and slack, dreamily raising a giant glowing rubber stamp reading 'APPROVED' over her floating submission scroll. At a grand enchanted temple gate at dusk, drifting sparkles and incense, rich magenta-and-purple glow. Render only the label 'APPROVED' on the stamp.",
       "image": "art/the-app-store-enchantress.png"
@@ -476,19 +440,16 @@
           "name": "Edge Case from Beyond",
           "type": "debug",
           "damage": "13",
-          "description": "Conjures the case nobody built for — a rotate at checkout — and the happy path crumbles."
+          "description": "Conjures the case nobody built for — a rotate at checkout — and the opponent's happy path crumbles."
         },
         {
           "name": "It Repros on My Device",
           "type": "debug",
           "damage": "100",
-          "description": "Hits the impossible crash every time — only in the release build, on an Android no one else owns."
+          "description": "Hits the crash no one else can reproduce — every time, only on the device the opponent doesn't own."
         }
       ],
-      "backgroundColor": [
-        "purple",
-        "indigo"
-      ],
+      "backgroundColor": ["purple", "indigo"],
       "description": "A spectral tester who haunts the happy path, materializing only to do the unthinkable thing a real user would absolutely do — rotate mid-payment, flip airplane mode mid-upload, all on the cheapest Android in the drawer. Beloved and feared in equal measure: the crash they surface, the one that only shows up in the release build, is the one that would have shipped. The human truth — actual users really do all of this, and someone has to be the ghost who proves it.",
       "imagePrompt": "A translucent, softly glowing ghost-phantom wearing a conference QA lanyard with a mischievous spectral grin, phasing its ethereal hands straight through a giant glowing smartphone to twist it sideways mid-transaction while one wispy finger flicks on airplane-mode. Little glowing bug-spirits float around it; in the corner a tiny terrified developer watches a crash bloom red. Playful haunted-house energy, moonlit purple-and-indigo glow, drifting ectoplasm mist.",
       "image": "art/the-qa-phantom.png"
@@ -504,19 +465,16 @@
           "name": "Hear Both Sides",
           "type": "process",
           "damage": "2",
-          "description": "Weighs HEAD against incoming line by line — even the Podfile.lock conflict no one else will touch."
+          "description": "Weighs HEAD against incoming line by line — even the Podfile.lock conflict, both sides' moves cancel."
         },
         {
           "name": "Ruling from the Bench",
           "type": "native",
           "damage": "200",
-          "description": "Renders the binding verdict on the post-upgrade ios/ and android/ conflict, and the rebase comes out clean."
+          "description": "Binding verdict on the post-upgrade ios/ and android/ conflict — the opponent must accept; rebase clean."
         }
       ],
-      "backgroundColor": [
-        "cyan",
-        "blue"
-      ],
+      "backgroundColor": ["cyan", "blue"],
       "description": "The calm, impartial arbiter every team needs when two branches collide and neither developer will yield — never more so than after a React Native upgrade, when the ios/, android/, and Podfile.lock conflicts pile up. Hears both sides, weighs the diff with a steady hand, and brings order to the chaos of '<<<<<<< HEAD'. Respected, fair, faintly theatrical in the wig — the senior who settles the standoff instead of bleeding in the arena.",
       "imagePrompt": "A dignified judge in a tall white curly barrister's wig and flowing black robe, perched high behind an ornate courtroom bench, banging a single glowing gavel. Below, two glowing rival code-branch streams are tangled in tug-of-war, knotted with '<<<<<<<' conflict chevrons; golden scales of justice weigh two little glowing code-blocks labeled 'HEAD' and 'incoming' in balance. Stately wood-paneled courtroom, warm amber light. Render only the two scale labels 'HEAD' and 'incoming'.",
       "image": "art/the-merge-magistrate.png"
@@ -532,19 +490,16 @@
           "name": "Heirloom Variables",
           "type": "craft",
           "damage": "0%",
-          "description": "No monocrop AI here — his variable names are heirloom stock: odd, local, unmistakably his."
+          "description": "No monocrop AI here — his heirloom variable names are so his own no model can predict the next move."
         },
         {
           "name": "Knows Every Row",
           "type": "craft",
           "damage": "100%",
-          "description": "Planted every line by hand, so he knows it by heart. When prod burns at 3am he alone knows where it's buried."
+          "description": "Planted every line by hand — when prod burns at 3am he alone knows where it's buried, never panics."
         }
       ],
-      "backgroundColor": [
-        "green",
-        "yellow"
-      ],
+      "backgroundColor": ["green", "yellow"],
       "description": "A wholesome organic farmer of code who believes the best software is grown, not generated. Tends his repository like an heirloom garden — every function hand-planted, free-range, small-batch, lovingly weeded by hand. Looks on the room's factory-farmed AI slop the way a farmers-market regular eyes a vacuum-sealed TV dinner: politely horrified. Not a luddite — a craftsman who'd simply rather raise his code than order it. Slow by the seasons, but he knows every row because his own hands planted it, and what he ships is nourishing, traceable, and entirely his. The proud anti-AI artisan the agentic deck needs as its warm, earthy foil. Farm-to-table, commit by commit.",
       "imagePrompt": "A wholesome beaming organic farmer in worn denim overalls, rolled sleeves and a wide straw hat, kneeling proudly in a lush sun-drenched garden where CODE grows like heirloom crops — glowing curly-braces, leafy function-vines and plump code-vegetables sprouting in tidy hand-tended rows. He cradles a wicker basket overflowing with freshly hand-picked glowing code snippets, watering can and trowel beside him. Far off, a hulking industrial harvester-combine (faintly AI-glowing, churning grey machine-made slop) works a barren field — and he's turned his back to it, unbothered. Golden-hour light, rolling green farmland, butterflies and pollen motes.",
       "image": "art/the-organic-code-farmer.png"
@@ -560,19 +515,16 @@
           "name": "Drop to Native",
           "type": "native",
           "damage": "2",
-          "description": "When JavaScript hits a wall he drops below and solves it twice — once in Swift, once in Kotlin."
+          "description": "When JS hits a wall he drops below and strikes twice — once in Swift, once in Kotlin."
         },
         {
           "name": "Over Any Wall",
           "type": "native",
           "damage": "∞",
-          "description": "Every 'React Native can't' is just a door he knows is unlocked one layer down."
+          "description": "Every 'React Native can't' is a door he opens from underneath — no wall the opponent raises holds."
         }
       ],
-      "backgroundColor": [
-        "indigo",
-        "cyan"
-      ],
+      "backgroundColor": ["indigo", "cyan"],
       "description": "The team's secret weapon, and never blocked. When React Native runs out of road — no library, no API, a platform limit everyone else accepts as final — the Native Ninja slips one layer down and does it in Swift or Kotlin. A TurboModule here, a native view manager there, a patched SDK nobody else dared open; it comes back working and no one's quite sure how. Fearless in Xcode and Android Studio, fluent below the bridge where most RN devs won't go. To him 'React Native can't do that' isn't a wall — it's a door he knows is unlocked from underneath. The counterpoint to the Bridge Troll: where the Troll guards the crossing, the Ninja treats it as a back door left open.",
       "imagePrompt": "A sleek acrobatic cartoon ninja in a dark indigo hood and mask, caught mid-leap across a dark chasm — launching off a crumbling glowing JavaScript-yellow ledge (a small carved 'JS' sign, a dead-end wall) toward a cooler 'native' platform of glowing metal gears and circuitry, where two banners await: the orange Swift bird labeled 'Swift' and the Kotlin square labeled 'Kotlin'. In each hand he hurls a glowing shuriken — one shaped like the Swift bird, one like the Kotlin square. Motion-trails and speed-lines trace his arc, a katana on his back. Moody night chasm, electric-cyan glow, deep indigo. Render only the labels 'JS', 'Swift', and 'Kotlin'.",
       "image": "art/the-native-ninja.png"
@@ -588,19 +540,16 @@
           "name": "Plaintext in the Glovebox",
           "type": "security",
           "damage": "$5K",
-          "description": "Finds the key you left in AsyncStorage and writes you up — that belongs in the Keychain, son."
+          "description": "Finds the key you left in AsyncStorage — Keychain, son. Writes you up; the opponent eats a $5K fine."
         },
         {
           "name": "Running a Red",
           "type": "security",
           "damage": "$300",
-          "description": "Your browser's Update button has glowed red for weeks — he books you for blowing the light."
+          "description": "Your Update button's glowed red for weeks — he books you for running it. Citation served, $300 due."
         }
       ],
-      "backgroundColor": [
-        "blue",
-        "indigo"
-      ],
+      "backgroundColor": ["blue", "indigo"],
       "description": "A by-the-book OpSec cop who patrols the codebase enforcing the rules nobody loves until the day they save them. Pulls over PRs for transitive CVEs, writes citations for secrets committed in plaintext, mandates 2FA, and taps the update banner you've snoozed for a month. Not malicious — genuinely the reason the team isn't on the breach blog. Lovably over-zealous, immovable on policy, secretly soft. The law the OTA Smuggler keeps dodging at the border crossing, and the scourge of anyone who clicks 'allow all' without reading. Universal guilt under the badge: everyone has waved off the security update 'just one more day.'",
       "imagePrompt": "A fit male cop in tactical gear with mirrored aviator sunglasses, a gold badge reading '403', standing in a rain-slick night intersection — one hand jabbing an accusing finger up at the traffic light, the other holding up a freshly-torn citation with a knowing smirk. The traffic signal's red lamp is unmistakably a glowing red browser 'Update' notification badge (a round red button marked 'UPDATE') — the light he says you blew through. A guilty little app-car skids past having just run it, hazard lights blinking. His cruiser idles behind, light bar flashing red-and-blue. Cinematic night lighting, the cop the clear focus. Render only the labels '403' on the badge and 'UPDATE' on the light.",
       "image": "art/the-opsec-cop.png"
@@ -616,19 +565,16 @@
           "name": "Sear of First Light",
           "type": "craft",
           "damage": "255",
-          "description": "An app flashes pure white at 2am; the retinas scorch and the demon shrieks back into the dark."
+          "description": "An app flashes pure white at 2am — the searing light scorches the demon and he shrieks into the dark."
         },
         {
           "name": "Reopen the Request",
           "type": "process",
           "damage": "∞",
-          "description": "The dark-mode ticket won't stay closed — reopened every release until the whole app goes dark."
+          "description": "The dark-mode ticket won't stay closed — reopened every release, chipping away till the app goes dark."
         }
       ],
-      "backgroundColor": [
-        "purple",
-        "blue"
-      ],
+      "backgroundColor": ["purple", "blue"],
       "description": "A gleeful little gremlin of the night who physically cannot abide a light background. Lives in solarized-dark terminals and dimmed IDEs, recoils hissing from any white screen, and one-stars every app that ships without a dark theme. Not a villain — the patron creature of everyone who's ever muttered 'why is this app trying to blind me' at 2am. The dark-mode feature request that haunts the issue tracker, given a face and a tail. Universal guilt: half the room is nodding.",
       "imagePrompt": "A small, impish shadow-demon of the night — round and mischievous with big glowing moon-pale eyes, little curved horns, tattered bat-wings and a flicking pointed tail, body a deep velvety midnight-violet. Mid-stride and gleefully hauling an enormous billowing cloak of star-studded night sky across a searing, blown-out white landscape, dragging cozy darkness over the painful glare like pulling a blanket over the whole world. Behind him the land is scorched blinding white; under his trailing cloak it melts into soft restful dark dotted with stars and fireflies. He flinches and throws one clawed hand up against the harsh light, fanged grin half-smug half-pained, wisps of smoke curling off his singed skin. Cold harsh white burning into deep indigo-and-violet starlit calm.",
       "image": "art/the-dark-mode-demon.png"
@@ -644,7 +590,7 @@
           "name": "The Blindfold Trial",
           "type": "craft",
           "damage": "44",
-          "description": "Journeys the full app by voice alone; any button found unnamed or thinner than 44 bars is vanquished."
+          "description": "Travels the app by voice alone; any button unnamed or thinner than 44 points is struck from the board."
         },
         {
           "name": "Trial by Light",
@@ -653,10 +599,7 @@
           "description": "Holds every hue to the sacred 4.5 ratio; the faint grey-on-grey is banished into shadow."
         }
       ],
-      "backgroundColor": [
-        "teal",
-        "blue"
-      ],
+      "backgroundColor": ["teal", "blue"],
       "description": "The righteous conscience of the team — a holy warrior for the user nobody else designs for. Turns on VoiceOver and navigates the whole app eyes closed, finds the button that announces only 'button, button, button,' measures every contrast ratio, and refuses to ship a single unlabeled touchable or a tap target under 44 points. Beloved and a little exhausting; the reason the app works for everyone, not just the people who built it. Every number is real scripture — 44pt minimum tap target, 4.5:1 WCAG AA contrast. Defends the unseen user the way a paladin defends the weak.",
       "imagePrompt": "A radiant holy paladin in gleaming armor, striding through a darkened twilight mountain pass and raising high a great glowing shield emblazoned with the universal accessibility symbol — a simple white figure with outstretched arms inside a circle. Holy light blazes from the shield and floods the path ahead, burning back the shadows so a trail of small grateful glowing wisp-travelers can follow safely behind him through ground no one else ever lit for them. A luminous sword of light in his other hand. A dim rugged mountain pass at dusk, transformed by warm golden-and-teal radiance pouring from the shield. Render only the accessibility symbol on the shield (the figure-in-a-circle icon) and no other words.",
       "image": "art/the-a11y-paladin.png"
@@ -672,13 +615,13 @@
           "name": "Count the Reps",
           "type": "motion",
           "damage": "50",
-          "description": "Makes each needless re-render drop and count out loud — one careless tap, fifty reps, soldier."
+          "description": "Every needless re-render the opponent makes drops and counts out loud — one careless tap, fifty reps."
         },
         {
           "name": "Trim the Fat",
           "type": "motion",
           "damage": "120",
-          "description": "Puts the whole component tree on a memo-and-useCallback diet until no render goes unearned."
+          "description": "Puts the opponent's whole component tree on a memo-and-useCallback diet until the bloat is gone."
         }
       ],
       "backgroundColor": "red",
@@ -697,19 +640,16 @@
           "name": "Every Commit a Release",
           "type": "ship",
           "damage": "+1",
-          "description": "Bumps the patch version for a one-character change; the deploy pipeline never once gets to rest."
+          "description": "Bumps the patch for a one-character change; the pipeline never rests — this move has no cooldown."
         },
         {
           "name": "Bump the Number",
           "type": "ship",
           "damage": "0.0.32861",
-          "description": "The semver lost meaning thousands of releases ago, yet the number still climbs."
+          "description": "The semver lost meaning thousands of releases ago — yet the number climbs, +1 every single turn."
         }
       ],
-      "backgroundColor": [
-        "yellow",
-        "orange"
-      ],
+      "backgroundColor": ["yellow", "orange"],
       "description": "A devout believer that no change is too small to ship. Every commit — a typo fix, a comment tweak, a whitespace nudge — is consecrated with its own point release, blessed and deployed to the faithful. The version number long ago spiraled past sense into the tens of thousands, and he wears it like vestments. Joyful, compulsive, allergic to batching. Drives the release pipeline like a bell that never stops ringing. The team teases him, but nothing he writes sits unreleased — and he sleeps fine knowing main and prod are never more than one commit apart.",
       "imagePrompt": "A beaming pope/cardinal figure in flowing gold-and-white vestments and a tall mitre, standing on a cathedral balcony with both arms raised in benediction, gripping a glowing crozier-staff topped with a small rocket symbol and a banner reading 'DEPLOY'. Below, a flock of tiny cute commit-creatures (little glowing orbs with faces) gaze up adoringly as release-confetti and light rain down. Behind him a giant ornate cathedral tally-board displays in big illuminated numerals 'v0.0.32861'. Warm gold-and-orange holy light, stained-glass glow, jubilant. Render only the labels 'DEPLOY' on the banner and 'v0.0.32861' on the board.",
       "image": "art/the-patch-pope.png"
@@ -725,7 +665,7 @@
           "name": "Read the Room",
           "type": "ai",
           "damage": "VIBES",
-          "description": "Senses which docs the moment needs and drops them into the agent's context, right on the beat."
+          "description": "Senses which docs the moment needs and drops them into context on the beat — no ally hallucinates."
         },
         {
           "name": "Cut the Record",
@@ -734,10 +674,7 @@
           "description": "Catches the fix nobody wrote down and presses it to wax — 'did you update the docs with this?'"
         }
       ],
-      "backgroundColor": [
-        "indigo",
-        "pink"
-      ],
+      "backgroundColor": ["indigo", "pink"],
       "description": "The crowd-pleasing selector of the codebase — part hype-man, part librarian. He never polices docs; he serves them. Reads what the room — and every agent — is missing and drops the exact reference into context at the perfect moment, so nothing hallucinates and nobody codes blind. Keeps the whole crate organized and fresh, slides a friendly 'did you update the docs with this?' onto every PR, and treats good context like a great set: the right track at the right time. Generous, tasteful, tuned-in — the reason the agents always have what they need and the team always finds the doc. Where the old gatekeepers nagged, the Context DJ just keeps the floor moving.",
       "imagePrompt": "An effortlessly cool, stoic DJ in dark wraparound sunglasses — calm and unbothered with a faint knowing 'I got you' smirk — standing behind a sleek glowing techno console. One hand raised, holding a vinyl docs-record; Below, a crowd of little glowing agent-bots vibe with their hands up; laser beams and neon strobes cut through the dark, hazy techno-club air. Sleek, confident, electric — the DJ and his 'docs' disc the clear focus.",
       "image": "art/the-context-dj.png"
@@ -753,19 +690,16 @@
           "name": "Just One More Idea",
           "type": "process",
           "damage": "+1",
-          "description": "Drops a brilliant feature into a full sprint; the whole plan rearranges overnight to chase it."
+          "description": "Drops one brilliant feature into a full sprint — the opponent's whole plan rearranges overnight."
         },
         {
           "name": "Siren Song",
           "type": "process",
           "damage": "∞",
-          "description": "The idea's so good no one can say no — and the roadmap drifts quietly onto the rocks."
+          "description": "The idea's so good the opponent can't say no — and their roadmap drifts quietly onto the rocks."
         }
       ],
-      "backgroundColor": [
-        "pink",
-        "purple"
-      ],
+      "backgroundColor": ["pink", "purple"],
       "description": "The boundless idea-fountain of the team — a founder, PM, or stakeholder whose mind never stops generating the next brilliant feature. Each new thought is genuinely good, delivered with such warmth and conviction that no one can bring themselves to say no, and a sprint that was full an hour ago quietly rearranges itself to chase it. Not a villain — the visionary spark that keeps the product ambitious — but every idea is someone else's unplanned week. Magnetic, optimistic, allergic to 'later.' The card you hand the person who's always three features ahead of the roadmap. Affectionate barb: the song is beautiful, and the rocks are real.",
       "imagePrompt": "A glamorous siren rising large from the sea, mid-song — her glowing song pours from her mouth and swells into one towering wave. Atop that wave a small boat marked 'ENGINEERING' is tossed high, its tiny crew hanging on. Open sea, wide empty twilight sky, the siren the clear focus. Pink-and-purple dusk, dreamy glow, alluring not menacing. Render only the label 'ENGINEERING' on the boat.",
       "image": "art/the-scope-siren.png"
@@ -781,19 +715,16 @@
           "name": "The Ten-Thousand-Line Decree",
           "type": "ai",
           "damage": "10K",
-          "description": "Sends no agent off without a spec so exacting it took longer to write than the task itself."
+          "description": "Binds the agent in a spec so exacting it outran the task — the opponent has no move left to chance."
         },
         {
           "name": "Begin Again",
           "type": "ai",
           "damage": "404",
-          "description": "One flawed result and the agent's memory is wiped to restart the whole quest from nothing."
+          "description": "One flawed result and the agent's memory is wiped — the opponent restarts the whole quest from nothing."
         }
       ],
-      "backgroundColor": [
-        "indigo",
-        "purple"
-      ],
+      "backgroundColor": ["indigo", "purple"],
       "description": "A monarch who rules a kingdom of agents from an iron throne and will not let one ride out without orders. Drafts spec-decrees ten thousand lines long — every constraint, edge case, and forbidden move spelled out — then dispatches a court of agents on quests that run for hours, to be reconciled when they return. Exacting, needy, impossible to satisfy: one hallucinated result, one misread instruction, and the offender is banished from the realm or sent back to begin the whole quest from nothing. Gets remarkable work out of the machine precisely because nothing is left to its discretion. The disciplined counterpart to the Agent Wrangler — where the Wrangler loses track of his stampede, the Tyrant commands hers by decree.",
       "imagePrompt": "A stern crowned monarch on a towering iron throne, unfurling an enormous scroll-decree that spills down the throne steps, one hand raised in command. At the foot of the throne a row of small glowing agent-knights kneel, awaiting orders. A vast shadowed throne hall behind. Regal indigo-and-purple light, the monarch the clear focus. Render no words.",
       "image": "art/the-spec-tyrant.png"
@@ -809,19 +740,16 @@
           "name": "Skip Trace",
           "type": "debug",
           "damage": "$5K",
-          "description": "Follows the fugitive crash frame by frame down the stack trace until it's cornered in prod."
+          "description": "Follows the fugitive crash frame by frame down the stack trace — it can't flee prod, can't hide."
         },
         {
           "name": "Caught in the Act",
           "type": "debug",
           "damage": "100%",
-          "description": "The crash that never repros on his machine — he stakes out prod and catches it red-handed."
+          "description": "The crash that never repros on his machine — he stakes out prod and catches it red-handed, every time."
         }
       ],
-      "backgroundColor": [
-        "orange",
-        "yellow"
-      ],
+      "backgroundColor": ["orange", "yellow"],
       "description": "A flamboyant reality-TV bounty hunter for fugitive bugs. The crash that skipped bail into production, the regression that fled in a release, the heisenbug that vanishes the moment you look — he hunts them all down with bravado and a can of bug spray, and will not quit until it's cuffed. Where the Console Detective deduces a bug at the desk, the Bug Bounty Hunter chases it across Sentry, the stack trace, and three release builds, and drags it back in handcuffs. All swagger and shades on the hunt — but soft underneath: at the capture he says a little prayer over the bug, treats it with mercy, and files the ticket with care. Lives for the gnarly 3am prod incident everyone else dreads. The double meaning lands for the security crowd too — every bounty's a payout. Nobody skips bail in his codebase.",
       "imagePrompt": "A flamboyant reality-TV bounty hunter — long sun-bleached blonde mullet, wraparound mirrored sunglasses, black leather fingerless gloves and a studded leather vest over a tank top, gold chains — striking a triumphant action pose. One hand hoists a big aerosol can clearly labeled 'BUG SPRAY' aloft like a weapon, the other drags a cuffed, sheepish cartoon bug-fugitive (a chunky beetle-creature with a glowing red error-glow and tiny handcuffs) by the scruff. A 'WANTED' poster of the bug is pinned to a post beside him. Hot dramatic lens-flare, sun-baked desert-highway palette, kicked-up dust, the hunter the clear hero. Render only the labels 'BUG SPRAY' on the can and 'WANTED' on the poster.",
       "image": "art/the-bug-bounty-hunter.png"
