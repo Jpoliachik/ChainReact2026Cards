@@ -19,7 +19,7 @@ instinct** — it's the whole read.
 ```
 Q1 — "Which is most you?"
 ├─ A · "It's me and the machines now."                → AI stance        (7 cards)
-├─ B · "I live below the bridge."                     → Native depth     (4 cards)
+├─ B · "I live down in the native layer."             → Native depth     (4 cards)
 ├─ C · "It has to FEEL right or I can't ship."        → Craft & motion   (6 cards)
 ├─ D · "Shipping is the whole game."                  → Past the gate    (4 cards)
 └─ E · "Someone has to keep this from falling apart." → Order-keepers    (9 cards)
@@ -38,21 +38,21 @@ Q2a · "Where do you actually stand on the AI?"
 │       ├─ "I cue up exactly the right context, on demand."      → The Context DJ
 │       └─ "I hand it a 10,000-line spec and hold it to all of it." → The Spec Tyrant
 │
-└─ "Trust, but verify — or don't trust at all."
+└─ "I keep AI on a short leash."
     └─ Q3a' · "How much do you let it in?"
         ├─ "Not at all — I grow my code by hand."               → The Organic Code Farmer
         ├─ "I read every overnight line myself, solo."          → The Night's Watch
         └─ "I can taste which model wrote a PR — no slop passes." → The Slop Sommelier
 ```
 
-## Branch B — "Below the bridge" (Native depth · 4)
+## Branch B — "Down in the native layer" (Native depth · 4)
 
 ```
 Q2b · "What's your world?"
-├─ "An ancient ejected beast I keep alive by hand."   → The Brownfield Mechanic
-├─ "The bridge itself — I guard what crosses."        → The Bridge Troll
+├─ "A giant legacy app I keep alive by hand."         → The Brownfield Mechanic
+├─ "The line between JS and native — I own that crossing." → The Bridge Troll
 ├─ "When RN runs out of road, I drop into Swift/Kotlin." → The Native Ninja
-└─ "Banishing the native quirk that haunts the UI."   → The Keyboard Exorcist
+└─ "The cursed native bug nobody else can reproduce." → The Keyboard Exorcist
 ```
 
 ## Branch C — "It has to feel right" (Craft & motion · 6)
