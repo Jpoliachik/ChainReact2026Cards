@@ -395,26 +395,26 @@
         {
           "name": "Stay in the Shadows",
           "type": "ship",
-          "damage": "0",
+          "damage": "JS",
           "description": "Stays in pure JS, untouchable — until one touch of native trips the alarm and breaks the stealth."
         }
       ],
       "backgroundColor": ["blue", "purple"],
       "description": "A mischievous hooded burglar who treats shipping past the App Store review queue as a gleeful midnight caper — why stand in the week-long line when you can slip across the rooftops and hand-deliver a fresh JS bundle while the city sleeps? Equal parts Assassin's Creed and Robin Hood, she beams `eas update` straight to grateful phones with a wink and a flourish, gone before the gate ever stirs. Gets away with it every time — until a change brushes native code, the runtimeVersion drifts, and her little parcel quietly reaches nobody. Cursed but shared: everyone running EAS Update knows the giddy thrill of patching prod live and dodging the line.",
-      "imagePrompt": "A mysterious hooded assassin in the Assassin's Creed mold — sleek pointed-hood cloak, face lost in deep shadow, lean and poised — moving in silent crouched stealth past a guarded checkpoint gate. Two stern blocky uniformed sentries flank the gate, each bearing a glowing white Apple-logo emblem, staring forward, oblivious. Behind their backs he slips a glowing contraband app-bundle parcel stamped 'eas update' through to a row of delighted phones lighting up on the far side. Moonlit, cool blues and electric-purple, long shadows. Cinematic, not cartoonish. Render only the label 'eas update' on the parcel.",
+      "imagePrompt": "A mysterious hooded assassin in the Assassin's Creed mold — sleek pointed-hood cloak, face lost in deep shadow, lean and poised — soaring stealthily above the walled garden stealth past a guarded checkpoint gate. Two stern blocky uniformed sentries flank the gate, each bearing a glowing white Apple-logo emblem. Behind their backs she slips a glowing contraband app-bundle parcel. Moonlit, cool blues and electric-purple, long shadows. Cinematic.",
       "image": "art/the-over-the-air-smuggler.png"
     },
     {
       "id": "the-app-store-enchantress",
       "name": "The App Store Enchantress",
-      "hp": 24,
+      "hp": 90,
       "type": "ship",
       "saying": "Look into my eyes, and approve my submission.",
       "moves": [
         {
           "name": "Look Into My Eyes",
           "type": "ship",
-          "damage": "1",
+          "damage": "70",
           "description": "Charms the reviewer with love-letter notes and a pre-logged-in demo; they wave it through, dazed."
         },
         {
@@ -445,7 +445,7 @@
         {
           "name": "It Repros on My Device",
           "type": "debug",
-          "damage": "100",
+          "damage": "60",
           "description": "Hits the crash no one else can reproduce — every time, only on the device the opponent doesn't own."
         }
       ],
@@ -457,7 +457,7 @@
     {
       "id": "the-merge-magistrate",
       "name": "The Merge Magistrate",
-      "hp": 140,
+      "hp": 100,
       "type": "process",
       "saying": "Both branches make their case — only one merges.",
       "moves": [
@@ -471,7 +471,7 @@
           "name": "Ruling from the Bench",
           "type": "native",
           "damage": "200",
-          "description": "Binding verdict on the post-upgrade ios/ and android/ conflict — the opponent must accept; rebase clean."
+          "description": "Binding verdict on the post-upgrade merge conflict — the opponent must accept; rebase clean."
         }
       ],
       "backgroundColor": ["cyan", "blue"],
@@ -482,7 +482,7 @@
     {
       "id": "the-organic-code-farmer",
       "name": "The Organic Code Farmer",
-      "hp": 100,
+      "hp": 120,
       "type": "ai",
       "saying": "Free-range, organic, certified human.",
       "moves": [
@@ -495,7 +495,7 @@
         {
           "name": "Knows Every Row",
           "type": "craft",
-          "damage": "100%",
+          "damage": "60",
           "description": "Planted every line by hand — when prod burns at 3am he alone knows where it's buried, never panics."
         }
       ],
@@ -509,18 +509,18 @@
       "name": "The Native Ninja",
       "hp": 60,
       "type": "native",
-      "saying": "There's always a native way.",
+      "saying": "Can it be done in React Native? Always.",
       "moves": [
         {
           "name": "Drop to Native",
           "type": "native",
-          "damage": "2",
+          "damage": "11",
           "description": "When JS hits a wall he drops below and strikes twice — once in Swift, once in Kotlin."
         },
         {
           "name": "Over Any Wall",
           "type": "native",
-          "damage": "∞",
+          "damage": "100%",
           "description": "Every 'React Native can't' is a door he opens from underneath — no wall the opponent raises holds."
         }
       ],
@@ -532,15 +532,15 @@
     {
       "id": "the-opsec-cop",
       "name": "The OpSec Cop",
-      "hp": 403,
+      "hp": 100,
       "type": "security",
       "saying": "Do you know why I stopped your build?",
       "moves": [
         {
           "name": "Plaintext in the Glovebox",
           "type": "security",
-          "damage": "$5K",
-          "description": "Finds the key you left in AsyncStorage — Keychain, son. Writes you up; the opponent eats a $5K fine."
+          "damage": "PWNED",
+          "description": "Finds the key you left in AsyncStorage — that belongs in the Keychain, son."
         },
         {
           "name": "Running a Red",
@@ -590,7 +590,7 @@
           "name": "The Blindfold Trial",
           "type": "craft",
           "damage": "44",
-          "description": "Travels the app by voice alone; any button unnamed or thinner than 44 points is struck from the board."
+          "description": "Travels the app by voice alone; any button unnamed or thinner than 44 points is banished from the realm."
         },
         {
           "name": "Trial by Light",
@@ -620,7 +620,7 @@
         {
           "name": "Trim the Fat",
           "type": "motion",
-          "damage": "120",
+          "damage": "100",
           "description": "Puts the opponent's whole component tree on a memo-and-useCallback diet until the bloat is gone."
         }
       ],
@@ -634,23 +634,23 @@
       "name": "The Patch Pope",
       "hp": 70,
       "type": "ship",
-      "saying": "Typo fix? That's a release.",
+      "saying": "Blessed are those who deploy on Fridays.",
       "moves": [
         {
-          "name": "Every Commit a Release",
-          "type": "ship",
-          "damage": "+1",
-          "description": "Bumps the patch for a one-character change; the pipeline never rests — this move has no cooldown."
+          "name": "Holy War",
+          "type": "process",
+          "damage": "5",
+          "description": "Reignites the deploy-on-Friday debate; the whole channel piles in and both sides take the heat."
         },
         {
-          "name": "Bump the Number",
+          "name": "Go Forth and Deploy",
           "type": "ship",
-          "damage": "0.0.32861",
-          "description": "The semver lost meaning thousands of releases ago — yet the number climbs, +1 every single turn."
+          "damage": "200",
+          "description": "Blesses whatever you've got and sends it straight to prod — a benediction that never misses."
         }
       ],
       "backgroundColor": ["yellow", "orange"],
-      "description": "A devout believer that no change is too small to ship. Every commit — a typo fix, a comment tweak, a whitespace nudge — is consecrated with its own point release, blessed and deployed to the faithful. The version number long ago spiraled past sense into the tens of thousands, and he wears it like vestments. Joyful, compulsive, allergic to batching. Drives the release pipeline like a bell that never stops ringing. The team teases him, but nothing he writes sits unreleased — and he sleeps fine knowing main and prod are never more than one commit apart.",
+      "description": "A joyful evangelist of continuous deployment who believes no change is too small to ship. Every commit — a typo fix, a comment tweak, a whitespace nudge — is consecrated and sent to the faithful in prod. He has automated the whole liturgy: the pipeline runs his daily mass, so a Friday deploy holds no fear. The version number long ago spiraled past sense into the tens of thousands, and he wears it like vestments. Joyful, generous, allergic to batching. The team teases him, but nothing he writes sits unreleased — and he sleeps fine knowing main and prod are never more than one commit apart.",
       "imagePrompt": "A beaming pope/cardinal figure in flowing gold-and-white vestments and a tall mitre, standing on a cathedral balcony with both arms raised in benediction, gripping a glowing crozier-staff topped with a small rocket symbol and a banner reading 'DEPLOY'. Below, a flock of tiny cute commit-creatures (little glowing orbs with faces) gaze up adoringly as release-confetti and light rain down. Behind him a giant ornate cathedral tally-board displays in big illuminated numerals 'v0.0.32861'. Warm gold-and-orange holy light, stained-glass glow, jubilant. Render only the labels 'DEPLOY' on the banner and 'v0.0.32861' on the board.",
       "image": "art/the-patch-pope.png"
     },
@@ -665,7 +665,7 @@
           "name": "Read the Room",
           "type": "ai",
           "damage": "VIBES",
-          "description": "Senses which docs the moment needs and drops them into context on the beat — no ally hallucinates."
+          "description": "Senses which docs are needed and drops into context on beat - no hallucinations for 3 turns."
         },
         {
           "name": "Cut the Record",
