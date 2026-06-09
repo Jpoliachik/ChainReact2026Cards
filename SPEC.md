@@ -91,7 +91,7 @@ Each card and each move carries a `type` — but these are **the deck's own doma
 generic Pokémon elements. The type icon tells you what _kind_ of dev energy the card is.
 One of eight:
 
-`ai · native · motion · craft · ship · debug · security · process`
+`ai · native · motion · craft · ship · debug · security · process · fire`
 
 - **ai** (sparkle) — agents, models, prompts, context, the slop wars
 - **native** (phone) — the JS↔native bridge, Swift/Kotlin, legacy/brownfield, the OS layer
@@ -101,6 +101,7 @@ One of eight:
 - **debug** (bug) — the hunt: console logs, QA, crashes, fugitive bugs
 - **security** (shield) — supply chain, secrets, policy, CVEs
 - **process** (gear) — git, migrations, scope, demos — keeping the machine honest
+- **fire** (flame) — the heat: flamewars and holy wars, 3am prod incidents, token bonfires, burning resources (mostly a move type, for chaos energy)
 
 Icon + color for each live in `render/card.js` (`public/icons/<icon>.svg`); the card's `type`
 drives the HP badge, and each move's `type` shows as a single circular icon inline beside the

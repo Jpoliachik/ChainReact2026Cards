@@ -138,7 +138,7 @@
       "moves": [
         {
           "name": "Token Bonfire",
-          "type": "ai",
+          "type": "fire",
           "damage": "1M",
           "description": "Sets a million tokens ablaze before lunch and calls it research — huge damage, and the bill comes due."
         },
@@ -614,8 +614,8 @@
         {
           "name": "Count the Reps",
           "type": "motion",
-          "damage": "50",
-          "description": "Every needless re-render the opponent makes drops and counts out loud — one careless tap, fifty reps."
+          "damage": "123",
+          "description": "Profiles the render loop and counts every re-render out loud — app performance is shamed into shape."
         },
         {
           "name": "Trim the Fat",
@@ -632,21 +632,21 @@
     {
       "id": "the-patch-pope",
       "name": "The Patch Pope",
-      "hp": 70,
+      "hp": 80,
       "type": "ship",
       "saying": "Blessed are those who deploy on Fridays.",
       "moves": [
         {
-          "name": "Holy War",
-          "type": "process",
-          "damage": "5",
-          "description": "Reignites the deploy-on-Friday debate; the whole channel piles in and both sides take the heat."
-        },
-        {
           "name": "Go Forth and Deploy",
           "type": "ship",
-          "damage": "200",
+          "damage": "20",
           "description": "Blesses whatever you've got and sends it straight to prod — a benediction that never misses."
+        },
+        {
+          "name": "Holy War",
+          "type": "fire",
+          "damage": "?",
+          "description": "Reignites the deploy-on-Friday debate; the whole channel piles in and both sides take damage."
         }
       ],
       "backgroundColor": ["yellow", "orange"],
@@ -670,7 +670,7 @@
         {
           "name": "Cut the Record",
           "type": "process",
-          "damage": "33⅓",
+          "damage": "10",
           "description": "Catches the fix nobody wrote down and presses it to wax — 'did you update the docs with this?'"
         }
       ],
@@ -682,7 +682,7 @@
     {
       "id": "the-scope-siren",
       "name": "The Scope Siren",
-      "hp": 130,
+      "hp": 60,
       "type": "process",
       "saying": "Quick thought — what if it also did this?",
       "moves": [

@@ -35,6 +35,7 @@ const TYPE_CONFIG = {
   debug: { icon: "bug.svg", color: "#65a30d", name: "Debug" },
   security: { icon: "shield.svg", color: "#dc2626", name: "Security" },
   process: { icon: "gear.svg", color: "#475569", name: "Process" },
+  fire: { icon: "flame.svg", color: "#ea580c", name: "Fire" },
 };
 
 const COLOR_MAP = {

@@ -42,7 +42,7 @@ writing, judging, or cutting cards. Key reminders:
   target 30.)
 - **Phase 2 (in progress): the actual visual.** Each card now grows the full Pokémon card —
   `hp`, a deck-domain `type` (`ai · native · motion · craft · ship · debug · security ·
-  process`), `backgroundColor`, and a per-move `type` / `damage` — and renders to a 816×1110
+  process · fire`), `backgroundColor`, and a per-move `type` / `damage` — and renders to a 816×1110
   trading card. See SPEC.md for the schema + type system. The type/damage values are tuned
   for refinement, not final.
 
