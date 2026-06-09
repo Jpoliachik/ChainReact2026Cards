@@ -108,6 +108,16 @@ When you **cut or rename** a card, delete its now-orphaned `card-exports/<id>.pn
 export is missing. **A cut card must also be removed from the `QUIZ` object** in `index.html`,
 or the quiz can route to a card that no longer exists.
 
+### Catch a forgotten export: `pnpm check:exports`
+
+This trap has actually shipped stale art to the live site (art committed without a re-export).
+**Run `pnpm check:exports` before committing art changes and before publishing.** It's
+zero-dep and flags any card whose `public/art/<id>.png` is newer than its
+`card-exports/<id>.png` — both locally (on-disk mtime) and in git history (art committed
+after its export) — plus any card with art but no export. Exit code is non-zero if anything's
+out of sync, so it drops cleanly into a pre-commit hook or CI. The fix it prints is always
+`pnpm export <id>` for the flagged cards, then commit the refreshed exports.
+
 ## Conventions
 
 - Use **pnpm**, not npm.

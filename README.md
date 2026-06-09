@@ -22,9 +22,15 @@ frame, name plate, HP + type icon, framed art, saying, two moves with energy pip
 One renderer — `render/card.js` (+ `public/card.css`, `public/icons/`) — feeds every view.
 
 ```bash
-pnpm export       # render every card → card-exports/<id>.png  (300 DPI, print-ready)
-pnpm export <id>  # just one card
+pnpm export        # render every card → card-exports/<id>.png  (300 DPI, print-ready)
+pnpm export <id>   # just one card
+pnpm check:exports # flag any card-exports/ out of date with its public/art/ — run before committing art / publishing
 ```
+
+> **Two image layers, easy to desync.** `public/art/<id>.png` is the raw art; `card-exports/<id>.png`
+> is the rendered card the live site actually serves, and it only refreshes when you run `pnpm export`.
+> Change art without re-exporting and the site silently shows the old card. `pnpm check:exports`
+> catches exactly that — on-disk and in git history — and exits non-zero, so it fits a pre-commit hook or CI.
 
 ## Entry points
 

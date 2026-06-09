@@ -8,7 +8,8 @@
     "start": "node server.js",
     "dev": "node server.js",
     "build": "node build.js",
-    "export": "node export.js"
+    "export": "node export.js",
+    "check:exports": "node check-exports.js"
   },
   "dependencies": {
     "puppeteer": "^24.19.0",
