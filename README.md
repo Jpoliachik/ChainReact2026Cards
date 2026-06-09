@@ -5,7 +5,8 @@ tarot register, Pokémon mechanics. Handed out at the conference: _"which one ar
 
 **▶ Live deck: https://jpoliachik.github.io/ChainReact2026Cards/**
 
-See [SPEC.md](SPEC.md) for the design north star and card schema.
+See [SPEC.md](SPEC.md) for the design north star and card schema, and
+[QUIZ.md](QUIZ.md) for the "which one are you?" decision-tree design.
 
 ## The cards
 
@@ -27,8 +28,10 @@ pnpm export <id>  # just one card
 
 ## Entry points
 
-- **`index.html`** (repo root) — the static, view-only showcase served by GitHub Pages.
-  Shows the finished cards from `card-exports/`; auto-updates on every push.
+- **`index.html`** (repo root) — the static site served by GitHub Pages. Opens with the
+  **"which one are you?" quiz** (a decision tree that routes you to one card; see
+  [QUIZ.md](QUIZ.md)), then the full gallery of finished cards from `card-exports/`.
+  No build, no server; auto-updates on every push.
 - **`public/index.html`** — the interactive local gallery: renders the actual cards live
   (instant reflection of `cards.json` edits) and generates art. Needs the Node server:
 

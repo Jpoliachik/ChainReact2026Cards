@@ -34,6 +34,18 @@ writing, judging, or cutting cards. Key reminders:
 - **Curate for spread** across domains: `ai · native · motion · craft · process · conference`.
   Conference-meta cards land hardest in the room. Watch the coverage bar.
 
+## The quiz (the site's landing flow)
+
+The published site (`index.html`) opens with the **"which one are you?" quiz** — a decision
+tree that asks a few posture questions and routes the person to one card, then offers the
+full gallery. The tree is **data in `index.html` (the `QUIZ` object) — that object is the
+source of truth** for every question, answer label, and route. `QUIZ.md` is the *design doc*
+(coverage, placement logic, the reserved 6th branch); it explains the why, not the wording,
+so don't keep the two in line-by-line sync — only update `QUIZ.md` when the *structure*
+changes (branch added, card re-routed, coverage count shifts). Quiz copy is plain
+person-voice self-ID ("that's me"); the high tarot register lives in the card name (the
+reveal). Editing the quiz needs no re-export — it's site copy, not a card field.
+
 ## The gallery tool
 
 Viewing is the main use; edit `cards.json` directly to change a card, then reload.
@@ -91,8 +103,10 @@ So whenever you **swap/regenerate art, rename a card `id`, or edit any visible f
 (`name`, `saying`, moves, `hp`, `type`, colors), you MUST re-run `pnpm export <id>` and commit
 the new `card-exports/<id>.png` — otherwise the live site stays stale or shows the card broken.
 When you **cut or rename** a card, delete its now-orphaned `card-exports/<id>.png` (and
-`public/art/<id>.png`). `index.html` (the Pages entry point) reads `./cards.json` +
-`./card-exports/<id>.png`, falling back to an "art pending" tile when an export is missing.
+`public/art/<id>.png`). `index.html` (the Pages entry point) runs the quiz and gallery off
+`./cards.json` + `./card-exports/<id>.png`, falling back to an "art pending" tile when an
+export is missing. **A cut card must also be removed from the `QUIZ` object** in `index.html`,
+or the quiz can route to a card that no longer exists.
 
 ## Conventions
 
