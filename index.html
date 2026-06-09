@@ -2,16 +2,20 @@
 <html lang="en">
 <!--
   Static, view-only showcase served by GitHub Pages.
-  Fetches ./cards.json for the card list and shows the finished cards from
-  ./card-exports/<id>.png (committed by `pnpm export`). Falls back to an
-  "art pending" tile for any card without an export yet.
-  (The interactive gallery with live rendering + art generation lives in
-  public/index.html and needs the Node server: `pnpm start`.)
+
+  Two experiences, one file (no server, no build):
+    1. The QUIZ — "Which React Native developer are you?" A step-by-step decision
+       tree (the QUIZ object below, kept in sync with QUIZ.md) that routes to one card.
+    2. The GALLERY — every card, from ./card-exports/<id>.png (committed by `pnpm export`),
+       falling back to an "art pending" tile.
+
+  Card metadata comes from ./cards.json. (The interactive gallery with live rendering +
+  art generation lives in public/index.html and needs the Node server: `pnpm start`.)
 -->
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Chain React Cards</title>
+<title>Chain React Cards — Which one are you?</title>
 <meta property="og:title" content="Chain React Cards" />
 <meta property="og:description" content="Developer-archetype cards for Chain React 2026 — which one are you?" />
 <style>
@@ -20,17 +24,80 @@
     --muted: #9b96b0; --faint: #5d5872; --line: #2f2c3d; --gold: #d9b35e;
   }
   * { box-sizing: border-box; }
+  html, body { height: 100%; }
   body { margin: 0; background: var(--bg); color: var(--ink);
-    font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-  .wrap { max-width: 1280px; margin: 0 auto; padding: 32px 24px 120px; }
-  header { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
-  h1 { font: 600 28px/1 "Iowan Old Style", Georgia, serif; letter-spacing: .2px; margin: 0; }
+    font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased; }
+  h1, h2, .serif { font-family: "Iowan Old Style", Georgia, serif; }
+  button { font: inherit; cursor: pointer; }
+  .hidden { display: none !important; }
+
+  /* faint mystical backdrop */
+  body::before { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    background:
+      radial-gradient(1100px 700px at 50% -10%, rgba(217,179,94,.10), transparent 60%),
+      radial-gradient(800px 500px at 90% 110%, rgba(123,104,200,.10), transparent 60%); }
+  .stage { position: relative; z-index: 1; }
+
+  /* ---------- INTRO ---------- */
+  .intro { min-height: 100vh; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; text-align: center; padding: 40px 24px; gap: 6px; }
+  .eyebrow { text-transform: uppercase; letter-spacing: 3px; font-size: 11px; color: var(--gold); }
+  .intro h1 { font-size: clamp(34px, 7vw, 64px); margin: 14px 0 0; line-height: 1.05; font-weight: 600; }
+  .intro .lede { color: var(--muted); max-width: 30ch; margin: 16px 0 4px; font-size: 17px; }
+  .intro .event { color: var(--faint); font-size: 13px; }
+  .cta { margin-top: 34px; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+  .btn-primary { background: linear-gradient(180deg, #e8c878, var(--gold)); color: #1a160c;
+    border: none; padding: 16px 40px; border-radius: 999px; font-size: 17px; font-weight: 700;
+    letter-spacing: .3px; box-shadow: 0 10px 30px rgba(217,179,94,.28); transition: transform .12s ease, box-shadow .12s ease; }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 14px 36px rgba(217,179,94,.36); }
+  .btn-link { background: none; border: none; color: var(--muted); font-size: 14px;
+    text-decoration: underline; text-underline-offset: 3px; padding: 6px; transition: color .12s ease; }
+  .btn-link:hover { color: var(--ink); }
+
+  /* ---------- QUIZ ---------- */
+  .quiz { min-height: 100vh; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; padding: 56px 24px; max-width: 720px; margin: 0 auto; }
+  .dots { display: flex; gap: 9px; margin-bottom: 28px; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--line); transition: background .2s ease; }
+  .dot.on { background: var(--gold); }
+  .qhead { text-align: center; }
+  .qstep { text-transform: uppercase; letter-spacing: 2.5px; font-size: 11px; color: var(--faint); }
+  .qtext { font-size: clamp(24px, 4.4vw, 34px); margin: 12px 0 4px; font-weight: 600; line-height: 1.2; }
+  .qhint { color: var(--muted); font-size: 14px; min-height: 1.4em; }
+  .answers { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px; margin: 30px 0 0; }
+  .answer { text-align: left; background: var(--panel); color: var(--ink); border: 1px solid var(--line);
+    border-radius: 13px; padding: 17px 20px; font-size: 16px; line-height: 1.35;
+    display: flex; align-items: center; gap: 14px; transition: border-color .12s ease, background .12s ease, transform .12s ease; }
+  .answer:hover { border-color: var(--gold); background: #241f2e; transform: translateX(3px); }
+  .answer .mark { color: var(--gold); flex: none; font-size: 18px; opacity: .8; }
+  .quiz-foot { margin-top: 26px; }
+
+  /* ---------- RESULT ---------- */
+  .result { min-height: 100vh; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; padding: 48px 24px 64px; text-align: center; gap: 4px; }
+  .result .eyebrow { margin-bottom: 4px; }
+  .result h2 { font-size: clamp(30px, 6vw, 50px); margin: 2px 0 0; font-weight: 600; }
+  .result .saying { color: var(--muted); font-style: italic; max-width: 32ch; margin: 12px 0 26px; font-size: 17px; }
+  .result-card { width: min(360px, 84vw); border-radius: 16px; overflow: hidden; background: #000;
+    box-shadow: 0 22px 60px rgba(0,0,0,.55); }
+  .result-card img { display: block; width: 100%; height: auto; }
+  .result-actions { margin-top: 32px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+  .btn-ghost { background: none; border: 1px solid var(--line); color: var(--ink);
+    padding: 13px 26px; border-radius: 999px; font-size: 15px; transition: border-color .12s ease, background .12s ease; }
+  .btn-ghost:hover { border-color: var(--gold); background: #241f2e; }
+
+  /* ---------- GALLERY ---------- */
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 28px 24px 120px; }
+  .gal-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+  .gal-head h1 { font-size: 28px; margin: 0; font-weight: 600; }
   .sub { color: var(--muted); font-size: 13px; }
-  .count { margin-left: auto; font-size: 13px; color: var(--muted); }
+  .count { font-size: 13px; color: var(--muted); }
   .count b { color: var(--ink); }
+  .gal-head .btn-ghost { margin-left: auto; padding: 9px 18px; font-size: 13px; }
   .grid { display: grid; gap: 26px; margin-top: 28px; justify-items: center;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
-  .card { width: 340px; border-radius: 14px; overflow: hidden;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+  .card { width: 320px; border-radius: 14px; overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,.4); background: #000; }
   .card img { display: block; width: 100%; height: auto; }
   .card.placeholder { aspect-ratio: 816 / 1110; display: flex; flex-direction: column;
@@ -38,24 +105,207 @@
     border: 1px solid var(--line); background: var(--panel); }
   .glyph { font-size: 32px; color: var(--gold); opacity: .85; }
   .pending { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--faint); }
+
+  /* shared entrance animation */
+  .fade { animation: fade .32s ease both; }
+  @keyframes fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) {
+    .fade { animation: none; } .answer:hover { transform: none; } .btn-primary:hover { transform: none; }
+  }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <h1>Chain React Cards</h1>
-    <span class="sub" id="sub"></span>
-    <span class="count" id="count"></span>
-  </header>
-  <div class="grid" id="grid"></div>
-</div>
+<div class="stage" id="stage"></div>
 
 <script>
 const esc = s => (s||"").replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
 
+/* ----------------------------------------------------------------------------
+   The decision tree. Mirror of QUIZ.md — keep both in sync.
+   A node is either a QUESTION  { q, hint?, options: [{label, node}] }
+                  or a LEAF     "<card-id>"  (a string).
+---------------------------------------------------------------------------- */
+const leaf = id => id;
+const QUIZ = {
+  q: "Which is most you?",
+  hint: "Answer on instinct — your gut is the whole read.",
+  options: [
+    { label: "It's me and the machines now.", node: {
+        q: "Where do you actually stand on the AI?",
+        options: [
+          { label: "All in — let it cook.", node: {
+              q: "And your move is…",
+              options: [
+                { label: "I run a whole stampede of agents at once.", node: leaf("the-agent-wrangler") },
+                { label: "I coax it with the perfectly-worded prompt.", node: leaf("the-prompt-whisperer") },
+                { label: "I cue up exactly the right context, on demand.", node: leaf("the-context-dj") },
+                { label: "I hand it a 10,000-line spec and hold it to all of it.", node: leaf("the-spec-tyrant") },
+              ] } },
+          { label: "Trust, but verify — or don't trust at all.", node: {
+              q: "How much do you let it in?",
+              options: [
+                { label: "Not at all — I grow my code by hand.", node: leaf("the-organic-code-farmer") },
+                { label: "I read every overnight line myself, solo.", node: leaf("the-nights-watch") },
+                { label: "I can taste which model wrote a PR — no slop passes.", node: leaf("the-slop-sommelier") },
+              ] } },
+        ] } },
+
+    { label: "I live below the bridge.", node: {
+        q: "What's your world?",
+        options: [
+          { label: "An ancient ejected beast I keep alive by hand.", node: leaf("the-brownfield-mechanic") },
+          { label: "The bridge itself — I guard what crosses.", node: leaf("the-bridge-troll") },
+          { label: "When RN runs out of road, I drop into Swift / Kotlin.", node: leaf("the-native-ninja") },
+          { label: "Banishing the native quirk that haunts the UI.", node: leaf("the-keyboard-exorcist") },
+        ] } },
+
+    { label: "It has to FEEL right or I can't ship.", node: {
+        q: "Static layout, or living motion?",
+        options: [
+          { label: "Static — the pixels have to be exact.", node: {
+              q: "The flaw you can't unsee is…",
+              options: [
+                { label: "Two pixels of misalignment.", node: leaf("the-pixel-surgeon") },
+                { label: "A light-mode screen searing my retinas.", node: leaf("the-dark-mode-demon") },
+                { label: "A screen reader hitting an unlabeled button.", node: leaf("the-a11y-paladin") },
+              ] } },
+          { label: "Motion — it has to move just right.", node: {
+              q: "What has to be perfect?",
+              options: [
+                { label: "The easing curve / the transition.", node: leaf("the-reanimated-wizard") },
+                { label: "The swipe — it has to be buttery.", node: leaf("the-gesture-jester") },
+                { label: "Sixty frames. No dropped frames. Ever.", node: leaf("the-render-drill-sergeant") },
+              ] } },
+        ] } },
+
+    { label: "Shipping is the whole game.", node: {
+        q: "The App Store stands between you and your users. You…",
+        options: [
+          { label: "Start fresh and sprint — faster to rewrite than to fix.", node: leaf("the-greenfield-speedster") },
+          { label: "Sneak a JS bundle over the wall — gone by morning.", node: leaf("the-over-the-air-smuggler") },
+          { label: "Charm the reviewer into a first-pass yes.", node: leaf("the-app-store-enchantress") },
+          { label: "Deploy on Fridays and bless the build.", node: leaf("the-patch-pope") },
+        ] } },
+
+    { label: "Someone has to keep this from falling apart.", node: {
+        q: "In the chaos, you're the one who…",
+        options: [
+          { label: "Hunts the bug / the hidden truth.", node: {
+              q: "You corner it by…",
+              options: [
+                { label: "console.log and instinct.", node: leaf("the-console-detective") },
+                { label: "Doing what no sane user would.", node: leaf("the-qa-phantom") },
+                { label: "Chasing it all the way into prod.", node: leaf("the-bug-bounty-hunter") },
+              ] } },
+          { label: "Tames the people / the ceremony.", node: {
+              q: "What do you wrangle?",
+              options: [
+                { label: "The merge-conflict standoff.", node: leaf("the-merge-magistrate") },
+                { label: "The live demo, by sleight of hand.", node: leaf("the-demo-illusionist") },
+                { label: "Scope — I'm the one going “what if it also did this?”", node: leaf("the-scope-siren") },
+              ] } },
+          { label: "Stands guard over time / threats / deps.", node: {
+              q: "Your watch is…",
+              options: [
+                { label: "The dreaded SDK upgrade — I endure it so the team won't.", node: leaf("the-upgrade-monk") },
+                { label: "A bunker of vendored deps — the registry will betray us.", node: leaf("the-dependency-prepper") },
+                { label: "The build itself — I stop it when it's unsafe.", node: leaf("the-opsec-cop") },
+              ] } },
+        ] } },
+  ],
+};
+
+/* longest remaining depth from a node (for the progress dots) */
+const isLeaf = n => typeof n === "string";
+function depth(node) {
+  if (isLeaf(node)) return 0;
+  return 1 + Math.max(...node.options.map(o => depth(o.node)));
+}
+
+const stage = document.getElementById("stage");
+let META = {}, BYID = {};
+
+/* ---------- views ---------- */
+function showIntro() {
+  stage.innerHTML = `
+    <div class="intro fade">
+      <div class="eyebrow">Tarot meets Pokémon</div>
+      <h1>Which React Native<br>developer are you?</h1>
+      <p class="lede">Answer a few questions on instinct. Meet the card that's secretly you.</p>
+      <div class="event">${esc(META.event || "")}</div>
+      <div class="cta">
+        <button class="btn-primary" id="start">Start the quiz</button>
+        <button class="btn-link" id="see-all">or see all the cards</button>
+      </div>
+    </div>`;
+  stage.querySelector("#start").onclick = startQuiz;
+  stage.querySelector("#see-all").onclick = showGallery;
+}
+
+let path = []; // chosen nodes, root first
+
+function startQuiz() { path = [QUIZ]; renderQuestion(); }
+
+function renderQuestion() {
+  const node = path[path.length - 1];
+  const step = path.length;                 // 1-based
+  // dots = steps already taken + the remaining depth from here (incl. this question)
+  const totalSteps = (step - 1) + Math.max(depth(node), 1);
+  const dots = Array.from({ length: totalSteps }, (_, i) =>
+    `<span class="dot ${i < step ? "on" : ""}"></span>`).join("");
+
+  stage.innerHTML = `
+    <div class="quiz fade">
+      <div class="dots">${dots}</div>
+      <div class="qhead">
+        <div class="qstep">Question ${step}</div>
+        <div class="qtext serif">${esc(node.q)}</div>
+        <div class="qhint">${esc(node.hint || "")}</div>
+      </div>
+      <div class="answers">
+        ${node.options.map((o, i) =>
+          `<button class="answer" data-i="${i}"><span class="mark">✦</span><span>${esc(o.label)}</span></button>`).join("")}
+      </div>
+      <div class="quiz-foot">
+        <button class="btn-link" id="back">${step > 1 ? "← back" : "← start over"}</button>
+      </div>
+    </div>`;
+
+  stage.querySelectorAll(".answer").forEach(btn => {
+    btn.onclick = () => {
+      const next = node.options[+btn.dataset.i].node;
+      if (isLeaf(next)) showResult(next);
+      else { path.push(next); renderQuestion(); }
+    };
+  });
+  stage.querySelector("#back").onclick = () => {
+    path.pop();
+    if (path.length === 0) showIntro(); else renderQuestion();
+  };
+}
+
+function showResult(id) {
+  const card = BYID[id] || {};
+  const art = card.image
+    ? `<div class="result-card"><img src="card-exports/${esc(id)}.png" alt="${esc(card.name)}" /></div>`
+    : `<div class="result-card card placeholder"><span class="glyph">✦</span><span class="pending">art pending</span></div>`;
+  stage.innerHTML = `
+    <div class="result fade">
+      <div class="eyebrow">You are</div>
+      <h2 class="serif">The ${esc(card.name || "")}</h2>
+      <p class="saying">${card.saying ? "&ldquo;" + esc(card.saying) + "&rdquo;" : ""}</p>
+      ${art}
+      <div class="result-actions">
+        <button class="btn-primary" id="all">See all cards</button>
+        <button class="btn-ghost" id="retake">Retake the quiz</button>
+      </div>
+    </div>`;
+  stage.querySelector("#all").onclick = showGallery;
+  stage.querySelector("#retake").onclick = startQuiz;
+}
+
 function cardEl(c) {
   const el = document.createElement("div");
-  // The finished card is rendered to card-exports/<id>.png by `pnpm export`.
   if (c.image) {
     el.className = "card";
     el.innerHTML = `<img loading="lazy" src="card-exports/${esc(c.id)}.png" alt="${esc(c.name)}" />`;
@@ -66,12 +316,31 @@ function cardEl(c) {
   return el;
 }
 
+function showGallery() {
+  stage.innerHTML = `
+    <div class="wrap fade">
+      <div class="gal-head">
+        <h1 class="serif">Chain React Cards</h1>
+        <span class="sub">${esc(META.event || "")}</span>
+        <span class="count"><b>${CARDS.length}</b> cards</span>
+        <button class="btn-ghost" id="quiz">✦ Which one are you?</button>
+      </div>
+      <div class="grid" id="grid"></div>
+    </div>`;
+  const grid = stage.querySelector("#grid");
+  CARDS.forEach(c => grid.appendChild(cardEl(c)));
+  stage.querySelector("#quiz").onclick = showIntro;
+  window.scrollTo(0, 0);
+}
+
+/* ---------- boot ---------- */
+let CARDS = [];
 (async () => {
   const data = await (await fetch("./cards.json")).json();
-  document.getElementById("sub").textContent = data.meta?.event || "";
-  document.getElementById("count").innerHTML = `<b>${data.cards.length}</b> cards`;
-  const grid = document.getElementById("grid");
-  data.cards.forEach(c => grid.appendChild(cardEl(c)));
+  META = data.meta || {};
+  CARDS = data.cards || [];
+  BYID = Object.fromEntries(CARDS.map(c => [c.id, c]));
+  showIntro();
 })();
 </script>
 </body>
