@@ -112,11 +112,20 @@ or the quiz can route to a card that no longer exists.
 
 This trap has actually shipped stale art to the live site (art committed without a re-export).
 **Run `pnpm check:exports` before committing art changes and before publishing.** It's
-zero-dep and flags any card whose `public/art/<id>.png` is newer than its
-`card-exports/<id>.png` — both locally (on-disk mtime) and in git history (art committed
-after its export) — plus any card with art but no export. Exit code is non-zero if anything's
-out of sync, so it drops cleanly into a pre-commit hook or CI. The fix it prints is always
-`pnpm export <id>` for the flagged cards, then commit the refreshed exports.
+zero-dep and flags, for each card:
+
+- **stale art** — `public/art/<id>.png` newer than its `card-exports/<id>.png`, both locally
+  (on-disk mtime) and in git history (art committed after its export);
+- **stale text** — the card's rendered fields (`name`/`hp`/`type`/`saying`/`moves`/colors)
+  changed in `cards.json` since its last export, so the baked-in text is outdated. This is
+  tracked via `card-exports/.manifest.json`, a per-card hash written by `pnpm export` (see
+  `render-hash.js` for exactly which fields count — internal `description`/`imagePrompt` are
+  excluded, so editing them never forces a re-export);
+- **missing export** — a card with art but no export at all.
+
+Exit code is non-zero if anything's out of sync, so it drops cleanly into a pre-commit hook or
+CI. The fix it prints is always `pnpm export <id>` for the flagged cards, then commit the
+refreshed exports **and** the updated `.manifest.json`.
 
 ## Conventions
 

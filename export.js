@@ -13,6 +13,7 @@ import sharp from "sharp";
 import { readFile, writeFile, unlink, mkdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { cardRenderHash } from "./render-hash.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const CARDS_PATH = join(__dirname, "cards.json");
@@ -20,6 +21,9 @@ const RENDERER_PATH = join(__dirname, "render", "card.js");
 const PUBLIC_DIR = join(__dirname, "public");
 const TEMP_HTML = join(PUBLIC_DIR, "__export.html");
 const OUT_DIR = join(__dirname, "card-exports");
+// Per-card hash of the rendered text fields, so check:exports can detect when
+// cards.json text drifts from what was last exported (not just stale art).
+const MANIFEST_PATH = join(OUT_DIR, ".manifest.json");
 
 const WIDTH = 816;
 const HEIGHT = 1110;
@@ -57,6 +61,7 @@ async function main() {
   await writeFile(TEMP_HTML, html);
   await mkdir(OUT_DIR, { recursive: true });
 
+  const exported = [];
   const browser = await puppeteer.launch({
     headless: "new",
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
@@ -90,6 +95,7 @@ async function main() {
         .withMetadata({ density: 300 })
         .png({ compressionLevel: 9 })
         .toFile(out);
+      exported.push(card);
       console.log(`✓ ${card.id}.png  (${WIDTH}×${HEIGHT} @ 300dpi)`);
     }
   } finally {
@@ -97,7 +103,19 @@ async function main() {
     await unlink(TEMP_HTML).catch(() => {});
   }
 
-  console.log(`\n  Exported ${cards.length} card(s) to card-exports/\n`);
+  // Record the rendered-text hash of every card we exported (merging into any
+  // existing manifest so a single-card export doesn't drop the other entries).
+  let manifest = {};
+  try {
+    manifest = JSON.parse(await readFile(MANIFEST_PATH, "utf-8"));
+  } catch {
+    /* no manifest yet — start fresh */
+  }
+  for (const card of exported) manifest[card.id] = cardRenderHash(card);
+  const ordered = Object.fromEntries(Object.keys(manifest).sort().map((k) => [k, manifest[k]]));
+  await writeFile(MANIFEST_PATH, JSON.stringify(ordered, null, 2) + "\n");
+
+  console.log(`\n  Exported ${exported.length} card(s) to card-exports/\n`);
 }
 
 main().catch((err) => {
