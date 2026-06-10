@@ -134,7 +134,7 @@
         border-radius: 10px;
         position: relative;
         background: #15111d url("./card-back-web.png") center / cover no-repeat;
-        border: 2px solid var(--gold);
+        border: 1px solid var(--gold);
         box-shadow:
           0 14px 26px rgba(0, 0, 0, 0.5);
       }
@@ -543,7 +543,7 @@
            isn't cropped; the symmetric back tolerates the tiny cover crop */
         aspect-ratio: 816 / 1110;
         transform-style: preserve-3d;
-        transition: transform 0.75s cubic-bezier(0.3, 0.7, 0.2, 1);
+        transition: transform 0.5s cubic-bezier(0.3, 0.7, 0.2, 1);
       }
       .flip-inner.flipped {
         transform: rotateY(180deg);
@@ -563,8 +563,24 @@
         height: 100%;
         object-fit: cover;
       }
+      /* the back preview keeps a thin gold edge */
+      .flip-back {
+        border: 1px solid rgba(217, 179, 94, 0.7);
+      }
       .flip-front {
         transform: rotateY(180deg);
+      }
+      /* sequenced reveal: name + saying fade in when the card flips */
+      .reveal {
+        opacity: 0;
+        transform: translateY(6px);
+        transition:
+          opacity 0.4s ease,
+          transform 0.4s ease;
+      }
+      .reveal.shown {
+        opacity: 1;
+        transform: none;
       }
       @keyframes popUp {
         from {
@@ -752,7 +768,8 @@
         .result-card {
           animation: none !important;
         }
-        .flip-inner {
+        .flip-inner,
+        .reveal {
           transition: none !important;
         }
         .btn-primary::after {
@@ -1102,8 +1119,8 @@
         stage.innerHTML = `
     <div class="result fade">
       <div class="eyebrow">You are</div>
-      <h2 class="serif">The ${esc(card.name || "")}</h2>
-      <p class="saying">${card.saying ? "&ldquo;" + esc(card.saying) + "&rdquo;" : ""}</p>
+      <h2 class="serif reveal">The ${esc(card.name || "")}</h2>
+      <p class="saying reveal">${card.saying ? "&ldquo;" + esc(card.saying) + "&rdquo;" : ""}</p>
       ${art}
       <div class="result-actions">
         <button class="btn-primary" id="all">See all cards</button>
@@ -1113,8 +1130,17 @@
         Find your fellow <b>${esc(pluralize(card.name))}</b> at Chain React 2026 — Portland, July 30–31. ${CR_GO}
       </p>
     </div>`;
+        // "You are" shows first; ~0.5s later the name reveals and the card flips together.
         const flip = stage.querySelector("#flip");
-        if (flip) setTimeout(() => flip.classList.add("flipped"), 620);
+        const reveals = stage.querySelectorAll(".reveal");
+        if (reduce) {
+          reveals.forEach((el) => el.classList.add("shown"));
+        } else {
+          setTimeout(() => {
+            reveals.forEach((el) => el.classList.add("shown"));
+            if (flip) flip.classList.add("flipped");
+          }, 500);
+        }
         stage.querySelector("#all").onclick = showGallery;
         stage.querySelector("#retake").onclick = startQuiz;
       }
