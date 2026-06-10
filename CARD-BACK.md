@@ -8,13 +8,21 @@ as the character cards.
 
 ## Files
 
+All derived from the master; **re-run the crops in `git log` for these if the master changes**.
+
 - `card-back.png` — **full-res master** (1054×1492). Source of truth; use for **print**.
-- `card-back-web.png` — downscaled web copy (420×595, ~150KB). Used on the site.
+- `card-back-web.png` — downscaled web copy (300px wide, ~90KB). Site use.
+- `favicon.png` / `apple-touch-icon.png` — square crop of the center medallion.
+- `og-image.png` — 1200×630 social share card (bigger card, top cropped, "Which one are you?").
 
 ## Where it's used
 
 - **Home page floating deck** — the three fanned `.mini` cards in `index.html` use
   `card-back-web.png` as their face.
+- **Quiz result reveal** — the card pops up showing `card-back-web.png`, then flips to the
+  front art (`.flip-inner` in `index.html`; skipped under `prefers-reduced-motion`).
+- **Favicon / share image** — wired into `<head>` (`favicon`, `apple-touch-icon`, `og:image`,
+  `twitter:image`). OG/Twitter use absolute URLs against the Pages domain.
 
 ## The prompt (Nano Banana / Gemini)
 

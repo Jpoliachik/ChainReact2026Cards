@@ -16,8 +16,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Chain React Cards — Which one are you?</title>
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jpoliachik.github.io/ChainReact2026Cards/" />
     <meta property="og:title" content="Chain React Cards" />
     <meta property="og:description" content="Developer-archetype cards for Chain React 2026 — which one are you?" />
+    <meta property="og:image" content="https://jpoliachik.github.io/ChainReact2026Cards/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Chain React Cards" />
+    <meta name="twitter:description" content="Developer-archetype cards for Chain React 2026 — which one are you?" />
+    <meta name="twitter:image" content="https://jpoliachik.github.io/ChainReact2026Cards/og-image.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -521,12 +532,57 @@
       }
       .result-card {
         width: min(360px, 84vw);
+        perspective: 1200px;
+        animation: popUp 0.45s cubic-bezier(0.2, 0.9, 0.3, 1.15) both;
+      }
+      .flip-inner {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1054 / 1492;
+        transform-style: preserve-3d;
+        transition: transform 0.75s cubic-bezier(0.3, 0.7, 0.2, 1);
+      }
+      .flip-inner.flipped {
+        transform: rotateY(180deg);
+      }
+      .flip-face {
+        position: absolute;
+        inset: 0;
+        backface-visibility: hidden;
         border-radius: 16px;
         overflow: hidden;
         background: #000;
         box-shadow: 0 22px 60px rgba(0, 0, 0, 0.55);
       }
-      .result-card img {
+      .flip-face img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .flip-front {
+        transform: rotateY(180deg);
+      }
+      @keyframes popUp {
+        from {
+          opacity: 0;
+          transform: scale(0.82) translateY(16px);
+        }
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+      /* reduced-motion / no-art fallback: plain static card */
+      .result-card.static {
+        perspective: none;
+        animation: none;
+        border-radius: 16px;
+        overflow: hidden;
+        background: #000;
+        box-shadow: 0 22px 60px rgba(0, 0, 0, 0.55);
+      }
+      .result-card.static img {
         display: block;
         width: 100%;
         height: auto;
@@ -689,8 +745,12 @@
         .intro h1,
         .intro .lede,
         .cta,
-        .spark {
+        .spark,
+        .result-card {
           animation: none !important;
+        }
+        .flip-inner {
+          transition: none !important;
         }
         .btn-primary::after {
           display: none;
@@ -1023,9 +1083,19 @@
       function showResult(id) {
         setHeader(true);
         const card = BYID[id] || {};
-        const art = card.image
-          ? `<div class="result-card"><img src="card-exports/${esc(id)}.png" alt="${esc(card.name)}" /></div>`
-          : `<div class="result-card card placeholder"><span class="glyph">✦</span><span class="pending">art pending</span></div>`;
+        const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+        const front = card.image
+          ? `<img src="card-exports/${esc(id)}.png" alt="${esc(card.name)}" />`
+          : `<span class="glyph">✦</span><span class="pending">art pending</span>`;
+        const frontCls = card.image ? "" : " card placeholder";
+        // reduced motion: skip the flip, show the front art directly.
+        // otherwise: pop the card up showing its back, then flip to the front.
+        const art = reduce
+          ? `<div class="result-card static${frontCls}">${front}</div>`
+          : `<div class="result-card"><div class="flip-inner" id="flip">
+        <div class="flip-face flip-back"><img src="card-back-web.png" alt="" /></div>
+        <div class="flip-face flip-front${frontCls}">${front}</div>
+      </div></div>`;
         stage.innerHTML = `
     <div class="result fade">
       <div class="eyebrow">You are</div>
@@ -1040,6 +1110,8 @@
         Find your fellow <b>${esc(pluralize(card.name))}</b> at Chain React 2026 — Portland, July 30–31. ${CR_GO}
       </p>
     </div>`;
+        const flip = stage.querySelector("#flip");
+        if (flip) setTimeout(() => flip.classList.add("flipped"), 620);
         stage.querySelector("#all").onclick = showGallery;
         stage.querySelector("#retake").onclick = startQuiz;
       }
