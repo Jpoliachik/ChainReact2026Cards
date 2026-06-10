@@ -54,6 +54,29 @@
       body {
         height: 100%;
       }
+      /* Always show the scrollbar track so it never pops in/out (and the
+         layout never shifts) as quiz steps change height. */
+      html {
+        overflow-y: scroll;
+        scrollbar-gutter: stable;
+        scrollbar-color: var(--faint) transparent;
+      }
+      /* Persistent, on-theme scrollbar (opts out of macOS overlay auto-hide
+         on WebKit, so it never flickers between quiz steps). */
+      ::-webkit-scrollbar {
+        width: 11px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--faint);
+        border-radius: 999px;
+        border: 3px solid var(--bg);
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--muted);
+      }
       body {
         margin: 0;
         background: var(--bg);
