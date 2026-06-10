@@ -6,7 +6,19 @@ opposite: **no character, fully symmetrical, iconic, legible face-down** across 
 stack. Think Pokémon's Poké Ball back or a tarot deck's patterned verso.
 
 - **Aspect:** portrait, matches the deck's `816×1110` card dimensions.
-- **Status:** prompt drafted; not yet generated.
+- **Status:** v1 generated (too ornate / logo glow felt off-style); v2 prompt below.
+
+## Style direction (must match the card fronts)
+
+The back should feel like the **same deck** as the character cards: **painterly cartoon
+illustration, bold simple shapes, vibrant flat color, clean dramatic lighting** (Pokémon
+character-card energy — see the jester on a lamplit stage, the cowboy roping code-horses).
+Lessons from v1:
+
+- **Simplify** — fewer ornate hairline patterns; a few **large bold shapes** with breathing room.
+- **One consistent painterly background texture**, not a busy starfield.
+- **Logo lives *in* the art**, rendered as a clean flat emblem — **no neon glow / halo bloom**.
+- Keep: symmetry, gold frame, two-line title, navy/aubergine + gold palette.
 
 ## Concept
 
@@ -27,29 +39,44 @@ background pattern**, inside an **ornate frame**, with a **two-line title** belo
 └──────────────────────────┘
 ```
 
-## The prompt (Nano Banana / Gemini)
+## The prompt — v2 (Nano Banana / Gemini)
 
 Pass the **Chain React logo as a reference image** alongside this text prompt.
 
-> A symmetrical trading-card BACK design, portrait orientation, ornate and premium. **Center
-> the provided Chain React logo as a glowing emblem** — treat it like a Pokémon-style
-> medallion: set it inside a circular badge with a soft radial bloom behind it, raised and
-> luminous, the unmistakable hero of the composition.
+> A symmetrical trading-card BACK, portrait orientation, in the style of a **painterly cartoon
+> illustration** — vibrant flat color, bold simple shapes, clean dramatic lighting, like a
+> Pokémon-style character card. Cohesive and uncluttered, with generous negative space.
 >
-> Surround it with a **fourfold-symmetric mandala** that fuses tarot-arcana ornamentation with
-> React-atom orbital motifs — concentric rings, fine filigree, tessellated repeating detail
-> radiating outward from the central emblem. Dense, hypnotic, perfectly mirrored.
+> **Center the provided Chain React logo** as a clean flat emblem integrated into the artwork —
+> set inside a single bold circular medallion with a simple gold ring. Render it as part of the
+> illustration, NOT a glowing neon overlay; no bright bloom or halo.
 >
-> Enclose everything in an **ornate gold frame** with decorative corner flourishes, like the
-> border of a tarot card.
+> Behind it, a **simple bold mandala** built from a few large concentric shapes — broad rings,
+> big petal forms, clean radial geometry. Minimal fine detail. Perfectly symmetrical, calm,
+> iconic.
 >
-> Below the central emblem, render the title on **two lines, centered**: "CHAIN REACT" /
-> "TRADING CARDS" — in an elegant high-fantasy / tarot display typeface (think engraved serif
-> or art-nouveau lettering), gold, crisp and legible.
+> One **consistent painterly background texture** across the whole card — a smooth deep gradient
+> with subtle hand-painted brush texture, like the backdrop of a character illustration. No busy
+> starfields or scattered sparkles.
 >
-> Palette: deep midnight navy and aubergine background, antique-gold linework, subtle
-> teal/cyan accent glow from the central atom. Rich, mystical, collectible. No characters, no
-> scattered objects — pure symmetric emblem-and-pattern. High detail, clean rendering.
+> Enclose in a **clean ornate gold frame** with simple corner flourishes.
+>
+> Two-line centered title below the medallion: "CHAIN REACT" / "TRADING CARDS" in an elegant
+> tarot/fantasy display serif, gold.
+>
+> Palette: deep midnight navy and aubergine, antique gold, one subtle teal accent. Rich,
+> collectible, cohesive with a vibrant illustrated character deck.
+
+<details><summary>v1 prompt (archived — too ornate, logo glow felt off-style)</summary>
+
+> A symmetrical trading-card BACK design, portrait orientation, ornate and premium. Center the
+> provided Chain React logo as a glowing emblem — Pokémon-style medallion in a circular badge
+> with a soft radial bloom. Surround it with a fourfold-symmetric mandala fusing tarot-arcana
+> ornamentation with React-atom orbital motifs — concentric rings, fine filigree, tessellated
+> detail. Ornate gold frame, decorative corners. Two-line title "CHAIN REACT" / "TRADING CARDS"
+> in tarot display serif. Deep navy/aubergine, antique gold, teal/cyan glow.
+
+</details>
 
 ## Open decisions
 
