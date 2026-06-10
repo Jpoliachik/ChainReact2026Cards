@@ -134,6 +134,7 @@
         border-radius: 10px;
         position: relative;
         background: #15111d url("./card-back-web.png") center / cover no-repeat;
+        border: 2px solid var(--gold);
         box-shadow:
           0 14px 26px rgba(0, 0, 0, 0.5);
       }
@@ -538,7 +539,9 @@
       .flip-inner {
         position: relative;
         width: 100%;
-        aspect-ratio: 1054 / 1492;
+        /* match the front card export ratio (816×1110) so the character art
+           isn't cropped; the symmetric back tolerates the tiny cover crop */
+        aspect-ratio: 816 / 1110;
         transform-style: preserve-3d;
         transition: transform 0.75s cubic-bezier(0.3, 0.7, 0.2, 1);
       }
